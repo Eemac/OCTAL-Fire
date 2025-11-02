@@ -623,8 +623,12 @@
       "stm32"
     ],
     [
-      "72db870c-e775-4d4c-b351-14a4d227b1d5",
-      "Cube connector"
+      "d10b32a2-8ae5-4f91-93a8-2e17c5422b40",
+      "CAN Repeater"
+    ],
+    [
+      "0e50c34f-cbc1-4276-a63e-8f0ddf3c5268",
+      "Bus Arbitration Logic"
     ]
   ],
   "text_variables": {}

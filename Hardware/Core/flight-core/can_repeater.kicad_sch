@@ -1,0 +1,50 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "bb752a74-5f7c-4409-8b13-64e5e500c5b7")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 114.3 77.47)
+		(size 33.02 19.05)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "0e50c34f-cbc1-4276-a63e-8f0ddf3c5268")
+		(property "Sheetname" "Bus Arbitration Logic"
+			(at 114.3 76.7584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "bus_arbitration_logic.kicad_sch"
+			(at 114.3 97.1046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "flight-core"
+				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/d10b32a2-8ae5-4f91-93a8-2e17c5422b40"
+					(page "4")
+				)
+			)
+		)
+	)
+)
