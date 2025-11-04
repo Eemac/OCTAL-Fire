@@ -908,651 +908,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "formula:CONN_02x03_RA"
-			(pin_names
-				(offset 0.254)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at 0 4.318 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "Value" "CONN_02x03_RA"
-				(at -0.254 -6.858 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "Footprint" "CONN06_1724480006_MOL"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.molex.com/en-us/products/part-detail-pdf/1724480006?display=pdf"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Mini-Fit Jr. Connector Header Through Hole, Right Angle 6 position 0.165\" (4.20mm)"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "MPN" "1724480006"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "1724480006 6 pin connector"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "CONN06_1724480006_MOL"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "CONN_02x03_RA_0_1"
-				(rectangle
-					(start -2.54 2.54)
-					(end 2.54 -5.08)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -2.54 1.397)
-					(end -1.27 1.143)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -2.54 -1.143)
-					(end -1.27 -1.397)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -2.54 -3.683)
-					(end -1.27 -3.937)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 1.27 1.397)
-					(end 2.54 1.143)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 1.27 -1.143)
-					(end 2.54 -1.397)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 1.27 -3.683)
-					(end 2.54 -3.937)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "CONN_02x03_RA_1_1"
-				(pin passive line
-					(at -6.35 1.27 0)
-					(length 3.81)
-					(name "P1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -6.35 -1.27 0)
-					(length 3.81)
-					(name "P3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -6.35 -3.81 0)
-					(length 3.81)
-					(name "P5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 6.35 1.27 180)
-					(length 3.81)
-					(name "P2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 6.35 -1.27 180)
-					(length 3.81)
-					(name "P4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 6.35 -3.81 180)
-					(length 3.81)
-					(name "P6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "CONN_02x03_RA_1_2"
-				(polyline
-					(pts
-						(xy 5.08 2.54) (xy 5.08 -15.24)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 -15.24) (xy 12.7 -15.24)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 0) (xy 5.08 0)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 0) (xy 8.89 0.8467)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 0) (xy 8.89 -0.8467)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -2.54) (xy 5.08 -2.54)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -2.54) (xy 8.89 -1.6933)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -2.54) (xy 8.89 -3.3867)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -5.08) (xy 5.08 -5.08)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -5.08) (xy 8.89 -4.2333)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -5.08) (xy 8.89 -5.9267)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -7.62) (xy 5.08 -7.62)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -7.62) (xy 8.89 -6.7733)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -7.62) (xy 8.89 -8.4667)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -10.16) (xy 5.08 -10.16)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -10.16) (xy 8.89 -9.3133)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -10.16) (xy 8.89 -11.0067)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -12.7) (xy 5.08 -12.7)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -12.7) (xy 8.89 -11.8533)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -12.7) (xy 8.89 -13.5467)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 12.7 2.54) (xy 5.08 2.54)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 12.7 -15.24) (xy 12.7 2.54)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin unspecified line
-					(at 0 0 0)
-					(length 5.08)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 0 -2.54 0)
-					(length 5.08)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 0 -5.08 0)
-					(length 5.08)
-					(name "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 0 -7.62 0)
-					(length 5.08)
-					(name "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 0 -10.16 0)
-					(length 5.08)
-					(name "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 0 -12.7 0)
-					(length 5.08)
-					(name "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "formula:DC_DC_CONVERTER_12V_240W"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -6182,36 +5537,6 @@
 	)
 	(wire
 		(pts
-			(xy -15.24 19.05) (xy -16.51 19.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "457b5303-9046-49ac-b649-ecdfe9a33b66")
-	)
-	(wire
-		(pts
-			(xy -25.4 109.22) (xy -24.13 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4b19826a-466f-4117-b00a-19ae69685c35")
-	)
-	(wire
-		(pts
-			(xy -25.4 102.87) (xy -25.4 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4ba151eb-3f0f-456a-8421-014682274329")
-	)
-	(wire
-		(pts
 			(xy 43.18 135.89) (xy 41.91 135.89)
 		)
 		(stroke
@@ -6302,16 +5627,6 @@
 	)
 	(wire
 		(pts
-			(xy -25.4 25.4) (xy -25.4 19.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9ba77007-77f5-478a-a8ad-eacda6a9d89b")
-	)
-	(wire
-		(pts
 			(xy 118.11 185.42) (xy 124.46 185.42)
 		)
 		(stroke
@@ -6382,36 +5697,6 @@
 	)
 	(wire
 		(pts
-			(xy -15.24 109.22) (xy -16.51 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e132060d-43ec-4451-8230-2f35ccba54f1")
-	)
-	(wire
-		(pts
-			(xy -15.24 102.87) (xy -15.24 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e5b03c09-6c0c-4267-91d5-40dc015b0c80")
-	)
-	(wire
-		(pts
-			(xy -25.4 19.05) (xy -24.13 19.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e7162fdf-97e0-4d8a-9dcf-1a171c1610d1")
-	)
-	(wire
-		(pts
 			(xy 222.25 80.01) (xy 240.03 80.01)
 		)
 		(stroke
@@ -6442,16 +5727,6 @@
 	)
 	(wire
 		(pts
-			(xy -15.24 25.4) (xy -15.24 19.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f786e41e-297d-473c-9bcc-2e8f5d2a962c")
-	)
-	(wire
-		(pts
 			(xy 33.02 33.02) (xy 33.02 26.67)
 		)
 		(stroke
@@ -6459,16 +5734,6 @@
 			(type default)
 		)
 		(uuid "fe0f456e-a16b-404a-bd73-980b66696865")
-	)
-	(label "CAN-_N"
-		(at -13.97 41.91 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "034c5122-06e0-43bc-88fb-05e9e793f202")
 	)
 	(label "CAN-_N"
 		(at 43.18 33.02 0)
@@ -6480,16 +5745,6 @@
 		)
 		(uuid "042269fc-dd81-47d4-8081-e5cdb71f3a96")
 	)
-	(label "CAN+_W"
-		(at -26.67 39.37 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "0a504c30-1218-46b8-910e-70f817cef2ba")
-	)
 	(label "+3.3V"
 		(at 355.6 234.95 90)
 		(effects
@@ -6499,26 +5754,6 @@
 			(justify left bottom)
 		)
 		(uuid "0b06e33b-31f8-40b5-9d3b-38c9facbc4b4")
-	)
-	(label "CAN-_S"
-		(at -13.97 77.47 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "129fb5ae-0101-47e4-b60d-30769c7250fc")
-	)
-	(label "CAN-_END"
-		(at -26.67 95.25 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "16bd2664-6b9d-4fea-9a61-de66eeaef557")
 	)
 	(label "CANBN-"
 		(at 44.45 46.99 0)
@@ -6530,16 +5765,6 @@
 		)
 		(uuid "1a4cae70-8170-4065-b50f-d86ef006b046")
 	)
-	(label "CAN-_N"
-		(at -15.24 25.4 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "1fee5993-bde0-4701-9abd-8c9a411aabf2")
-	)
 	(label "CANBN+"
 		(at 44.45 44.45 0)
 		(effects
@@ -6550,16 +5775,6 @@
 		)
 		(uuid "26683373-7a83-4027-97e4-3eccd598ca43")
 	)
-	(label "CAN-_END"
-		(at -25.4 102.87 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "274e1870-c51c-4bf7-858c-bb441922276d")
-	)
 	(label "CAN+"
 		(at 196.85 179.07 180)
 		(effects
@@ -6569,16 +5784,6 @@
 			(justify right bottom)
 		)
 		(uuid "2b16a1ef-ec39-41cd-aca0-c5a1cbd6063f")
-	)
-	(label "+BATT_IN"
-		(at -26.67 90.17 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "2bed87d3-a102-4c11-b52a-73468927d9a9")
 	)
 	(label "CANME+"
 		(at 71.12 59.69 0)
@@ -6600,26 +5805,6 @@
 		)
 		(uuid "2e4be7fc-6d0b-431d-9d45-52582a9e0d55")
 	)
-	(label "CAN+_E"
-		(at -26.67 74.93 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "316724fb-10c6-4029-aa5b-554bceafdfc6")
-	)
-	(label "CAN-_W"
-		(at -13.97 59.69 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "35ed53e9-b1de-42e1-b8ac-60d5d0e0ee01")
-	)
 	(label "RIDER_ESTOP"
 		(at 165.1 198.12 0)
 		(effects
@@ -6629,26 +5814,6 @@
 			(justify left bottom)
 		)
 		(uuid "39c24e1a-35ba-48dc-a9df-ff8f8c3dfc01")
-	)
-	(label "CAN+_W"
-		(at -13.97 57.15 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "3a81b3ee-262b-4f35-ad1b-c4d9fe2131b7")
-	)
-	(label "CAN+_END"
-		(at -15.24 102.87 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "3bb68767-9823-4012-8768-da26b48aefdb")
 	)
 	(label "MATE_DETECT_E"
 		(at 44.45 115.57 0)
@@ -6690,36 +5855,6 @@
 		)
 		(uuid "3f3380e4-84dc-4d69-8e72-d64c5b4ea12b")
 	)
-	(label "MATE_DETECT_S"
-		(at -13.97 72.39 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "40b862f0-8a73-4183-87bc-e84a301a521e")
-	)
-	(label "CAN+_S"
-		(at -13.97 74.93 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "457c5f0a-662c-4411-9ecc-4eb8ab19bb9d")
-	)
-	(label "+BATT_IN"
-		(at -26.67 54.61 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "50aa530e-009a-4472-a58a-26b578e9e37a")
-	)
 	(label "CANBS+"
 		(at 44.45 87.63 0)
 		(effects
@@ -6729,16 +5864,6 @@
 			(justify left bottom)
 		)
 		(uuid "58440a38-9931-481c-8998-c2bf70584b66")
-	)
-	(label "CAN+_N"
-		(at -25.4 25.4 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "5c6dd8e9-178b-49ca-bc6d-161fa1d02d12")
 	)
 	(label "GND"
 		(at 306.07 234.95 90)
@@ -6790,26 +5915,6 @@
 		)
 		(uuid "6ddb03cf-3087-4229-babc-c15f676dd61f")
 	)
-	(label "CAN+_E"
-		(at -13.97 92.71 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "6f6c68be-7e50-465c-82d8-0d9d55c2442c")
-	)
-	(label "CAN-_E"
-		(at -26.67 77.47 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "705804a6-6366-49f6-923e-eddf6edc0332")
-	)
 	(label "MATE_DETECT_S"
 		(at 44.45 92.71 0)
 		(effects
@@ -6839,26 +5944,6 @@
 			(justify left bottom)
 		)
 		(uuid "72aad94c-1a23-4281-a832-951fac75d8a0")
-	)
-	(label "CAN+_END"
-		(at -26.67 92.71 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "760010bb-3e1f-409e-aefa-3dda12d6d9e7")
-	)
-	(label "CAN-_W"
-		(at -26.67 41.91 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "76fa682a-85c0-42ec-bce7-d009d61d645f")
 	)
 	(label "WIRELESS_ESTOP"
 		(at 165.1 200.66 0)
@@ -6909,16 +5994,6 @@
 			(justify left bottom)
 		)
 		(uuid "82ac6ef2-f98f-4a14-9868-67afd054e8be")
-	)
-	(label "+BATT_IN"
-		(at -26.67 72.39 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "8647cdde-8a06-462d-ae1e-7f1daaa507e9")
 	)
 	(label "CAN+_N"
 		(at 33.02 33.02 180)
@@ -7010,16 +6085,6 @@
 		)
 		(uuid "9000e9fc-b678-45ae-bddf-e192612b4cf8")
 	)
-	(label "CAN-_S"
-		(at -26.67 59.69 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "9230a694-2bf1-4f08-aee4-94010e5a31cb")
-	)
 	(label "CANMSW+"
 		(at 71.12 106.68 0)
 		(effects
@@ -7039,16 +6104,6 @@
 			(justify left bottom)
 		)
 		(uuid "932be38e-b1a5-4b3c-ab0d-fa003e626fe9")
-	)
-	(label "MATE_DETECT_E"
-		(at -13.97 90.17 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "96858a7a-607f-4ac7-9597-bf0eb3016b92")
 	)
 	(label "+5V"
 		(at 368.3 234.95 90)
@@ -7110,36 +6165,6 @@
 		)
 		(uuid "a700000f-893b-4403-96f9-8ae41934bf07")
 	)
-	(label "CAN-_E"
-		(at -13.97 95.25 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a739c680-bd63-4c53-a707-51ffdbd93ea2")
-	)
-	(label "CAN+_S"
-		(at -26.67 57.15 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "a830a9b8-fc51-4904-b95a-568d4493c685")
-	)
-	(label "MATE_DETECT_N"
-		(at -13.97 36.83 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c3a7f6af-2ac8-4d33-b0e0-44d32504b209")
-	)
 	(label "CANMW-"
 		(at 71.12 124.46 0)
 		(effects
@@ -7150,16 +6175,6 @@
 		)
 		(uuid "c687b3d1-7578-4bb3-93cd-7772d378a113")
 	)
-	(label "MATE_DETECT_W"
-		(at -13.97 54.61 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c74024cc-f7d2-4063-99d2-ac9a6afe7e57")
-	)
 	(label "+19V"
 		(at 342.9 234.95 90)
 		(effects
@@ -7169,16 +6184,6 @@
 			(justify left bottom)
 		)
 		(uuid "cf5b88b3-f02b-42da-9b9e-416cd191d2de")
-	)
-	(label "+BATT_IN"
-		(at -26.67 36.83 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "cf96539e-7f22-4277-ad8c-3b9a1f1c4129")
 	)
 	(label "CANBW-"
 		(at 44.45 113.03 0)
@@ -7249,16 +6254,6 @@
 			(justify left bottom)
 		)
 		(uuid "ec375d9e-e80c-4b5d-ac17-7d36f0e0b8d5")
-	)
-	(label "CAN+_N"
-		(at -13.97 39.37 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f1a187cf-4fc0-4652-a4cd-5b0a5f85a91a")
 	)
 	(label "MATE_DETECT_W"
 		(at 44.45 71.12 0)
@@ -8368,97 +7363,6 @@
 		)
 	)
 	(symbol
-		(lib_id "formula:CONN_02x03_RA")
-		(at -20.32 73.66 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5586e0b5-5fe5-4b9c-b061-fbb612e1cf46")
-		(property "Reference" "J3"
-			(at -20.32 66.04 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "CONN_02x03_RA"
-			(at -20.32 68.58 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "footprints:CONN06_1724480006_MOL"
-			(at -20.32 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.molex.com/en-us/products/part-detail-pdf/1724480006?display=pdf"
-			(at -20.32 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mini-Fit Jr. Connector Header Through Hole, Right Angle 6 position 0.165\" (4.20mm)"
-			(at -20.32 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "1724480006"
-			(at -20.32 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "6"
-			(uuid "2123d426-73f6-4e7a-afed-0679118f9f1e")
-		)
-		(pin "2"
-			(uuid "20bf8c4c-85eb-491f-b79d-00dc78817a08")
-		)
-		(pin "4"
-			(uuid "eb34e6d8-b58f-420b-a000-faa22fc70a75")
-		)
-		(pin "3"
-			(uuid "7c29efc7-cef7-4741-9955-986c591f8304")
-		)
-		(pin "1"
-			(uuid "cbd4f77c-c761-4d96-856e-61ea21336d3b")
-		)
-		(pin "5"
-			(uuid "f7676da9-53ad-403a-8384-29d1641f5414")
-		)
-		(instances
-			(project "flight-core"
-				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1"
-					(reference "J3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector_Generic:Conn_01x04")
 		(at 95.25 30.48 0)
 		(mirror y)
@@ -8760,97 +7664,6 @@
 		)
 	)
 	(symbol
-		(lib_id "formula:CONN_02x03_RA")
-		(at -20.32 55.88 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "61da219c-9713-457c-b34d-02bb756b8c3e")
-		(property "Reference" "J2"
-			(at -20.32 48.26 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "CONN_02x03_RA"
-			(at -20.32 50.8 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "CONN06_1724480006_MOL"
-			(at -20.32 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.molex.com/en-us/products/part-detail-pdf/1724480006?display=pdf"
-			(at -20.32 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mini-Fit Jr. Connector Header Through Hole, Right Angle 6 position 0.165\" (4.20mm)"
-			(at -20.32 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "1724480006"
-			(at -20.32 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "6"
-			(uuid "3085a5b8-634e-49ba-9ca2-96c6e351f890")
-		)
-		(pin "2"
-			(uuid "f711be10-c216-4e72-9448-9b8608b58077")
-		)
-		(pin "4"
-			(uuid "161ecada-2ee9-42aa-b17d-d504f7e9dda5")
-		)
-		(pin "3"
-			(uuid "31b06b6f-455e-43ad-997d-8a66c37bc7da")
-		)
-		(pin "1"
-			(uuid "a1abbdb3-63d8-4ff4-85c7-26d96d192788")
-		)
-		(pin "5"
-			(uuid "bfbe0083-de5f-4c4e-a0da-d9f767a2907d")
-		)
-		(instances
-			(project "flight-core"
-				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1"
-					(reference "J2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+48V")
 		(at 342.9 228.6 0)
 		(unit 1)
@@ -9110,97 +7923,6 @@
 			(project "flight-core"
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1"
 					(reference "J14")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "formula:CONN_02x03_RA")
-		(at -20.32 91.44 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "77f0bbcc-dc6a-49b9-a2f5-754876101631")
-		(property "Reference" "J4"
-			(at -20.32 83.82 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "CONN_02x03_RA"
-			(at -20.32 86.36 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "CONN06_1724480006_MOL"
-			(at -20.32 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.molex.com/en-us/products/part-detail-pdf/1724480006?display=pdf"
-			(at -20.32 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mini-Fit Jr. Connector Header Through Hole, Right Angle 6 position 0.165\" (4.20mm)"
-			(at -20.32 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "1724480006"
-			(at -20.32 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "6"
-			(uuid "c39815b6-ad50-492e-a3c2-8f57c7843472")
-		)
-		(pin "2"
-			(uuid "2ba0e66f-5b70-4515-bda6-23c967efcf07")
-		)
-		(pin "4"
-			(uuid "d02d193c-6d6d-4f6b-8a99-a4cbb0b323ab")
-		)
-		(pin "3"
-			(uuid "0246ce2d-a2b4-4104-bfe1-866838f6d56c")
-		)
-		(pin "1"
-			(uuid "15a6d189-6f58-4b2a-8650-cfaf2522db67")
-		)
-		(pin "5"
-			(uuid "59f017e6-7382-40e7-aebe-74dbbb922640")
-		)
-		(instances
-			(project "flight-core"
-				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1"
-					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -9662,139 +8384,6 @@
 		)
 	)
 	(symbol
-		(lib_id "OEM:120R")
-		(at -20.32 19.05 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a6a7dd8f-c041-4a9a-9146-eb22ee855658")
-		(property "Reference" "R101"
-			(at -21.5901 16.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "120R"
-			(at -19.0501 16.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "OEM:R_0603"
-			(at -20.32 17.272 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
-			(at -20.32 19.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor 120 ohm 0603 1/10W 1%"
-			(at -20.32 19.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "RC0603FR-13120RL"
-			(at -20.32 19.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFN" "Yageo"
-			(at -20.32 19.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DKPN" "13-RC0603FR-13120RLDKR-ND"
-			(at -20.32 19.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Package" "0603"
-			(at -20.32 19.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "NewDesigns" "YES"
-			(at -20.32 19.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Stocked" "Digi-Reel"
-			(at -20.32 19.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Style" "SMD"
-			(at -20.32 19.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "166be059-1e34-47fb-bc70-601b042a1406")
-		)
-		(pin "1"
-			(uuid "ddff0354-5f99-4694-9647-068cb62a8359")
-		)
-		(instances
-			(project "flight-core"
-				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1"
-					(reference "R101")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 240.03 90.17 0)
 		(unit 1)
@@ -10087,139 +8676,6 @@
 			(project "flight-core"
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1"
 					(reference "J107")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "OEM:120R")
-		(at -20.32 109.22 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b582ce9c-90c5-4816-bff9-db539fcdfc84")
-		(property "Reference" "R102"
-			(at -19.0499 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "120R"
-			(at -21.5899 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "OEM:R_0603"
-			(at -20.32 110.998 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
-			(at -20.32 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor 120 ohm 0603 1/10W 1%"
-			(at -20.32 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "RC0603FR-13120RL"
-			(at -20.32 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFN" "Yageo"
-			(at -20.32 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DKPN" "13-RC0603FR-13120RLDKR-ND"
-			(at -20.32 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Package" "0603"
-			(at -20.32 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "NewDesigns" "YES"
-			(at -20.32 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Stocked" "Digi-Reel"
-			(at -20.32 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Style" "SMD"
-			(at -20.32 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "822322f2-2623-40eb-bda9-80c4437b4b90")
-		)
-		(pin "1"
-			(uuid "c2535640-813f-4ac0-b200-589e174fc373")
-		)
-		(instances
-			(project "flight-core"
-				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1"
-					(reference "R102")
 					(unit 1)
 				)
 			)
@@ -10852,96 +9308,6 @@
 			(project "flight-core"
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1"
 					(reference "J13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "formula:CONN_02x03_RA")
-		(at -20.32 38.1 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e8756e45-ca69-4b42-a86c-ba7c7707d5a1")
-		(property "Reference" "J1"
-			(at -20.32 30.48 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "CONN_02x03_RA"
-			(at -20.32 33.02 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "CONN06_1724480006_MOL"
-			(at -20.32 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.molex.com/en-us/products/part-detail-pdf/1724480006?display=pdf"
-			(at -20.32 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mini-Fit Jr. Connector Header Through Hole, Right Angle 6 position 0.165\" (4.20mm)"
-			(at -20.32 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "1724480006"
-			(at -20.32 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "6"
-			(uuid "84efa9e7-1180-4ef0-b1c2-b9c548fc3a68")
-		)
-		(pin "2"
-			(uuid "29de85b0-b8a1-4b35-aa45-e1a623a7d459")
-		)
-		(pin "4"
-			(uuid "85e79f50-d034-4d23-8ed7-1ac14845bb12")
-		)
-		(pin "3"
-			(uuid "87bb77c2-65ea-41aa-bdf3-a99cff9d0e5d")
-		)
-		(pin "1"
-			(uuid "d613f727-1b08-499c-9b60-2c6a0452e552")
-		)
-		(pin "5"
-			(uuid "5e916e1d-99da-41ce-9374-4f6ccac58709")
-		)
-		(instances
-			(project ""
-				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1"
-					(reference "J1")
 					(unit 1)
 				)
 			)

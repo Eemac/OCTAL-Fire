@@ -5,7 +5,173 @@
 	(uuid "416bb0c3-48d7-4357-ad38-12392032f53b")
 	(paper "A4")
 	(lib_symbols
-		(symbol "formula:SN74LV32APWR_4U_OR"
+		(symbol "OlinBAD:C_0.1uF_0603"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_0.1uF"
+				(at 0.635 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "footprints:C_0603_1608Metric"
+				(at 0.9652 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/KEM_C1002_X7R_SMD"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "CAP CER 0.1UF 50V X7R 0603"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MFN" "KEMET"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(hide yes)
+				)
+			)
+			(property "MPN" "C0603C104K5RACTU"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(hide yes)
+				)
+			)
+			(property "PurchasingLink" "https://www.digikey.com/products/en?keywords=478-3352-1-ND"
+				(at 10.795 12.7 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(hide yes)
+				)
+			)
+			(property "Size" "0603"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C? C_????_* C_???? SMD*_c Capacitor*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_0.1uF_0603_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_0.1uF_0603_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "OlinBAD:SN74LV32APWR_4U_OR"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -410,7 +576,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "formula:SN74LVC2G04DBVR_2U_Inverter"
+		(symbol "OlinBAD:SN74LVC2G04DBVR_2U_Inverter"
 			(pin_names
 				(offset 1.016)
 			)
@@ -613,7 +779,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "formula:SN74LVC2G07DBVR_MultiUnit"
+		(symbol "OlinBAD:SN74LVC2G07DBVR_2U_Buffer"
 			(pin_names
 				(offset 1.016)
 			)
@@ -639,7 +805,7 @@
 					(justify left bottom)
 				)
 			)
-			(property "Footprint" "SN74LVC2G07DBVR:SOT95P280X145-6N"
+			(property "Footprint" "obad_footprints:SOT95P280X145-6N"
 				(at 2.794 -0.254 0)
 				(effects
 					(font
@@ -677,7 +843,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "buffer non-invert"
+			(property "ki_keywords" "buffer non-invert multi unit"
 				(at 0 0 0)
 				(effects
 					(font
@@ -686,7 +852,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "SN74LVC2G07DBVR_MultiUnit_0_0"
+			(symbol "SN74LVC2G07DBVR_2U_Buffer_0_0"
 				(pin power_in line
 					(at 0 7.62 270)
 					(length 3.81)
@@ -724,7 +890,7 @@
 					)
 				)
 			)
-			(symbol "SN74LVC2G07DBVR_MultiUnit_0_1"
+			(symbol "SN74LVC2G07DBVR_2U_Buffer_0_1"
 				(polyline
 					(pts
 						(xy 7.62 0) (xy -2.54 5.08) (xy -2.54 -5.08) (xy 7.62 0)
@@ -738,7 +904,7 @@
 					)
 				)
 			)
-			(symbol "SN74LVC2G07DBVR_MultiUnit_1_1"
+			(symbol "SN74LVC2G07DBVR_2U_Buffer_1_1"
 				(pin input line
 					(at -7.62 0 0)
 					(length 5.08)
@@ -776,7 +942,7 @@
 					)
 				)
 			)
-			(symbol "SN74LVC2G07DBVR_MultiUnit_2_1"
+			(symbol "SN74LVC2G07DBVR_2U_Buffer_2_1"
 				(pin input line
 					(at -7.62 0 0)
 					(length 5.08)
@@ -816,7 +982,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "formula:SN74LVC2G08DCUT_2U_AND"
+		(symbol "OlinBAD:SN74LVC2G08DCUT_2U_AND"
 			(pin_names
 				(offset 1.016)
 			)
@@ -1062,7 +1228,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "formula:SN74LVC2G132DCTR_2U_NAND"
+		(symbol "OlinBAD:SN74LVC2G132DCTR_2U_NAND"
 			(pin_names
 				(offset 1.016)
 			)
@@ -1598,10 +1764,28 @@
 		)
 	)
 	(junction
+		(at 55.88 157.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "005446ea-77ce-4def-b8f2-badbe694940c")
+	)
+	(junction
+		(at 90.17 157.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0c0371c4-bed6-4ec9-82ad-f5950d532430")
+	)
+	(junction
 		(at 127 31.75)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "16d6e7b7-d9c5-4d7a-ae6d-8c872a066a10")
+	)
+	(junction
+		(at 124.46 165.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2b36676f-db14-4e5a-a6c2-3ed87fe5c967")
 	)
 	(junction
 		(at 189.23 29.21)
@@ -1622,10 +1806,40 @@
 		(uuid "497eca6e-13cc-4342-8a47-7950c3f634bf")
 	)
 	(junction
+		(at 107.95 157.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4acd8d3a-8b90-4794-bba9-8b6d357226a9")
+	)
+	(junction
 		(at 171.45 129.54)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "51cdc322-7744-477a-ae49-22f318ad3ba0")
+	)
+	(junction
+		(at 73.66 157.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "91b6c2ab-2790-494c-bb38-c30600449c8c")
+	)
+	(junction
+		(at 73.66 165.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "91d0d94a-8c7a-4a1a-a6bf-8edce3e765b8")
+	)
+	(junction
+		(at 107.95 165.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "aab6e297-6aaa-4f30-8a1c-b20a044971e3")
+	)
+	(junction
+		(at 90.17 165.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b4ad5942-eb1d-45e0-a800-ebf7dabcfdd5")
 	)
 	(junction
 		(at 220.98 74.93)
@@ -1737,6 +1951,16 @@
 	)
 	(wire
 		(pts
+			(xy 90.17 165.1) (xy 107.95 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28f01b68-c0da-45b6-aa24-1241424907be")
+	)
+	(wire
+		(pts
 			(xy 107.95 68.58) (xy 107.95 132.08)
 		)
 		(stroke
@@ -1744,6 +1968,16 @@
 			(type default)
 		)
 		(uuid "2bbe9b7a-4ca6-43cf-90ef-19231ec84144")
+	)
+	(wire
+		(pts
+			(xy 107.95 165.1) (xy 124.46 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c6d2738-d410-41f2-98c8-05633c19b524")
 	)
 	(wire
 		(pts
@@ -1774,6 +2008,16 @@
 			(type default)
 		)
 		(uuid "2f519d89-ef17-41ed-bcd6-3d17346c889b")
+	)
+	(wire
+		(pts
+			(xy 90.17 157.48) (xy 107.95 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "32534ff7-deba-408d-b93c-e4270bde3046")
 	)
 	(wire
 		(pts
@@ -1857,6 +2101,16 @@
 	)
 	(wire
 		(pts
+			(xy 73.66 157.48) (xy 90.17 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5611d59f-ccea-477d-957f-693ee9a1dde1")
+	)
+	(wire
+		(pts
 			(xy 171.45 129.54) (xy 260.35 129.54)
 		)
 		(stroke
@@ -1937,6 +2191,36 @@
 	)
 	(wire
 		(pts
+			(xy 107.95 157.48) (xy 124.46 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d7dba8e-f3a3-4119-8bb8-e337a64f4cc8")
+	)
+	(wire
+		(pts
+			(xy 55.88 157.48) (xy 73.66 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f94831d-54a1-4c55-a1d7-6df3584d5328")
+	)
+	(wire
+		(pts
+			(xy 73.66 165.1) (xy 90.17 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a3f5c30c-eb2b-4e53-adc7-d2be98a7899c")
+	)
+	(wire
+		(pts
 			(xy 152.4 29.21) (xy 189.23 29.21)
 		)
 		(stroke
@@ -1984,6 +2268,16 @@
 			(type default)
 		)
 		(uuid "b51078f1-b4c6-4cd3-babc-e059e20a5e95")
+	)
+	(wire
+		(pts
+			(xy 55.88 165.1) (xy 73.66 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb47972a-7683-44ba-bc3a-c082a8dc7b69")
 	)
 	(wire
 		(pts
@@ -2037,6 +2331,16 @@
 	)
 	(wire
 		(pts
+			(xy 124.46 167.64) (xy 124.46 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d3573a9e-8b44-402f-af91-07bea8f07ba3")
+	)
+	(wire
+		(pts
 			(xy 193.04 77.47) (xy 193.04 45.72)
 		)
 		(stroke
@@ -2044,6 +2348,16 @@
 			(type default)
 		)
 		(uuid "d7f7bf86-3875-40fb-8766-bef40db7b5ad")
+	)
+	(wire
+		(pts
+			(xy 55.88 153.67) (xy 55.88 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8078426-0a64-4f6d-850e-63657b7506b7")
 	)
 	(wire
 		(pts
@@ -5499,7 +5813,7 @@
 		)
 	)
 	(image
-		(at 25.4 -110.49)
+		(at -93.98 118.11)
 		(scale 0.553297)
 		(uuid "2baaabf4-c6aa-4b7a-a0bb-246a47b79fd5")
 		(data "iVBORw0KGgoAAAANSUhEUgAABtQAAASKCAYAAADOoIrPAAAMP2lDQ1BJQ0MgUHJvZmlsZQAASImV"
@@ -9804,7 +10118,113 @@
 		(uuid "ca318dad-7f79-44eb-9e13-d6b73411945d")
 	)
 	(symbol
-		(lib_id "formula:SN74LV32APWR_4U_OR")
+		(lib_id "OlinBAD:C_0.1uF_0603")
+		(at 73.66 161.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "09c2d960-cc8e-4b60-83f6-8fb8cea83df2")
+		(property "Reference" "C3"
+			(at 77.47 160.0199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "C_0.1uF"
+			(at 77.47 162.5599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "footprints:C_0603_1608Metric"
+			(at 74.6252 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/KEM_C1002_X7R_SMD"
+			(at 74.295 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "CAP CER 0.1UF 50V X7R 0603"
+			(at 73.66 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFN" "KEMET"
+			(at 73.66 161.29 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C0603C104K5RACTU"
+			(at 73.66 161.29 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "PurchasingLink" "https://www.digikey.com/products/en?keywords=478-3352-1-ND"
+			(at 84.455 148.59 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Size" "0603"
+			(at 73.66 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c9f019e4-f113-42b6-b21d-5f8f0de99714")
+		)
+		(pin "2"
+			(uuid "08134a43-41dd-483b-bb47-62f9e8de47d8")
+		)
+		(instances
+			(project "flight-core"
+				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/d10b32a2-8ae5-4f91-93a8-2e17c5422b40/0e50c34f-cbc1-4276-a63e-8f0ddf3c5268"
+					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "OlinBAD:SN74LV32APWR_4U_OR")
 		(at 166.37 48.26 0)
 		(mirror y)
 		(unit 2)
@@ -9911,7 +10331,7 @@
 		)
 	)
 	(symbol
-		(lib_id "formula:SN74LVC2G04DBVR_2U_Inverter")
+		(lib_id "OlinBAD:SN74LVC2G04DBVR_2U_Inverter")
 		(at 181.61 91.44 0)
 		(mirror y)
 		(unit 1)
@@ -10003,7 +10423,178 @@
 		)
 	)
 	(symbol
-		(lib_id "formula:SN74LVC2G08DCUT_2U_AND")
+		(lib_id "OlinBAD:C_0.1uF_0603")
+		(at 107.95 161.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1f81e652-6eb8-492b-895f-5da11631dbeb")
+		(property "Reference" "C11"
+			(at 111.76 160.0199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "C_0.1uF"
+			(at 111.76 162.5599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "footprints:C_0603_1608Metric"
+			(at 108.9152 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/KEM_C1002_X7R_SMD"
+			(at 108.585 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "CAP CER 0.1UF 50V X7R 0603"
+			(at 107.95 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFN" "KEMET"
+			(at 107.95 161.29 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C0603C104K5RACTU"
+			(at 107.95 161.29 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "PurchasingLink" "https://www.digikey.com/products/en?keywords=478-3352-1-ND"
+			(at 118.745 148.59 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Size" "0603"
+			(at 107.95 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3a587c6d-10de-4e67-9473-b2a0d207aa62")
+		)
+		(pin "2"
+			(uuid "819b0596-59a3-43f9-a494-ea5e4dc01176")
+		)
+		(instances
+			(project "flight-core"
+				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/d10b32a2-8ae5-4f91-93a8-2e17c5422b40/0e50c34f-cbc1-4276-a63e-8f0ddf3c5268"
+					(reference "C11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 55.88 153.67 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "30c14523-9aed-44b7-9797-ac688121e069")
+		(property "Reference" "#PWR033"
+			(at 55.88 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 55.626 149.352 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 55.88 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 55.88 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 55.88 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "22e7f318-eea3-42f9-a247-c0fc6b6493e8")
+		)
+		(instances
+			(project "flight-core"
+				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/d10b32a2-8ae5-4f91-93a8-2e17c5422b40/0e50c34f-cbc1-4276-a63e-8f0ddf3c5268"
+					(reference "#PWR033")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "OlinBAD:SN74LVC2G08DCUT_2U_AND")
 		(at 149.86 66.04 0)
 		(unit 2)
 		(exclude_from_sim no)
@@ -10059,12 +10650,11 @@
 			)
 		)
 		(property "Label" "AND"
-			(at 149.606 66.04 0)
+			(at 148.336 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(pin "8"
@@ -10101,7 +10691,72 @@
 		)
 	)
 	(symbol
-		(lib_id "formula:SN74LVC2G132DCTR_2U_NAND")
+		(lib_id "power:GND")
+		(at 124.46 167.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "487116ee-34d5-40fe-9899-5bdc2b8a362a")
+		(property "Reference" "#PWR031"
+			(at 124.46 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 124.46 171.958 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 124.46 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 124.46 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 124.46 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cf1bb27e-b4cf-4868-ab72-f973b396e81f")
+		)
+		(instances
+			(project "flight-core"
+				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/d10b32a2-8ae5-4f91-93a8-2e17c5422b40/0e50c34f-cbc1-4276-a63e-8f0ddf3c5268"
+					(reference "#PWR031")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "OlinBAD:SN74LVC2G132DCTR_2U_NAND")
 		(at 204.47 77.47 0)
 		(mirror y)
 		(unit 2)
@@ -10216,7 +10871,7 @@
 			)
 		)
 		(property "Label" "NAND"
-			(at 205.994 77.724 0)
+			(at 205.994 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10257,7 +10912,7 @@
 		)
 	)
 	(symbol
-		(lib_id "formula:SN74LVC2G08DCUT_2U_AND")
+		(lib_id "OlinBAD:SN74LVC2G08DCUT_2U_AND")
 		(at 151.13 93.98 0)
 		(mirror y)
 		(unit 1)
@@ -10320,28 +10975,28 @@
 			)
 		)
 		(pin "8"
-			(uuid "b29c24cd-b755-4e5a-8e9c-5ab1d39d346f")
+			(uuid "b29c24cd-b755-4e5a-8e9c-5ab1d39d3470")
 		)
 		(pin "1"
-			(uuid "45d72b1a-1b83-46e2-9d47-b4c3140f7411")
+			(uuid "45d72b1a-1b83-46e2-9d47-b4c3140f7412")
 		)
 		(pin "7"
-			(uuid "ed957013-36c8-44b3-ac9d-f465ce8e5ddd")
+			(uuid "ed957013-36c8-44b3-ac9d-f465ce8e5dde")
 		)
 		(pin "5"
-			(uuid "9a2d5397-7893-4061-a3dd-265741f966be")
+			(uuid "9a2d5397-7893-4061-a3dd-265741f966bf")
 		)
 		(pin "6"
-			(uuid "8fb771dc-6944-4328-978e-eac9bcf85da5")
+			(uuid "8fb771dc-6944-4328-978e-eac9bcf85da6")
 		)
 		(pin "2"
-			(uuid "756c6e89-0f22-4bfc-972e-9a8f2c3585dc")
+			(uuid "756c6e89-0f22-4bfc-972e-9a8f2c3585dd")
 		)
 		(pin "3"
-			(uuid "c874c878-c7c6-40af-b1e7-c8dab63f277e")
+			(uuid "c874c878-c7c6-40af-b1e7-c8dab63f277f")
 		)
 		(pin "4"
-			(uuid "8a11720c-23e2-4d37-8860-c65636fa5ab8")
+			(uuid "8a11720c-23e2-4d37-8860-c65636fa5ab9")
 		)
 		(instances
 			(project ""
@@ -10353,7 +11008,7 @@
 		)
 	)
 	(symbol
-		(lib_id "formula:SN74LVC2G07DBVR_MultiUnit")
+		(lib_id "OlinBAD:SN74LVC2G07DBVR_2U_Buffer")
 		(at 252.73 74.93 0)
 		(mirror y)
 		(unit 2)
@@ -10380,7 +11035,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "SN74LVC2G07DBVR:SOT95P280X145-6N"
+		(property "Footprint" "obad_footprints:SOT95P280X145-6N"
 			(at 249.936 75.184 0)
 			(effects
 				(font
@@ -10446,7 +11101,7 @@
 		)
 	)
 	(symbol
-		(lib_id "formula:SN74LV32APWR_4U_OR")
+		(lib_id "OlinBAD:SN74LV32APWR_4U_OR")
 		(at 160.02 129.54 0)
 		(unit 4)
 		(exclude_from_sim no)
@@ -10500,46 +11155,46 @@
 			)
 		)
 		(pin "3"
-			(uuid "ea37d57d-52aa-4534-bb11-4f9182bc3a92")
+			(uuid "ea37d57d-52aa-4534-bb11-4f9182bc3a93")
 		)
 		(pin "4"
-			(uuid "3f67a75a-fe20-407e-98a8-b5e1872ded19")
+			(uuid "3f67a75a-fe20-407e-98a8-b5e1872ded1a")
 		)
 		(pin "10"
-			(uuid "67cabf42-abac-42cf-b966-87fc8b814bb1")
+			(uuid "67cabf42-abac-42cf-b966-87fc8b814bb2")
 		)
 		(pin "12"
-			(uuid "001cf88e-7a8f-4244-9053-24e214d57fef")
+			(uuid "001cf88e-7a8f-4244-9053-24e214d57ff0")
 		)
 		(pin "13"
-			(uuid "984ca116-9893-40e6-a8ea-c9d6f47194f9")
+			(uuid "984ca116-9893-40e6-a8ea-c9d6f47194fa")
 		)
 		(pin "8"
-			(uuid "174c193f-e814-4bfd-bb58-acc43bda5dca")
+			(uuid "174c193f-e814-4bfd-bb58-acc43bda5dcb")
 		)
 		(pin "11"
-			(uuid "37b66977-50e4-4401-b20f-f4d53325ec9c")
+			(uuid "37b66977-50e4-4401-b20f-f4d53325ec9d")
 		)
 		(pin "5"
-			(uuid "5c013751-58a8-4763-8da7-9d767c9bf9e3")
+			(uuid "5c013751-58a8-4763-8da7-9d767c9bf9e4")
 		)
 		(pin "1"
-			(uuid "bc7c566c-6e8b-4135-845d-ccde2f6eeac0")
+			(uuid "bc7c566c-6e8b-4135-845d-ccde2f6eeac1")
 		)
 		(pin "9"
-			(uuid "5c37f2de-2d3f-4025-af72-60be659fafc2")
+			(uuid "5c37f2de-2d3f-4025-af72-60be659fafc3")
 		)
 		(pin "6"
-			(uuid "07f84341-661d-4d0f-b34a-4db8dd905945")
+			(uuid "07f84341-661d-4d0f-b34a-4db8dd905946")
 		)
 		(pin "14"
-			(uuid "27181aab-0242-414c-9086-14e43700fe53")
+			(uuid "27181aab-0242-414c-9086-14e43700fe54")
 		)
 		(pin "2"
-			(uuid "270a02b0-50c0-4a9e-a9ac-956bdb5fe56f")
+			(uuid "270a02b0-50c0-4a9e-a9ac-956bdb5fe570")
 		)
 		(pin "7"
-			(uuid "37b367fe-5e36-4f44-b9e7-1251c1407dd3")
+			(uuid "37b367fe-5e36-4f44-b9e7-1251c1407dd4")
 		)
 		(instances
 			(project ""
@@ -10551,7 +11206,7 @@
 		)
 	)
 	(symbol
-		(lib_id "formula:SN74LV32APWR_4U_OR")
+		(lib_id "OlinBAD:SN74LV32APWR_4U_OR")
 		(at 140.97 31.75 0)
 		(mirror y)
 		(unit 1)
@@ -10607,46 +11262,46 @@
 			)
 		)
 		(pin "3"
-			(uuid "ea37d57d-52aa-4534-bb11-4f9182bc3a92")
+			(uuid "ea37d57d-52aa-4534-bb11-4f9182bc3a94")
 		)
 		(pin "4"
-			(uuid "3f67a75a-fe20-407e-98a8-b5e1872ded19")
+			(uuid "3f67a75a-fe20-407e-98a8-b5e1872ded1b")
 		)
 		(pin "10"
-			(uuid "67cabf42-abac-42cf-b966-87fc8b814bb1")
+			(uuid "67cabf42-abac-42cf-b966-87fc8b814bb3")
 		)
 		(pin "12"
-			(uuid "001cf88e-7a8f-4244-9053-24e214d57fef")
+			(uuid "001cf88e-7a8f-4244-9053-24e214d57ff1")
 		)
 		(pin "13"
-			(uuid "984ca116-9893-40e6-a8ea-c9d6f47194f9")
+			(uuid "984ca116-9893-40e6-a8ea-c9d6f47194fb")
 		)
 		(pin "8"
-			(uuid "174c193f-e814-4bfd-bb58-acc43bda5dca")
+			(uuid "174c193f-e814-4bfd-bb58-acc43bda5dcc")
 		)
 		(pin "11"
-			(uuid "37b66977-50e4-4401-b20f-f4d53325ec9c")
+			(uuid "37b66977-50e4-4401-b20f-f4d53325ec9e")
 		)
 		(pin "5"
-			(uuid "5c013751-58a8-4763-8da7-9d767c9bf9e3")
+			(uuid "5c013751-58a8-4763-8da7-9d767c9bf9e5")
 		)
 		(pin "1"
-			(uuid "bc7c566c-6e8b-4135-845d-ccde2f6eeac0")
+			(uuid "bc7c566c-6e8b-4135-845d-ccde2f6eeac2")
 		)
 		(pin "9"
-			(uuid "5c37f2de-2d3f-4025-af72-60be659fafc2")
+			(uuid "5c37f2de-2d3f-4025-af72-60be659fafc4")
 		)
 		(pin "6"
-			(uuid "07f84341-661d-4d0f-b34a-4db8dd905945")
+			(uuid "07f84341-661d-4d0f-b34a-4db8dd905947")
 		)
 		(pin "14"
-			(uuid "27181aab-0242-414c-9086-14e43700fe53")
+			(uuid "27181aab-0242-414c-9086-14e43700fe55")
 		)
 		(pin "2"
-			(uuid "270a02b0-50c0-4a9e-a9ac-956bdb5fe56f")
+			(uuid "270a02b0-50c0-4a9e-a9ac-956bdb5fe571")
 		)
 		(pin "7"
-			(uuid "37b367fe-5e36-4f44-b9e7-1251c1407dd3")
+			(uuid "37b367fe-5e36-4f44-b9e7-1251c1407dd5")
 		)
 		(instances
 			(project ""
@@ -10658,7 +11313,7 @@
 		)
 	)
 	(symbol
-		(lib_id "formula:SN74LVC2G07DBVR_MultiUnit")
+		(lib_id "OlinBAD:SN74LVC2G07DBVR_2U_Buffer")
 		(at 52.07 80.01 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10684,7 +11339,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "SN74LVC2G07DBVR:SOT95P280X145-6N"
+		(property "Footprint" "obad_footprints:SOT95P280X145-6N"
 			(at 54.864 80.264 0)
 			(effects
 				(font
@@ -10723,22 +11378,22 @@
 			)
 		)
 		(pin "1"
-			(uuid "7b18bdb3-19df-490a-b55e-24e02ae2065c")
+			(uuid "7b18bdb3-19df-490a-b55e-24e02ae2065d")
 		)
 		(pin "4"
-			(uuid "1f4ade04-4a7b-46ba-b660-3ae2b41d3f91")
+			(uuid "1f4ade04-4a7b-46ba-b660-3ae2b41d3f92")
 		)
 		(pin "6"
-			(uuid "c3ddba23-6c2e-4ace-8efd-39370962ca95")
+			(uuid "c3ddba23-6c2e-4ace-8efd-39370962ca96")
 		)
 		(pin "5"
-			(uuid "0b8c31c1-b9ab-4b76-a481-282b116419fd")
+			(uuid "0b8c31c1-b9ab-4b76-a481-282b116419fe")
 		)
 		(pin "2"
-			(uuid "56ac87ec-493a-4f6e-9fa7-a1fb4ed667b4")
+			(uuid "56ac87ec-493a-4f6e-9fa7-a1fb4ed667b5")
 		)
 		(pin "3"
-			(uuid "9404ef5e-b2e7-4b14-b345-c6b4331a25cc")
+			(uuid "9404ef5e-b2e7-4b14-b345-c6b4331a25cd")
 		)
 		(instances
 			(project ""
@@ -10750,7 +11405,7 @@
 		)
 	)
 	(symbol
-		(lib_id "formula:SN74LVC2G132DCTR_2U_NAND")
+		(lib_id "OlinBAD:SN74LVC2G132DCTR_2U_NAND")
 		(at 95.25 82.55 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10865,7 +11520,6 @@
 		)
 		(property "Label" "NAND"
 			(at 93.726 82.55 0)
-			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10873,33 +11527,351 @@
 			)
 		)
 		(pin "4"
-			(uuid "dd072188-7eeb-4a8c-b88f-2b0680d7ef3a")
+			(uuid "dd072188-7eeb-4a8c-b88f-2b0680d7ef3b")
 		)
 		(pin "1"
-			(uuid "19800d0d-3a0d-4bf7-b4a9-e265c18b44e2")
+			(uuid "19800d0d-3a0d-4bf7-b4a9-e265c18b44e3")
 		)
 		(pin "8"
-			(uuid "a9c87ae8-178f-40fd-bcef-ab10e2cb5f4e")
+			(uuid "a9c87ae8-178f-40fd-bcef-ab10e2cb5f4f")
 		)
 		(pin "6"
-			(uuid "8a15027a-3d23-4673-97f6-8d5ffd6f8167")
+			(uuid "8a15027a-3d23-4673-97f6-8d5ffd6f8168")
 		)
 		(pin "3"
-			(uuid "1edc53fe-b245-463f-a1a9-4795fe9ef477")
+			(uuid "1edc53fe-b245-463f-a1a9-4795fe9ef478")
 		)
 		(pin "5"
-			(uuid "a2d37c89-664c-46bb-bb99-507e86ae5597")
+			(uuid "a2d37c89-664c-46bb-bb99-507e86ae5598")
 		)
 		(pin "7"
-			(uuid "73503317-623a-40a9-a232-a2287e7fc5ed")
+			(uuid "73503317-623a-40a9-a232-a2287e7fc5ee")
 		)
 		(pin "2"
-			(uuid "9727c74b-a9f2-4eff-be14-8f64a62b2a26")
+			(uuid "9727c74b-a9f2-4eff-be14-8f64a62b2a27")
 		)
 		(instances
 			(project ""
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/d10b32a2-8ae5-4f91-93a8-2e17c5422b40/0e50c34f-cbc1-4276-a63e-8f0ddf3c5268"
 					(reference "U5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "OlinBAD:C_0.1uF_0603")
+		(at 124.46 161.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a6e1c76d-ce8b-4d8a-a8ad-a9beb7b5d785")
+		(property "Reference" "C12"
+			(at 128.27 160.0199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "C_0.1uF"
+			(at 128.27 162.5599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "footprints:C_0603_1608Metric"
+			(at 125.4252 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/KEM_C1002_X7R_SMD"
+			(at 125.095 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "CAP CER 0.1UF 50V X7R 0603"
+			(at 124.46 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFN" "KEMET"
+			(at 124.46 161.29 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C0603C104K5RACTU"
+			(at 124.46 161.29 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "PurchasingLink" "https://www.digikey.com/products/en?keywords=478-3352-1-ND"
+			(at 135.255 148.59 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Size" "0603"
+			(at 124.46 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "872440e2-9dfb-47ab-ab7f-8fa355438327")
+		)
+		(pin "2"
+			(uuid "ce09b431-6b1a-499e-9f63-8f7520250741")
+		)
+		(instances
+			(project "flight-core"
+				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/d10b32a2-8ae5-4f91-93a8-2e17c5422b40/0e50c34f-cbc1-4276-a63e-8f0ddf3c5268"
+					(reference "C12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "OlinBAD:C_0.1uF_0603")
+		(at 55.88 161.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "aa3b6ed8-e94d-409a-a513-265b9275d9d2")
+		(property "Reference" "C2"
+			(at 59.69 160.0199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "C_0.1uF"
+			(at 59.69 162.5599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "footprints:C_0603_1608Metric"
+			(at 56.8452 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/KEM_C1002_X7R_SMD"
+			(at 56.515 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "CAP CER 0.1UF 50V X7R 0603"
+			(at 55.88 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFN" "KEMET"
+			(at 55.88 161.29 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C0603C104K5RACTU"
+			(at 55.88 161.29 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "PurchasingLink" "https://www.digikey.com/products/en?keywords=478-3352-1-ND"
+			(at 66.675 148.59 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Size" "0603"
+			(at 55.88 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a69469ed-7f49-4d8a-ba7a-da5b9ee53ceb")
+		)
+		(pin "2"
+			(uuid "d27df83a-c308-423b-9b01-8a3b74dc7389")
+		)
+		(instances
+			(project ""
+				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/d10b32a2-8ae5-4f91-93a8-2e17c5422b40/0e50c34f-cbc1-4276-a63e-8f0ddf3c5268"
+					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "OlinBAD:C_0.1uF_0603")
+		(at 90.17 161.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b35536a7-cc39-4e25-bdb8-dab0282a7699")
+		(property "Reference" "C4"
+			(at 93.98 160.0199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "C_0.1uF"
+			(at 93.98 162.5599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "footprints:C_0603_1608Metric"
+			(at 91.1352 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/KEM_C1002_X7R_SMD"
+			(at 90.805 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "CAP CER 0.1UF 50V X7R 0603"
+			(at 90.17 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFN" "KEMET"
+			(at 90.17 161.29 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C0603C104K5RACTU"
+			(at 90.17 161.29 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "PurchasingLink" "https://www.digikey.com/products/en?keywords=478-3352-1-ND"
+			(at 100.965 148.59 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Size" "0603"
+			(at 90.17 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c3969419-dacd-4598-976f-df0a50bffe65")
+		)
+		(pin "2"
+			(uuid "f4a6a844-91de-4e42-9cdf-78ef8d389162")
+		)
+		(instances
+			(project "flight-core"
+				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/d10b32a2-8ae5-4f91-93a8-2e17c5422b40/0e50c34f-cbc1-4276-a63e-8f0ddf3c5268"
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -10971,7 +11943,7 @@
 		)
 	)
 	(symbol
-		(lib_id "formula:SN74LV32APWR_4U_OR")
+		(lib_id "OlinBAD:SN74LV32APWR_4U_OR")
 		(at 125.73 113.03 0)
 		(unit 3)
 		(exclude_from_sim no)
@@ -11025,46 +11997,46 @@
 			)
 		)
 		(pin "3"
-			(uuid "ea37d57d-52aa-4534-bb11-4f9182bc3a92")
+			(uuid "ea37d57d-52aa-4534-bb11-4f9182bc3a95")
 		)
 		(pin "4"
-			(uuid "3f67a75a-fe20-407e-98a8-b5e1872ded19")
+			(uuid "3f67a75a-fe20-407e-98a8-b5e1872ded1c")
 		)
 		(pin "10"
-			(uuid "67cabf42-abac-42cf-b966-87fc8b814bb1")
+			(uuid "67cabf42-abac-42cf-b966-87fc8b814bb4")
 		)
 		(pin "12"
-			(uuid "001cf88e-7a8f-4244-9053-24e214d57fef")
+			(uuid "001cf88e-7a8f-4244-9053-24e214d57ff2")
 		)
 		(pin "13"
-			(uuid "984ca116-9893-40e6-a8ea-c9d6f47194f9")
+			(uuid "984ca116-9893-40e6-a8ea-c9d6f47194fc")
 		)
 		(pin "8"
-			(uuid "174c193f-e814-4bfd-bb58-acc43bda5dca")
+			(uuid "174c193f-e814-4bfd-bb58-acc43bda5dcd")
 		)
 		(pin "11"
-			(uuid "37b66977-50e4-4401-b20f-f4d53325ec9c")
+			(uuid "37b66977-50e4-4401-b20f-f4d53325ec9f")
 		)
 		(pin "5"
-			(uuid "5c013751-58a8-4763-8da7-9d767c9bf9e3")
+			(uuid "5c013751-58a8-4763-8da7-9d767c9bf9e6")
 		)
 		(pin "1"
-			(uuid "bc7c566c-6e8b-4135-845d-ccde2f6eeac0")
+			(uuid "bc7c566c-6e8b-4135-845d-ccde2f6eeac3")
 		)
 		(pin "9"
-			(uuid "5c37f2de-2d3f-4025-af72-60be659fafc2")
+			(uuid "5c37f2de-2d3f-4025-af72-60be659fafc5")
 		)
 		(pin "6"
-			(uuid "07f84341-661d-4d0f-b34a-4db8dd905945")
+			(uuid "07f84341-661d-4d0f-b34a-4db8dd905948")
 		)
 		(pin "14"
-			(uuid "27181aab-0242-414c-9086-14e43700fe53")
+			(uuid "27181aab-0242-414c-9086-14e43700fe56")
 		)
 		(pin "2"
-			(uuid "270a02b0-50c0-4a9e-a9ac-956bdb5fe56f")
+			(uuid "270a02b0-50c0-4a9e-a9ac-956bdb5fe572")
 		)
 		(pin "7"
-			(uuid "37b367fe-5e36-4f44-b9e7-1251c1407dd3")
+			(uuid "37b367fe-5e36-4f44-b9e7-1251c1407dd6")
 		)
 		(instances
 			(project ""
@@ -11141,7 +12113,7 @@
 		)
 	)
 	(symbol
-		(lib_id "formula:SN74LVC2G04DBVR_2U_Inverter")
+		(lib_id "OlinBAD:SN74LVC2G04DBVR_2U_Inverter")
 		(at 116.84 68.58 0)
 		(unit 2)
 		(exclude_from_sim no)
@@ -11205,22 +12177,22 @@
 			)
 		)
 		(pin "1"
-			(uuid "1024d0d5-5c62-44a1-8603-549bbd3d4e4c")
+			(uuid "1024d0d5-5c62-44a1-8603-549bbd3d4e4d")
 		)
 		(pin "2"
-			(uuid "00a15714-5490-4bba-bf6e-dd4661cfa975")
+			(uuid "00a15714-5490-4bba-bf6e-dd4661cfa976")
 		)
 		(pin "4"
-			(uuid "22180d93-2770-40e7-a12c-a38ca608ab8b")
+			(uuid "22180d93-2770-40e7-a12c-a38ca608ab8c")
 		)
 		(pin "3"
-			(uuid "490c4d12-0e5d-4d6a-ac86-aa96001ebf5e")
+			(uuid "490c4d12-0e5d-4d6a-ac86-aa96001ebf5f")
 		)
 		(pin "6"
-			(uuid "3587ca9d-dcf8-4855-a2e8-17635842792e")
+			(uuid "3587ca9d-dcf8-4855-a2e8-17635842792f")
 		)
 		(pin "5"
-			(uuid "9d3a9e91-9591-459d-89a9-53dc0a05b83d")
+			(uuid "9d3a9e91-9591-459d-89a9-53dc0a05b83e")
 		)
 		(instances
 			(project ""

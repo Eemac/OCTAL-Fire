@@ -39,6 +39,46 @@
 				(justify left top)
 			)
 		)
+		(pin "TX1" output
+			(at 114.3 82.55 180)
+			(uuid "8262b3f2-fd1e-4792-8dd5-9f6cb0632a35")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "RX2" input
+			(at 147.32 82.55 0)
+			(uuid "a9ba9732-113b-4104-88d0-4939efb7a50f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "TX2" output
+			(at 147.32 88.9 0)
+			(uuid "665576e4-4dfa-40ff-ad58-577858e6cfd4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "RX1" input
+			(at 114.3 88.9 180)
+			(uuid "d626a71d-57d9-493b-904a-eb9b8f6002f7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "flight-core"
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/d10b32a2-8ae5-4f91-93a8-2e17c5422b40"

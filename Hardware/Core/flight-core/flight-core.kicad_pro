@@ -451,7 +451,8 @@
       "footprints"
     ],
     "pinned_symbol_libs": [
-      "formula"
+      "formula",
+      "OlinBAD"
     ]
   },
   "meta": {
