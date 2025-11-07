@@ -8084,6 +8084,16 @@
 		)
 		(uuid "1a0d4670-c12c-4fc4-8c62-b13a2382a10d")
 	)
+	(label "SWDIO"
+		(at 232.41 107.95 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "22570111-b7ea-4327-9f49-d3a5bdd682d0")
+	)
 	(label "MUX2_COMS"
 		(at 57.15 87.63 180)
 		(effects
@@ -8254,16 +8264,6 @@
 		)
 		(uuid "7ecc95f5-c0ed-46d7-baea-5f9aad836be0")
 	)
-	(label "SWCLK"
-		(at 232.41 107.95 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "7ef54be2-25cb-4692-b6d4-ea44b79e2aa0")
-	)
 	(label "VDDA"
 		(at 86.36 24.13 180)
 		(effects
@@ -8323,16 +8323,6 @@
 			(justify right bottom)
 		)
 		(uuid "90bd13fa-7f42-4edb-8f2b-e2b9a4aec687")
-	)
-	(label "SWDIO"
-		(at 232.41 105.41 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "90e70001-31df-4c4b-b1b0-9344e34bde02")
 	)
 	(label "SWCLK"
 		(at 102.87 69.85 180)
@@ -8443,6 +8433,16 @@
 			(justify right bottom)
 		)
 		(uuid "ba4061de-4bf8-4412-b834-72471fe31b48")
+	)
+	(label "SWCLK"
+		(at 232.41 105.41 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c6283aaf-f6ca-4723-a42e-35230c8c9889")
 	)
 	(label "USB_C_COMS"
 		(at 57.15 77.47 180)
