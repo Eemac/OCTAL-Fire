@@ -40,6 +40,9 @@ fp-info-cache
 # libaries handled by symbol converter tool
 oem.kicad_sym
 
+# files Amanda doesn't want to commit
+can_isolation_unique_part_bom.txt
+
 # Fab files
 fab/
 *.csv

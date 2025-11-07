@@ -448,7 +448,8 @@
   },
   "libraries": {
     "pinned_footprint_libs": [
-      "footprints"
+      "footprints",
+      "obad_footprints"
     ],
     "pinned_symbol_libs": [
       "formula",
@@ -624,12 +625,120 @@
       "stm32"
     ],
     [
-      "d10b32a2-8ae5-4f91-93a8-2e17c5422b40",
-      "CAN Repeater"
+      "548c5fda-faed-4907-ac4a-bc470113a7d0",
+      "CAN Repeater1"
     ],
     [
       "0e50c34f-cbc1-4276-a63e-8f0ddf3c5268",
       "Bus Arbitration Logic"
+    ],
+    [
+      "344cc74f-a628-49df-be8a-bc5614ade625",
+      "CAN Repeater2"
+    ],
+    [
+      "0e50c34f-cbc1-4276-a63e-8f0ddf3c5268",
+      "Bus Arbitration Logic"
+    ],
+    [
+      "4d4d4b6e-b0b8-4e7c-8890-6ff279f1bf86",
+      "CAN Repeater3"
+    ],
+    [
+      "0e50c34f-cbc1-4276-a63e-8f0ddf3c5268",
+      "Bus Arbitration Logic"
+    ],
+    [
+      "0d8aff7f-d6ca-4045-85c5-1a1f4c62101b",
+      "CAN Repeater4"
+    ],
+    [
+      "0e50c34f-cbc1-4276-a63e-8f0ddf3c5268",
+      "Bus Arbitration Logic"
+    ],
+    [
+      "554781ed-180d-4035-b0cf-be25a87c50d5",
+      "CAN Repeater5"
+    ],
+    [
+      "0e50c34f-cbc1-4276-a63e-8f0ddf3c5268",
+      "Bus Arbitration Logic"
+    ],
+    [
+      "5cd59e90-1b11-4144-87f2-aafe09e96414",
+      "CAN Repeater6"
+    ],
+    [
+      "0e50c34f-cbc1-4276-a63e-8f0ddf3c5268",
+      "Bus Arbitration Logic"
+    ],
+    [
+      "7185d0b4-1971-45be-af29-2a5ca11b78e7",
+      "CAN Repeater7"
+    ],
+    [
+      "0e50c34f-cbc1-4276-a63e-8f0ddf3c5268",
+      "Bus Arbitration Logic"
+    ],
+    [
+      "c8d150bc-4746-43dd-a1b2-8ca0ae03d6a6",
+      "CAN Repeater8"
+    ],
+    [
+      "0e50c34f-cbc1-4276-a63e-8f0ddf3c5268",
+      "Bus Arbitration Logic"
+    ],
+    [
+      "66136be3-edc9-4a2c-bee0-74cf2086e2ec",
+      "CAN Repeater9"
+    ],
+    [
+      "0e50c34f-cbc1-4276-a63e-8f0ddf3c5268",
+      "Bus Arbitration Logic"
+    ],
+    [
+      "73f99ffd-38ff-45fb-a377-e30159c05912",
+      "CAN Repeater10"
+    ],
+    [
+      "0e50c34f-cbc1-4276-a63e-8f0ddf3c5268",
+      "Bus Arbitration Logic"
+    ],
+    [
+      "8530813e-1c71-4684-b5d7-274038aa1688",
+      "CAN Repeater11"
+    ],
+    [
+      "0e50c34f-cbc1-4276-a63e-8f0ddf3c5268",
+      "Bus Arbitration Logic"
+    ],
+    [
+      "c609f1a1-abda-478b-aae8-3ac690d48591",
+      "CAN Repeater12"
+    ],
+    [
+      "0e50c34f-cbc1-4276-a63e-8f0ddf3c5268",
+      "Bus Arbitration Logic"
+    ],
+    [
+      "9a54db1a-b47f-4159-981e-de187c4c4ab9",
+      "CAN Repeater13"
+    ],
+    [
+      "0e50c34f-cbc1-4276-a63e-8f0ddf3c5268",
+      "Bus Arbitration Logic"
+    ],
+    [
+      "ba3a1bbc-b1e5-484f-8b44-4c2b1cf2999c",
+      "CAN Repeater14"
+    ],
+    [
+      "0e50c34f-cbc1-4276-a63e-8f0ddf3c5268",
+      "Bus Arbitration Logic"
+    ],
+    [
+      "7dc5358b-fa42-41f0-aa49-5a04c373b069",
+      "Arm Connectors"
     ]
   ],
   "text_variables": {}
