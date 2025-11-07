@@ -113,6 +113,17 @@
 			(embedded_fonts no)
 		)
 	)
+	(hierarchical_label "TH_8_A"
+		(shape input)
+		(at 33.02 167.64 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "003ee6d8-4bb6-401d-8508-77d485b8e77c")
+	)
 	(hierarchical_label "TH_6_B"
 		(shape input)
 		(at 48.26 129.54 270)
@@ -333,6 +344,17 @@
 		)
 		(uuid "7e073c2c-e33a-401f-8836-62582c80f667")
 	)
+	(hierarchical_label "TH_8_B"
+		(shape input)
+		(at 48.26 167.64 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8b2de649-f5a9-4a46-b110-f7944a4d344d")
+	)
 	(hierarchical_label "TH_4_C"
 		(shape input)
 		(at 63.5 87.63 270)
@@ -490,6 +512,73 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
+		(at 48.26 167.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "222fdd5b-176b-4932-ae1e-0753d81b0658")
+		(property "Reference" "TP930"
+			(at 50.8 163.0679 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 50.8 165.6079 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 53.34 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 53.34 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 48.26 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2bd7903f-4b7e-4884-b6c3-4c2a1205923e")
+		)
+		(instances
+			(project "bms"
+				(path "/36848c1b-92a5-46b0-877b-0db2387c679c/05829897-ef90-44bc-a038-5de17ebabfde/b8ebf3ea-bca9-4581-8fa0-11f77ce7e9f6"
+					(reference "TP930")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
 		(at 48.26 129.54 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -617,6 +706,73 @@
 			(project "bms"
 				(path "/36848c1b-92a5-46b0-877b-0db2387c679c/05829897-ef90-44bc-a038-5de17ebabfde/b8ebf3ea-bca9-4581-8fa0-11f77ce7e9f6"
 					(reference "TP922")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 33.02 167.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "30b32f68-cb15-4035-9114-71309f0e6ec2")
+		(property "Reference" "TP929"
+			(at 35.56 163.0679 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 35.56 165.6079 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 38.1 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 38.1 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 33.02 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c12cc720-67e7-49a8-90ee-cc420f8c420f")
+		)
+		(instances
+			(project "bms"
+				(path "/36848c1b-92a5-46b0-877b-0db2387c679c/05829897-ef90-44bc-a038-5de17ebabfde/b8ebf3ea-bca9-4581-8fa0-11f77ce7e9f6"
+					(reference "TP929")
 					(unit 1)
 				)
 			)

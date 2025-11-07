@@ -303,189 +303,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Jumper:SolderJumper_2_Open"
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "JP"
-				(at 0 2.032 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "SolderJumper_2_Open"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Solder Jumper, 2-pole, open"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "solder jumper SPST"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "SolderJumper*Open*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "SolderJumper_2_Open_0_1"
-				(polyline
-					(pts
-						(xy -0.254 1.016) (xy -0.254 -1.016)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -0.254 -1.016)
-					(mid -1.2656 0)
-					(end -0.254 1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -0.254 -1.016)
-					(mid -1.2656 0)
-					(end -0.254 1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(arc
-					(start 0.254 1.016)
-					(mid 1.2656 0)
-					(end 0.254 -1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0.254 1.016)
-					(mid 1.2656 0)
-					(end 0.254 -1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.254 1.016) (xy 0.254 -1.016)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "SolderJumper_2_Open_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "OEM:10R"
 			(pin_numbers
 				(hide yes)
@@ -1467,22 +1284,10 @@
 		(uuid "4cc49ea5-f84a-4fce-b0bd-60c0156b4993")
 	)
 	(junction
-		(at 182.88 76.2)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "581fdf25-fb0d-44d8-8add-d7d178c9beb1")
-	)
-	(junction
 		(at 171.45 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7dd1515c-583a-48e4-b919-bfdbfdc52e4f")
-	)
-	(junction
-		(at 182.88 102.87)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "86426e8f-d431-4870-8db1-9ce3e4118e32")
 	)
 	(junction
 		(at 143.51 100.33)
@@ -1578,7 +1383,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 76.2) (xy 193.04 76.2)
+			(xy 171.45 76.2) (xy 193.04 76.2)
 		)
 		(stroke
 			(width 0)
@@ -1615,16 +1420,6 @@
 			(type default)
 		)
 		(uuid "7865d5d1-e52b-48d6-b2c5-49fc8992ec9f")
-	)
-	(wire
-		(pts
-			(xy 182.88 76.2) (xy 182.88 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7acb51ca-2b6e-4aa7-92a2-97a3fa3c5c38")
 	)
 	(wire
 		(pts
@@ -1678,16 +1473,6 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 76.2) (xy 182.88 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "add8456c-891b-4eb5-aff7-17e6b516b5d5")
-	)
-	(wire
-		(pts
 			(xy 137.16 76.2) (xy 143.51 76.2)
 		)
 		(stroke
@@ -1708,7 +1493,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 102.87) (xy 182.88 102.87)
+			(xy 171.45 102.87) (xy 194.31 102.87)
 		)
 		(stroke
 			(width 0)
@@ -1725,26 +1510,6 @@
 			(type default)
 		)
 		(uuid "dca219b8-b62b-4657-b869-b71bab7a806b")
-	)
-	(wire
-		(pts
-			(xy 182.88 102.87) (xy 194.31 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f72fab8d-fa92-4979-a569-30a0eb096f78")
-	)
-	(wire
-		(pts
-			(xy 182.88 93.98) (xy 182.88 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fcddcb3f-f3d4-4748-a00d-1af8be251004")
 	)
 	(hierarchical_label "SN"
 		(shape output)
@@ -2649,128 +2414,6 @@
 				)
 				(path "/36848c1b-92a5-46b0-877b-0db2387c679c/826e6c70-848d-4f04-803e-a5eb891d5409/f9712816-d0d1-4731-9589-3dc1d67e51f8"
 					(reference "R203")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Jumper:SolderJumper_2_Open")
-		(at 182.88 90.17 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "bc8e9012-6bcd-4c67-ae92-e87201af5c17")
-		(property "Reference" "JP201"
-			(at 180.34 90.17 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "SolderJumper_2_Open"
-			(at 180.34 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm"
-			(at 182.88 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 182.88 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 182.88 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "bc2d1f3f-6782-431c-be45-297a11e9605a")
-		)
-		(pin "2"
-			(uuid "f3148df1-24e0-4804-a9ba-8644e8808a8c")
-		)
-		(instances
-			(project "bms"
-				(path "/36848c1b-92a5-46b0-877b-0db2387c679c/826e6c70-848d-4f04-803e-a5eb891d5409/08939dd6-8002-48a6-bc3c-6d57039b8cb1"
-					(reference "JP1801")
-					(unit 1)
-				)
-				(path "/36848c1b-92a5-46b0-877b-0db2387c679c/826e6c70-848d-4f04-803e-a5eb891d5409/1776b018-8c42-4ffc-935d-22158017bf2f"
-					(reference "JP2101")
-					(unit 1)
-				)
-				(path "/36848c1b-92a5-46b0-877b-0db2387c679c/826e6c70-848d-4f04-803e-a5eb891d5409/19704c5a-78bc-41aa-be36-2f34e0d106cb"
-					(reference "JP1301")
-					(unit 1)
-				)
-				(path "/36848c1b-92a5-46b0-877b-0db2387c679c/826e6c70-848d-4f04-803e-a5eb891d5409/291371aa-8f00-485b-b59d-3c659613fdef"
-					(reference "JP701")
-					(unit 1)
-				)
-				(path "/36848c1b-92a5-46b0-877b-0db2387c679c/826e6c70-848d-4f04-803e-a5eb891d5409/2f3b7f9d-db27-4f04-af44-e56cb2c38fbc"
-					(reference "JP1701")
-					(unit 1)
-				)
-				(path "/36848c1b-92a5-46b0-877b-0db2387c679c/826e6c70-848d-4f04-803e-a5eb891d5409/66a2c798-220f-466d-a17c-351810975fec"
-					(reference "JP1901")
-					(unit 1)
-				)
-				(path "/36848c1b-92a5-46b0-877b-0db2387c679c/826e6c70-848d-4f04-803e-a5eb891d5409/85847120-5e6c-4155-8ac2-747adc018505"
-					(reference "JP2201")
-					(unit 1)
-				)
-				(path "/36848c1b-92a5-46b0-877b-0db2387c679c/826e6c70-848d-4f04-803e-a5eb891d5409/9e9ff205-786a-4005-8122-23a4d17d9d4f"
-					(reference "JP1501")
-					(unit 1)
-				)
-				(path "/36848c1b-92a5-46b0-877b-0db2387c679c/826e6c70-848d-4f04-803e-a5eb891d5409/aaf9f96a-7ddf-4995-af3f-f87e14c8af2d"
-					(reference "JP1401")
-					(unit 1)
-				)
-				(path "/36848c1b-92a5-46b0-877b-0db2387c679c/826e6c70-848d-4f04-803e-a5eb891d5409/c9e0032d-4014-4eee-89ce-a01f9e17c7e7"
-					(reference "JP1201")
-					(unit 1)
-				)
-				(path "/36848c1b-92a5-46b0-877b-0db2387c679c/826e6c70-848d-4f04-803e-a5eb891d5409/cca58e24-f26b-4a68-933b-39fd7594f2b8"
-					(reference "JP2001")
-					(unit 1)
-				)
-				(path "/36848c1b-92a5-46b0-877b-0db2387c679c/826e6c70-848d-4f04-803e-a5eb891d5409/d2d0499b-0d0c-497e-b229-513cca94df20"
-					(reference "JP1601")
-					(unit 1)
-				)
-				(path "/36848c1b-92a5-46b0-877b-0db2387c679c/826e6c70-848d-4f04-803e-a5eb891d5409/d46111bc-cccb-419c-90ce-3d65698ee648"
-					(reference "JP1001")
-					(unit 1)
-				)
-				(path "/36848c1b-92a5-46b0-877b-0db2387c679c/826e6c70-848d-4f04-803e-a5eb891d5409/f9712816-d0d1-4731-9589-3dc1d67e51f8"
-					(reference "JP201")
 					(unit 1)
 				)
 			)
