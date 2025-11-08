@@ -19224,7 +19224,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C_100nF"
+		(property "Value" "100nF"
 			(at 0.635 -2.54 0)
 			(effects
 				(font
@@ -68857,7 +68857,7 @@
 				)
 			)
 		)
-		(property "Value" "R_100K"
+		(property "Value" "100K"
 			(at -2.54 0 90)
 			(effects
 				(font

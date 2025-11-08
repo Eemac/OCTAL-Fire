@@ -625,6 +625,14 @@
       "stm32"
     ],
     [
+      "b78052bb-331a-483e-8ae2-7fb3771b0ac3",
+      "CAN Repeater10"
+    ],
+    [
+      "0e50c34f-cbc1-4276-a63e-8f0ddf3c5268",
+      "Bus Arbitration Logic"
+    ],
+    [
       "548c5fda-faed-4907-ac4a-bc470113a7d0",
       "CAN Repeater1"
     ],
@@ -691,14 +699,6 @@
     [
       "66136be3-edc9-4a2c-bee0-74cf2086e2ec",
       "CAN Repeater9"
-    ],
-    [
-      "0e50c34f-cbc1-4276-a63e-8f0ddf3c5268",
-      "Bus Arbitration Logic"
-    ],
-    [
-      "73f99ffd-38ff-45fb-a377-e30159c05912",
-      "CAN Repeater10"
     ],
     [
       "0e50c34f-cbc1-4276-a63e-8f0ddf3c5268",

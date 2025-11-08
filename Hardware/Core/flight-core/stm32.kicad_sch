@@ -130,6 +130,163 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "C_100nF_1"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "100nF"
+				(at 0.635 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "footprints:C_0603_1608Metric"
+				(at 0.9652 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.samsungsem.com/kr/support/product-search/mlcc/CL10A475KQ8NNNC.jsp"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Capacitor, 100nF, 25V, 10%, 0603"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MFN" "DK"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(hide yes)
+				)
+			)
+			(property "MPN" "1276-6717-1-ND"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(hide yes)
+				)
+			)
+			(property "PurchasingLink" "https://www.digikey.com/product-detail/en/samsung-electro-mechanics/CL10B104KA8WPNC/1276-6717-1-ND/5961576"
+				(at 10.795 12.7 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C? C_????_* C_???? SMD*_c Capacitor*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_100nF_1_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_100nF_1_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector:Conn_01x04_Socket"
 			(pin_names
 				(offset 1.016)
@@ -1066,6 +1223,145 @@
 						)
 					)
 					(number "B8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:C"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2979,208 +3275,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "OEM:0u1F"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "C"
-				(at 0.635 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "0u1F"
-				(at 0.635 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "OEM:C_0603"
-				(at 0.9652 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "${OEM_DIR}/parts/datasheets/samsung_CL10B104KB8NNWC.pdf"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Unpolarized capacitor 0.1uF 50V X7R 0603"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "MPN" "CL10B104KB8NNWC"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "MFN" "Samsung Electro-Mechanics"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "DKPN" "1276-1935-2-ND"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Package" "0603"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Stocked" "Reel"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "NewDesigns" "YES"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Style" "SMD"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "cap capacitor 100nF"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "C_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "0u1F_0_1"
-				(polyline
-					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "0u1F_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 2.794)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 2.794)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "OEM:120R_DNP"
 			(pin_numbers
 				(hide yes)
@@ -3537,6 +3631,172 @@
 				(pin passive line
 					(at 0 -3.81 90)
 					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "OlinBAD:C_0.1uF_0603"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "0.1uF"
+				(at 0.635 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "footprints:C_0603_1608Metric"
+				(at 0.9652 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/KEM_C1002_X7R_SMD"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "CAP CER 0.1UF 50V X7R 0603"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MFN" "KEMET"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(hide yes)
+				)
+			)
+			(property "MPN" "C0603C104K5RACTU"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(hide yes)
+				)
+			)
+			(property "PurchasingLink" "https://www.digikey.com/products/en?keywords=478-3352-1-ND"
+				(at 10.795 12.7 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(hide yes)
+				)
+			)
+			(property "Size" "0603"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C? C_????_* C_???? SMD*_c Capacitor*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_0.1uF_0603_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_0.1uF_0603_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
 					(name "~"
 						(effects
 							(font
@@ -6159,12 +6419,6 @@
 		(uuid "16f26e88-3a79-4d3e-be0c-c6a8aca04c99")
 	)
 	(junction
-		(at 100.33 107.95)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1f3e04ad-6a3c-4a3e-bee8-f1da92e39b73")
-	)
-	(junction
 		(at 231.14 95.25)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6207,12 +6461,6 @@
 		(uuid "5b69ef49-999e-4329-8f2b-8c010b5613fd")
 	)
 	(junction
-		(at 87.63 146.05)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "65de7463-e72d-45e9-9a43-431622ceb2c4")
-	)
-	(junction
 		(at 240.03 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6223,6 +6471,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "75b12be3-66f2-4257-9b6e-d3d2fe5b692c")
+	)
+	(junction
+		(at 87.63 146.05)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "75d54b62-73c9-4a26-8648-bfed7ae14546")
+	)
+	(junction
+		(at 100.33 107.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7726a0ff-44c2-4939-b622-66f3d30820e8")
 	)
 	(junction
 		(at 27.94 69.85)
@@ -6827,16 +7087,6 @@
 			(type default)
 		)
 		(uuid "6e8ba544-501f-4638-ae3d-9d65fd7b134b")
-	)
-	(wire
-		(pts
-			(xy 87.63 143.51) (xy 87.63 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "72b408f2-d55f-452e-a07e-348811cbf121")
 	)
 	(wire
 		(pts
@@ -7510,13 +7760,23 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 146.05) (xy 87.63 148.59)
+			(xy 87.63 143.51) (xy 87.63 146.05)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "e1e7030f-db16-4969-891b-9e741ad2526d")
+	)
+	(wire
+		(pts
+			(xy 87.63 146.05) (xy 87.63 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e28ec9f3-6443-40c7-8e3b-deac0e8c7122")
 	)
 	(wire
 		(pts
@@ -7668,6 +7928,16 @@
 		)
 		(uuid "fd559122-54c6-4af7-8084-339a1a55986f")
 	)
+	(label "SHDN_SENSE_N_ARM"
+		(at 161.29 -97.79 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "01d8ace5-f193-4809-85c8-8609dea6b50d")
+	)
 	(label "D+"
 		(at 176.53 76.2 180)
 		(effects
@@ -7677,6 +7947,16 @@
 			(justify right bottom)
 		)
 		(uuid "038fa9cc-44b9-4a32-b49b-7218e4fd9ec0")
+	)
+	(label "SHDN_SENSE_WIRED_ESTOP"
+		(at 78.74 -57.15 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "040f82bc-3a0b-4c2b-82ac-27947254bc71")
 	)
 	(label "SPI1_SCK"
 		(at 181.61 58.42 0)
@@ -7738,6 +8018,16 @@
 		)
 		(uuid "1719df50-8737-464b-91a7-3fbb0d8b982f")
 	)
+	(label "SHDN_SENSE_SE_ARM"
+		(at 161.29 -67.31 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1ae798d1-5cbe-4eb6-afdc-a94ff9065090")
+	)
 	(label "TXCAN"
 		(at 38.1 151.13 0)
 		(effects
@@ -7778,6 +8068,16 @@
 		)
 		(uuid "2f8c0f42-26c8-4a4b-8b93-30948edfad9e")
 	)
+	(label "SHDN_SENSE_E_ARM"
+		(at 161.29 -77.47 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3c2979db-0fd4-42a4-b855-932324fa0b29")
+	)
 	(label "DEBUG1"
 		(at 130.81 109.22 180)
 		(effects
@@ -7798,6 +8098,46 @@
 		)
 		(uuid "4a37ab0e-c7ba-4ec1-be5e-990ace6f1bf6")
 	)
+	(label "SHDN_SENSE_S_ARM"
+		(at 161.29 -57.15 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4fe6f385-9ed1-4bd8-afd7-94c9f067325a")
+	)
+	(label "SHDN_SENSE_BMS_MATE_S"
+		(at 121.92 -48.26 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "559a8704-6dd9-4e20-b26a-e18dd1e66e2d")
+	)
+	(label "SHDN_SENSE_REMOTE_ESTOP"
+		(at 78.74 -68.58 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "56f5c96b-832e-43f7-ab40-bcb4e6463763")
+	)
+	(label "SHDN_SENSE_ALL_BATT"
+		(at 121.92 -16.51 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5954cf5b-a1f8-46d9-a3aa-ad77ef91fb60")
+	)
 	(label "RXCAN"
 		(at 38.1 153.67 0)
 		(effects
@@ -7807,6 +8147,26 @@
 			(justify left bottom)
 		)
 		(uuid "5cb0066e-e5a4-40eb-bf0a-6d719d55f738")
+	)
+	(label "SHDN_SENSE_NE_ARM"
+		(at 161.29 -87.63 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5fc75246-a9d6-4f9a-9f1a-06c6c40c1441")
+	)
+	(label "SHDN_SENSE_STM"
+		(at 121.92 -115.57 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "639b5b49-60f8-40b2-9fb3-a3c4e51e3e86")
 	)
 	(label "SWCLK"
 		(at 204.47 41.91 0)
@@ -7828,6 +8188,16 @@
 		)
 		(uuid "6b111aa0-d915-4c02-adb5-cd0a2a193acc")
 	)
+	(label "SHDN_SENSE_BMS_MATE_E"
+		(at 121.92 -71.12 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6cad8dd0-fead-4802-a76c-406f7e2ac330")
+	)
 	(label "BOOT0"
 		(at 130.81 93.98 180)
 		(effects
@@ -7848,6 +8218,96 @@
 		)
 		(uuid "7acdaad8-9072-4641-ab8a-090226800771")
 	)
+	(label "SHDN_SENSE_FRAME_ESTOP"
+		(at 78.74 -91.44 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7d50aeb3-52f0-41a1-bec9-3c32050f4419")
+	)
+	(label "SHDN_SENSE_NUC"
+		(at 121.92 -97.79 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "82bb8268-0c74-48dc-8ad0-831eaa503b1b")
+	)
+	(label "SHDN_SENSE_BMS_OK_S"
+		(at 121.92 -31.75 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "85e555a7-3b22-4bf5-b9a9-686938d0d708")
+	)
+	(label "SHDN_SENSE_BMS_OK_N"
+		(at 121.92 -74.93 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8a67eba7-1052-47ee-a2b1-47b145d015f9")
+	)
+	(label "SHDN_SENSE_CRITICAL"
+		(at 78.74 -39.37 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8bbd9f09-1132-4e4d-adc7-a1dd7eff790f")
+	)
+	(label "SHDN_SENSE_NW_ARM"
+		(at 161.29 -27.94 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8c025ecb-b3a7-4221-b624-df4e6777d20e")
+	)
+	(label "SHDN_SENSE_RIDER_ESTOP"
+		(at 78.74 -80.01 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8dde560b-4817-4346-b321-47ba4f9cccf3")
+	)
+	(label "SHDN_SENSE_W_ARM"
+		(at 161.29 -36.83 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8f7fb924-e608-4a98-b6cd-4e517341487b")
+	)
+	(label "SHDN_SENSE_SW_ARM"
+		(at 161.29 -46.99 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "91aa1ec8-ff7e-477c-b045-90e726c31fb9")
+	)
 	(label "SPI1_MISO"
 		(at 181.61 60.96 0)
 		(effects
@@ -7858,6 +8318,16 @@
 		)
 		(uuid "95de37e7-d354-4f80-85f8-5d9c66f92700")
 	)
+	(label "SHDN_SENSE_BMS_OK_E"
+		(at 121.92 -53.34 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ac274062-8fd3-485a-a694-c9c6a32d95ca")
+	)
 	(label "CAN_COMS"
 		(at 130.81 91.44 180)
 		(effects
@@ -7867,6 +8337,16 @@
 			(justify right bottom)
 		)
 		(uuid "b1fc4155-18b9-4337-a0d6-c7f5e393b2f3")
+	)
+	(label "SHDN_SENSE_BMS_MATE_W"
+		(at 121.92 -26.67 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b53a2ec4-6f1d-49d3-94b2-f57e377fd668")
 	)
 	(label "SWDIO"
 		(at 204.47 39.37 0)
@@ -7888,6 +8368,16 @@
 		)
 		(uuid "c6fbb1ab-e527-4174-a0c1-fd97e0e04753")
 	)
+	(label "SHDN_SENSE_BMS_MATE_N"
+		(at 121.92 -93.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d16c3428-5254-4f46-ae24-87351436d19c")
+	)
 	(label "VREF+"
 		(at 123.19 45.72 0)
 		(effects
@@ -7897,6 +8387,16 @@
 			(justify left bottom)
 		)
 		(uuid "d9243c13-5a69-48ff-b4ab-1f1302447706")
+	)
+	(label "SHDN_SENSE_TILT"
+		(at 78.74 -48.26 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "db3f30cb-9b68-4533-83e1-e22e1c61da20")
 	)
 	(label "D-"
 		(at 176.53 73.66 180)
@@ -7937,6 +8437,16 @@
 			(justify left bottom)
 		)
 		(uuid "f32bf115-bcf5-4378-a8ab-380290a571d8")
+	)
+	(label "SHDN_SENSE_TSMS"
+		(at 78.74 -101.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fbbeb09b-8acd-4726-a082-5cbdec05f89f")
 	)
 	(label "SWCLK"
 		(at 176.53 81.28 180)
@@ -9233,6 +9743,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 96.52 72.39 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "44d03b11-4345-4cc2-b86d-04fe78fa620b")
+		(property "Reference" "C7"
+			(at 99.822 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "8pF"
+			(at 99.822 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "footprints:C_0603_1608Metric"
+			(at 95.5548 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 96.52 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 96.52 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "aec0b9db-dc2b-44c8-ac17-44e230091847")
+		)
+		(pin "2"
+			(uuid "400b7471-b095-431a-b8ea-f43c1e77b579")
+		)
+		(instances
+			(project "flight-core"
+				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/91e18f07-bd3f-4576-bbe1-a0227cf7132e"
+					(reference "C7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "MCU_ST_STM32G4:STM32G473CCTx")
 		(at 148.59 78.74 0)
 		(unit 1)
@@ -10166,6 +10746,111 @@
 		)
 	)
 	(symbol
+		(lib_id "OlinBAD:C_0.1uF_0603")
+		(at 31.75 152.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "67e5f429-6d4f-4de3-99dd-7e04064e9fe8")
+		(property "Reference" "C161"
+			(at 33.782 159.258 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 36.322 159.258 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "footprints:C_0603_1608Metric"
+			(at 32.7152 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/KEM_C1002_X7R_SMD"
+			(at 32.385 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "CAP CER 0.1UF 50V X7R 0603"
+			(at 31.75 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFN" "KEMET"
+			(at 31.75 152.4 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C0603C104K5RACTU"
+			(at 31.75 152.4 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "PurchasingLink" "https://www.digikey.com/products/en?keywords=478-3352-1-ND"
+			(at 42.545 139.7 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Size" "0603"
+			(at 31.75 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8a4d03bb-666c-4d8f-bc4c-cdb238dcdf22")
+		)
+		(pin "1"
+			(uuid "355fb090-996b-4e97-ae5b-2266cd54b97e")
+		)
+		(instances
+			(project ""
+				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/91e18f07-bd3f-4576-bbe1-a0227cf7132e"
+					(reference "C161")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:USB_C_Receptacle_USB2.0_16P")
 		(at 255.27 102.87 0)
 		(mirror y)
@@ -10446,6 +11131,103 @@
 			(project "flight-core"
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/91e18f07-bd3f-4576-bbe1-a0227cf7132e"
 					(reference "SW2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "formula:C_100nF")
+		(at 93.98 35.56 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "74ee616b-1530-47e2-80b5-791c0eaf9c95")
+		(property "Reference" "C8"
+			(at 92.71 39.624 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "100nF"
+			(at 91.186 41.656 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 97.79 36.5252 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.samsungsem.com/kr/support/product-search/mlcc/CL10A475KQ8NNNC.jsp"
+			(at 91.44 36.195 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Capacitor, 100nF, 25V, 10%, 0603"
+			(at 93.98 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFN" "DK"
+			(at 93.98 35.56 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "1276-6717-1-ND"
+			(at 93.98 35.56 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "PurchasingLink" "https://www.digikey.com/product-detail/en/samsung-electro-mechanics/CL10B104KA8WPNC/1276-6717-1-ND/5961576"
+			(at 81.28 46.355 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "93544756-6a81-48f9-8cea-028bdbd02662")
+		)
+		(pin "2"
+			(uuid "0343c7c8-b157-404b-9447-085207b39ac3")
+		)
+		(instances
+			(project "flight-core"
+				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/91e18f07-bd3f-4576-bbe1-a0227cf7132e"
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -11196,7 +11978,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "R_10K"
+		(property "Value" "10K"
 			(at 92.202 100.076 0)
 			(effects
 				(font
@@ -11269,138 +12051,6 @@
 			(project "flight-core"
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/91e18f07-bd3f-4576-bbe1-a0227cf7132e"
 					(reference "R1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "OEM:0u1F")
-		(at 31.75 152.4 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8b85df3d-f018-496a-8b06-d4fab67c90ec")
-		(property "Reference" "C404"
-			(at 33.02 151.13 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "C_0.1uF"
-			(at 35.306 154.178 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "OEM:C_0603_1608Metric"
-			(at 32.7152 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://datasheets.avx.com/X7RDielectric.pdf"
-			(at 32.385 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 31.75 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "478-3352-1-ND"
-			(at 31.75 152.4 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFN" "Digi-Key"
-			(at 31.75 152.4 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Package" "Value"
-			(at 31.75 152.4 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "DKPN" "1276-1935-2-ND"
-			(at 31.75 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Stocked" "Reel"
-			(at 31.75 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "NewDesigns" "YES"
-			(at 31.75 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Style" "SMD"
-			(at 31.75 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "acb28f73-e253-46da-9f9d-9fa99d7d8741")
-		)
-		(pin "2"
-			(uuid "a48239e4-7de1-443a-a484-67c38c9ccfae")
-		)
-		(instances
-			(project "flight-core"
-				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/91e18f07-bd3f-4576-bbe1-a0227cf7132e"
-					(reference "C404")
 					(unit 1)
 				)
 			)
@@ -11669,330 +12319,6 @@
 		)
 	)
 	(symbol
-		(lib_id "formula:C_100nF")
-		(at 96.52 72.39 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a0cd956a-4992-4c16-8505-1469d24f7ac7")
-		(property "Reference" "C7"
-			(at 99.822 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "C_8pF"
-			(at 99.822 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "footprints:C_0603_1608Metric"
-			(at 97.4852 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.samsungsem.com/kr/support/product-search/mlcc/CL10A475KQ8NNNC.jsp"
-			(at 97.155 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Capacitor, 100nF, 25V, 10%, 0603"
-			(at 96.52 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFN" "DK"
-			(at 96.52 72.39 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "1276-6717-1-ND"
-			(at 96.52 72.39 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "PurchasingLink" "https://www.digikey.com/product-detail/en/samsung-electro-mechanics/CL10B104KA8WPNC/1276-6717-1-ND/5961576"
-			(at 107.315 59.69 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "0e3bee82-6651-4530-bf70-6a77ab942033")
-		)
-		(pin "1"
-			(uuid "81bef410-f3b8-4e7e-9a52-6cd3c1c57410")
-		)
-		(instances
-			(project "flight-core"
-				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/91e18f07-bd3f-4576-bbe1-a0227cf7132e"
-					(reference "C7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "OEM:0u1F")
-		(at 24.13 152.4 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a3eaf1d2-0e63-4e24-9968-b7e9681d13a6")
-		(property "Reference" "C403"
-			(at 25.4 150.876 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "C_0.1uF"
-			(at 27.432 154.432 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "OEM:C_0603_1608Metric"
-			(at 25.0952 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://datasheets.avx.com/X7RDielectric.pdf"
-			(at 24.765 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 24.13 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "478-3352-1-ND"
-			(at 24.13 152.4 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFN" "Digi-Key"
-			(at 24.13 152.4 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Package" "Value"
-			(at 24.13 152.4 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "DKPN" "1276-1935-2-ND"
-			(at 24.13 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Stocked" "Reel"
-			(at 24.13 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "NewDesigns" "YES"
-			(at 24.13 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Style" "SMD"
-			(at 24.13 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c4626b85-3893-488c-ac25-3bebb8011cd1")
-		)
-		(pin "2"
-			(uuid "0cd89ea9-a22d-4dc4-abc0-c6792c89386c")
-		)
-		(instances
-			(project "flight-core"
-				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/91e18f07-bd3f-4576-bbe1-a0227cf7132e"
-					(reference "C403")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "formula:C_100nF")
-		(at 93.98 35.56 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a7a9f170-72b6-4982-bf2f-148d2cf0621c")
-		(property "Reference" "C8"
-			(at 94.996 42.418 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "C_100nF"
-			(at 98.044 39.878 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "footprints:C_0603_1608Metric"
-			(at 97.79 34.5948 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.samsungsem.com/kr/support/product-search/mlcc/CL10A475KQ8NNNC.jsp"
-			(at 91.44 34.925 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Capacitor, 100nF, 25V, 10%, 0603"
-			(at 93.98 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFN" "DK"
-			(at 93.98 35.56 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "1276-6717-1-ND"
-			(at 93.98 35.56 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "PurchasingLink" "https://www.digikey.com/product-detail/en/samsung-electro-mechanics/CL10B104KA8WPNC/1276-6717-1-ND/5961576"
-			(at 81.28 24.765 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5184654f-e335-4e05-a49e-9b61d0d6136f")
-		)
-		(pin "2"
-			(uuid "bb794c53-2360-4962-9835-3e5b8c35ddaf")
-		)
-		(instances
-			(project "flight-core"
-				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/91e18f07-bd3f-4576-bbe1-a0227cf7132e"
-					(reference "C8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "OEM:1KR")
 		(at 236.22 92.71 90)
 		(unit 1)
@@ -12253,16 +12579,17 @@
 		)
 	)
 	(symbol
+		(lib_name "C_100nF_1")
 		(lib_id "formula:C_100nF")
-		(at 86.36 72.39 0)
+		(at 100.33 111.76 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "bd97473a-b818-4a16-b951-b04fc0fc0662")
-		(property "Reference" "C6"
-			(at 80.772 71.12 0)
+		(uuid "bd562126-5ec3-4b57-917d-aad97ec320cd")
+		(property "Reference" "C17"
+			(at 104.394 114.3 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12270,8 +12597,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C_8pF"
-			(at 77.724 73.66 0)
+		(property "Value" "100nF"
+			(at 106.934 114.3 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12280,7 +12607,7 @@
 			)
 		)
 		(property "Footprint" "footprints:C_0603_1608Metric"
-			(at 87.3252 76.2 0)
+			(at 101.2952 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12289,7 +12616,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.samsungsem.com/kr/support/product-search/mlcc/CL10A475KQ8NNNC.jsp"
-			(at 86.995 69.85 0)
+			(at 100.965 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12298,7 +12625,7 @@
 			)
 		)
 		(property "Description" "Capacitor, 100nF, 25V, 10%, 0603"
-			(at 86.36 72.39 0)
+			(at 100.33 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12307,7 +12634,7 @@
 			)
 		)
 		(property "MFN" "DK"
-			(at 86.36 72.39 0)
+			(at 100.33 111.76 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -12316,7 +12643,7 @@
 			)
 		)
 		(property "MPN" "1276-6717-1-ND"
-			(at 86.36 72.39 0)
+			(at 100.33 111.76 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -12325,7 +12652,7 @@
 			)
 		)
 		(property "PurchasingLink" "https://www.digikey.com/product-detail/en/samsung-electro-mechanics/CL10B104KA8WPNC/1276-6717-1-ND/5961576"
-			(at 97.155 59.69 0)
+			(at 111.125 99.06 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -12334,15 +12661,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "17f6042e-6060-4462-8146-3cc7d80117cf")
+			(uuid "bc0c3293-7910-4f19-8384-68c0db481679")
 		)
 		(pin "1"
-			(uuid "2585c4a3-7e12-4ad4-ab73-1b7a775138c7")
+			(uuid "692fd6a1-1c4c-4080-a8db-0387be40f74f")
 		)
 		(instances
-			(project "flight-core"
+			(project ""
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/91e18f07-bd3f-4576-bbe1-a0227cf7132e"
-					(reference "C6")
+					(reference "C17")
 					(unit 1)
 				)
 			)
@@ -12651,6 +12978,111 @@
 		)
 	)
 	(symbol
+		(lib_id "OlinBAD:C_0.1uF_0603")
+		(at 24.13 152.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c8980cfc-c064-4f68-aecc-207dc7a70c0b")
+		(property "Reference" "C162"
+			(at 25.908 150.622 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 28.448 150.622 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "footprints:C_0603_1608Metric"
+			(at 25.0952 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/KEM_C1002_X7R_SMD"
+			(at 24.765 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "CAP CER 0.1UF 50V X7R 0603"
+			(at 24.13 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFN" "KEMET"
+			(at 24.13 152.4 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C0603C104K5RACTU"
+			(at 24.13 152.4 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "PurchasingLink" "https://www.digikey.com/products/en?keywords=478-3352-1-ND"
+			(at 34.925 139.7 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Size" "0603"
+			(at 24.13 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "fb2627ee-0e9e-4c35-9180-bb127387a209")
+		)
+		(pin "1"
+			(uuid "d85741df-ab0c-42b6-8518-a77d15af4e3e")
+		)
+		(instances
+			(project "flight-core"
+				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/91e18f07-bd3f-4576-bbe1-a0227cf7132e"
+					(reference "C162")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_name "GND_4")
 		(lib_id "power:GND")
 		(at 212.09 46.99 0)
@@ -12711,138 +13143,6 @@
 			(project "flight-core"
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/91e18f07-bd3f-4576-bbe1-a0227cf7132e"
 					(reference "#PWR045")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "OEM:0u1F")
-		(at 91.44 146.05 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d263d22d-7b4c-45ab-8c9e-62b7d1521159")
-		(property "Reference" "C405"
-			(at 97.79 142.24 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "C_0.1uF"
-			(at 100.33 144.526 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "OEM:C_0603_1608Metric"
-			(at 95.25 145.0848 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://datasheets.avx.com/X7RDielectric.pdf"
-			(at 88.9 145.415 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 91.44 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "478-3352-1-ND"
-			(at 91.44 146.05 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFN" "Digi-Key"
-			(at 91.44 146.05 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Package" "Value"
-			(at 91.44 146.05 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "DKPN" "1276-1935-2-ND"
-			(at 91.44 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Stocked" "Reel"
-			(at 91.44 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "NewDesigns" "YES"
-			(at 91.44 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Style" "SMD"
-			(at 91.44 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b9ebdc43-1092-4160-96fc-d0aa7005989a")
-		)
-		(pin "2"
-			(uuid "41c4fd23-d5c8-4ff7-97e1-17b435e300f5")
-		)
-		(instances
-			(project "flight-core"
-				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/91e18f07-bd3f-4576-bbe1-a0227cf7132e"
-					(reference "C405")
 					(unit 1)
 				)
 			)
@@ -13011,16 +13311,16 @@
 		)
 	)
 	(symbol
-		(lib_id "formula:C_100nF")
-		(at 100.33 111.76 180)
+		(lib_id "OlinBAD:C_0.1uF_0603")
+		(at 91.44 146.05 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "e295c29b-57b7-40d5-bc4a-7bfba5c2873e")
-		(property "Reference" "C17"
-			(at 107.188 110.744 90)
+		(uuid "e35b70cb-3456-4af6-97b3-52cba9669413")
+		(property "Reference" "C163"
+			(at 98.298 144.018 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13028,8 +13328,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C_100nF"
-			(at 104.648 107.696 90)
+		(property "Value" "0.1uF"
+			(at 98.298 141.478 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13037,8 +13337,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "OEM:C_0603_1608Metric"
-			(at 99.3648 107.95 0)
+		(property "Footprint" "footprints:C_0603_1608Metric"
+			(at 95.25 145.0848 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13046,8 +13346,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.samsungsem.com/kr/support/product-search/mlcc/CL10A475KQ8NNNC.jsp"
-			(at 99.695 114.3 0)
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/KEM_C1002_X7R_SMD"
+			(at 88.9 145.415 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13055,8 +13355,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Capacitor, 100nF, 25V, 10%, 0603"
-			(at 100.33 111.76 0)
+		(property "Description" "CAP CER 0.1UF 50V X7R 0603"
+			(at 91.44 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13064,8 +13364,8 @@
 				(hide yes)
 			)
 		)
-		(property "MFN" "DK"
-			(at 100.33 111.76 0)
+		(property "MFN" "KEMET"
+			(at 91.44 146.05 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -13073,8 +13373,8 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "1276-6717-1-ND"
-			(at 100.33 111.76 0)
+		(property "MPN" "C0603C104K5RACTU"
+			(at 91.44 146.05 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -13082,8 +13382,8 @@
 				(hide yes)
 			)
 		)
-		(property "PurchasingLink" "https://www.digikey.com/product-detail/en/samsung-electro-mechanics/CL10B104KA8WPNC/1276-6717-1-ND/5961576"
-			(at 89.535 124.46 0)
+		(property "PurchasingLink" "https://www.digikey.com/products/en?keywords=478-3352-1-ND"
+			(at 78.74 135.255 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -13091,16 +13391,25 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "e253635f-ebf9-40b5-932b-feafd9852499")
+		(property "Size" "0603"
+			(at 91.44 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "2"
-			(uuid "0b7149a4-891a-4314-8f8d-bff94e2d9def")
+			(uuid "ff42001b-b57f-47e2-abcd-bac096f17e8b")
+		)
+		(pin "1"
+			(uuid "dc816ef4-dc82-4dda-a784-4f91fa3d54b8")
 		)
 		(instances
 			(project "flight-core"
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/91e18f07-bd3f-4576-bbe1-a0227cf7132e"
-					(reference "C17")
+					(reference "C163")
 					(unit 1)
 				)
 			)
@@ -13365,6 +13674,75 @@
 			(project "flight-core"
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/91e18f07-bd3f-4576-bbe1-a0227cf7132e"
 					(reference "#PWR044")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 86.36 72.39 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ede21c93-bfc2-48c0-b4fb-e51e04ea9b88")
+		(property "Reference" "C6"
+			(at 79.756 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "8pF"
+			(at 79.756 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "footprints:C_0603_1608Metric"
+			(at 87.3252 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 86.36 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 86.36 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "eda66144-2cb2-45e6-ae15-bf250324daf4")
+		)
+		(pin "2"
+			(uuid "25598f08-4b6e-4bde-8f0b-e759ec38535a")
+		)
+		(instances
+			(project ""
+				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/91e18f07-bd3f-4576-bbe1-a0227cf7132e"
+					(reference "C6")
 					(unit 1)
 				)
 			)

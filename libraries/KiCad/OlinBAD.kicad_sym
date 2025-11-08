@@ -21,7 +21,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C_0.1uF"
+		(property "Value" "0.1uF"
 			(at 0.635 -2.54 0)
 			(effects
 				(font
@@ -3637,11 +3637,11 @@
 				)
 			)
 		)
-		(property "Value" "L_470nH"
+		(property "Value" "470nH"
 			(at 0 3.81 0)
 			(effects
 				(font
-					(size 1.016 1.016)
+					(size 1.27 1.27)
 				)
 			)
 		)
