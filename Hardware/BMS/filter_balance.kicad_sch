@@ -1104,18 +1104,6 @@
 		)
 		(uuid "193ae3bc-acf3-4a9e-bbeb-b3cb4106c8a1")
 	)
-	(text "Cells: Samsung 40T 21700\nhttps://cdn.shopify.com/s/files/1/0481/9678/0183/files/Samsung_Introduction_of_New_40T_v3.pdf?v=1612843210"
-		(exclude_from_sim no)
-		(at 29.21 194.31 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(italic yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "36167c3e-2e94-4299-b8e3-d2987d7cc30a")
-	)
 	(text "Balance current [A]\n\n= (% SOC imbalance * battery capacity)/(num of hours to balance)\n\n= (0.05 * 64Ah) / (20)\n\n= 160 mA"
 		(exclude_from_sim no)
 		(at 28.194 152.146 0)

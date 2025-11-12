@@ -5,6 +5,180 @@
 	(uuid "eaca76a7-3dfa-437c-88f1-bb4a65c3ab31")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Device:LED"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LED"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Light emitting diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "LED diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LED_0_1"
+				(polyline
+					(pts
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "OEM:120R_DNP"
 			(pin_numbers
 				(hide yes)
@@ -1011,17 +1185,6 @@
 		)
 		(uuid "01883bc7-35d1-4c08-856a-bab7c746130b")
 	)
-	(hierarchical_label "OT"
-		(shape input)
-		(at 81.28 33.02 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "020c0213-26f1-4eb4-83ef-8da3ba09ad86")
-	)
 	(hierarchical_label "DEBUG1"
 		(shape input)
 		(at 36.83 96.52 180)
@@ -1032,6 +1195,17 @@
 			(justify right)
 		)
 		(uuid "16788beb-d43c-40d8-956c-4b082e791f35")
+	)
+	(hierarchical_label "UT"
+		(shape input)
+		(at 58.42 33.02 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1c6bd95d-5502-4e34-83b8-1b42d17f86f6")
 	)
 	(hierarchical_label "USB_C_COMS"
 		(shape input)
@@ -1054,6 +1228,17 @@
 			(justify right)
 		)
 		(uuid "5bc99123-63f6-4a4c-adc0-09d8718dc021")
+	)
+	(hierarchical_label "UV"
+		(shape input)
+		(at 106.68 33.02 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5eb55eca-de57-4b85-932c-b26122d6cbbd")
 	)
 	(hierarchical_label "MUX1_COMS"
 		(shape input)
@@ -1079,25 +1264,14 @@
 	)
 	(hierarchical_label "OV"
 		(shape input)
-		(at 33.02 33.02 180)
+		(at 81.28 33.02 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "be86bb3b-658d-4523-9d7c-ff2713f4e068")
-	)
-	(hierarchical_label "UV"
-		(shape input)
-		(at 58.42 33.02 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "c9f302a7-a5d3-430a-a5df-28c6390e20e8")
+		(uuid "d129e074-5881-4b6c-b35c-879570299ea3")
 	)
 	(hierarchical_label "MUX2_COMS"
 		(shape input)
@@ -1110,6 +1284,17 @@
 		)
 		(uuid "dc4f46db-daa8-4b1c-b6a3-091b6cd38f0e")
 	)
+	(hierarchical_label "OT"
+		(shape input)
+		(at 33.02 33.02 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ea2d64d1-1c1c-4e03-9375-5f9ac514f386")
+	)
 	(hierarchical_label "ERROR"
 		(shape input)
 		(at 134.62 33.02 180)
@@ -1120,17 +1305,6 @@
 			(justify right)
 		)
 		(uuid "ecad7002-441d-41de-b18c-ba68eec05c6b")
-	)
-	(hierarchical_label "UT"
-		(shape input)
-		(at 106.68 33.02 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "f34b9be4-1ade-4ae5-af37-ec48fa053116")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -2689,6 +2863,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:LED")
+		(at 85.09 101.6 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6b6edb49-d2eb-479d-a862-af5eec9156ce")
+		(property "Reference" "D1107"
+			(at 86.614 100.33 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "WHITE"
+			(at 86.868 102.108 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+			(at 85.09 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 85.09 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 85.09 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "91b07ac4-5f07-4eef-b7b6-ce9fd301a603")
+		)
+		(pin "1"
+			(uuid "16f3c0d3-5e4a-4fa6-8b32-5bdaf1244238")
+		)
+		(instances
+			(project "bms"
+				(path "/36848c1b-92a5-46b0-877b-0db2387c679c/f65c4f1e-6852-4d59-9c03-643ed066f793/e0ab8427-e77b-4bff-9ce4-fd9b0c7b1819"
+					(reference "D1107")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "formula:LED_0805_Red")
 		(at 137.16 36.83 90)
 		(unit 1)
@@ -3781,103 +4024,6 @@
 			(project "bms"
 				(path "/36848c1b-92a5-46b0-877b-0db2387c679c/f65c4f1e-6852-4d59-9c03-643ed066f793/e0ab8427-e77b-4bff-9ce4-fd9b0c7b1819"
 					(reference "R1109")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "formula:LED_0805_Amber")
-		(at 85.09 101.6 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c8596d78-9a86-4f65-933c-eada8da247c8")
-		(property "Reference" "D1107"
-			(at 88.9 101.9301 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "LED_0805_Amber"
-			(at 88.9 104.4701 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "footprints:LED_0805_OEM"
-			(at 85.09 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://media.digikey.com/pdf/Data%20Sheets/Chicago%20Miniature%20Lamps%20PDFs/CMDA5_Series_Rev_Aug_2014.pdf"
-			(at 82.55 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "LED, Amber, 1.9V, 20mA, 0805"
-			(at 85.09 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFN" "DK"
-			(at 85.09 101.6 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "L71517CT-ND"
-			(at 85.09 101.6 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "PurchasingLink" "https://www.digikey.com/product-detail/en/visual-communications-company-vcc/CMDA5DY7D1S/L71517CT-ND/614867"
-			(at 72.39 91.44 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "1f2e6360-dc86-4aed-bdc9-9c0e7c9ff7f9")
-		)
-		(pin "1"
-			(uuid "8e25bdf4-b89b-4d13-a780-66962afcc539")
-		)
-		(instances
-			(project "bms"
-				(path "/36848c1b-92a5-46b0-877b-0db2387c679c/f65c4f1e-6852-4d59-9c03-643ed066f793/e0ab8427-e77b-4bff-9ce4-fd9b0c7b1819"
-					(reference "D1107")
 					(unit 1)
 				)
 			)

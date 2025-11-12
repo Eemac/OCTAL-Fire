@@ -5117,16 +5117,6 @@
 		)
 		(uuid "a4134128-2ab7-4c11-9f80-b086368473c0")
 	)
-	(label "CELL0"
-		(at 161.29 27.94 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "a7014805-07a4-4ca7-b056-ef3e091a9e73")
-	)
 	(label "CELL14"
 		(at 26.67 34.29 180)
 		(effects
@@ -8060,16 +8050,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
-			)
-		)
-		(pin "CELL0" input
-			(at 161.29 27.94 180)
-			(uuid "58164862-bf0a-4138-8fcf-ff941e1ecbac")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 			)
 		)
 		(pin "CELL1" input

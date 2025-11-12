@@ -115,7 +115,7 @@
 	)
 	(hierarchical_label "CELL1"
 		(shape input)
-		(at 57.15 39.37 270)
+		(at 39.37 39.37 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -126,7 +126,7 @@
 	)
 	(hierarchical_label "CELL13"
 		(shape input)
-		(at 147.32 59.69 270)
+		(at 129.54 58.42 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -137,7 +137,7 @@
 	)
 	(hierarchical_label "CELL14"
 		(shape input)
-		(at 171.45 50.8 270)
+		(at 147.32 58.42 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -148,7 +148,7 @@
 	)
 	(hierarchical_label "CELL4"
 		(shape input)
-		(at 111.76 39.37 270)
+		(at 93.98 39.37 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -159,7 +159,7 @@
 	)
 	(hierarchical_label "CELL2"
 		(shape input)
-		(at 76.2 39.37 270)
+		(at 58.42 39.37 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -170,7 +170,7 @@
 	)
 	(hierarchical_label "CELL11"
 		(shape input)
-		(at 111.76 59.69 270)
+		(at 93.98 58.42 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -181,7 +181,7 @@
 	)
 	(hierarchical_label "CELL8"
 		(shape input)
-		(at 57.15 59.69 270)
+		(at 39.37 58.42 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -192,7 +192,7 @@
 	)
 	(hierarchical_label "CELL6"
 		(shape input)
-		(at 147.32 39.37 270)
+		(at 129.54 39.37 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -203,7 +203,7 @@
 	)
 	(hierarchical_label "CELL12"
 		(shape input)
-		(at 129.54 59.69 270)
+		(at 111.76 58.42 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -214,7 +214,7 @@
 	)
 	(hierarchical_label "CELL3"
 		(shape input)
-		(at 93.98 39.37 270)
+		(at 76.2 39.37 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -225,7 +225,7 @@
 	)
 	(hierarchical_label "CELL9"
 		(shape input)
-		(at 76.2 59.69 270)
+		(at 58.42 58.42 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -234,20 +234,9 @@
 		)
 		(uuid "bfea1575-447d-4edd-995e-d1583f937bfc")
 	)
-	(hierarchical_label "CELL0"
-		(shape input)
-		(at 39.37 39.37 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "c594ed6f-9160-4074-a7dc-12902ad63f78")
-	)
 	(hierarchical_label "CELL5"
 		(shape input)
-		(at 129.54 39.37 270)
+		(at 111.76 39.37 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -258,7 +247,7 @@
 	)
 	(hierarchical_label "CELL7"
 		(shape input)
-		(at 39.37 59.69 270)
+		(at 147.32 39.37 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -269,7 +258,7 @@
 	)
 	(hierarchical_label "CELL10"
 		(shape input)
-		(at 93.98 59.69 270)
+		(at 76.2 58.42 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -280,7 +269,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 57.15 59.69 0)
+		(at 39.37 58.42 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -289,7 +278,7 @@
 		(fields_autoplaced yes)
 		(uuid "0fb43666-61e7-4bb7-a68a-09b5abec0c91")
 		(property "Reference" "TP804"
-			(at 59.69 55.1179 0)
+			(at 41.91 53.8479 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -298,7 +287,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 59.69 57.6579 0)
+			(at 41.91 56.3879 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -307,7 +296,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Keystone_5019_Miniature"
-			(at 62.23 59.69 0)
+			(at 44.45 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -316,7 +305,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 62.23 59.69 0)
+			(at 44.45 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -325,7 +314,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 57.15 59.69 0)
+			(at 39.37 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -347,7 +336,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 129.54 59.69 0)
+		(at 111.76 58.42 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -356,7 +345,7 @@
 		(fields_autoplaced yes)
 		(uuid "1b2ecb65-d19c-4753-9df7-018b98a23541")
 		(property "Reference" "TP812"
-			(at 132.08 55.1179 0)
+			(at 114.3 53.8479 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -365,7 +354,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 132.08 57.6579 0)
+			(at 114.3 56.3879 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -374,7 +363,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Keystone_5019_Miniature"
-			(at 134.62 59.69 0)
+			(at 116.84 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -383,7 +372,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 134.62 59.69 0)
+			(at 116.84 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -392,7 +381,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 129.54 59.69 0)
+			(at 111.76 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -414,7 +403,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 39.37 59.69 0)
+		(at 147.32 39.37 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -423,140 +412,6 @@
 		(fields_autoplaced yes)
 		(uuid "1f815547-6124-46f0-b496-709abd33bfeb")
 		(property "Reference" "TP802"
-			(at 41.91 55.1179 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 41.91 57.6579 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Keystone_5019_Miniature"
-			(at 44.45 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 44.45 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 39.37 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "25070d92-ab37-4397-98b6-292a304d3cd8")
-		)
-		(instances
-			(project "bms"
-				(path "/36848c1b-92a5-46b0-877b-0db2387c679c/826e6c70-848d-4f04-803e-a5eb891d5409/e1025dcc-ecdc-4fd2-8475-11da7bf22bb3"
-					(reference "TP802")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 39.37 39.37 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "21efef8d-a7fb-4968-bd50-41bab8d18dfa")
-		(property "Reference" "TP801"
-			(at 41.91 34.7979 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 41.91 37.3379 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Keystone_5019_Miniature"
-			(at 44.45 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 44.45 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 39.37 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "bfda6e86-2767-4615-bada-d24052b98670")
-		)
-		(instances
-			(project "bms"
-				(path "/36848c1b-92a5-46b0-877b-0db2387c679c/826e6c70-848d-4f04-803e-a5eb891d5409/e1025dcc-ecdc-4fd2-8475-11da7bf22bb3"
-					(reference "TP801")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 147.32 39.37 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "72e4b599-d0c9-44c1-8ddf-a1159d60df27")
-		(property "Reference" "TP813"
 			(at 149.86 34.7979 0)
 			(effects
 				(font
@@ -602,347 +457,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "98ddfc13-9cd6-44a6-8ffe-474ec1abd77b")
+			(uuid "25070d92-ab37-4397-98b6-292a304d3cd8")
 		)
 		(instances
 			(project "bms"
 				(path "/36848c1b-92a5-46b0-877b-0db2387c679c/826e6c70-848d-4f04-803e-a5eb891d5409/e1025dcc-ecdc-4fd2-8475-11da7bf22bb3"
-					(reference "TP813")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 76.2 59.69 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "85daabd2-72d6-464d-893c-6cb64e03dad4")
-		(property "Reference" "TP806"
-			(at 78.74 55.1179 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 78.74 57.6579 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Keystone_5019_Miniature"
-			(at 81.28 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 81.28 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 76.2 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6bf47d91-6343-42cc-b445-c471b445fe81")
-		)
-		(instances
-			(project "bms"
-				(path "/36848c1b-92a5-46b0-877b-0db2387c679c/826e6c70-848d-4f04-803e-a5eb891d5409/e1025dcc-ecdc-4fd2-8475-11da7bf22bb3"
-					(reference "TP806")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 111.76 39.37 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8e21b5b7-0a22-459f-91b0-1304a38dc587")
-		(property "Reference" "TP809"
-			(at 114.3 34.7979 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 114.3 37.3379 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Keystone_5019_Miniature"
-			(at 116.84 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 116.84 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 111.76 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3bab5d8e-71cf-45cc-8a99-802aeeec7dbb")
-		)
-		(instances
-			(project "bms"
-				(path "/36848c1b-92a5-46b0-877b-0db2387c679c/826e6c70-848d-4f04-803e-a5eb891d5409/e1025dcc-ecdc-4fd2-8475-11da7bf22bb3"
-					(reference "TP809")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 147.32 59.69 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9e735e88-98bd-4317-913e-7676bbd9c582")
-		(property "Reference" "TP814"
-			(at 149.86 55.1179 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 149.86 57.6579 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Keystone_5019_Miniature"
-			(at 152.4 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 152.4 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 147.32 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "12e7bc3c-cfbf-4873-8125-5bd9887c8813")
-		)
-		(instances
-			(project "bms"
-				(path "/36848c1b-92a5-46b0-877b-0db2387c679c/826e6c70-848d-4f04-803e-a5eb891d5409/e1025dcc-ecdc-4fd2-8475-11da7bf22bb3"
-					(reference "TP814")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 171.45 50.8 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a7055465-7a9e-489e-8411-2d3921f1c760")
-		(property "Reference" "TP815"
-			(at 173.99 46.2279 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 173.99 48.7679 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Keystone_5019_Miniature"
-			(at 176.53 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 176.53 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 171.45 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "cfbf3c90-d2dd-41ff-bf41-577a26635cf1")
-		)
-		(instances
-			(project "bms"
-				(path "/36848c1b-92a5-46b0-877b-0db2387c679c/826e6c70-848d-4f04-803e-a5eb891d5409/e1025dcc-ecdc-4fd2-8475-11da7bf22bb3"
-					(reference "TP815")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 93.98 39.37 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a8d4d92d-0f5e-41d7-a8d9-4edb154acb38")
-		(property "Reference" "TP807"
-			(at 96.52 34.7979 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 96.52 37.3379 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Keystone_5019_Miniature"
-			(at 99.06 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 99.06 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 93.98 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1e33e35b-c6a6-49bc-bdc9-30383424022a")
-		)
-		(instances
-			(project "bms"
-				(path "/36848c1b-92a5-46b0-877b-0db2387c679c/826e6c70-848d-4f04-803e-a5eb891d5409/e1025dcc-ecdc-4fd2-8475-11da7bf22bb3"
-					(reference "TP807")
+					(reference "TP802")
 					(unit 1)
 				)
 			)
@@ -957,8 +477,8 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "b2e9f048-306f-4029-b17b-53dd4d225f7e")
-		(property "Reference" "TP811"
+		(uuid "72e4b599-d0c9-44c1-8ddf-a1159d60df27")
+		(property "Reference" "TP813"
 			(at 132.08 34.7979 0)
 			(effects
 				(font
@@ -1004,12 +524,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "012e655b-ec06-46ab-9ba7-ac90280bd4ab")
+			(uuid "98ddfc13-9cd6-44a6-8ffe-474ec1abd77b")
 		)
 		(instances
 			(project "bms"
 				(path "/36848c1b-92a5-46b0-877b-0db2387c679c/826e6c70-848d-4f04-803e-a5eb891d5409/e1025dcc-ecdc-4fd2-8475-11da7bf22bb3"
-					(reference "TP811")
+					(reference "TP813")
 					(unit 1)
 				)
 			)
@@ -1017,16 +537,16 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 93.98 59.69 0)
+		(at 58.42 58.42 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "b9d4bdd3-cec9-48f2-bbf1-657af43ef3ca")
-		(property "Reference" "TP808"
-			(at 96.52 55.1179 0)
+		(uuid "85daabd2-72d6-464d-893c-6cb64e03dad4")
+		(property "Reference" "TP806"
+			(at 60.96 53.8479 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1035,7 +555,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 96.52 57.6579 0)
+			(at 60.96 56.3879 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1044,7 +564,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Keystone_5019_Miniature"
-			(at 99.06 59.69 0)
+			(at 63.5 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1053,7 +573,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 99.06 59.69 0)
+			(at 63.5 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1062,7 +582,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 93.98 59.69 0)
+			(at 58.42 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1071,12 +591,213 @@
 			)
 		)
 		(pin "1"
-			(uuid "61f7bc06-567f-4a24-94be-d379f198bea7")
+			(uuid "6bf47d91-6343-42cc-b445-c471b445fe81")
 		)
 		(instances
 			(project "bms"
 				(path "/36848c1b-92a5-46b0-877b-0db2387c679c/826e6c70-848d-4f04-803e-a5eb891d5409/e1025dcc-ecdc-4fd2-8475-11da7bf22bb3"
-					(reference "TP808")
+					(reference "TP806")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 93.98 39.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8e21b5b7-0a22-459f-91b0-1304a38dc587")
+		(property "Reference" "TP809"
+			(at 96.52 34.7979 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 96.52 37.3379 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Keystone_5019_Miniature"
+			(at 99.06 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 99.06 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 93.98 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3bab5d8e-71cf-45cc-8a99-802aeeec7dbb")
+		)
+		(instances
+			(project "bms"
+				(path "/36848c1b-92a5-46b0-877b-0db2387c679c/826e6c70-848d-4f04-803e-a5eb891d5409/e1025dcc-ecdc-4fd2-8475-11da7bf22bb3"
+					(reference "TP809")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 129.54 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9e735e88-98bd-4317-913e-7676bbd9c582")
+		(property "Reference" "TP814"
+			(at 132.08 53.8479 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 132.08 56.3879 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Keystone_5019_Miniature"
+			(at 134.62 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 134.62 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 129.54 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "12e7bc3c-cfbf-4873-8125-5bd9887c8813")
+		)
+		(instances
+			(project "bms"
+				(path "/36848c1b-92a5-46b0-877b-0db2387c679c/826e6c70-848d-4f04-803e-a5eb891d5409/e1025dcc-ecdc-4fd2-8475-11da7bf22bb3"
+					(reference "TP814")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 147.32 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a7055465-7a9e-489e-8411-2d3921f1c760")
+		(property "Reference" "TP815"
+			(at 149.86 53.8479 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 149.86 56.3879 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Keystone_5019_Miniature"
+			(at 152.4 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 152.4 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 147.32 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cfbf3c90-d2dd-41ff-bf41-577a26635cf1")
+		)
+		(instances
+			(project "bms"
+				(path "/36848c1b-92a5-46b0-877b-0db2387c679c/826e6c70-848d-4f04-803e-a5eb891d5409/e1025dcc-ecdc-4fd2-8475-11da7bf22bb3"
+					(reference "TP815")
 					(unit 1)
 				)
 			)
@@ -1091,8 +812,8 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "c867b469-9858-42c2-a75d-5ee6c4fea2dc")
-		(property "Reference" "TP805"
+		(uuid "a8d4d92d-0f5e-41d7-a8d9-4edb154acb38")
+		(property "Reference" "TP807"
 			(at 78.74 34.7979 0)
 			(effects
 				(font
@@ -1138,6 +859,207 @@
 			)
 		)
 		(pin "1"
+			(uuid "1e33e35b-c6a6-49bc-bdc9-30383424022a")
+		)
+		(instances
+			(project "bms"
+				(path "/36848c1b-92a5-46b0-877b-0db2387c679c/826e6c70-848d-4f04-803e-a5eb891d5409/e1025dcc-ecdc-4fd2-8475-11da7bf22bb3"
+					(reference "TP807")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 111.76 39.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b2e9f048-306f-4029-b17b-53dd4d225f7e")
+		(property "Reference" "TP811"
+			(at 114.3 34.7979 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 114.3 37.3379 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Keystone_5019_Miniature"
+			(at 116.84 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 116.84 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 111.76 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "012e655b-ec06-46ab-9ba7-ac90280bd4ab")
+		)
+		(instances
+			(project "bms"
+				(path "/36848c1b-92a5-46b0-877b-0db2387c679c/826e6c70-848d-4f04-803e-a5eb891d5409/e1025dcc-ecdc-4fd2-8475-11da7bf22bb3"
+					(reference "TP811")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 76.2 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b9d4bdd3-cec9-48f2-bbf1-657af43ef3ca")
+		(property "Reference" "TP808"
+			(at 78.74 53.8479 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 78.74 56.3879 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Keystone_5019_Miniature"
+			(at 81.28 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 81.28 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 76.2 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "61f7bc06-567f-4a24-94be-d379f198bea7")
+		)
+		(instances
+			(project "bms"
+				(path "/36848c1b-92a5-46b0-877b-0db2387c679c/826e6c70-848d-4f04-803e-a5eb891d5409/e1025dcc-ecdc-4fd2-8475-11da7bf22bb3"
+					(reference "TP808")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 58.42 39.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c867b469-9858-42c2-a75d-5ee6c4fea2dc")
+		(property "Reference" "TP805"
+			(at 60.96 34.7979 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 60.96 37.3379 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Keystone_5019_Miniature"
+			(at 63.5 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 63.5 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 58.42 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
 			(uuid "b0acef26-5a6f-4081-81d9-fed459d6f1f0")
 		)
 		(instances
@@ -1151,7 +1073,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 111.76 59.69 0)
+		(at 93.98 58.42 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1160,7 +1082,7 @@
 		(fields_autoplaced yes)
 		(uuid "c95ac873-9848-4d2d-baf4-f42e9b3cbc3d")
 		(property "Reference" "TP810"
-			(at 114.3 55.1179 0)
+			(at 96.52 53.8479 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1169,7 +1091,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 114.3 57.6579 0)
+			(at 96.52 56.3879 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1178,7 +1100,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Keystone_5019_Miniature"
-			(at 116.84 59.69 0)
+			(at 99.06 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1187,7 +1109,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 116.84 59.69 0)
+			(at 99.06 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1196,7 +1118,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 111.76 59.69 0)
+			(at 93.98 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1218,7 +1140,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 57.15 39.37 0)
+		(at 39.37 39.37 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1227,7 +1149,7 @@
 		(fields_autoplaced yes)
 		(uuid "df1a609a-d354-49b4-9a41-108e1cde5e10")
 		(property "Reference" "TP803"
-			(at 59.69 34.7979 0)
+			(at 41.91 34.7979 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1236,7 +1158,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 59.69 37.3379 0)
+			(at 41.91 37.3379 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1245,7 +1167,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Keystone_5019_Miniature"
-			(at 62.23 39.37 0)
+			(at 44.45 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1254,7 +1176,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 62.23 39.37 0)
+			(at 44.45 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1263,7 +1185,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 57.15 39.37 0)
+			(at 39.37 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)

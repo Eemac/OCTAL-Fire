@@ -2395,16 +2395,6 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 138.43) (xy 143.51 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3d21ee75-1749-45e6-a0fd-b1996617a7b7")
-	)
-	(wire
-		(pts
 			(xy 66.04 119.38) (xy 66.04 132.08)
 		)
 		(stroke
@@ -2525,7 +2515,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 140.97) (xy 143.51 142.24)
+			(xy 143.51 135.89) (xy 143.51 142.24)
 		)
 		(stroke
 			(width 0)
@@ -2652,16 +2642,6 @@
 			(type default)
 		)
 		(uuid "6b409539-904e-4ab8-817b-4cddeaf11021")
-	)
-	(wire
-		(pts
-			(xy 142.24 140.97) (xy 143.51 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6b8b4637-8e23-4978-a8e5-cf6fb31f8ac6")
 	)
 	(wire
 		(pts
@@ -2982,16 +2962,6 @@
 			(type default)
 		)
 		(uuid "9cf5c845-dccb-4264-9a36-ac9f4214ebbf")
-	)
-	(wire
-		(pts
-			(xy 142.24 140.97) (xy 142.24 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9eea5698-01df-4047-aeae-ab5103f62e92")
 	)
 	(wire
 		(pts
@@ -3525,16 +3495,6 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 138.43) (xy 143.51 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f89f88bc-65db-4414-9d4e-25c6bb58f5f8")
-	)
-	(wire
-		(pts
 			(xy 55.88 73.66) (xy 66.04 73.66)
 		)
 		(stroke
@@ -3623,6 +3583,16 @@
 		)
 		(uuid "0f6b1e39-ea10-42a7-a4e2-227f8a147c00")
 	)
+	(label "TH_7_D"
+		(at 154.94 130.81 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "10b9ca22-0603-4a9d-954e-8e38b7ada490")
+	)
 	(label "TH_2_C"
 		(at 91.44 59.69 180)
 		(effects
@@ -3632,6 +3602,16 @@
 			(justify right bottom)
 		)
 		(uuid "10dd4c72-1f99-47f7-b265-b72fa459872a")
+	)
+	(label "TH_7_B"
+		(at 154.94 125.73 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1386e97b-b4fa-42a4-81be-968b33829658")
 	)
 	(label "TH_2_D"
 		(at 241.3 88.9 180)
@@ -3884,7 +3864,7 @@
 		(uuid "3f58c034-b829-445f-a7f6-ab5d819d309f")
 	)
 	(label "THERM_AMBIENT"
-		(at 142.24 138.43 180)
+		(at 143.51 138.43 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3953,6 +3933,16 @@
 		)
 		(uuid "46cf40f7-498a-415a-9713-7d88f857c551")
 	)
+	(label "TH_7_A"
+		(at 154.94 123.19 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "492e94a3-bb92-4c0e-85f4-f59dba0e308c")
+	)
 	(label "TH_7_D"
 		(at 266.7 101.6 0)
 		(effects
@@ -4003,16 +3993,6 @@
 		)
 		(uuid "52d90534-05c4-4d1c-8fd1-6a60cafbd043")
 	)
-	(label "TH_7_A"
-		(at 154.94 130.81 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "5303a36d-32cc-4de2-9e4c-cc5b8fd00fad")
-	)
 	(label "TH_3_B"
 		(at 91.44 72.39 180)
 		(effects
@@ -4062,16 +4042,6 @@
 			(justify right bottom)
 		)
 		(uuid "69049978-38d8-460d-b8cb-41e753051b54")
-	)
-	(label "TH_7_C"
-		(at 154.94 125.73 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "6b1fa993-d191-4d7f-b17e-2306e2ce84f7")
 	)
 	(label "TH_2_D"
 		(at 43.18 73.66 180)
@@ -4252,6 +4222,16 @@
 			(justify right bottom)
 		)
 		(uuid "8f63fd2f-c3af-45e1-88c7-5695fc3ce1db")
+	)
+	(label "TH_7_C"
+		(at 154.94 128.27 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "915ad6c9-b4f6-41ea-bc0c-7ca51425a8d4")
 	)
 	(label "TH_4_B"
 		(at 91.44 77.47 180)
@@ -4493,6 +4473,16 @@
 		)
 		(uuid "cf99e619-025e-4c4d-b232-f7e99d063969")
 	)
+	(label "THERM_AMBIENT"
+		(at 266.7 107.95 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d050fd88-95f3-4be0-850e-304726dad796")
+	)
 	(label "TH_7_A"
 		(at 90.17 151.13 180)
 		(effects
@@ -4552,16 +4542,6 @@
 			(justify right bottom)
 		)
 		(uuid "df48a33a-84eb-46a2-87da-f06f4398c6d8")
-	)
-	(label "TH_7_D"
-		(at 154.94 123.19 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "e1322e57-8240-466a-ab6c-a37f28b4b6cd")
 	)
 	(label "TH_5_D"
 		(at 43.18 119.38 180)
@@ -4652,16 +4632,6 @@
 			(justify right bottom)
 		)
 		(uuid "f61a2458-3899-4976-beab-379930e4c82c")
-	)
-	(label "TH_7_B"
-		(at 154.94 128.27 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "f64bf1d0-836d-46d2-888a-c8f04e25b478")
 	)
 	(label "TH_6_D"
 		(at 154.94 120.65 180)
@@ -4846,6 +4816,17 @@
 			(justify left)
 		)
 		(uuid "c53b31b9-cb05-427c-91ee-b367cbbf4d97")
+	)
+	(hierarchical_label "THERM_BUSBAR"
+		(shape input)
+		(at 266.7 105.41 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d58c7c3d-247c-49e5-967f-57b700bd8a0d")
 	)
 	(hierarchical_label "SCL"
 		(shape output)
@@ -9352,6 +9333,26 @@
 		(pin "TH_7_D" input
 			(at 266.7 101.6 0)
 			(uuid "ee6397c0-4d40-4f39-bb2b-dee81054ebaf")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "TH_8_A" input
+			(at 266.7 105.41 0)
+			(uuid "81496a67-af71-488d-8225-46cb8b1fc163")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "TH_8_B" input
+			(at 266.7 107.95 0)
+			(uuid "df66c7ce-79db-4b1b-83b8-a925641a9305")
 			(effects
 				(font
 					(size 1.27 1.27)

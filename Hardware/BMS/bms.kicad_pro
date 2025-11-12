@@ -123,7 +123,7 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.0,
+        "min_clearance": 0.15,
         "min_connection": 0.0,
         "min_copper_edge_clearance": 0.5,
         "min_groove_width": 0.0,
@@ -136,7 +136,7 @@
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.0,
+        "min_track_width": 0.15,
         "min_via_annular_width": 0.1,
         "min_via_diameter": 0.5,
         "solder_mask_to_copper_clearance": 0.0,
@@ -190,6 +190,7 @@
         0.0,
         0.1524,
         0.2032,
+        0.358,
         0.4,
         0.7
       ],
@@ -475,7 +476,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.15,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -486,7 +487,7 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.2,
+        "track_width": 0.15,
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
@@ -504,10 +505,10 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "../../../../Boards/bms_pdf/",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "bms.step",
       "svg": "",
       "vrml": ""
     },
@@ -674,6 +675,10 @@
     [
       "c9e0032d-4014-4eee-89ce-a01f9e17c7e7",
       "Cell4 Filtering and Balancing"
+    ],
+    [
+      "499e9990-2ead-48e5-bb1e-d470202346f6",
+      "Fans"
     ],
     [
       "19704c5a-78bc-41aa-be36-2f34e0d106cb",
