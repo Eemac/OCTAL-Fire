@@ -147,6 +147,193 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "OEM:120R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "120R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "OEM:R_0603"
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor 120 ohm 0603 1/10W 1%"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MPN" "RC0603FR-13120RL"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MFN" "Yageo"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "DKPN" "13-RC0603FR-13120RLDKR-ND"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Package" "0603"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "NewDesigns" "YES"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Stocked" "Digi-Reel"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Style" "SMD"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor "
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "120R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "120R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(wire
 		(pts
@@ -240,6 +427,16 @@
 	)
 	(wire
 		(pts
+			(xy 146.05 176.53) (xy 144.78 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49d47ae8-0091-4463-a2ed-0f0c28a270f6")
+	)
+	(wire
+		(pts
 			(xy 120.65 54.61) (xy 132.08 54.61)
 		)
 		(stroke
@@ -307,6 +504,16 @@
 			(type default)
 		)
 		(uuid "734f17bd-21b6-4d15-86e1-4eb48d842881")
+	)
+	(wire
+		(pts
+			(xy 135.89 170.18) (xy 135.89 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7668e4d0-eeb8-4084-b9e5-2d4bd19f9114")
 	)
 	(wire
 		(pts
@@ -420,6 +627,16 @@
 	)
 	(wire
 		(pts
+			(xy 135.89 176.53) (xy 137.16 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc66ae62-4697-4afa-889a-cd0387a38b6a")
+	)
+	(wire
+		(pts
 			(xy 120.65 41.91) (xy 132.08 41.91)
 		)
 		(stroke
@@ -460,6 +677,16 @@
 	)
 	(wire
 		(pts
+			(xy 146.05 170.18) (xy 146.05 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f105b142-e47b-4d1d-88ec-851263965397")
+	)
+	(wire
+		(pts
 			(xy 120.65 151.13) (xy 132.08 151.13)
 		)
 		(stroke
@@ -467,6 +694,16 @@
 			(type default)
 		)
 		(uuid "ffbba765-6661-418e-8de5-0dccc911355f")
+	)
+	(label "CAN-"
+		(at 146.05 170.18 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "25200b35-429a-4ead-8f1c-cbf69670cbef")
 	)
 	(label "CANMNE+"
 		(at 120.65 54.61 0)
@@ -477,6 +714,16 @@
 			(justify left bottom)
 		)
 		(uuid "2533db98-8445-49b0-a716-fa57e7e2c8b1")
+	)
+	(label "CAN+"
+		(at 135.89 170.18 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "26f74da3-41cd-4e47-b6bf-bd7aaec76164")
 	)
 	(label "CAN+"
 		(at 168.91 71.12 0)
@@ -1032,6 +1279,139 @@
 			(project "flight-core"
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/7dc5358b-fa42-41f0-aa49-5a04c373b069"
 					(reference "J14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "OEM:120R")
+		(at 140.97 176.53 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7b7a1033-28f1-49cf-91a5-48648eece191")
+		(property "Reference" "R4"
+			(at 142.2401 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "120"
+			(at 139.7001 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "OEM:R_0603"
+			(at 140.97 178.308 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
+			(at 140.97 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor 120 ohm 0603 1/10W 1%"
+			(at 140.97 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RC0603FR-13120RL"
+			(at 140.97 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFN" "Yageo"
+			(at 140.97 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DKPN" "13-RC0603FR-13120RLDKR-ND"
+			(at 140.97 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0603"
+			(at 140.97 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "NewDesigns" "YES"
+			(at 140.97 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Stocked" "Digi-Reel"
+			(at 140.97 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Style" "SMD"
+			(at 140.97 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c70c6ca5-b0fa-467e-b6ba-e237ad4d66eb")
+		)
+		(pin "1"
+			(uuid "24e6e737-c76f-4248-8706-69ca4649f414")
+		)
+		(instances
+			(project "flight-core"
+				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/7dc5358b-fa42-41f0-aa49-5a04c373b069"
+					(reference "R4")
 					(unit 1)
 				)
 			)
