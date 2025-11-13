@@ -1,0 +1,283 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "a0ce2afe-2a2f-4561-9b3c-0cc632f2d010")
+	(paper "A4")
+	(lib_symbols)
+	(hierarchical_label "SHDN_SENSE_SE_ARM"
+		(shape input)
+		(at 82.55 111.76 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "10c33ab9-fb74-451d-92e3-ebd317763dbc")
+	)
+	(hierarchical_label "SHDN_SENSE_W_ARM"
+		(shape input)
+		(at 82.55 119.38 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "154c634a-7120-47d5-9d57-6b86577dfc62")
+	)
+	(hierarchical_label "SHDN_SENSE_SANITY"
+		(shape input)
+		(at 82.55 76.2 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "20d3d360-0f88-4d77-a42c-e0285bc8d455")
+	)
+	(hierarchical_label "SHDN_SENSE_ALL_BATT"
+		(shape input)
+		(at 82.55 101.6 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "243219c2-6e1d-44ad-b5bd-aa86b04b12a8")
+	)
+	(hierarchical_label "SHDN_SENSE_S_ARM"
+		(shape input)
+		(at 82.55 114.3 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2bc50a42-6497-462a-a9e5-3fa0e58b0474")
+	)
+	(hierarchical_label "SHDN_SENSE_TILT"
+		(shape input)
+		(at 82.55 71.12 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "377bf14d-d48d-47cc-8524-19df653fff76")
+	)
+	(hierarchical_label "SHDN_SENSE_N_ARM"
+		(shape input)
+		(at 82.55 104.14 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3e178383-f118-4605-a3e6-516a6aa80be9")
+	)
+	(hierarchical_label "SHDN_SENSE_WIRED_ESTOP"
+		(shape input)
+		(at 82.55 68.58 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "58905715-a820-46c6-8f87-180d14374992")
+	)
+	(hierarchical_label "SHDN_SENSE_BMS_MATE_N"
+		(shape input)
+		(at 82.55 83.82 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6fa32f6d-cdd6-482d-a1f6-4ee865c7d89c")
+	)
+	(hierarchical_label "SHDN_SENSE_RIDER_ESTOP"
+		(shape input)
+		(at 82.55 63.5 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7c53ac4e-66fd-4e52-a7c3-f9f4dbf5ae57")
+	)
+	(hierarchical_label "SHDN_SENSE_BMS_OK_S"
+		(shape input)
+		(at 82.55 96.52 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7dd998d4-f6bc-4857-ae70-02fa91ef073f")
+	)
+	(hierarchical_label "SHDN_SENSE_CUBE"
+		(shape input)
+		(at 82.55 73.66 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8992f3e6-a8a2-46f4-b9e6-2d7df4820f71")
+	)
+	(hierarchical_label "SHDN_SENSE_BMS_OK_E"
+		(shape input)
+		(at 82.55 91.44 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "97232172-97f6-436b-88e8-826e36d6a49b")
+	)
+	(hierarchical_label "SHDN_SENSE_SW_ARM"
+		(shape input)
+		(at 82.55 116.84 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9dc281c0-a352-40d0-b9d1-efbfeb583291")
+	)
+	(hierarchical_label "SHDN_SENSE_BMS_OK_N"
+		(shape input)
+		(at 82.55 86.36 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a1ac9cd1-e6e5-43db-953b-d824a0f445f0")
+	)
+	(hierarchical_label "SHDN_SENSE_TSMS"
+		(shape input)
+		(at 82.55 58.42 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a80e31b5-1051-42ef-a330-8d5e1739b4ec")
+	)
+	(hierarchical_label "SHDN_SENSE_BMS_MATE_W"
+		(shape input)
+		(at 82.55 99.06 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b535445f-fec4-4be0-b260-0eae01528cdd")
+	)
+	(hierarchical_label "SHDN_SENSE_REMOTE_ESTOP"
+		(shape input)
+		(at 82.55 66.04 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b8097ae5-b5a4-4037-b5f1-7f102da6612d")
+	)
+	(hierarchical_label "SHDN_SENSE_FRAME_ESTOP"
+		(shape input)
+		(at 82.55 60.96 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c0284805-c65a-4c2b-a626-ebb9c13df956")
+	)
+	(hierarchical_label "SHDN_SENSE_NW_ARM"
+		(shape input)
+		(at 82.55 121.92 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c9de4e5d-2d4f-4559-b2df-b625bf387ec5")
+	)
+	(hierarchical_label "SHDN_SENSE_E_ARM"
+		(shape input)
+		(at 82.55 109.22 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "cc5ced1d-037e-43cb-8531-27a55674dd89")
+	)
+	(hierarchical_label "SHDN_SENSE_NE_ARM"
+		(shape input)
+		(at 82.55 106.68 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d06313f3-f1c7-415b-b854-fdfaa0e3f802")
+	)
+	(hierarchical_label "SHDN_SENSE_BMS_MATE_E"
+		(shape input)
+		(at 82.55 88.9 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d244a8d0-e11a-40a7-8c8a-fbb5b06161a3")
+	)
+	(hierarchical_label "SHDN_SENSE_BMS_MATE_S"
+		(shape input)
+		(at 82.55 93.98 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e4a85134-0ebf-4927-8bdb-aeef9d61d6a4")
+	)
+	(hierarchical_label "SHDN_SENSE_NUC"
+		(shape input)
+		(at 82.55 81.28 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "fac60cb0-3134-40dd-a62d-e1f870f582d6")
+	)
+)

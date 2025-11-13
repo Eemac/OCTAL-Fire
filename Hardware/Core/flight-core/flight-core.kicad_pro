@@ -733,12 +733,28 @@
       "CAN Repeater14"
     ],
     [
+      "04eec032-1078-43ee-b9a1-985f3959b29a",
+      "Shutdown Nodes"
+    ],
+    [
       "0e50c34f-cbc1-4276-a63e-8f0ddf3c5268",
       "Bus Arbitration Logic"
     ],
     [
+      "f120f04e-9926-485a-8729-a726a206f3dc",
+      "Power Supplies"
+    ],
+    [
       "7dc5358b-fa42-41f0-aa49-5a04c373b069",
       "Arm Connectors"
+    ],
+    [
+      "5021d7c9-30f6-40e8-9368-2fcfccc5f247",
+      "Cube 1 Header"
+    ],
+    [
+      "8e65f8e7-591b-477a-9c20-d7fa30040a28",
+      "LEDs and TPs"
     ]
   ],
   "text_variables": {}
