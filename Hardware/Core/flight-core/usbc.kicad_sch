@@ -1860,311 +1860,18 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Transistor_FET:2N7002E"
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "Q"
-				(at 5.08 1.905 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "2N7002E"
-				(at 5.08 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-				(at 5.08 -1.905 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "http://www.diodes.com/assets/Datasheets/ds30376.pdf"
-				(at 5.08 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Description" "0.24A Id, 60V Vds, N-Channel MOSFET, SOT-23"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "N-Channel MOSFET"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "SOT?23*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "2N7002E_0_1"
-				(polyline
-					(pts
-						(xy 0.254 1.905) (xy 0.254 -1.905)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.254 0) (xy -2.54 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 2.286) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 0.508) (xy 0.762 -0.508)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -1.27) (xy 0.762 -2.286)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -1.778) (xy 3.302 -1.778) (xy 3.302 1.778) (xy 0.762 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.016 0) (xy 2.032 0.381) (xy 2.032 -0.381) (xy 1.016 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 1.651 0)
-					(radius 2.794)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 2.54) (xy 2.54 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.54 1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 2.54 -1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.921 0.381) (xy 3.683 0.381)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.302 0.381) (xy 2.921 -0.254) (xy 3.683 -0.254) (xy 3.302 0.381)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "2N7002E_1_1"
-				(pin input line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "G"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name "S"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 	)
 	(junction
 		(at 134.62 91.44)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "04ecd88e-0d9c-4b66-8daa-4242184bc8cd")
+	)
+	(junction
+		(at 143.51 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "42c72af0-abbc-47ca-868c-27a479c0a5ed")
 	)
 	(junction
 		(at 143.51 99.06)
@@ -2191,12 +1898,6 @@
 		(uuid "86640f0f-a911-4bfb-b09e-29ec550ee33a")
 	)
 	(junction
-		(at 139.7 78.74)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a925739b-37fa-42f5-b8a4-c754c92358dd")
-	)
-	(junction
 		(at 158.75 121.92)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2212,13 +1913,13 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 66.04) (xy 139.7 66.04)
+			(xy 143.51 69.85) (xy 148.59 69.85)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1ea5ba0d-ba00-462c-b391-3c5405acb03f")
+		(uuid "21716f51-bf3d-4aa7-a0ba-3b4cbf19655d")
 	)
 	(wire
 		(pts
@@ -2242,23 +1943,13 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 66.04) (xy 139.7 78.74)
+			(xy 143.51 63.5) (xy 143.51 69.85)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "41d6f867-244b-422f-91c1-185a8f8db5b6")
-	)
-	(wire
-		(pts
-			(xy 143.51 78.74) (xy 143.51 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "436d4613-33cc-4b61-a4f1-020daef5ed35")
 	)
 	(wire
 		(pts
@@ -2269,16 +1960,6 @@
 			(type default)
 		)
 		(uuid "613c51a1-3054-4f87-a782-b80a608bc246")
-	)
-	(wire
-		(pts
-			(xy 135.89 78.74) (xy 139.7 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6224f7a8-4dec-4077-9535-b7e3f64019ee")
 	)
 	(wire
 		(pts
@@ -2302,16 +1983,6 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 78.74) (xy 143.51 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "733a8a69-aaa0-44e5-a2fb-98e440f164f2")
-	)
-	(wire
-		(pts
 			(xy 158.75 121.92) (xy 166.37 121.92)
 		)
 		(stroke
@@ -2332,7 +2003,7 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 66.04) (xy 158.75 66.04)
+			(xy 165.1 69.85) (xy 163.83 69.85)
 		)
 		(stroke
 			(width 0)
@@ -2392,6 +2063,16 @@
 	)
 	(wire
 		(pts
+			(xy 143.51 69.85) (xy 143.51 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c17b91e6-7c9d-410d-9105-33c6ccc2a9a7")
+	)
+	(wire
+		(pts
 			(xy 158.75 121.92) (xy 158.75 123.19)
 		)
 		(stroke
@@ -2419,27 +2100,6 @@
 			(type default)
 		)
 		(uuid "f0881dda-e1ee-4106-ab3d-8350f895df4d")
-	)
-	(wire
-		(pts
-			(xy 129.54 73.66) (xy 128.27 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f9c21136-41e4-41da-9ab5-e028d1f94984")
-	)
-	(hierarchical_label "BMS_EN"
-		(shape input)
-		(at 129.54 73.66 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "049dc2e8-54ad-41e5-8c1f-8140cfe4ad36")
 	)
 	(hierarchical_label "D-"
 		(shape bidirectional)
@@ -2531,7 +2191,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 147.32 66.04 180)
+		(at 152.4 69.85 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2539,7 +2199,7 @@
 		(dnp no)
 		(uuid "0b7ffc65-2f13-4d45-827e-e1a5781ad268")
 		(property "Reference" "D401"
-			(at 146.05 64.516 90)
+			(at 151.13 68.326 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2548,7 +2208,7 @@
 			)
 		)
 		(property "Value" "WHITE"
-			(at 147.828 64.262 90)
+			(at 152.908 68.072 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2557,7 +2217,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
-			(at 147.32 66.04 0)
+			(at 152.4 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2566,7 +2226,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 147.32 66.04 0)
+			(at 152.4 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2575,7 +2235,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 147.32 66.04 0)
+			(at 152.4 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2599,74 +2259,8 @@
 		)
 	)
 	(symbol
-		(lib_name "GND_4")
-		(lib_id "power:GND")
-		(at 128.27 83.82 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "0ec11be0-f033-4a02-9c8e-92dfc16a861d")
-		(property "Reference" "#PWR0424"
-			(at 128.27 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 128.27 88.138 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 128.27 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 128.27 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 128.27 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "021a243d-5d66-497e-b8a3-3d8ff404400c")
-		)
-		(instances
-			(project "flight-core"
-				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/91e18f07-bd3f-4576-bbe1-a0227cf7132e/18962740-1c79-42a0-bb7c-73bce74e5c8a"
-					(reference "#PWR0424")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
-		(at 154.94 66.04 270)
+		(at 160.02 69.85 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2674,7 +2268,7 @@
 		(dnp no)
 		(uuid "1f242892-c3d6-4ef3-b1ff-92b42a120493")
 		(property "Reference" "R408"
-			(at 155.702 63.754 90)
+			(at 160.782 67.564 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2682,7 +2276,7 @@
 			)
 		)
 		(property "Value" "400"
-			(at 154.94 66.04 90)
+			(at 160.02 69.85 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2690,7 +2284,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 154.94 64.262 90)
+			(at 160.02 68.072 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2699,7 +2293,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 154.94 66.04 0)
+			(at 160.02 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2708,7 +2302,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 154.94 66.04 0)
+			(at 160.02 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2819,7 +2413,7 @@
 	(symbol
 		(lib_name "GND_4")
 		(lib_id "power:GND")
-		(at 160.02 66.04 0)
+		(at 165.1 69.85 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2827,7 +2421,7 @@
 		(dnp no)
 		(uuid "3410708a-2c9e-4eb0-be07-16c349fb4169")
 		(property "Reference" "#PWR0431"
-			(at 160.02 72.39 0)
+			(at 165.1 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2836,7 +2430,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 160.02 69.85 0)
+			(at 165.1 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2844,7 +2438,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 160.02 66.04 0)
+			(at 165.1 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2853,7 +2447,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 160.02 66.04 0)
+			(at 165.1 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2862,7 +2456,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 160.02 66.04 0)
+			(at 165.1 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3261,56 +2855,18 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET:2N7002E")
-		(at 130.81 78.74 180)
+		(lib_name "+5V_1")
+		(lib_id "power:+5V")
+		(at 143.51 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "c254ba01-475b-4e09-ac07-a6e4db195cca")
-		(property "Reference" "Q401"
-			(at 124.46 77.4699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "2N7002E"
-			(at 124.46 80.0099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 125.73 76.835 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.diodes.com/assets/Datasheets/ds30376.pdf"
-			(at 125.73 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.24A Id, 60V Vds, N-Channel MOSFET, SOT-23"
-			(at 130.81 78.74 0)
+		(uuid "bda32e47-d283-4064-bcb2-b108ea43d9b9")
+		(property "Reference" "#PWR0346"
+			(at 143.51 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3318,19 +2874,48 @@
 				(hide yes)
 			)
 		)
-		(pin "3"
-			(uuid "1c03ec47-2019-4707-b91e-d4c5c6158f32")
+		(property "Value" "+5V"
+			(at 143.51 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 143.51 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 143.51 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 143.51 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "1"
-			(uuid "40c037e3-7d95-4514-a18f-18679db2adb8")
-		)
-		(pin "2"
-			(uuid "5c32597a-fd15-4c9d-a174-638458146f34")
+			(uuid "6c2d5823-71d8-49c1-9710-062b50ec7f19")
 		)
 		(instances
 			(project "flight-core"
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/91e18f07-bd3f-4576-bbe1-a0227cf7132e/18962740-1c79-42a0-bb7c-73bce74e5c8a"
-					(reference "Q401")
+					(reference "#PWR0346")
 					(unit 1)
 				)
 			)
