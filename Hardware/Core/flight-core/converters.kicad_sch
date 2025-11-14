@@ -3062,6 +3062,17 @@
 		)
 		(uuid "bf5d3c35-f79e-4c31-bd99-55abea87e4cf")
 	)
+	(hierarchical_label "POWER_ENABLE"
+		(shape input)
+		(at 58.42 71.12 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f948e4ac-7bd5-45b4-bade-d37cdc9a9d19")
+	)
 	(symbol
 		(lib_id "power:+3.3V")
 		(at 220.98 60.96 0)
