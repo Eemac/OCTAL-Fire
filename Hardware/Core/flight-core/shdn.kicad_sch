@@ -1110,6 +1110,38 @@
 			(embedded_fonts no)
 		)
 	)
+	(rectangle
+		(start 34.29 27.94)
+		(end 121.92 157.48)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 7efc957b-e568-4b81-8682-89d98edb29dd)
+	)
+	(text "OPPOSITE OF SHUTDOWN SENSE CUBE"
+		(exclude_from_sim no)
+		(at 152.908 133.858 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "2ef10aaf-2836-432b-9a0c-8b09d19c1a54")
+	)
+	(text "Critical Nodes"
+		(exclude_from_sim no)
+		(at 41.148 159.766 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "abadd4d5-c508-4be7-ae2e-9c61a16192fe")
+	)
 	(junction
 		(at 219.71 72.39)
 		(diameter 0)
@@ -1793,15 +1825,15 @@
 		(uuid "32464058-71f7-4a34-a031-4496cbc3586c")
 	)
 	(hierarchical_label "CUBE_OK"
-		(shape input)
-		(at 54.61 116.84 180)
+		(shape output)
+		(at 146.05 130.81 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
-		(uuid "408fae95-6ab5-4c97-9945-b47fb88c5133")
+		(uuid "3a4b2ec5-08be-46bb-ad7a-18dd9e6024e5")
 	)
 	(hierarchical_label "SHDN_SENSE_NW_ARM"
 		(shape output)
