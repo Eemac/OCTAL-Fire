@@ -310,7 +310,7 @@
 					)
 				)
 			)
-			(property "Value" "TCAN1042VDRQ1"
+			(property "Value" "TCAN1042HGVDRQ1"
 				(at 0 15.494 0)
 				(effects
 					(font
@@ -1419,6 +1419,155 @@
 		)
 	)
 	(symbol
+		(lib_id "OlinBAD:TCAN1042HGVDRQ1")
+		(at 87.63 104.14 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00e07ada-a2b2-4723-b366-a896d591f589")
+		(property "Reference" "U5"
+			(at 87.63 85.09 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "TCAN1042HGVDRQ1"
+			(at 87.63 87.63 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "obad_footprints:D0008A_M"
+			(at 87.63 97.536 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tcan1042hgv-q1.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1763514572527&ref_url=https%253A%252F%252Fwww.ti.com%252Fgeneral%252Fdocs%252Fsuppproductinfo.tsp%253FdistId%253D10%2526gotoUrl%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fgpn%252Ftcan1042hgv-q1"
+			(at 88.138 96.012 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "(VIO 5V) Automotive Fault Protected CAN Transceiver with CAN FD"
+			(at 87.63 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "https://www.digikey.com/en/products/detail/texas-instruments/TCAN1042HGVDRQ1/5967638?gclsrc=aw.ds&gad_source=1&gad_campaignid=120565755&gbraid=0AAAAADrbLljwAXt-QCRGsfhWJNL9EDDzm&gclid=CjwKCAiAz_DIBhBJEiwAVH2XwHEXN2txZcp9zpCNMQ7T_4r1dgZgYo6IwLw2TloibvoGR3RSDrh8aRoCYN8QAvD_BwE"
+			(at 87.63 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "fe69a7cf-aba0-47f4-88e3-c331e40fcd38")
+		)
+		(pin "5"
+			(uuid "41261e61-e840-4f94-8c53-e6bea6282fd1")
+		)
+		(pin "1"
+			(uuid "39f81d25-008c-4536-9753-e24f854d6033")
+		)
+		(pin "4"
+			(uuid "6dfa2762-a911-4f67-ae1a-9380ef9060cb")
+		)
+		(pin "8"
+			(uuid "d84c2eeb-9f9e-440b-b34d-34c92f9180a7")
+		)
+		(pin "7"
+			(uuid "4d5155a4-f493-4186-bd83-b6000ca6405f")
+		)
+		(pin "6"
+			(uuid "a1ed74bc-1045-495b-9073-4c74e5471555")
+		)
+		(pin "2"
+			(uuid "618ae7bf-47f3-474a-ba53-5ef558a3c388")
+		)
+		(instances
+			(project "flight-core"
+				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/66136be3-edc9-4a2c-bee0-74cf2086e2ec"
+					(reference "U70")
+					(unit 1)
+				)
+				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/8530813e-1c71-4684-b5d7-274038aa1688"
+					(reference "U83")
+					(unit 1)
+				)
+				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/9a54db1a-b47f-4159-981e-de187c4c4ab9"
+					(reference "U85")
+					(unit 1)
+				)
+				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/b78052bb-331a-483e-8ae2-7fb3771b0ac3"
+					(reference "U5")
+					(unit 1)
+				)
+				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/ba3a1bbc-b1e5-484f-8b44-4c2b1cf2999c"
+					(reference "U91")
+					(unit 1)
+				)
+				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/c609f1a1-abda-478b-aae8-3ac690d48591"
+					(reference "U84")
+					(unit 1)
+				)
+				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/7dc5358b-fa42-41f0-aa49-5a04c373b069/0d8aff7f-d6ca-4045-85c5-1a1f4c62101b"
+					(reference "U17")
+					(unit 1)
+				)
+				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/7dc5358b-fa42-41f0-aa49-5a04c373b069/344cc74f-a628-49df-be8a-bc5614ade625"
+					(reference "U9")
+					(unit 1)
+				)
+				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/7dc5358b-fa42-41f0-aa49-5a04c373b069/4d4d4b6e-b0b8-4e7c-8890-6ff279f1bf86"
+					(reference "U15")
+					(unit 1)
+				)
+				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/7dc5358b-fa42-41f0-aa49-5a04c373b069/548c5fda-faed-4907-ac4a-bc470113a7d0"
+					(reference "U7")
+					(unit 1)
+				)
+				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/7dc5358b-fa42-41f0-aa49-5a04c373b069/554781ed-180d-4035-b0cf-be25a87c50d5"
+					(reference "U19")
+					(unit 1)
+				)
+				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/7dc5358b-fa42-41f0-aa49-5a04c373b069/5cd59e90-1b11-4144-87f2-aafe09e96414"
+					(reference "U21")
+					(unit 1)
+				)
+				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/7dc5358b-fa42-41f0-aa49-5a04c373b069/7185d0b4-1971-45be-af29-2a5ca11b78e7"
+					(reference "U23")
+					(unit 1)
+				)
+				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/7dc5358b-fa42-41f0-aa49-5a04c373b069/c8d150bc-4746-43dd-a1b2-8ca0ae03d6a6"
+					(reference "U66")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "OlinBAD:C_0.1uF_0603")
 		(at 78.74 132.08 0)
 		(unit 1)
@@ -2099,7 +2248,7 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "6a74d7d6-6eb5-4599-b9e0-65ed21dd77bc")
+		(uuid "40a3d35d-1924-44f0-b5da-df79111a67bc")
 		(property "Reference" "U2"
 			(at 168.91 85.09 0)
 			(effects
@@ -2108,7 +2257,7 @@
 				)
 			)
 		)
-		(property "Value" "TCAN1042VDRQ1"
+		(property "Value" "TCAN1042HGVDRQ1"
 			(at 168.91 87.63 0)
 			(effects
 				(font
@@ -2155,28 +2304,28 @@
 			)
 		)
 		(pin "3"
-			(uuid "b94c40dc-d554-4a61-9e76-06aca08f2206")
-		)
-		(pin "2"
-			(uuid "97a7f0d1-ad26-4065-aaa6-9b115691cc73")
-		)
-		(pin "1"
-			(uuid "e94c518f-640a-41ae-a3d3-c229a44ebf51")
+			(uuid "b113d36b-5d6a-49a8-8f04-60767c98e846")
 		)
 		(pin "5"
-			(uuid "bc5faa6e-2101-493c-ac37-fc075ad71a6b")
+			(uuid "746b147e-70fd-4342-85bf-4c416cf0c86d")
 		)
-		(pin "8"
-			(uuid "738e4e9f-09dd-465e-a0e0-847bc622dc26")
+		(pin "1"
+			(uuid "ea731a97-90e3-4b42-bf43-2817e65c0c67")
 		)
 		(pin "4"
-			(uuid "75c03642-9c32-460e-ae4a-ff8faa56a74e")
+			(uuid "c41519aa-17c0-41b9-8f67-75646deb2d31")
 		)
-		(pin "6"
-			(uuid "4e20804d-5dc4-46c0-a571-8f87cce7443a")
+		(pin "8"
+			(uuid "856f3229-28f0-404c-8351-d843ab900eea")
 		)
 		(pin "7"
-			(uuid "f082c014-cec1-49d3-9bbd-8eeadb79a5d0")
+			(uuid "20057504-6c98-406e-91bf-13476cc2b5f1")
+		)
+		(pin "6"
+			(uuid "612e3fff-3deb-48c0-8b0c-d59a3905bc43")
+		)
+		(pin "2"
+			(uuid "cfe97398-6907-498e-b1e2-a83a2c72c993")
 		)
 		(instances
 			(project ""
@@ -3495,155 +3644,6 @@
 				)
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/7dc5358b-fa42-41f0-aa49-5a04c373b069/c8d150bc-4746-43dd-a1b2-8ca0ae03d6a6"
 					(reference "#PWR0121")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "OlinBAD:TCAN1042HGVDRQ1")
-		(at 87.63 104.14 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e36b7d9d-9779-4a52-b604-574766194f5c")
-		(property "Reference" "U5"
-			(at 87.63 85.09 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "TCAN1042VDRQ1"
-			(at 87.63 87.63 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "obad_footprints:D0008A_M"
-			(at 87.63 97.536 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tcan1042hgv-q1.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1763514572527&ref_url=https%253A%252F%252Fwww.ti.com%252Fgeneral%252Fdocs%252Fsuppproductinfo.tsp%253FdistId%253D10%2526gotoUrl%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fgpn%252Ftcan1042hgv-q1"
-			(at 88.138 96.012 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "(VIO 5V) Automotive Fault Protected CAN Transceiver with CAN FD"
-			(at 87.63 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purchase Link" "https://www.digikey.com/en/products/detail/texas-instruments/TCAN1042HGVDRQ1/5967638?gclsrc=aw.ds&gad_source=1&gad_campaignid=120565755&gbraid=0AAAAADrbLljwAXt-QCRGsfhWJNL9EDDzm&gclid=CjwKCAiAz_DIBhBJEiwAVH2XwHEXN2txZcp9zpCNMQ7T_4r1dgZgYo6IwLw2TloibvoGR3RSDrh8aRoCYN8QAvD_BwE"
-			(at 87.63 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "22499c00-ec7c-4295-8005-3e3e6965b273")
-		)
-		(pin "2"
-			(uuid "ab7ee8f0-3a31-48c2-b807-5b6f81dbeb53")
-		)
-		(pin "1"
-			(uuid "3ad78387-3c60-4198-908d-cc7349000122")
-		)
-		(pin "5"
-			(uuid "76cbb826-b47a-4078-9084-4bbb84bfc545")
-		)
-		(pin "8"
-			(uuid "603811b4-e09a-4a12-87d7-cef8a49018e3")
-		)
-		(pin "4"
-			(uuid "dd2f85fb-276e-4b51-bbbf-7d4b591dfcd5")
-		)
-		(pin "6"
-			(uuid "990347f0-56d2-4769-8475-9d1655a58bd7")
-		)
-		(pin "7"
-			(uuid "315dddb1-db19-4140-b258-adc7a0d9e3f5")
-		)
-		(instances
-			(project "flight-core"
-				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/66136be3-edc9-4a2c-bee0-74cf2086e2ec"
-					(reference "U70")
-					(unit 1)
-				)
-				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/8530813e-1c71-4684-b5d7-274038aa1688"
-					(reference "U83")
-					(unit 1)
-				)
-				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/9a54db1a-b47f-4159-981e-de187c4c4ab9"
-					(reference "U85")
-					(unit 1)
-				)
-				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/b78052bb-331a-483e-8ae2-7fb3771b0ac3"
-					(reference "U5")
-					(unit 1)
-				)
-				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/ba3a1bbc-b1e5-484f-8b44-4c2b1cf2999c"
-					(reference "U91")
-					(unit 1)
-				)
-				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/c609f1a1-abda-478b-aae8-3ac690d48591"
-					(reference "U84")
-					(unit 1)
-				)
-				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/7dc5358b-fa42-41f0-aa49-5a04c373b069/0d8aff7f-d6ca-4045-85c5-1a1f4c62101b"
-					(reference "U17")
-					(unit 1)
-				)
-				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/7dc5358b-fa42-41f0-aa49-5a04c373b069/344cc74f-a628-49df-be8a-bc5614ade625"
-					(reference "U9")
-					(unit 1)
-				)
-				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/7dc5358b-fa42-41f0-aa49-5a04c373b069/4d4d4b6e-b0b8-4e7c-8890-6ff279f1bf86"
-					(reference "U15")
-					(unit 1)
-				)
-				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/7dc5358b-fa42-41f0-aa49-5a04c373b069/548c5fda-faed-4907-ac4a-bc470113a7d0"
-					(reference "U7")
-					(unit 1)
-				)
-				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/7dc5358b-fa42-41f0-aa49-5a04c373b069/554781ed-180d-4035-b0cf-be25a87c50d5"
-					(reference "U19")
-					(unit 1)
-				)
-				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/7dc5358b-fa42-41f0-aa49-5a04c373b069/5cd59e90-1b11-4144-87f2-aafe09e96414"
-					(reference "U21")
-					(unit 1)
-				)
-				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/7dc5358b-fa42-41f0-aa49-5a04c373b069/7185d0b4-1971-45be-af29-2a5ca11b78e7"
-					(reference "U23")
-					(unit 1)
-				)
-				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/7dc5358b-fa42-41f0-aa49-5a04c373b069/c8d150bc-4746-43dd-a1b2-8ca0ae03d6a6"
-					(reference "U66")
 					(unit 1)
 				)
 			)

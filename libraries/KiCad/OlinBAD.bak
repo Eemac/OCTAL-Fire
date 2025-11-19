@@ -1008,7 +1008,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "LED_0805"
+	(symbol "LED_0805_WHITE"
 		(pin_numbers
 			(hide yes)
 		)
@@ -1098,7 +1098,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "LED_0805_0_1"
+		(symbol "LED_0805_WHITE_0_1"
 			(polyline
 				(pts
 					(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
@@ -1160,7 +1160,7 @@
 				)
 			)
 		)
-		(symbol "LED_0805_1_1"
+		(symbol "LED_0805_WHITE_1_1"
 			(pin passive line
 				(at -3.81 0 0)
 				(length 2.54)
@@ -5814,7 +5814,7 @@
 				)
 			)
 		)
-		(property "Value" "TCAN1042VDRQ1"
+		(property "Value" "TCAN1042HGVDRQ1"
 			(at 0 15.494 0)
 			(effects
 				(font
