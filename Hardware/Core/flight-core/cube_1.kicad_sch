@@ -7326,6 +7326,10 @@
 		)
 		(instances
 			(project "flight-core"
+				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/5021d7c9-30f6-40e8-9368-2fcfccc5f247"
+					(reference "J?")
+					(unit 1)
+				)
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/b1ca264a-f418-4fe7-a7ba-dc33a197c475"
 					(reference "J38")
 					(unit 1)
@@ -7472,6 +7476,10 @@
 		)
 		(instances
 			(project "flight-core"
+				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/5021d7c9-30f6-40e8-9368-2fcfccc5f247"
+					(reference "#PWR?")
+					(unit 1)
+				)
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/b1ca264a-f418-4fe7-a7ba-dc33a197c475"
 					(reference "#PWR0112")
 					(unit 1)
@@ -8214,6 +8222,10 @@
 		)
 		(instances
 			(project "flight-core"
+				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/5021d7c9-30f6-40e8-9368-2fcfccc5f247"
+					(reference "J?")
+					(unit 1)
+				)
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/b1ca264a-f418-4fe7-a7ba-dc33a197c475"
 					(reference "J40")
 					(unit 1)
@@ -8315,6 +8327,10 @@
 		)
 		(instances
 			(project "flight-core"
+				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/5021d7c9-30f6-40e8-9368-2fcfccc5f247"
+					(reference "R?")
+					(unit 1)
+				)
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/b1ca264a-f418-4fe7-a7ba-dc33a197c475"
 					(reference "R72")
 					(unit 1)
@@ -8579,6 +8595,10 @@
 		)
 		(instances
 			(project "flight-core"
+				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/5021d7c9-30f6-40e8-9368-2fcfccc5f247"
+					(reference "R?")
+					(unit 1)
+				)
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/b1ca264a-f418-4fe7-a7ba-dc33a197c475"
 					(reference "R98")
 					(unit 1)

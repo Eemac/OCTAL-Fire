@@ -709,6 +709,14 @@
       "Bus Arbitration Logic"
     ],
     [
+      "cbe67422-12d3-42db-946d-8be969821f84",
+      "CAN Repeater12"
+    ],
+    [
+      "0e50c34f-cbc1-4276-a63e-8f0ddf3c5268",
+      "Bus Arbitration Logic"
+    ],
+    [
       "8530813e-1c71-4684-b5d7-274038aa1688",
       "CAN Repeater11"
     ],
@@ -763,6 +771,70 @@
     [
       "dc9c6c82-2ca0-4595-949b-0b07300fa078",
       "USB-C Connector"
+    ],
+    [
+      "21dd0929-817e-4818-acf9-3e5f318279ce",
+      "CAN Repeater1"
+    ],
+    [
+      "0e50c34f-cbc1-4276-a63e-8f0ddf3c5268",
+      "Bus Arbitration Logic"
+    ],
+    [
+      "4ca96cdf-dbab-45c4-8eef-8c50f309fb20",
+      "CAN Repeater2"
+    ],
+    [
+      "0e50c34f-cbc1-4276-a63e-8f0ddf3c5268",
+      "Bus Arbitration Logic"
+    ],
+    [
+      "2bf3d2ff-d5e8-41a4-97d9-0c15fb45719e",
+      "CAN Repeater3"
+    ],
+    [
+      "0e50c34f-cbc1-4276-a63e-8f0ddf3c5268",
+      "Bus Arbitration Logic"
+    ],
+    [
+      "ac899d37-d2bd-48ec-bccc-46eb481dc086",
+      "CAN Repeater4"
+    ],
+    [
+      "0e50c34f-cbc1-4276-a63e-8f0ddf3c5268",
+      "Bus Arbitration Logic"
+    ],
+    [
+      "21124d6a-662f-46a5-a3ca-4c252b9c032a",
+      "CAN Repeater5"
+    ],
+    [
+      "0e50c34f-cbc1-4276-a63e-8f0ddf3c5268",
+      "Bus Arbitration Logic"
+    ],
+    [
+      "e0569eee-276c-4e82-9d75-cd33c5ae696c",
+      "CAN Repeater6"
+    ],
+    [
+      "0e50c34f-cbc1-4276-a63e-8f0ddf3c5268",
+      "Bus Arbitration Logic"
+    ],
+    [
+      "5f7c4f0b-9979-4460-a629-87fa1b723861",
+      "CAN Repeater7"
+    ],
+    [
+      "0e50c34f-cbc1-4276-a63e-8f0ddf3c5268",
+      "Bus Arbitration Logic"
+    ],
+    [
+      "67b5d86b-1492-4621-afa3-c9efbcdc26c6",
+      "CAN Repeater8"
+    ],
+    [
+      "0e50c34f-cbc1-4276-a63e-8f0ddf3c5268",
+      "Bus Arbitration Logic"
     ]
   ],
   "text_variables": {}
