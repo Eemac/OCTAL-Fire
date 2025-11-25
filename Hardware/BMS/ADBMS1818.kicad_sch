@@ -750,6 +750,142 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:Fuse"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "F"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Fuse"
+				(at -1.905 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Fuse"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "fuse"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*Fuse*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Fuse_0_1"
+				(rectangle
+					(start -0.762 -2.54)
+					(end 0.762 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Fuse_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "OEM:1KR"
 			(pin_numbers
 				(hide yes)
@@ -3076,6 +3212,16 @@
 			(type default)
 		)
 		(uuid "49000b53-5c7d-4881-8655-1d7fbcaee1ac")
+	)
+	(wire
+		(pts
+			(xy 158.75 85.09) (xy 167.64 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a8502a4-fa25-44bd-b3a1-5676fe5bcb5e")
 	)
 	(wire
 		(pts
@@ -5498,6 +5644,17 @@
 		)
 		(uuid "6184a897-aa77-4f04-be7d-5dbd92342377")
 	)
+	(hierarchical_label "BATT+"
+		(shape input)
+		(at 151.13 85.09 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7e94c337-195c-4020-8cb7-283459baf3cc")
+	)
 	(hierarchical_label "CSB"
 		(shape input)
 		(at 265.43 95.25 0)
@@ -5508,17 +5665,6 @@
 			(justify left)
 		)
 		(uuid "83e143f3-7ca8-46d9-a54e-9b8148891ce4")
-	)
-	(hierarchical_label "BATT+"
-		(shape input)
-		(at 167.64 85.09 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "b6123998-e16e-4051-b5ef-7bb77f93409e")
 	)
 	(hierarchical_label "SDI"
 		(shape input)
@@ -6761,6 +6907,73 @@
 			(project "bms"
 				(path "/36848c1b-92a5-46b0-877b-0db2387c679c/826e6c70-848d-4f04-803e-a5eb891d5409"
 					(reference "#PWR0502")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Fuse")
+		(at 154.94 85.09 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e6fe8dd4-716a-4374-952b-99f09884d330")
+		(property "Reference" "F501"
+			(at 154.94 87.122 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4A"
+			(at 154.94 83.058 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Fuse:Fuse_1206_3216Metric"
+			(at 154.94 86.868 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 154.94 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Fuse, 4A, 72V, Fast Blow"
+			(at 154.94 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e2f8ec76-760f-418f-a16e-3d8174374c0f")
+		)
+		(pin "1"
+			(uuid "bbc2fd73-e6fb-4063-9935-fbc9a58b3d0d")
+		)
+		(instances
+			(project ""
+				(path "/36848c1b-92a5-46b0-877b-0db2387c679c/826e6c70-848d-4f04-803e-a5eb891d5409"
+					(reference "F501")
 					(unit 1)
 				)
 			)

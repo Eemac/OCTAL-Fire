@@ -1,4 +1,4 @@
-27297129688072136
+27314760683065725
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -35,12 +35,47 @@ BatteryTab
 4
 1
 BAD_LIB
+CONV_MIC28514T-E_PHA
+
+
+0
+60
+60
+BAD_LIB
+Cube_Orange+_Female_Header
+
+cube orange plus female df17 hrs 80dp
+0
+82
+82
+BAD_LIB
 D0008A_M
 
 TCAN1042VDRQ1 
 0
 8
 8
+BAD_LIB
+HTSOP-J8
+
+
+0
+8
+8
+BAD_LIB
+IC_SN74LVC2G132DCTR
+
+
+0
+8
+8
+BAD_LIB
+IND_XFL4015_COC
+
+XFL4015-471MEC 
+0
+2
+2
 BAD_LIB
 NTBLS0D8N08X
 
@@ -49,6 +84,27 @@ NTBLS0D8N08X
 3
 3
 BAD_LIB
+RLT0007A
+
+TPS62086RLTR 
+0
+7
+7
+BAD_LIB
+SOP50P310X90-8N
+
+
+0
+8
+8
+BAD_LIB
+SOP65P640X120-14N
+
+
+0
+14
+14
+BAD_LIB
 SOP65P640X120-17N
 
 
@@ -56,9 +112,23 @@ SOP65P640X120-17N
 17
 17
 BAD_LIB
+SOT95P280X145-6N
+
+
+0
+6
+6
+BAD_LIB
 SO_011IST_STM-M
 
 TSC2011IST 
+0
+8
+8
+BAD_LIB
+UWE-Q12_MUR
+
+UWE-12/10-Q12N-C 
 0
 8
 8

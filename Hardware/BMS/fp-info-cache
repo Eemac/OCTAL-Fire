@@ -1,4 +1,4 @@
-27309471747268641
+27314760683065725
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -70,12 +70,26 @@ IC_SN74LVC2G132DCTR
 8
 8
 BAD_LIB
+IND_XFL4015_COC
+
+XFL4015-471MEC 
+0
+2
+2
+BAD_LIB
 NTBLS0D8N08X
 
 
 0
 3
 3
+BAD_LIB
+RLT0007A
+
+TPS62086RLTR 
+0
+7
+7
 BAD_LIB
 SOP50P310X90-8N
 
@@ -108,6 +122,13 @@ BAD_LIB
 SO_011IST_STM-M
 
 TSC2011IST 
+0
+8
+8
+BAD_LIB
+UWE-Q12_MUR
+
+UWE-12/10-Q12N-C 
 0
 8
 8
@@ -106782,8 +106803,8 @@ TestPoint_Keystone_5019_Miniature
 Keystone SMT Miniature Test Point 5019, http://www.keyelco.com/product-pdf.cfm?p=1357
 Test Point
 0
-0
-0
+1
+1
 TestPoint
 TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded
 wire loop with bead as test point, loop diameter 1.8mm, hole diameter 1.0mm

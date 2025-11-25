@@ -6264,12 +6264,6 @@
 		(uuid "2254348f-0846-425b-807f-5e168e24d5f2")
 	)
 	(junction
-		(at 194.31 111.76)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "27cecb56-5b8e-46a0-a953-9cf5b82e239a")
-	)
-	(junction
 		(at 81.28 172.72)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6280,6 +6274,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2ddd3ff3-7c5b-4391-8989-77c25aa4745d")
+	)
+	(junction
+		(at 200.66 111.76)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2e457b01-e49d-4a4d-93ee-83ed182c3907")
 	)
 	(junction
 		(at 154.94 25.4)
@@ -6569,6 +6569,16 @@
 	)
 	(wire
 		(pts
+			(xy 200.66 111.76) (xy 209.55 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1edf38a7-83f3-4247-81ca-d95508aa4178")
+	)
+	(wire
+		(pts
 			(xy 179.07 33.02) (xy 167.64 33.02)
 		)
 		(stroke
@@ -6817,26 +6827,6 @@
 		)
 		(uuid "4c3f2adf-cfe5-4f2a-8077-918829bec9c8")
 	)
-	(wire
-		(pts
-			(xy 194.31 111.76) (xy 194.31 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4d624a25-b5ef-48c5-86a4-5bddfa0b1e29")
-	)
-	(wire
-		(pts
-			(xy 195.58 111.76) (xy 194.31 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5011917f-5680-41a0-bc8c-bf6fa99378db")
-	)
 	(polyline
 		(pts
 			(xy 103.886 60.452) (xy 103.886 64.262)
@@ -6859,7 +6849,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 118.11) (xy 194.31 118.11)
+			(xy 187.96 118.11) (xy 200.66 118.11)
 		)
 		(stroke
 			(width 0)
@@ -6929,16 +6919,6 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 111.76) (xy 209.55 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6da1685e-0cb3-48fb-9a1c-cb5c2fbd65c6")
-	)
-	(wire
-		(pts
 			(xy 69.85 21.59) (xy 69.85 26.67)
 		)
 		(stroke
@@ -6946,16 +6926,6 @@
 			(type default)
 		)
 		(uuid "6dd18a28-f161-4d9d-9132-31453abcc780")
-	)
-	(wire
-		(pts
-			(xy 189.23 111.76) (xy 194.31 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6e777059-02e8-4f03-9d68-15985c58c24c")
 	)
 	(wire
 		(pts
@@ -6976,6 +6946,16 @@
 			(type default)
 		)
 		(uuid "71800cff-2067-4fe1-947f-b5ed75b9f5a5")
+	)
+	(wire
+		(pts
+			(xy 189.23 111.76) (xy 190.5 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71f84322-b401-42a8-91f7-127bc078fd5e")
 	)
 	(wire
 		(pts
@@ -7619,6 +7599,16 @@
 	)
 	(wire
 		(pts
+			(xy 200.66 111.76) (xy 198.12 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e205515e-1020-488b-9d9f-2c235c6d6e17")
+	)
+	(wire
+		(pts
 			(xy 190.5 80.01) (xy 190.5 78.74)
 		)
 		(stroke
@@ -7656,6 +7646,16 @@
 			(type default)
 		)
 		(uuid "e7a01a71-128b-44ab-b0e3-81938c89438e")
+	)
+	(wire
+		(pts
+			(xy 200.66 118.11) (xy 200.66 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7dcaadd-b3a8-4521-88ce-2bd81a93f037")
 	)
 	(wire
 		(pts
@@ -9541,7 +9541,7 @@
 	)
 	(symbol
 		(lib_id "formula:R_10K")
-		(at 199.39 111.76 270)
+		(at 194.31 111.76 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9549,7 +9549,7 @@
 		(dnp no)
 		(uuid "24b4c1c0-b0c7-4e29-9a35-862a86f15f14")
 		(property "Reference" "R404"
-			(at 201.676 114.3 90)
+			(at 196.596 114.3 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9558,7 +9558,7 @@
 			)
 		)
 		(property "Value" "100"
-			(at 201.168 111.76 90)
+			(at 196.088 111.76 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9567,7 +9567,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 199.39 109.982 0)
+			(at 194.31 109.982 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9576,7 +9576,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.bourns.com/data/global/pdfs/CRS.pdf"
-			(at 199.39 113.792 0)
+			(at 194.31 113.792 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9585,7 +9585,7 @@
 			)
 		)
 		(property "Description" "Resistor, 10K, 0.25W, 1%, 0805"
-			(at 199.39 111.76 0)
+			(at 194.31 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9594,7 +9594,7 @@
 			)
 		)
 		(property "MFN" "DK"
-			(at 199.39 111.76 0)
+			(at 194.31 111.76 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -9603,7 +9603,7 @@
 			)
 		)
 		(property "MPN" "CRS0805-FX-1002ELFCT-ND"
-			(at 199.39 111.76 0)
+			(at 194.31 111.76 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -9612,7 +9612,7 @@
 			)
 		)
 		(property "PurchasingLink" "https://www.digikey.com/products/en?keywords=CRS0805-FX-1002ELFCT-ND"
-			(at 209.55 123.952 0)
+			(at 204.47 123.952 0)
 			(effects
 				(font
 					(size 1.524 1.524)
