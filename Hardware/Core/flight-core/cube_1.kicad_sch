@@ -738,6 +738,300 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "OlinBAD:CST-951AP"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "LS"
+				(at -3.8206 8.9148 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Value" "CST-951AP"
+				(at 5.08 -5.08 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" "obad_footprints:CUI_CST-951AP"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Audio Buzzer Magnetic 4Vo-p 6Vo-p 8mA 5Vo-p 85dBA Pin Through Hole Tray"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MF" "CUI"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "PACKAGE" "CUI"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "PRICE" "0.69 USD"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MP" "CST-951AP"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "AVAILABILITY" "Good"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(symbol "CST-951AP_0_0"
+				(polyline
+					(pts
+						(xy -0.635 1.27) (xy 0 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.635 -1.27) (xy -0.635 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.27) (xy 0.635 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy -0.635 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 1.27) (xy 0.635 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 1.27) (xy 1.905 3.175)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.905 3.175) (xy 1.905 -3.175)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.905 -3.175) (xy 0.635 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(text "+"
+					(at -1.9143 1.2762 0)
+					(effects
+						(font
+							(size 1.7867 1.7867)
+						)
+						(justify left bottom)
+					)
+				)
+				(text "-"
+					(at -1.9123 -3.8099 0)
+					(effects
+						(font
+							(size 1.7848 1.7848)
+						)
+						(justify left bottom)
+					)
+				)
+				(pin passive line
+					(at 0 5.08 270)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "P"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "M"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "OlinBAD:DF17_4.0_-80DP-0.5V_57_"
 			(pin_names
 				(offset 0)
@@ -5690,7 +5984,7 @@
 	)
 	(text "BUZZER"
 		(exclude_from_sim no)
-		(at 265.43 148.59 0)
+		(at 279.4 106.68 0)
 		(effects
 			(font
 				(size 11.43 11.43)
@@ -6161,10 +6455,6 @@
 		(uuid "ec819771-6430-4a35-9763-8fac6d469b8b")
 	)
 	(no_connect
-		(at 96.52 116.84)
-		(uuid "ef55a7a7-ac2b-498a-8106-b11ba0e47118")
-	)
-	(no_connect
 		(at 96.52 55.88)
 		(uuid "efa51bab-e390-49f7-8274-9605e1218781")
 	)
@@ -6201,6 +6491,16 @@
 			(type default)
 		)
 		(uuid "05b6fffe-9aa6-4946-ab94-7d02a52e754e")
+	)
+	(wire
+		(pts
+			(xy 274.32 133.35) (xy 274.32 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "093bc997-59b6-4276-8b22-28edc01d78b3")
 	)
 	(wire
 		(pts
@@ -6431,6 +6731,16 @@
 			(type default)
 		)
 		(uuid "6686673a-820f-407d-890f-baa50662f709")
+	)
+	(wire
+		(pts
+			(xy 274.32 146.05) (xy 274.32 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f5f3708-2674-4e50-9216-785d27d32ebc")
 	)
 	(bus
 		(pts
@@ -6982,6 +7292,16 @@
 		)
 		(uuid "6ece7f9b-0636-4e96-bac1-5c839700c7e7")
 	)
+	(label "BUZZER"
+		(at 266.7 128.27 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "77edc9bc-6688-46fd-8c1f-900bd2f684f5")
+	)
 	(label "UART_TELEM2_RX"
 		(at 227.33 73.66 180)
 		(effects
@@ -6991,16 +7311,6 @@
 			(justify right bottom)
 		)
 		(uuid "7b6a5387-ea38-4ebd-8680-c2f65a533d0f")
-	)
-	(label "ALARM"
-		(at 266.7 128.27 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "8a004a29-6886-4fe6-98ea-f6bb06e6854c")
 	)
 	(label "CAN-"
 		(at 71.12 147.32 180)
@@ -7081,6 +7391,16 @@
 			(justify right bottom)
 		)
 		(uuid "d28321bf-a4aa-4b11-9672-0938c5b11c3d")
+	)
+	(label "BUZZER"
+		(at 96.52 116.84 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "db1ffde0-15f9-41c2-a3c2-3da1dca381d1")
 	)
 	(label "FMU_LED_AMBER"
 		(at 96.52 50.8 0)
@@ -7374,6 +7694,132 @@
 				)
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/b1ca264a-f418-4fe7-a7ba-dc33a197c475"
 					(reference "#PWR080")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "OlinBAD:CST-951AP")
+		(at 274.32 140.97 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "25d17fe0-36ef-4c6b-ac3e-043286b2191b")
+		(property "Reference" "LS1"
+			(at 278.13 139.947 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "CST-951AP"
+			(at 278.13 142.487 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "obad_footprints:CUI_CST-951AP"
+			(at 274.32 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 274.32 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Audio Buzzer Magnetic 4Vo-p 6Vo-p 8mA 5Vo-p 85dBA Pin Through Hole Tray"
+			(at 274.32 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MF" "CUI"
+			(at 274.32 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "PACKAGE" "CUI"
+			(at 274.32 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.69 USD"
+			(at 274.32 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MP" "CST-951AP"
+			(at 274.32 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "AVAILABILITY" "Good"
+			(at 274.32 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "P"
+			(uuid "a3333e1c-f1d1-422b-b7cd-00d4a995f80c")
+		)
+		(pin "M"
+			(uuid "681e35a1-1060-46a2-9090-cee48e37ce59")
+		)
+		(instances
+			(project ""
+				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/5021d7c9-30f6-40e8-9368-2fcfccc5f247"
+					(reference "LS2")
+					(unit 1)
+				)
+				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/b1ca264a-f418-4fe7-a7ba-dc33a197c475"
+					(reference "LS1")
 					(unit 1)
 				)
 			)
@@ -9416,6 +9862,76 @@
 				)
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/b1ca264a-f418-4fe7-a7ba-dc33a197c475"
 					(reference "#PWR073")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 274.32 148.59 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "be66db5a-dad1-4933-b4a1-a0038825bf61")
+		(property "Reference" "#PWR0447"
+			(at 274.32 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 274.32 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 274.32 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 274.32 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 274.32 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "73cbc56a-484e-41db-8616-12b7c7595731")
+		)
+		(instances
+			(project ""
+				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/5021d7c9-30f6-40e8-9368-2fcfccc5f247"
+					(reference "#PWR0448")
+					(unit 1)
+				)
+				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/b1ca264a-f418-4fe7-a7ba-dc33a197c475"
+					(reference "#PWR0447")
 					(unit 1)
 				)
 			)

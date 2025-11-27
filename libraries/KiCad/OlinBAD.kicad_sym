@@ -613,7 +613,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "CST-951AP:CUI_CST-951AP"
+		(property "Footprint" "obad_footprints:CUI_CST-951AP"
 			(at 0 0 0)
 			(effects
 				(font
