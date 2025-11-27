@@ -6051,7 +6051,7 @@
 	)
 	(text "FMU_CHX_PROT"
 		(exclude_from_sim no)
-		(at 118.872 118.872 0)
+		(at 129.032 118.872 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6263,10 +6263,6 @@
 		(uuid "f11572d9-83e2-433a-8b96-44eb0638bdb7")
 	)
 	(no_connect
-		(at 96.52 119.38)
-		(uuid "019cfe9f-e20f-4d0e-bdfe-7763cf8d2f15")
-	)
-	(no_connect
 		(at 71.12 93.98)
 		(uuid "037fe7f5-e6a9-4e13-9bdd-a72e4fcf8a07")
 	)
@@ -6351,10 +6347,6 @@
 		(uuid "4754336b-9646-4194-ab88-427362a9677a")
 	)
 	(no_connect
-		(at 96.52 121.92)
-		(uuid "4bed0f58-9088-47dd-ad93-1a4854a3ec87")
-	)
-	(no_connect
 		(at 71.12 88.9)
 		(uuid "550cac54-e36a-4a10-a81f-d30e16bf73fa")
 	)
@@ -6413,10 +6405,6 @@
 	(no_connect
 		(at 71.12 63.5)
 		(uuid "a26b0d6e-4108-4d50-bcf3-ea90b6f183ba")
-	)
-	(no_connect
-		(at 96.52 124.46)
-		(uuid "a34ecac5-48cd-4960-bad2-0a46f60a32d0")
 	)
 	(no_connect
 		(at 71.12 101.6)
@@ -6584,7 +6572,7 @@
 	)
 	(bus
 		(pts
-			(xy 116.84 111.76) (xy 116.84 124.46)
+			(xy 127 111.76) (xy 127 124.46)
 		)
 		(stroke
 			(width 0)
@@ -6731,6 +6719,16 @@
 			(type default)
 		)
 		(uuid "6686673a-820f-407d-890f-baa50662f709")
+	)
+	(wire
+		(pts
+			(xy 96.52 121.92) (xy 105.41 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69dc3d88-e5b3-4bd7-a383-52fadf41cc4d")
 	)
 	(wire
 		(pts
@@ -6991,6 +6989,16 @@
 			(type default)
 		)
 		(uuid "c7f135e9-f800-45e7-a808-a67cda63cf34")
+	)
+	(wire
+		(pts
+			(xy 96.52 124.46) (xy 114.3 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cbd01558-3be1-44f5-8797-1d9a258c5b40")
 	)
 	(wire
 		(pts
@@ -7826,6 +7834,104 @@
 		)
 	)
 	(symbol
+		(lib_id "formula:TP")
+		(at 110.49 121.92 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "28981128-9290-4670-b3d6-6c9690699b1e")
+		(property "Reference" "TP36"
+			(at 111.76 120.6499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TP"
+			(at 111.76 123.1899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "footprints:tp_1.6mm"
+			(at 107.95 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.keyelco.com/product-pdf.cfm?p=1314"
+			(at 110.49 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 110.49 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFN" "DK"
+			(at 113.03 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "36-5006-ND"
+			(at 115.57 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PurchasingLink" "https://www.digikey.com/product-detail/en/keystone-electronics/5006/36-5006-ND/255330"
+			(at 118.11 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8d5760ee-3a92-4770-87cc-5422abc7e5ce")
+		)
+		(instances
+			(project "flight-core"
+				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/5021d7c9-30f6-40e8-9368-2fcfccc5f247"
+					(reference "TP37")
+					(unit 1)
+				)
+				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/b1ca264a-f418-4fe7-a7ba-dc33a197c475"
+					(reference "TP36")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x04_Socket")
 		(at 171.45 45.72 0)
 		(unit 1)
@@ -7900,6 +8006,104 @@
 				)
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/b1ca264a-f418-4fe7-a7ba-dc33a197c475"
 					(reference "J11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "formula:TP")
+		(at 101.6 119.38 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3986676f-05fe-4a42-b5dd-81309e07b134")
+		(property "Reference" "TP38"
+			(at 102.87 118.1099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TP"
+			(at 102.87 120.6499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "footprints:tp_1.6mm"
+			(at 99.06 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.keyelco.com/product-pdf.cfm?p=1314"
+			(at 101.6 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 101.6 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFN" "DK"
+			(at 104.14 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "36-5006-ND"
+			(at 106.68 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PurchasingLink" "https://www.digikey.com/product-detail/en/keystone-electronics/5006/36-5006-ND/255330"
+			(at 109.22 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6c4a8190-c0f5-45e1-bb66-e4adf0a12264")
+		)
+		(instances
+			(project "flight-core"
+				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/5021d7c9-30f6-40e8-9368-2fcfccc5f247"
+					(reference "TP39")
+					(unit 1)
+				)
+				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/b1ca264a-f418-4fe7-a7ba-dc33a197c475"
+					(reference "TP38")
 					(unit 1)
 				)
 			)
@@ -9792,6 +9996,104 @@
 				)
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/b1ca264a-f418-4fe7-a7ba-dc33a197c475"
 					(reference "D6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "formula:TP")
+		(at 119.38 124.46 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ac23f967-af1f-47d3-9a59-0393d0e4aa3f")
+		(property "Reference" "TP34"
+			(at 120.65 123.1899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TP"
+			(at 120.65 125.7299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "footprints:tp_1.6mm"
+			(at 116.84 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.keyelco.com/product-pdf.cfm?p=1314"
+			(at 119.38 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 119.38 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFN" "DK"
+			(at 121.92 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "36-5006-ND"
+			(at 124.46 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PurchasingLink" "https://www.digikey.com/product-detail/en/keystone-electronics/5006/36-5006-ND/255330"
+			(at 127 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bb6a2766-5e3a-49fb-80ea-5e5f2aaf14da")
+		)
+		(instances
+			(project ""
+				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/5021d7c9-30f6-40e8-9368-2fcfccc5f247"
+					(reference "TP35")
+					(unit 1)
+				)
+				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/b1ca264a-f418-4fe7-a7ba-dc33a197c475"
+					(reference "TP34")
 					(unit 1)
 				)
 			)
