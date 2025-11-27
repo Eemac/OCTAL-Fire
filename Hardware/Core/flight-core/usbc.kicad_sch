@@ -827,6 +827,130 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "GND_4"
 			(power)
 			(pin_numbers
@@ -918,193 +1042,6 @@
 						)
 					)
 					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "OEM:1KR"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "R"
-				(at 2.032 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "1KR"
-				(at 0 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "OEM:R_0603_1608Metric"
-				(at -1.778 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "${OEM_DIR}/parts/datasheets/stackpole_RMCF_RMCP.pdf"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Resistor 1K ohm 0603 1/10W 1%"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "MPN" "RMCF0603FT1K00"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "DKPN" "RMCF0603FT1K00TR-ND"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "MFN" "Stackpole Electronics"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "NewDesigns" "YES"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Stocked" "Reel"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Package" "0603"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Style" "SMD"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "R res resistor "
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "R_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "1KR_0_1"
-				(rectangle
-					(start -1.016 -2.54)
-					(end 1.016 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "1KR_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1788,7 +1725,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0b25180f-e2b3-4344-8edc-22f7f82842ce")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR0293"
 			(at 134.62 99.06 0)
 			(effects
 				(font
@@ -1844,7 +1781,7 @@
 			)
 			(project "usbc"
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/91e18f07-bd3f-4576-bbe1-a0227cf7132e/dc9c6c82-2ca0-4595-949b-0b07300fa078"
-					(reference "#PWR?")
+					(reference "#PWR0293")
 					(unit 1)
 				)
 			)
@@ -1859,7 +1796,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2b988c5e-d144-4fec-b52f-a64fc20694ee")
-		(property "Reference" "U?"
+		(property "Reference" "U63"
 			(at 124.206 94.234 0)
 			(effects
 				(font
@@ -1935,7 +1872,7 @@
 			)
 			(project "usbc"
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/91e18f07-bd3f-4576-bbe1-a0227cf7132e/dc9c6c82-2ca0-4595-949b-0b07300fa078"
-					(reference "U?")
+					(reference "U63")
 					(unit 1)
 				)
 			)
@@ -1951,7 +1888,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4f252c5f-9611-4399-816e-647b2f0eb439")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR0294"
 			(at 158.75 129.54 0)
 			(effects
 				(font
@@ -2007,7 +1944,7 @@
 			)
 			(project "usbc"
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/91e18f07-bd3f-4576-bbe1-a0227cf7132e/dc9c6c82-2ca0-4595-949b-0b07300fa078"
-					(reference "#PWR?")
+					(reference "#PWR0294")
 					(unit 1)
 				)
 			)
@@ -2023,7 +1960,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6a918a16-de69-428f-9cb3-55c9488123e5")
-		(property "Reference" "J?"
+		(property "Reference" "J35"
 			(at 149.352 77.216 0)
 			(effects
 				(font
@@ -2128,7 +2065,7 @@
 			)
 			(project "usbc"
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/91e18f07-bd3f-4576-bbe1-a0227cf7132e/dc9c6c82-2ca0-4595-949b-0b07300fa078"
-					(reference "J?")
+					(reference "J35")
 					(unit 1)
 				)
 			)
@@ -2145,7 +2082,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9c540601-49da-4344-abd1-70255dea366d")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR0291"
 			(at 123.19 96.52 0)
 			(effects
 				(font
@@ -2201,22 +2138,22 @@
 			)
 			(project "usbc"
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/91e18f07-bd3f-4576-bbe1-a0227cf7132e/dc9c6c82-2ca0-4595-949b-0b07300fa078"
-					(reference "#PWR?")
+					(reference "#PWR0291")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "OEM:1KR")
+		(lib_id "Device:R")
 		(at 139.7 88.9 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "ae80da61-a758-41e2-88f9-43ad00846d9b")
-		(property "Reference" "R?"
+		(uuid "9c972e9b-8ed2-453f-ab49-898f9ea66d03")
+		(property "Reference" "R88"
 			(at 139.7 86.36 90)
 			(effects
 				(font
@@ -2224,7 +2161,7 @@
 				)
 			)
 		)
-		(property "Value" "5.1k"
+		(property "Value" "5100"
 			(at 139.7 88.9 90)
 			(effects
 				(font
@@ -2232,8 +2169,8 @@
 				)
 			)
 		)
-		(property "Footprint" "OEM:R_0603_1608Metric"
-			(at 139.7 90.678 0)
+		(property "Footprint" "footprints:R_0603_1608Metric"
+			(at 139.7 90.678 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2241,16 +2178,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "${OEM_DIR}/parts/datasheets/stackpole_RMCF_RMCP.pdf"
-			(at 139.7 86.868 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
+		(property "Datasheet" "~"
 			(at 139.7 88.9 0)
 			(effects
 				(font
@@ -2259,61 +2187,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFN" "Stackpole Electronics"
-			(at 139.7 88.9 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "RMCF0603FT1K00"
-			(at 139.7 88.9 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "DKPN" "RMCF0603FT1K00TR-ND"
-			(at 139.7 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "NewDesigns" "YES"
-			(at 139.7 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Stocked" "Reel"
-			(at 139.7 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Package" "0603"
-			(at 139.7 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Style" "SMD"
+		(property "Description" "Resistor"
 			(at 139.7 88.9 0)
 			(effects
 				(font
@@ -2323,21 +2197,82 @@
 			)
 		)
 		(pin "1"
-			(uuid "336bd9c6-b2ba-4f27-ab85-532e746e6ff6")
+			(uuid "5f78a6eb-8f8e-473c-8aa7-b7e459d8f846")
 		)
 		(pin "2"
-			(uuid "40df8cdf-3f13-4961-ad0a-25deb1d0c2ce")
+			(uuid "fc088e4e-62ae-40f7-a969-c7026b516598")
 		)
 		(instances
-			(project "usbc"
-				(path "/5b2d7450-9def-4ea1-9c70-a6272bc3923e"
-					(reference "R?")
+			(project ""
+				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/91e18f07-bd3f-4576-bbe1-a0227cf7132e/dc9c6c82-2ca0-4595-949b-0b07300fa078"
+					(reference "R88")
 					(unit 1)
 				)
 			)
-			(project "usbc"
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 139.7 91.44 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b362b63a-78d7-4484-b375-e6de94544b7d")
+		(property "Reference" "R89"
+			(at 139.7 93.98 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "5100"
+			(at 139.7 91.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "footprints:R_0603_1608Metric"
+			(at 139.7 93.218 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 139.7 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 139.7 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ea1fd651-37d9-4810-b0e7-9a751c4ddedf")
+		)
+		(pin "2"
+			(uuid "a2f9fb93-286a-49c4-816e-0533ffa448fc")
+		)
+		(instances
+			(project "flight-core"
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/91e18f07-bd3f-4576-bbe1-a0227cf7132e/dc9c6c82-2ca0-4595-949b-0b07300fa078"
-					(reference "R?")
+					(reference "R89")
 					(unit 1)
 				)
 			)
@@ -2353,7 +2288,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e4b4a1e4-2725-4001-99db-15b1c4534902")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR0292"
 			(at 123.19 113.03 0)
 			(effects
 				(font
@@ -2409,143 +2344,7 @@
 			)
 			(project "usbc"
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/91e18f07-bd3f-4576-bbe1-a0227cf7132e/dc9c6c82-2ca0-4595-949b-0b07300fa078"
-					(reference "#PWR?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "OEM:1KR")
-		(at 139.7 91.44 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ef9f6d68-acfd-4ee8-ada0-1df4306aa1db")
-		(property "Reference" "R?"
-			(at 139.7 93.98 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "5.1k"
-			(at 139.7 91.44 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "OEM:R_0603_1608Metric"
-			(at 139.7 89.662 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "${OEM_DIR}/parts/datasheets/stackpole_RMCF_RMCP.pdf"
-			(at 139.7 93.472 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 139.7 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFN" "Stackpole Electronics"
-			(at 139.7 91.44 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "RMCF0603FT1K00"
-			(at 139.7 91.44 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "DKPN" "RMCF0603FT1K00TR-ND"
-			(at 139.7 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "NewDesigns" "YES"
-			(at 139.7 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Stocked" "Reel"
-			(at 139.7 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Package" "0603"
-			(at 139.7 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Style" "SMD"
-			(at 139.7 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "074c6dc0-7fc8-4a43-80f2-f03cd39f46ff")
-		)
-		(pin "2"
-			(uuid "b9c1f439-9a13-4864-bec5-064703695d97")
-		)
-		(instances
-			(project "usbc"
-				(path "/5b2d7450-9def-4ea1-9c70-a6272bc3923e"
-					(reference "R?")
-					(unit 1)
-				)
-			)
-			(project "usbc"
-				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/91e18f07-bd3f-4576-bbe1-a0227cf7132e/dc9c6c82-2ca0-4595-949b-0b07300fa078"
-					(reference "R?")
+					(reference "#PWR0292")
 					(unit 1)
 				)
 			)
