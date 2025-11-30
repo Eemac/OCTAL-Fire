@@ -8962,6 +8962,16 @@
 		)
 		(uuid "9c91016f-1e24-4be2-8726-2947276dfe5e")
 	)
+	(label "SPI1_MOSI"
+		(at 134.62 54.61 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a0271feb-fffa-4e67-aba8-c875e7f6a80b")
+	)
 	(label "SHDN_SENSE_S_ARM"
 		(at 246.38 102.87 180)
 		(effects
