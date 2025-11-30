@@ -5226,152 +5226,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "formula:R_120_DNP"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "R"
-				(at 2.032 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "R_120_DNP"
-				(at -2.54 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "footprints:R_0805_OEM"
-				(at -30.48 3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.mouser.com/datasheet/2/315/AOA0000C304-1149620.pdf"
-				(at -30.48 11.43 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Description" "Resistor, 120, 0.125W, 1%, 0805"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "MFN" "DK"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-					(hide yes)
-				)
-			)
-			(property "MPN" "667-ERJ-6ENF1200V"
-				(at -30.48 6.35 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "PurchasingLink" "https://www.mouser.com/ProductDetail/Panasonic-Industrial-Devices/ERJ-6ENF1200V?qs=sGAEpiMZZMvdGkrng054t8AJgcdMkx7x%252bFQnctTMUmU%3d"
-				(at -30.48 8.89 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "R_* Resistor_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "R_120_DNP_0_1"
-				(rectangle
-					(start -1.016 -2.54)
-					(end 1.016 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R_120_DNP_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "formula:R_200"
 			(pin_numbers
 				(hide yes)
@@ -5984,7 +5838,7 @@
 	)
 	(text "BUZZER"
 		(exclude_from_sim no)
-		(at 279.4 106.68 0)
+		(at 273.05 107.95 0)
 		(effects
 			(font
 				(size 11.43 11.43)
@@ -6245,22 +6099,10 @@
 		(uuid "f713870a-8993-41c0-8916-f753845ee9e9")
 	)
 	(junction
-		(at 52.07 152.4)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "222af3fc-9150-48b4-af55-28a414549691")
-	)
-	(junction
 		(at 71.12 128.27)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5b259e50-a90d-4c41-ab25-0aa2eaba4d4f")
-	)
-	(junction
-		(at 52.07 144.78)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f11572d9-83e2-433a-8b96-44eb0638bdb7")
 	)
 	(no_connect
 		(at 71.12 93.98)
@@ -6462,17 +6304,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 147.32) (xy 71.12 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0396d78d-acf6-4a2a-8a64-aa8dd2be93a4")
-	)
-	(wire
-		(pts
-			(xy 200.66 133.35) (xy 200.66 135.89)
+			(xy 194.31 123.19) (xy 194.31 125.73)
 		)
 		(stroke
 			(width 0)
@@ -6482,23 +6314,13 @@
 	)
 	(wire
 		(pts
-			(xy 274.32 133.35) (xy 274.32 135.89)
+			(xy 269.24 138.43) (xy 269.24 143.51)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "093bc997-59b6-4276-8b22-28edc01d78b3")
-	)
-	(wire
-		(pts
-			(xy 45.72 152.4) (xy 52.07 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "09604690-4611-45db-ab3e-768e74d82ef5")
 	)
 	(wire
 		(pts
@@ -6540,16 +6362,6 @@
 		)
 		(uuid "254dd30e-ed9e-4577-9a4f-92291d5a635f")
 	)
-	(wire
-		(pts
-			(xy 52.07 142.24) (xy 52.07 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "26355667-24fa-461d-bf07-5d6b398e6933")
-	)
 	(bus
 		(pts
 			(xy 68.58 104.14) (xy 68.58 106.68)
@@ -6582,7 +6394,7 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 143.51) (xy 200.66 144.78)
+			(xy 194.31 133.35) (xy 194.31 134.62)
 		)
 		(stroke
 			(width 0)
@@ -6632,7 +6444,7 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 133.35) (xy 237.49 135.89)
+			(xy 231.14 124.46) (xy 231.14 127)
 		)
 		(stroke
 			(width 0)
@@ -6659,16 +6471,6 @@
 			(type default)
 		)
 		(uuid "485eee3f-d6f5-45e7-b69a-297ffe159885")
-	)
-	(wire
-		(pts
-			(xy 52.07 144.78) (xy 45.72 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4d31879a-0b3c-4154-837a-67dd52538c68")
 	)
 	(wire
 		(pts
@@ -6732,7 +6534,7 @@
 	)
 	(wire
 		(pts
-			(xy 274.32 146.05) (xy 274.32 148.59)
+			(xy 269.24 153.67) (xy 269.24 154.94)
 		)
 		(stroke
 			(width 0)
@@ -6749,6 +6551,16 @@
 			(type default)
 		)
 		(uuid "772f7fa9-2803-4349-b384-a2ca9139b262")
+	)
+	(wire
+		(pts
+			(xy 269.24 128.27) (xy 269.24 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c665143-414a-4d81-a530-f6ddaae235d4")
 	)
 	(bus
 		(pts
@@ -6780,16 +6592,6 @@
 		)
 		(uuid "83bb23dc-2710-4e3f-b21d-38096b1ec061")
 	)
-	(wire
-		(pts
-			(xy 58.42 147.32) (xy 58.42 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "84eb68cb-edb0-4b2f-bc5a-6c6b54f5ee7b")
-	)
 	(bus
 		(pts
 			(xy 99.06 63.5) (xy 99.06 66.04)
@@ -6799,16 +6601,6 @@
 			(type default)
 		)
 		(uuid "88167a51-1325-4290-91ea-aafcac654fac")
-	)
-	(wire
-		(pts
-			(xy 58.42 144.78) (xy 52.07 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8b1913bc-88e4-40c8-ac9f-aaf41f0a4663")
 	)
 	(wire
 		(pts
@@ -6822,17 +6614,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 152.4) (xy 58.42 149.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "91ec6f9b-c038-4e0c-bf8e-3a268cc9e40d")
-	)
-	(wire
-		(pts
-			(xy 200.66 152.4) (xy 200.66 153.67)
+			(xy 194.31 152.4) (xy 194.31 153.67)
 		)
 		(stroke
 			(width 0)
@@ -6900,26 +6682,6 @@
 		)
 		(uuid "a30e09b9-8475-4d4c-b6ac-1a4793bb05f0")
 	)
-	(wire
-		(pts
-			(xy 52.07 154.94) (xy 52.07 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a5a5a916-9257-44c3-9844-36040ade6eb8")
-	)
-	(wire
-		(pts
-			(xy 52.07 152.4) (xy 58.42 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a7e1f40e-1063-409c-9eea-28ef0d744d67")
-	)
 	(bus
 		(pts
 			(xy 68.58 78.74) (xy 68.58 81.28)
@@ -6932,7 +6694,7 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 143.51) (xy 237.49 144.78)
+			(xy 231.14 134.62) (xy 231.14 135.89)
 		)
 		(stroke
 			(width 0)
@@ -7002,16 +6764,6 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 149.86) (xy 71.12 149.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d934b819-f766-4683-b3d3-c9719e3731ce")
-	)
-	(wire
-		(pts
 			(xy 143.51 91.44) (xy 143.51 93.98)
 		)
 		(stroke
@@ -7062,7 +6814,7 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 152.4) (xy 237.49 153.67)
+			(xy 231.14 153.67) (xy 231.14 154.94)
 		)
 		(stroke
 			(width 0)
@@ -7110,16 +6862,6 @@
 		)
 		(uuid "fd39e2af-6650-42bb-a694-81bcb9764752")
 	)
-	(label "CAN+"
-		(at 71.12 149.86 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "02de7b02-77a5-4c8b-939a-ec55b66dc2a1")
-	)
 	(label "GND"
 		(at 41.91 78.74 0)
 		(effects
@@ -7151,7 +6893,7 @@
 		(uuid "1bcc7ca2-b18c-4547-b293-ee7a49294de1")
 	)
 	(label "FMU_LED_AMBER"
-		(at 193.04 128.27 180)
+		(at 186.69 147.32 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7241,7 +6983,7 @@
 		(uuid "425d331a-4b1d-4869-bbe5-087070d0df8d")
 	)
 	(label "IO_LED_SAFET_PROT"
-		(at 229.87 128.27 180)
+		(at 223.52 148.59 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7301,7 +7043,7 @@
 		(uuid "6ece7f9b-0636-4e96-bac1-5c839700c7e7")
 	)
 	(label "BUZZER"
-		(at 266.7 128.27 180)
+		(at 261.62 148.59 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7319,16 +7061,6 @@
 			(justify right bottom)
 		)
 		(uuid "7b6a5387-ea38-4ebd-8680-c2f65a533d0f")
-	)
-	(label "CAN-"
-		(at 71.12 147.32 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "8e1441e4-63d8-41d8-ae54-e891470cbda6")
 	)
 	(label "FMU_SWCLK"
 		(at 71.12 53.34 180)
@@ -7502,12 +7234,12 @@
 	)
 	(hierarchical_label "CAN-"
 		(shape output)
-		(at 52.07 142.24 90)
+		(at 71.12 147.32 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "55538acb-4426-48a2-9764-5cf5f2e59658")
 	)
@@ -7557,7 +7289,7 @@
 	)
 	(hierarchical_label "CAN+"
 		(shape output)
-		(at 52.07 154.94 270)
+		(at 71.12 149.86 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7627,7 +7359,7 @@
 		(instances
 			(project "flight-core"
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/5021d7c9-30f6-40e8-9368-2fcfccc5f247"
-					(reference "#PWR0224")
+					(reference "#PWR0225")
 					(unit 1)
 				)
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/b1ca264a-f418-4fe7-a7ba-dc33a197c475"
@@ -7639,7 +7371,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 237.49 153.67 0)
+		(at 231.14 154.94 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7648,7 +7380,7 @@
 		(fields_autoplaced yes)
 		(uuid "20adbeac-897f-4ce9-8ce7-cacb7ac55705")
 		(property "Reference" "#PWR080"
-			(at 237.49 160.02 0)
+			(at 231.14 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7657,7 +7389,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 237.49 158.75 0)
+			(at 231.14 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7665,7 +7397,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 237.49 153.67 0)
+			(at 231.14 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7674,7 +7406,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 237.49 153.67 0)
+			(at 231.14 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7683,7 +7415,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 237.49 153.67 0)
+			(at 231.14 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7697,7 +7429,7 @@
 		(instances
 			(project "flight-core"
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/5021d7c9-30f6-40e8-9368-2fcfccc5f247"
-					(reference "#PWR0237")
+					(reference "#PWR0238")
 					(unit 1)
 				)
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/b1ca264a-f418-4fe7-a7ba-dc33a197c475"
@@ -7709,34 +7441,33 @@
 	)
 	(symbol
 		(lib_id "OlinBAD:CST-951AP")
-		(at 274.32 140.97 0)
+		(at 269.24 133.35 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "25d17fe0-36ef-4c6b-ac3e-043286b2191b")
 		(property "Reference" "LS1"
-			(at 278.13 139.947 0)
+			(at 265.43 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Value" "CST-951AP"
-			(at 278.13 142.487 0)
+			(at 265.43 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "obad_footprints:CUI_CST-951AP"
-			(at 274.32 140.97 0)
+			(at 269.24 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7746,7 +7477,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 274.32 140.97 0)
+			(at 269.24 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7755,7 +7486,7 @@
 			)
 		)
 		(property "Description" "Audio Buzzer Magnetic 4Vo-p 6Vo-p 8mA 5Vo-p 85dBA Pin Through Hole Tray"
-			(at 274.32 140.97 0)
+			(at 269.24 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7765,7 +7496,7 @@
 			)
 		)
 		(property "MF" "CUI"
-			(at 274.32 140.97 0)
+			(at 269.24 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7775,7 +7506,7 @@
 			)
 		)
 		(property "PACKAGE" "CUI"
-			(at 274.32 140.97 0)
+			(at 269.24 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7785,7 +7516,7 @@
 			)
 		)
 		(property "PRICE" "0.69 USD"
-			(at 274.32 140.97 0)
+			(at 269.24 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7795,7 +7526,7 @@
 			)
 		)
 		(property "MP" "CST-951AP"
-			(at 274.32 140.97 0)
+			(at 269.24 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7805,7 +7536,7 @@
 			)
 		)
 		(property "AVAILABILITY" "Good"
-			(at 274.32 140.97 0)
+			(at 269.24 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7843,7 +7574,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "28981128-9290-4670-b3d6-6c9690699b1e")
-		(property "Reference" "TP36"
+		(property "Reference" "TP8"
 			(at 111.76 120.6499 90)
 			(effects
 				(font
@@ -7921,11 +7652,11 @@
 		(instances
 			(project "flight-core"
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/5021d7c9-30f6-40e8-9368-2fcfccc5f247"
-					(reference "TP37")
+					(reference "TP12")
 					(unit 1)
 				)
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/b1ca264a-f418-4fe7-a7ba-dc33a197c475"
-					(reference "TP36")
+					(reference "TP8")
 					(unit 1)
 				)
 			)
@@ -8021,7 +7752,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3986676f-05fe-4a42-b5dd-81309e07b134")
-		(property "Reference" "TP38"
+		(property "Reference" "TP7"
 			(at 102.87 118.1099 90)
 			(effects
 				(font
@@ -8099,11 +7830,11 @@
 		(instances
 			(project "flight-core"
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/5021d7c9-30f6-40e8-9368-2fcfccc5f247"
-					(reference "TP39")
+					(reference "TP11")
 					(unit 1)
 				)
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/b1ca264a-f418-4fe7-a7ba-dc33a197c475"
-					(reference "TP38")
+					(reference "TP7")
 					(unit 1)
 				)
 			)
@@ -8169,7 +7900,7 @@
 		(instances
 			(project "flight-core"
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/5021d7c9-30f6-40e8-9368-2fcfccc5f247"
-					(reference "#PWR0226")
+					(reference "#PWR0227")
 					(unit 1)
 				)
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/b1ca264a-f418-4fe7-a7ba-dc33a197c475"
@@ -8238,7 +7969,7 @@
 		(instances
 			(project "flight-core"
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/5021d7c9-30f6-40e8-9368-2fcfccc5f247"
-					(reference "#PWR0235")
+					(reference "#PWR0236")
 					(unit 1)
 				)
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/b1ca264a-f418-4fe7-a7ba-dc33a197c475"
@@ -8258,7 +7989,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "49bfc799-63e7-4a8e-a11a-99f1c8225328")
-		(property "Reference" "TP7"
+		(property "Reference" "TP10"
 			(at 238.76 50.7999 0)
 			(effects
 				(font
@@ -8336,11 +8067,11 @@
 		(instances
 			(project ""
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/5021d7c9-30f6-40e8-9368-2fcfccc5f247"
-					(reference "TP8")
+					(reference "TP14")
 					(unit 1)
 				)
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/b1ca264a-f418-4fe7-a7ba-dc33a197c475"
-					(reference "TP7")
+					(reference "TP10")
 					(unit 1)
 				)
 			)
@@ -8348,7 +8079,7 @@
 	)
 	(symbol
 		(lib_id "formula:LED_0805_Amber")
-		(at 200.66 148.59 90)
+		(at 194.31 138.43 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8356,7 +8087,7 @@
 		(dnp no)
 		(uuid "49de3e9a-1a23-4c31-8aa7-43cad66f3362")
 		(property "Reference" "D5"
-			(at 189.992 151.13 90)
+			(at 204.47 139.7 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8364,7 +8095,7 @@
 			)
 		)
 		(property "Value" "LED_0805_Amber"
-			(at 189.992 148.59 90)
+			(at 204.47 137.16 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8372,7 +8103,7 @@
 			)
 		)
 		(property "Footprint" "footprints:LED_0805_OEM"
-			(at 200.66 151.13 0)
+			(at 194.31 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8381,7 +8112,7 @@
 			)
 		)
 		(property "Datasheet" "https://media.digikey.com/pdf/Data%20Sheets/Chicago%20Miniature%20Lamps%20PDFs/CMDA5_Series_Rev_Aug_2014.pdf"
-			(at 198.12 148.59 0)
+			(at 191.77 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8390,7 +8121,7 @@
 			)
 		)
 		(property "Description" "LED, Amber, 1.9V, 20mA, 0805"
-			(at 200.66 148.59 0)
+			(at 194.31 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8399,7 +8130,7 @@
 			)
 		)
 		(property "MFN" "DK"
-			(at 200.66 148.59 0)
+			(at 194.31 138.43 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -8408,7 +8139,7 @@
 			)
 		)
 		(property "MPN" "L71517CT-ND"
-			(at 200.66 148.59 0)
+			(at 194.31 138.43 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -8417,7 +8148,7 @@
 			)
 		)
 		(property "PurchasingLink" "https://www.digikey.com/product-detail/en/visual-communications-company-vcc/CMDA5DY7D1S/L71517CT-ND/614867"
-			(at 187.96 138.43 0)
+			(at 181.61 128.27 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -8446,7 +8177,7 @@
 	)
 	(symbol
 		(lib_id "formula:MMBF170")
-		(at 234.95 128.27 0)
+		(at 228.6 148.59 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8454,7 +8185,7 @@
 		(dnp no)
 		(uuid "61a9f493-c135-489c-b039-6140e994a0fd")
 		(property "Reference" "Q2"
-			(at 224.79 121.666 0)
+			(at 218.44 141.986 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8463,7 +8194,7 @@
 			)
 		)
 		(property "Value" "MMBF170"
-			(at 224.79 124.206 0)
+			(at 218.44 144.526 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8472,7 +8203,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 240.03 130.175 0)
+			(at 233.68 150.495 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8483,7 +8214,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.fairchildsemi.com/datasheets/MM/MMBF170.pdf"
-			(at 240.03 126.365 0)
+			(at 233.68 146.685 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8493,7 +8224,7 @@
 			)
 		)
 		(property "Description" "MOSFET, N-channel, 60V, 500mA"
-			(at 234.95 128.27 0)
+			(at 228.6 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8502,7 +8233,7 @@
 			)
 		)
 		(property "MFN" "DK"
-			(at 242.57 123.825 0)
+			(at 236.22 144.145 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8511,7 +8242,7 @@
 			)
 		)
 		(property "MPN" "MMBF170CT-ND"
-			(at 245.11 121.285 0)
+			(at 238.76 141.605 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8520,7 +8251,7 @@
 			)
 		)
 		(property "PurchasingLink" "https://www.digikey.com/product-detail/en/on-semiconductor/MMBF170/MMBF170CT-ND/244295"
-			(at 247.65 118.745 0)
+			(at 241.3 139.065 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8703,7 +8434,7 @@
 		(instances
 			(project "flight-core"
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/5021d7c9-30f6-40e8-9368-2fcfccc5f247"
-					(reference "#PWR0227")
+					(reference "#PWR0228")
 					(unit 1)
 				)
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/b1ca264a-f418-4fe7-a7ba-dc33a197c475"
@@ -8794,111 +8525,6 @@
 				)
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/b1ca264a-f418-4fe7-a7ba-dc33a197c475"
 					(reference "J10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "formula:R_120_DNP")
-		(at 45.72 148.59 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "70494d02-ed42-435d-b368-afa7438a2fca")
-		(property "Reference" "R15"
-			(at 43.18 147.3199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "R_120_DNP"
-			(at 43.18 149.8599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "footprints:R_0603_1608Metric"
-			(at 76.2 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.mouser.com/datasheet/2/315/AOA0000C304-1149620.pdf"
-			(at 76.2 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, 120, 0.125W, 1%, 0805"
-			(at 45.72 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFN" "DK"
-			(at 45.72 148.59 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "667-ERJ-6ENF1200V"
-			(at 76.2 142.24 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "PurchasingLink" "https://www.mouser.com/ProductDetail/Panasonic-Industrial-Devices/ERJ-6ENF1200V?qs=sGAEpiMZZMvdGkrng054t8AJgcdMkx7x%252bFQnctTMUmU%3d"
-			(at 76.2 139.7 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5c6e4b79-8cb7-4577-aa8f-8e9d58c028c0")
-		)
-		(pin "2"
-			(uuid "3a17b8bb-1117-4598-8aba-8577b6387ea2")
-		)
-		(instances
-			(project "flight-core"
-				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/5021d7c9-30f6-40e8-9368-2fcfccc5f247"
-					(reference "R55")
-					(unit 1)
-				)
-				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/b1ca264a-f418-4fe7-a7ba-dc33a197c475"
-					(reference "R15")
 					(unit 1)
 				)
 			)
@@ -9223,7 +8849,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 274.32 123.19 0)
+		(at 269.24 125.73 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9232,7 +8858,7 @@
 		(fields_autoplaced yes)
 		(uuid "722d89c8-4f77-4804-8da5-74721e8920c0")
 		(property "Reference" "#PWR083"
-			(at 274.32 127 0)
+			(at 269.24 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9241,7 +8867,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 274.32 118.11 0)
+			(at 269.24 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9249,7 +8875,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 274.32 123.19 0)
+			(at 269.24 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9258,7 +8884,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 274.32 123.19 0)
+			(at 269.24 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9267,7 +8893,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 274.32 123.19 0)
+			(at 269.24 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9281,7 +8907,7 @@
 		(instances
 			(project "flight-core"
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/5021d7c9-30f6-40e8-9368-2fcfccc5f247"
-					(reference "#PWR0240")
+					(reference "#PWR0241")
 					(unit 1)
 				)
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/b1ca264a-f418-4fe7-a7ba-dc33a197c475"
@@ -9351,7 +8977,7 @@
 		(instances
 			(project ""
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/5021d7c9-30f6-40e8-9368-2fcfccc5f247"
-					(reference "#PWR0238")
+					(reference "#PWR0239")
 					(unit 1)
 				)
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/b1ca264a-f418-4fe7-a7ba-dc33a197c475"
@@ -9363,7 +8989,7 @@
 	)
 	(symbol
 		(lib_id "formula:R_200")
-		(at 237.49 139.7 0)
+		(at 231.14 130.81 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9372,7 +8998,7 @@
 		(dnp no)
 		(uuid "87ef5989-6584-48be-b25a-7c0dd0799c57")
 		(property "Reference" "R18"
-			(at 232.41 140.97 0)
+			(at 226.06 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9380,7 +9006,7 @@
 			)
 		)
 		(property "Value" "R_200"
-			(at 232.41 138.43 0)
+			(at 226.06 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9388,7 +9014,7 @@
 			)
 		)
 		(property "Footprint" "footprints:R_0603_1608Metric"
-			(at 239.268 139.7 0)
+			(at 232.918 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9397,7 +9023,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf"
-			(at 235.458 139.7 0)
+			(at 229.108 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9406,7 +9032,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 237.49 139.7 0)
+			(at 231.14 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9415,7 +9041,7 @@
 			)
 		)
 		(property "MFN" "DK"
-			(at 237.49 139.7 0)
+			(at 231.14 130.81 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -9424,7 +9050,7 @@
 			)
 		)
 		(property "MPN" "RMCF0805JT200RCT-ND"
-			(at 237.49 139.7 0)
+			(at 231.14 130.81 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -9433,7 +9059,7 @@
 			)
 		)
 		(property "PurchasingLink" "https://www.digikey.com/products/en?keywords=RMCF0805JT200RCT-ND"
-			(at 225.298 129.54 0)
+			(at 218.948 120.65 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -9450,7 +9076,7 @@
 		(instances
 			(project "flight-core"
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/5021d7c9-30f6-40e8-9368-2fcfccc5f247"
-					(reference "R58")
+					(reference "R57")
 					(unit 1)
 				)
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/b1ca264a-f418-4fe7-a7ba-dc33a197c475"
@@ -9548,7 +9174,7 @@
 		(instances
 			(project "flight-core"
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/5021d7c9-30f6-40e8-9368-2fcfccc5f247"
-					(reference "R56")
+					(reference "R55")
 					(unit 1)
 				)
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/b1ca264a-f418-4fe7-a7ba-dc33a197c475"
@@ -9560,7 +9186,7 @@
 	)
 	(symbol
 		(lib_id "formula:MMBF170")
-		(at 198.12 128.27 0)
+		(at 191.77 147.32 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9568,7 +9194,7 @@
 		(dnp no)
 		(uuid "8c2137f8-c60b-485a-ad8c-1814d5d8d826")
 		(property "Reference" "Q1"
-			(at 187.96 121.666 0)
+			(at 181.61 140.716 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9577,7 +9203,7 @@
 			)
 		)
 		(property "Value" "MMBF170"
-			(at 187.96 124.206 0)
+			(at 181.61 143.256 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9586,7 +9212,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 203.2 130.175 0)
+			(at 196.85 149.225 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9597,7 +9223,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.fairchildsemi.com/datasheets/MM/MMBF170.pdf"
-			(at 203.2 126.365 0)
+			(at 196.85 145.415 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9607,7 +9233,7 @@
 			)
 		)
 		(property "Description" "MOSFET, N-channel, 60V, 500mA"
-			(at 198.12 128.27 0)
+			(at 191.77 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9616,7 +9242,7 @@
 			)
 		)
 		(property "MFN" "DK"
-			(at 205.74 123.825 0)
+			(at 199.39 142.875 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9625,7 +9251,7 @@
 			)
 		)
 		(property "MPN" "MMBF170CT-ND"
-			(at 208.28 121.285 0)
+			(at 201.93 140.335 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9634,7 +9260,7 @@
 			)
 		)
 		(property "PurchasingLink" "https://www.digikey.com/product-detail/en/on-semiconductor/MMBF170/MMBF170CT-ND/244295"
-			(at 210.82 118.745 0)
+			(at 204.47 137.795 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9724,7 +9350,7 @@
 		(instances
 			(project "flight-core"
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/5021d7c9-30f6-40e8-9368-2fcfccc5f247"
-					(reference "#PWR0232")
+					(reference "#PWR0233")
 					(unit 1)
 				)
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/b1ca264a-f418-4fe7-a7ba-dc33a197c475"
@@ -9736,7 +9362,7 @@
 	)
 	(symbol
 		(lib_id "formula:R_200")
-		(at 200.66 139.7 0)
+		(at 194.31 129.54 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9745,7 +9371,7 @@
 		(dnp no)
 		(uuid "9f5f249a-f0d0-46bf-87c4-056d99754e6b")
 		(property "Reference" "R17"
-			(at 195.58 140.97 0)
+			(at 189.23 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9753,7 +9379,7 @@
 			)
 		)
 		(property "Value" "R_200"
-			(at 195.58 138.43 0)
+			(at 189.23 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9761,7 +9387,7 @@
 			)
 		)
 		(property "Footprint" "footprints:R_0603_1608Metric"
-			(at 202.438 139.7 0)
+			(at 196.088 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9770,7 +9396,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf"
-			(at 198.628 139.7 0)
+			(at 192.278 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9779,7 +9405,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 200.66 139.7 0)
+			(at 194.31 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9788,7 +9414,7 @@
 			)
 		)
 		(property "MFN" "DK"
-			(at 200.66 139.7 0)
+			(at 194.31 129.54 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -9797,7 +9423,7 @@
 			)
 		)
 		(property "MPN" "RMCF0805JT200RCT-ND"
-			(at 200.66 139.7 0)
+			(at 194.31 129.54 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -9806,7 +9432,7 @@
 			)
 		)
 		(property "PurchasingLink" "https://www.digikey.com/products/en?keywords=RMCF0805JT200RCT-ND"
-			(at 188.468 129.54 0)
+			(at 182.118 119.38 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -9823,7 +9449,7 @@
 		(instances
 			(project "flight-core"
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/5021d7c9-30f6-40e8-9368-2fcfccc5f247"
-					(reference "R57")
+					(reference "R56")
 					(unit 1)
 				)
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/b1ca264a-f418-4fe7-a7ba-dc33a197c475"
@@ -9893,7 +9519,7 @@
 		(instances
 			(project "flight-core"
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/5021d7c9-30f6-40e8-9368-2fcfccc5f247"
-					(reference "#PWR0239")
+					(reference "#PWR0240")
 					(unit 1)
 				)
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/b1ca264a-f418-4fe7-a7ba-dc33a197c475"
@@ -9905,7 +9531,7 @@
 	)
 	(symbol
 		(lib_id "formula:LED_0805_Amber")
-		(at 237.49 148.59 90)
+		(at 231.14 139.7 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9913,7 +9539,7 @@
 		(dnp no)
 		(uuid "a64240f8-8e02-44cf-b735-4121a0e5c5fd")
 		(property "Reference" "D6"
-			(at 226.822 151.13 90)
+			(at 242.57 140.97 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9921,7 +9547,7 @@
 			)
 		)
 		(property "Value" "LED_0805_Amber"
-			(at 226.822 148.59 90)
+			(at 242.57 138.43 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9929,7 +9555,7 @@
 			)
 		)
 		(property "Footprint" "footprints:LED_0805_OEM"
-			(at 237.49 151.13 0)
+			(at 231.14 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9938,7 +9564,7 @@
 			)
 		)
 		(property "Datasheet" "https://media.digikey.com/pdf/Data%20Sheets/Chicago%20Miniature%20Lamps%20PDFs/CMDA5_Series_Rev_Aug_2014.pdf"
-			(at 234.95 148.59 0)
+			(at 228.6 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9947,7 +9573,7 @@
 			)
 		)
 		(property "Description" "LED, Amber, 1.9V, 20mA, 0805"
-			(at 237.49 148.59 0)
+			(at 231.14 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9956,7 +9582,7 @@
 			)
 		)
 		(property "MFN" "DK"
-			(at 237.49 148.59 0)
+			(at 231.14 139.7 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -9965,7 +9591,7 @@
 			)
 		)
 		(property "MPN" "L71517CT-ND"
-			(at 237.49 148.59 0)
+			(at 231.14 139.7 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -9974,7 +9600,7 @@
 			)
 		)
 		(property "PurchasingLink" "https://www.digikey.com/product-detail/en/visual-communications-company-vcc/CMDA5DY7D1S/L71517CT-ND/614867"
-			(at 224.79 138.43 0)
+			(at 218.44 129.54 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -10011,7 +9637,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ac23f967-af1f-47d3-9a59-0393d0e4aa3f")
-		(property "Reference" "TP34"
+		(property "Reference" "TP9"
 			(at 120.65 123.1899 90)
 			(effects
 				(font
@@ -10089,11 +9715,11 @@
 		(instances
 			(project ""
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/5021d7c9-30f6-40e8-9368-2fcfccc5f247"
-					(reference "TP35")
+					(reference "TP13")
 					(unit 1)
 				)
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/b1ca264a-f418-4fe7-a7ba-dc33a197c475"
-					(reference "TP34")
+					(reference "TP9")
 					(unit 1)
 				)
 			)
@@ -10159,7 +9785,7 @@
 		(instances
 			(project "flight-core"
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/5021d7c9-30f6-40e8-9368-2fcfccc5f247"
-					(reference "#PWR0230")
+					(reference "#PWR0231")
 					(unit 1)
 				)
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/b1ca264a-f418-4fe7-a7ba-dc33a197c475"
@@ -10171,7 +9797,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 274.32 148.59 0)
+		(at 269.24 154.94 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10179,8 +9805,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "be66db5a-dad1-4933-b4a1-a0038825bf61")
-		(property "Reference" "#PWR0447"
-			(at 274.32 154.94 0)
+		(property "Reference" "#PWR084"
+			(at 269.24 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10189,7 +9815,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 274.32 153.67 0)
+			(at 269.24 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10197,7 +9823,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 274.32 148.59 0)
+			(at 269.24 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10206,7 +9832,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 274.32 148.59 0)
+			(at 269.24 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10215,7 +9841,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 274.32 148.59 0)
+			(at 269.24 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10229,11 +9855,11 @@
 		(instances
 			(project ""
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/5021d7c9-30f6-40e8-9368-2fcfccc5f247"
-					(reference "#PWR0448")
+					(reference "#PWR0242")
 					(unit 1)
 				)
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/b1ca264a-f418-4fe7-a7ba-dc33a197c475"
-					(reference "#PWR0447")
+					(reference "#PWR084")
 					(unit 1)
 				)
 			)
@@ -10241,7 +9867,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 200.66 123.19 0)
+		(at 194.31 123.19 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10250,7 +9876,7 @@
 		(fields_autoplaced yes)
 		(uuid "c5543e02-77a9-4b54-a9dd-7e094364ee66")
 		(property "Reference" "#PWR076"
-			(at 200.66 127 0)
+			(at 194.31 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10259,7 +9885,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 200.66 118.11 0)
+			(at 194.31 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10267,7 +9893,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 200.66 123.19 0)
+			(at 194.31 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10276,7 +9902,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 200.66 123.19 0)
+			(at 194.31 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10285,7 +9911,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 200.66 123.19 0)
+			(at 194.31 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10299,7 +9925,7 @@
 		(instances
 			(project "flight-core"
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/5021d7c9-30f6-40e8-9368-2fcfccc5f247"
-					(reference "#PWR0233")
+					(reference "#PWR0234")
 					(unit 1)
 				)
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/b1ca264a-f418-4fe7-a7ba-dc33a197c475"
@@ -10369,7 +9995,7 @@
 		(instances
 			(project "flight-core"
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/5021d7c9-30f6-40e8-9368-2fcfccc5f247"
-					(reference "#PWR0228")
+					(reference "#PWR0229")
 					(unit 1)
 				)
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/b1ca264a-f418-4fe7-a7ba-dc33a197c475"
@@ -10440,7 +10066,7 @@
 		(instances
 			(project "flight-core"
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/5021d7c9-30f6-40e8-9368-2fcfccc5f247"
-					(reference "#PWR0229")
+					(reference "#PWR0230")
 					(unit 1)
 				)
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/b1ca264a-f418-4fe7-a7ba-dc33a197c475"
@@ -10591,7 +10217,7 @@
 		(instances
 			(project "flight-core"
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/5021d7c9-30f6-40e8-9368-2fcfccc5f247"
-					(reference "#PWR0231")
+					(reference "#PWR0232")
 					(unit 1)
 				)
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/b1ca264a-f418-4fe7-a7ba-dc33a197c475"
@@ -10603,7 +10229,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 237.49 123.19 0)
+		(at 231.14 124.46 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10612,7 +10238,7 @@
 		(fields_autoplaced yes)
 		(uuid "e25301cf-02e6-48bb-bcdb-15182f1fad2c")
 		(property "Reference" "#PWR079"
-			(at 237.49 127 0)
+			(at 231.14 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10621,7 +10247,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 237.49 118.11 0)
+			(at 231.14 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10629,7 +10255,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 237.49 123.19 0)
+			(at 231.14 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10638,7 +10264,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 237.49 123.19 0)
+			(at 231.14 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10647,7 +10273,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 237.49 123.19 0)
+			(at 231.14 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10661,7 +10287,7 @@
 		(instances
 			(project "flight-core"
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/5021d7c9-30f6-40e8-9368-2fcfccc5f247"
-					(reference "#PWR0236")
+					(reference "#PWR0237")
 					(unit 1)
 				)
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/b1ca264a-f418-4fe7-a7ba-dc33a197c475"
@@ -10673,7 +10299,7 @@
 	)
 	(symbol
 		(lib_id "formula:MMBF170")
-		(at 271.78 128.27 0)
+		(at 266.7 148.59 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10681,7 +10307,7 @@
 		(dnp no)
 		(uuid "e7948025-9b31-4d70-8abc-77151dbf633b")
 		(property "Reference" "Q3"
-			(at 261.62 121.666 0)
+			(at 256.54 141.986 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10690,7 +10316,7 @@
 			)
 		)
 		(property "Value" "MMBF170"
-			(at 261.62 124.206 0)
+			(at 256.54 144.526 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10699,7 +10325,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 276.86 130.175 0)
+			(at 271.78 150.495 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10710,7 +10336,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.fairchildsemi.com/datasheets/MM/MMBF170.pdf"
-			(at 276.86 126.365 0)
+			(at 271.78 146.685 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10720,7 +10346,7 @@
 			)
 		)
 		(property "Description" "MOSFET, N-channel, 60V, 500mA"
-			(at 271.78 128.27 0)
+			(at 266.7 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10729,7 +10355,7 @@
 			)
 		)
 		(property "MFN" "DK"
-			(at 279.4 123.825 0)
+			(at 274.32 144.145 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10738,7 +10364,7 @@
 			)
 		)
 		(property "MPN" "MMBF170CT-ND"
-			(at 281.94 121.285 0)
+			(at 276.86 141.605 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10747,7 +10373,7 @@
 			)
 		)
 		(property "PurchasingLink" "https://www.digikey.com/product-detail/en/on-semiconductor/MMBF170/MMBF170CT-ND/244295"
-			(at 284.48 118.745 0)
+			(at 279.4 139.065 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10957,7 +10583,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 200.66 153.67 0)
+		(at 194.31 153.67 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10966,7 +10592,7 @@
 		(fields_autoplaced yes)
 		(uuid "fb7c98cc-4ff4-4f92-aa85-8cf7d4bcb903")
 		(property "Reference" "#PWR077"
-			(at 200.66 160.02 0)
+			(at 194.31 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10975,7 +10601,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 200.66 158.75 0)
+			(at 194.31 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10983,7 +10609,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 200.66 153.67 0)
+			(at 194.31 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10992,7 +10618,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 200.66 153.67 0)
+			(at 194.31 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11001,7 +10627,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 200.66 153.67 0)
+			(at 194.31 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11015,7 +10641,7 @@
 		(instances
 			(project "flight-core"
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/5021d7c9-30f6-40e8-9368-2fcfccc5f247"
-					(reference "#PWR0234")
+					(reference "#PWR0235")
 					(unit 1)
 				)
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/b1ca264a-f418-4fe7-a7ba-dc33a197c475"
@@ -11085,7 +10711,7 @@
 		(instances
 			(project "flight-core"
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/5021d7c9-30f6-40e8-9368-2fcfccc5f247"
-					(reference "#PWR0225")
+					(reference "#PWR0226")
 					(unit 1)
 				)
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/b1ca264a-f418-4fe7-a7ba-dc33a197c475"
