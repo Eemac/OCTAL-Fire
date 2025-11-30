@@ -7449,21 +7449,21 @@
 		(dnp no)
 		(uuid "25d17fe0-36ef-4c6b-ac3e-043286b2191b")
 		(property "Reference" "LS1"
-			(at 265.43 132.08 0)
+			(at 273.05 132.327 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Value" "CST-951AP"
-			(at 265.43 134.62 0)
+			(at 273.05 134.867 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Footprint" "obad_footprints:CUI_CST-951AP"
