@@ -656,6 +656,66 @@
       "Cube 2 Header"
     ],
     [
+      "c06071dc-7391-456f-89fe-442eb3a577b5",
+      "shutdown LED circuit1"
+    ],
+    [
+      "9976fc8a-7b1b-4d73-80e0-124c6478f0b5",
+      "shutdown LED circuit3"
+    ],
+    [
+      "01f469e2-a66e-4a4a-bdca-7d100d01b3f2",
+      "shutdown LED circuit4"
+    ],
+    [
+      "7aa2d373-06cd-492d-8658-01cdeb3e08fa",
+      "shutdown LED circuit5"
+    ],
+    [
+      "198621ff-0bf5-4d98-a943-93b911a933cc",
+      "shutdown LED circuit6"
+    ],
+    [
+      "869e4b4b-8519-4ffd-82e5-16a97cf491a6",
+      "shutdown LED circuit7"
+    ],
+    [
+      "485c92a2-6edf-4098-bfa5-e5676f058a68",
+      "shutdown LED circuit8"
+    ],
+    [
+      "4d6dcb23-cd62-4fc9-8c4b-d725628d9ecd",
+      "shutdown LED circuit9"
+    ],
+    [
+      "60c51b68-3838-4b2b-87a4-33ddac8b166c",
+      "shutdown LED circuit10"
+    ],
+    [
+      "26e55691-d37d-4e87-862a-eb964aa27e41",
+      "shutdown LED circuit11"
+    ],
+    [
+      "8ee200ee-cecf-4aa2-a5f7-7a91abc1ffd4",
+      "shutdown LED circuit12"
+    ],
+    [
+      "68688099-dbbf-4479-aee5-4cbc4e279232",
+      "shutdown LED circuit13"
+    ],
+    [
+      "67fc5250-5d6f-4bc7-96e1-28b63490e611",
+      "shutdown LED circuit14"
+    ],
+    [
+      "25dfc6b6-4087-4fe5-bc39-21bf1aaed193",
+      "shutdown LED circuit15"
+    ],
+    [
+      "70305bb4-79ee-46b3-84f3-dcd861beaa85",
+      "shutdown LED circuit16"
+    ],
+    [
       "66136be3-edc9-4a2c-bee0-74cf2086e2ec",
       "CAN Repeater9"
     ],
@@ -732,6 +792,10 @@
       "Bus Arbitration Logic"
     ],
     [
+      "7e54b340-baec-4f55-9d27-4a94895e53c2",
+      "shutdown LED circuit"
+    ],
+    [
       "4ca96cdf-dbab-45c4-8eef-8c50f309fb20",
       "CAN Repeater2"
     ],
@@ -786,6 +850,26 @@
     [
       "0e50c34f-cbc1-4276-a63e-8f0ddf3c5268",
       "Bus Arbitration Logic"
+    ],
+    [
+      "9405599d-1321-426c-9951-3f434eb84a4b",
+      "shutdown LED circuit17"
+    ],
+    [
+      "aa7ad9d4-0bbe-409f-8d65-8c12e34b5656",
+      "shutdown LED circuit18"
+    ],
+    [
+      "76eaedb2-7e20-4ad0-88b2-425edb1f2cef",
+      "shutdown LED circuit19"
+    ],
+    [
+      "cb770ae2-15b2-4344-a0dd-c2eabd091c76",
+      "shutdown LED circuit20"
+    ],
+    [
+      "8ed8bd18-c52b-459e-8a1a-953e20c7e312",
+      "shutdown LED circuit21"
     ]
   ],
   "text_variables": {}
