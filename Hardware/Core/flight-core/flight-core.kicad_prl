@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 0,
+    "active_layer": 25,
     "active_layer_preset": "",
     "auto_track_width": false,
     "hidden_netclasses": [],
@@ -44,7 +44,6 @@
       "bitmaps",
       "pads",
       "zones",
-      "drc_warnings",
       "drc_exclusions",
       "locked_item_shadows",
       "conflict_shadows",
