@@ -13042,7 +13042,7 @@
 				)
 			)
 		)
-		(property "Footprint" "footprints:R_0805_OEM"
+		(property "Footprint" "footprints:R_0603_1608Metric"
 			(at 78.74 173.99 0)
 			(effects
 				(font
@@ -13667,7 +13667,7 @@
 				)
 			)
 		)
-		(property "Footprint" "footprints:R_0805_OEM"
+		(property "Footprint" "footprints:R_0603_1608Metric"
 			(at 78.74 168.91 0)
 			(effects
 				(font
