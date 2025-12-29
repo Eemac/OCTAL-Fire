@@ -5,7 +5,7 @@
 	(uuid "263d09d1-e464-4549-a370-41a84f29cb12")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Connector_Generic_MountingPin:Conn_01x05_MountingPin"
+		(symbol "Connector_Generic:Conn_01x05"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -21,13 +21,12 @@
 					)
 				)
 			)
-			(property "Value" "Conn_01x05_MountingPin"
-				(at 1.27 -7.62 0)
+			(property "Value" "Conn_01x05"
+				(at 0 -7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
 			(property "Footprint" ""
@@ -48,7 +47,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Generic connectable mounting pin connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
 				(at 0 0 0)
 				(effects
 					(font
@@ -66,7 +65,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "Connector*:*_1x??-1MP*"
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -75,7 +74,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "Conn_01x05_MountingPin_1_1"
+			(symbol "Conn_01x05_1_1"
 				(rectangle
 					(start -1.27 6.35)
 					(end 1.27 -6.35)
@@ -140,26 +139,6 @@
 					)
 					(fill
 						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.016 -7.112) (xy 1.016 -7.112)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(text "Mounting"
-					(at 0 -6.731 0)
-					(effects
-						(font
-							(size 0.381 0.381)
-						)
 					)
 				)
 				(pin passive line
@@ -245,24 +224,6 @@
 						)
 					)
 					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -10.16 90)
-					(length 3.048)
-					(name "MountPin"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "MP"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -573,13 +534,9 @@
 			(embedded_fonts no)
 		)
 	)
-	(no_connect
-		(at 107.95 90.17)
-		(uuid "94511884-51ab-4fa5-9a8e-e9a7fcde112e")
-	)
 	(wire
 		(pts
-			(xy 71.12 120.65) (xy 74.93 120.65)
+			(xy 69.85 120.65) (xy 73.66 120.65)
 		)
 		(stroke
 			(width 0)
@@ -589,7 +546,7 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 120.65) (xy 87.63 120.65)
+			(xy 81.28 120.65) (xy 86.36 120.65)
 		)
 		(stroke
 			(width 0)
@@ -599,7 +556,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 77.47) (xy 85.09 77.47)
+			(xy 81.28 78.74) (xy 86.36 78.74)
 		)
 		(stroke
 			(width 0)
@@ -619,7 +576,7 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 107.95) (xy 87.63 107.95)
+			(xy 81.28 107.95) (xy 86.36 107.95)
 		)
 		(stroke
 			(width 0)
@@ -629,7 +586,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 120.65) (xy 87.63 121.92)
+			(xy 86.36 120.65) (xy 86.36 121.92)
 		)
 		(stroke
 			(width 0)
@@ -649,7 +606,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 107.95) (xy 87.63 109.22)
+			(xy 86.36 107.95) (xy 86.36 109.22)
 		)
 		(stroke
 			(width 0)
@@ -669,7 +626,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 77.47) (xy 72.39 77.47)
+			(xy 69.85 78.74) (xy 73.66 78.74)
 		)
 		(stroke
 			(width 0)
@@ -679,7 +636,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 77.47) (xy 85.09 78.74)
+			(xy 86.36 78.74) (xy 86.36 80.01)
 		)
 		(stroke
 			(width 0)
@@ -689,7 +646,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 107.95) (xy 74.93 107.95)
+			(xy 69.85 107.95) (xy 73.66 107.95)
 		)
 		(stroke
 			(width 0)
@@ -698,7 +655,7 @@
 		(uuid "ee96e805-97df-4180-b756-9fd32edf2392")
 	)
 	(label "TH_C"
-		(at 71.12 107.95 180)
+		(at 69.85 107.95 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -708,7 +665,7 @@
 		(uuid "09d51e1b-390d-4e18-a30d-f73770e2be3a")
 	)
 	(label "TH_B"
-		(at 102.87 77.47 180)
+		(at 102.87 97.79 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -728,7 +685,7 @@
 		(uuid "76171839-8460-4a85-bd11-9809e615e82e")
 	)
 	(label "TH_A"
-		(at 68.58 77.47 180)
+		(at 69.85 78.74 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -738,7 +695,7 @@
 		(uuid "7dc02073-a334-4c2b-abb8-afb8f1808c1b")
 	)
 	(label "TH_C"
-		(at 102.87 80.01 180)
+		(at 102.87 100.33 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -748,7 +705,7 @@
 		(uuid "889a5e59-64ac-4ce6-8e1d-05e14493d4dc")
 	)
 	(label "TH_A"
-		(at 102.87 74.93 180)
+		(at 102.87 95.25 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -758,7 +715,7 @@
 		(uuid "b043704c-85ab-417c-9f13-f49f24ad754b")
 	)
 	(label "TH_D"
-		(at 102.87 82.55 180)
+		(at 102.87 102.87 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -768,7 +725,7 @@
 		(uuid "c24be860-69e6-4091-9cd8-aca2dde9d5d9")
 	)
 	(label "TH_D"
-		(at 71.12 120.65 180)
+		(at 69.85 120.65 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -778,35 +735,33 @@
 		(uuid "f2fc4f75-a214-4d78-9f7f-b070248bc3cd")
 	)
 	(symbol
-		(lib_id "Connector_Generic_MountingPin:Conn_01x05_MountingPin")
-		(at 107.95 80.01 0)
+		(lib_id "Device:Thermistor_US")
+		(at 77.47 120.65 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "02fa83b8-6c87-4aa5-acef-93459e4969f4")
-		(property "Reference" "J1"
-			(at 106.68 72.136 0)
+		(fields_autoplaced yes)
+		(uuid "0339b0bc-aa26-4619-95aa-b5d38e7f21ee")
+		(property "Reference" "TH4"
+			(at 77.47 114.3 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "Conn_01x05_MountingPin"
-			(at 110.49 81.6355 0)
+		(property "Value" "Thermistor_US"
+			(at 77.47 116.84 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
-				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_EH_B5B-EH-A_1x05_P2.50mm_Vertical"
-			(at 107.95 80.01 0)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 77.47 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -815,7 +770,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 107.95 80.01 0)
+			(at 77.47 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -823,37 +778,104 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connectable mounting pin connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 107.95 80.01 0)
+		(property "Description" "Thermistor, temperature dependent resistor, US symbol"
+			(at 77.47 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(pin "4"
-			(uuid "a816130b-9ab7-470f-8cc3-a4cf9440c6cb")
-		)
-		(pin "1"
-			(uuid "4f51b026-7459-4558-ab85-157358e631ba")
-		)
-		(pin "MP"
-			(uuid "642b0ea0-6f82-4104-8b6a-a90977c79918")
-		)
-		(pin "3"
-			(uuid "5adc4062-9e90-4f79-8c03-f0c8b6ed53d7")
 		)
 		(pin "2"
-			(uuid "d707f190-4707-41ff-b672-e1dd03f5f407")
+			(uuid "5493cdbe-00b9-47fa-a31e-a3a8bbff70c8")
 		)
-		(pin "5"
-			(uuid "ea4c32ce-6180-43cd-b4fa-1235cff39ae1")
+		(pin "1"
+			(uuid "f4255e0b-8740-466c-acff-39fbc9da90db")
 		)
 		(instances
 			(project "Thermistors"
 				(path "/263d09d1-e464-4549-a370-41a84f29cb12"
-					(reference "J1")
+					(reference "TH4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x05")
+		(at 107.95 100.33 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0502f197-906c-4c9a-b6f5-7f1cb0abbad3")
+		(property "Reference" "J101"
+			(at 110.49 99.0599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x05"
+			(at 110.49 101.5999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "BAD_LIB:FPC_5pin"
+			(at 107.95 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 107.95 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 107.95 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dec8a19d-9a91-4694-afcf-1c4676542cb5")
+		)
+		(pin "2"
+			(uuid "44cb700e-ca09-46f8-9b0b-f633a7c2210c")
+		)
+		(pin "3"
+			(uuid "b755c464-0345-45ea-acb7-a445fcf695d1")
+		)
+		(pin "5"
+			(uuid "d3193097-87df-4bd7-a01d-10fd70b53021")
+		)
+		(pin "4"
+			(uuid "b8ae24f7-74e7-421a-96b1-3547ad12ef23")
+		)
+		(instances
+			(project ""
+				(path "/263d09d1-e464-4549-a370-41a84f29cb12"
+					(reference "J101")
 					(unit 1)
 				)
 			)
@@ -861,7 +883,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 87.63 121.92 0)
+		(at 86.36 121.92 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -870,7 +892,7 @@
 		(fields_autoplaced yes)
 		(uuid "0cf39217-0593-42c8-b6e6-52e04380a79e")
 		(property "Reference" "#PWR04"
-			(at 87.63 128.27 0)
+			(at 86.36 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -879,7 +901,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 87.63 127 0)
+			(at 86.36 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -887,7 +909,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 87.63 121.92 0)
+			(at 86.36 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -896,7 +918,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 87.63 121.92 0)
+			(at 86.36 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -905,7 +927,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 87.63 121.92 0)
+			(at 86.36 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -993,7 +1015,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 85.09 78.74 0)
+		(at 86.36 80.01 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1002,7 +1024,7 @@
 		(fields_autoplaced yes)
 		(uuid "2835c74b-5f11-45d1-a062-8ffe535ee098")
 		(property "Reference" "#PWR01"
-			(at 85.09 85.09 0)
+			(at 86.36 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1011,7 +1033,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 85.09 83.82 0)
+			(at 86.36 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1019,7 +1041,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 85.09 78.74 0)
+			(at 86.36 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1028,7 +1050,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 85.09 78.74 0)
+			(at 86.36 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1037,7 +1059,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 85.09 78.74 0)
+			(at 86.36 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1058,212 +1080,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Thermistor_US")
-		(at 78.74 120.65 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "47dae9f7-792e-40c0-ab97-37934dcea0c4")
-		(property "Reference" "TH4"
-			(at 78.74 114.3 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Thermistor_US"
-			(at 78.74 116.84 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 78.74 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 78.74 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Thermistor, temperature dependent resistor, US symbol"
-			(at 78.74 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "2a0fe28d-6613-4088-a767-cba1f93514c2")
-		)
-		(pin "1"
-			(uuid "b9be8c88-f18e-4240-902a-82bda50861dc")
-		)
-		(instances
-			(project "Thermistors"
-				(path "/263d09d1-e464-4549-a370-41a84f29cb12"
-					(reference "TH4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Thermistor_US")
-		(at 77.47 93.98 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "611b05d5-6b88-4168-95bd-7b7b960e48f2")
-		(property "Reference" "TH2"
-			(at 77.47 87.63 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Thermistor_US"
-			(at 77.47 90.17 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 77.47 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 77.47 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Thermistor, temperature dependent resistor, US symbol"
-			(at 77.47 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "a620f5ef-6cdd-47a9-8e99-fbdcb719346f")
-		)
-		(pin "1"
-			(uuid "75ad8c42-8f11-4629-82dd-dc33a169a4fc")
-		)
-		(instances
-			(project "Thermistors"
-				(path "/263d09d1-e464-4549-a370-41a84f29cb12"
-					(reference "TH2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Thermistor_US")
-		(at 78.74 107.95 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7fee625a-d27f-40ab-8c0b-7f610681ae47")
-		(property "Reference" "TH3"
-			(at 78.74 101.6 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Thermistor_US"
-			(at 78.74 104.14 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 78.74 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 78.74 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Thermistor, temperature dependent resistor, US symbol"
-			(at 78.74 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "2d55803c-0cb9-4b63-a8e7-9a42cce50282")
-		)
-		(pin "1"
-			(uuid "67f03147-71c6-4022-ba44-220cae359e17")
-		)
-		(instances
-			(project "Thermistors"
-				(path "/263d09d1-e464-4549-a370-41a84f29cb12"
-					(reference "TH3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
-		(at 102.87 85.09 0)
+		(at 102.87 105.41 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1272,7 +1090,7 @@
 		(fields_autoplaced yes)
 		(uuid "c0199b3c-0770-4c2a-b1fd-c69b3b26457e")
 		(property "Reference" "#PWR05"
-			(at 102.87 91.44 0)
+			(at 102.87 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1281,7 +1099,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 102.87 90.17 0)
+			(at 102.87 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1289,7 +1107,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 102.87 85.09 0)
+			(at 102.87 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1298,7 +1116,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 102.87 85.09 0)
+			(at 102.87 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1307,7 +1125,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 102.87 85.09 0)
+			(at 102.87 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1329,7 +1147,7 @@
 	)
 	(symbol
 		(lib_id "Device:Thermistor_US")
-		(at 76.2 77.47 90)
+		(at 77.47 78.74 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1338,7 +1156,7 @@
 		(fields_autoplaced yes)
 		(uuid "d1e7ab97-1fae-4fb4-80aa-916f0bdf7f87")
 		(property "Reference" "TH1"
-			(at 76.2 71.12 90)
+			(at 77.47 72.39 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1346,15 +1164,15 @@
 			)
 		)
 		(property "Value" "Thermistor_US"
-			(at 76.2 73.66 90)
+			(at 77.47 74.93 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 76.2 77.47 0)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 77.47 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1363,7 +1181,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 76.2 77.47 0)
+			(at 77.47 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1372,7 +1190,7 @@
 			)
 		)
 		(property "Description" "Thermistor, temperature dependent resistor, US symbol"
-			(at 76.2 77.47 0)
+			(at 77.47 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1397,7 +1215,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 87.63 109.22 0)
+		(at 86.36 109.22 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1406,7 +1224,7 @@
 		(fields_autoplaced yes)
 		(uuid "d3d92fa7-06c9-4429-a902-79afc7291c18")
 		(property "Reference" "#PWR03"
-			(at 87.63 115.57 0)
+			(at 86.36 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1415,7 +1233,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 87.63 114.3 0)
+			(at 86.36 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1423,7 +1241,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 87.63 109.22 0)
+			(at 86.36 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1432,7 +1250,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 87.63 109.22 0)
+			(at 86.36 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1441,7 +1259,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 87.63 109.22 0)
+			(at 86.36 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1456,6 +1274,142 @@
 			(project "Thermistors"
 				(path "/263d09d1-e464-4549-a370-41a84f29cb12"
 					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Thermistor_US")
+		(at 77.47 107.95 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e8ce082e-055e-4f0b-8707-bc57b86818c0")
+		(property "Reference" "TH3"
+			(at 77.47 101.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Thermistor_US"
+			(at 77.47 104.14 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 77.47 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 77.47 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Thermistor, temperature dependent resistor, US symbol"
+			(at 77.47 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1e95bb2f-bbeb-4e52-ad11-f0bf8fba6c59")
+		)
+		(pin "1"
+			(uuid "8f726621-e9c1-4a2c-9c45-c7ab018febf0")
+		)
+		(instances
+			(project "Thermistors"
+				(path "/263d09d1-e464-4549-a370-41a84f29cb12"
+					(reference "TH3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Thermistor_US")
+		(at 77.47 93.98 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fa989a46-1aa5-4608-b00a-fb1814095008")
+		(property "Reference" "TH2"
+			(at 77.47 87.63 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Thermistor_US"
+			(at 77.47 90.17 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 77.47 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 77.47 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Thermistor, temperature dependent resistor, US symbol"
+			(at 77.47 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8f1a2db8-0d33-4ed7-af9d-e3b36f2a65a9")
+		)
+		(pin "1"
+			(uuid "45d7b742-4e8e-44d8-ba38-6ab4ff056571")
+		)
+		(instances
+			(project "Thermistors"
+				(path "/263d09d1-e464-4549-a370-41a84f29cb12"
+					(reference "TH2")
 					(unit 1)
 				)
 			)
