@@ -1206,6 +1206,113 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "OlinBAD:D1.0_TP"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "D1.0_TP_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "D1.0_TP_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "OlinBAD:DF17_4.0_-80DP-0.5V_57_"
 			(pin_names
 				(offset 0)
@@ -5542,122 +5649,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "formula:TP"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "TP"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "TP"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "footprints:tp_1.6mm"
-				(at -2.54 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "http://www.keyelco.com/product-pdf.cfm?p=1314"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "MFN" "DK"
-				(at 2.54 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "MPN" "36-5006-ND"
-				(at 5.08 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "PurchasingLink" "https://www.digikey.com/product-detail/en/keystone-electronics/5006/36-5006-ND/255330"
-				(at 7.62 7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "TP_0_1"
-				(circle
-					(center 0 -1.27)
-					(radius 1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "TP_1_1"
-				(pin input line
-					(at 0 -5.08 90)
-					(length 2.54)
-					(name "TP"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:+3.3V"
 			(power)
 			(pin_numbers
@@ -6686,7 +6677,7 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 121.92) (xy 105.41 121.92)
+			(xy 96.52 121.92) (xy 111.76 121.92)
 		)
 		(stroke
 			(width 0)
@@ -6916,13 +6907,23 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 124.46) (xy 114.3 124.46)
+			(xy 96.52 124.46) (xy 116.84 124.46)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "cbd01558-3be1-44f5-8797-1d9a258c5b40")
+	)
+	(wire
+		(pts
+			(xy 96.52 119.38) (xy 105.41 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d16c7d49-0d20-4644-ab16-bc6f8d945f26")
 	)
 	(wire
 		(pts
@@ -7830,8 +7831,8 @@
 		)
 	)
 	(symbol
-		(lib_id "formula:TP")
-		(at 110.49 121.92 270)
+		(lib_id "OlinBAD:D1.0_TP")
+		(at 111.76 121.92 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7840,7 +7841,7 @@
 		(fields_autoplaced yes)
 		(uuid "28981128-9290-4670-b3d6-6c9690699b1e")
 		(property "Reference" "TP8"
-			(at 111.76 120.6499 90)
+			(at 116.84 120.6499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7849,7 +7850,7 @@
 			)
 		)
 		(property "Value" "TP"
-			(at 111.76 123.1899 90)
+			(at 116.84 123.1899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7857,8 +7858,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "footprints:tp_1.6mm"
-			(at 107.95 119.38 0)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 111.76 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7866,8 +7867,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.keyelco.com/product-pdf.cfm?p=1314"
-			(at 110.49 121.92 0)
+		(property "Datasheet" "~"
+			(at 111.76 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7875,8 +7876,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 110.49 121.92 0)
+		(property "Description" "test point"
+			(at 111.76 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7885,7 +7886,7 @@
 			)
 		)
 		(property "MFN" "DK"
-			(at 113.03 124.46 0)
+			(at 114.3 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7894,7 +7895,7 @@
 			)
 		)
 		(property "MPN" "36-5006-ND"
-			(at 115.57 127 0)
+			(at 116.84 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7903,7 +7904,7 @@
 			)
 		)
 		(property "PurchasingLink" "https://www.digikey.com/product-detail/en/keystone-electronics/5006/36-5006-ND/255330"
-			(at 118.11 129.54 0)
+			(at 119.38 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8008,17 +8009,16 @@
 		)
 	)
 	(symbol
-		(lib_id "formula:TP")
-		(at 101.6 119.38 270)
+		(lib_id "OlinBAD:D1.0_TP")
+		(at 105.41 119.38 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "3986676f-05fe-4a42-b5dd-81309e07b134")
 		(property "Reference" "TP7"
-			(at 102.87 118.1099 90)
+			(at 110.49 118.1099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8027,7 +8027,7 @@
 			)
 		)
 		(property "Value" "TP"
-			(at 102.87 120.6499 90)
+			(at 110.49 120.6499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8035,8 +8035,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "footprints:tp_1.6mm"
-			(at 99.06 116.84 0)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 105.41 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8044,8 +8044,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.keyelco.com/product-pdf.cfm?p=1314"
-			(at 101.6 119.38 0)
+		(property "Datasheet" "~"
+			(at 105.41 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8053,8 +8053,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 101.6 119.38 0)
+		(property "Description" "test point"
+			(at 105.41 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8063,7 +8063,7 @@
 			)
 		)
 		(property "MFN" "DK"
-			(at 104.14 121.92 0)
+			(at 107.95 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8072,7 +8072,7 @@
 			)
 		)
 		(property "MPN" "36-5006-ND"
-			(at 106.68 124.46 0)
+			(at 110.49 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8081,7 +8081,7 @@
 			)
 		)
 		(property "PurchasingLink" "https://www.digikey.com/product-detail/en/keystone-electronics/5006/36-5006-ND/255330"
-			(at 109.22 127 0)
+			(at 113.03 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8246,8 +8246,8 @@
 		)
 	)
 	(symbol
-		(lib_id "formula:TP")
-		(at 236.22 53.34 180)
+		(lib_id "OlinBAD:D1.0_TP")
+		(at 236.22 48.26 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8256,7 +8256,7 @@
 		(fields_autoplaced yes)
 		(uuid "49bfc799-63e7-4a8e-a11a-99f1c8225328")
 		(property "Reference" "TP10"
-			(at 238.76 50.7999 0)
+			(at 238.76 50.2919 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8265,7 +8265,7 @@
 			)
 		)
 		(property "Value" "TP"
-			(at 238.76 53.3399 0)
+			(at 238.76 52.8319 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8273,8 +8273,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "footprints:tp_1.6mm"
-			(at 238.76 50.8 0)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 231.14 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8282,8 +8282,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.keyelco.com/product-pdf.cfm?p=1314"
-			(at 236.22 53.34 0)
+		(property "Datasheet" "~"
+			(at 231.14 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8291,8 +8291,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 236.22 53.34 0)
+		(property "Description" "test point"
+			(at 236.22 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8301,7 +8301,7 @@
 			)
 		)
 		(property "MFN" "DK"
-			(at 233.68 55.88 0)
+			(at 233.68 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8310,7 +8310,7 @@
 			)
 		)
 		(property "MPN" "36-5006-ND"
-			(at 231.14 58.42 0)
+			(at 231.14 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8319,7 +8319,7 @@
 			)
 		)
 		(property "PurchasingLink" "https://www.digikey.com/product-detail/en/keystone-electronics/5006/36-5006-ND/255330"
-			(at 228.6 60.96 0)
+			(at 228.6 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9808,8 +9808,8 @@
 		)
 	)
 	(symbol
-		(lib_id "formula:TP")
-		(at 119.38 124.46 270)
+		(lib_id "OlinBAD:D1.0_TP")
+		(at 116.84 124.46 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9818,7 +9818,7 @@
 		(fields_autoplaced yes)
 		(uuid "ac23f967-af1f-47d3-9a59-0393d0e4aa3f")
 		(property "Reference" "TP9"
-			(at 120.65 123.1899 90)
+			(at 121.92 123.1899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9827,7 +9827,7 @@
 			)
 		)
 		(property "Value" "TP"
-			(at 120.65 125.7299 90)
+			(at 121.92 125.7299 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9835,8 +9835,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "footprints:tp_1.6mm"
-			(at 116.84 121.92 0)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 116.84 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9844,8 +9844,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.keyelco.com/product-pdf.cfm?p=1314"
-			(at 119.38 124.46 0)
+		(property "Datasheet" "~"
+			(at 116.84 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9853,8 +9853,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 119.38 124.46 0)
+		(property "Description" "test point"
+			(at 116.84 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9863,7 +9863,7 @@
 			)
 		)
 		(property "MFN" "DK"
-			(at 121.92 127 0)
+			(at 119.38 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9872,7 +9872,7 @@
 			)
 		)
 		(property "MPN" "36-5006-ND"
-			(at 124.46 129.54 0)
+			(at 121.92 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9881,7 +9881,7 @@
 			)
 		)
 		(property "PurchasingLink" "https://www.digikey.com/product-detail/en/keystone-electronics/5006/36-5006-ND/255330"
-			(at 127 132.08 0)
+			(at 124.46 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
