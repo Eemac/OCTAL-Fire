@@ -1233,7 +1233,7 @@
 					)
 				)
 			)
-			(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(property "Footprint" "obad_footprints:TestPoint_Pad_D1.0mm"
 				(at 5.08 0 0)
 				(effects
 					(font
@@ -6447,6 +6447,16 @@
 	)
 	(wire
 		(pts
+			(xy 182.88 152.4) (xy 182.88 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0011be92-87fe-4c45-ab40-0b433e1b8367")
+	)
+	(wire
+		(pts
 			(xy 96.52 104.14) (xy 144.78 104.14)
 		)
 		(stroke
@@ -6457,7 +6467,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 120.65) (xy 182.88 123.19)
+			(xy 182.88 121.92) (xy 182.88 123.19)
 		)
 		(stroke
 			(width 0)
@@ -6547,16 +6557,6 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 130.81) (xy 182.88 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "35de1fd7-0b46-4616-ae69-dc573b0635bb")
-	)
-	(wire
-		(pts
 			(xy 167.64 53.34) (xy 167.64 50.8)
 		)
 		(stroke
@@ -6585,6 +6585,16 @@
 		)
 		(uuid "40d51c40-e0a3-4869-b124-8345ef154833")
 	)
+	(wire
+		(pts
+			(xy 219.71 132.08) (xy 219.71 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4276d526-6b8e-44ed-97ca-5304710cb439")
+	)
 	(bus
 		(pts
 			(xy 215.9 97.79) (xy 215.9 105.41)
@@ -6597,7 +6607,7 @@
 	)
 	(wire
 		(pts
-			(xy 219.71 121.92) (xy 219.71 124.46)
+			(xy 219.71 121.92) (xy 219.71 123.19)
 		)
 		(stroke
 			(width 0)
@@ -6767,7 +6777,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 149.86) (xy 182.88 151.13)
+			(xy 182.88 142.24) (xy 182.88 143.51)
 		)
 		(stroke
 			(width 0)
@@ -6835,6 +6845,26 @@
 		)
 		(uuid "a30e09b9-8475-4d4c-b6ac-1a4793bb05f0")
 	)
+	(wire
+		(pts
+			(xy 182.88 130.81) (xy 182.88 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a527b344-e720-447a-a861-2799ace6b72d")
+	)
+	(wire
+		(pts
+			(xy 219.71 143.51) (xy 219.71 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8db286f-0d64-4beb-876f-3847abd5a501")
+	)
 	(bus
 		(pts
 			(xy 68.58 78.74) (xy 68.58 81.28)
@@ -6844,16 +6874,6 @@
 			(type default)
 		)
 		(uuid "b687a127-afbe-4031-8741-ba620b46998a")
-	)
-	(wire
-		(pts
-			(xy 219.71 132.08) (xy 219.71 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bd7f1358-2b1f-4c2c-9b70-47917058b320")
 	)
 	(wire
 		(pts
@@ -7056,7 +7076,7 @@
 		(uuid "1bcc7ca2-b18c-4547-b293-ee7a49294de1")
 	)
 	(label "FMU_LED_AMBER"
-		(at 175.26 144.78 180)
+		(at 175.26 137.16 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7136,7 +7156,7 @@
 		(uuid "425d331a-4b1d-4869-bbe5-087070d0df8d")
 	)
 	(label "IO_LED_SAFET_PROT"
-		(at 212.09 146.05 180)
+		(at 212.09 137.16 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7858,7 +7878,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+		(property "Footprint" "obad_footprints:TestPoint_Pad_D1.0mm"
 			(at 111.76 127 0)
 			(effects
 				(font
@@ -8035,7 +8055,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+		(property "Footprint" "obad_footprints:TestPoint_Pad_D1.0mm"
 			(at 105.41 124.46 0)
 			(effects
 				(font
@@ -8273,7 +8293,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+		(property "Footprint" "obad_footprints:TestPoint_Pad_D1.0mm"
 			(at 231.14 48.26 0)
 			(effects
 				(font
@@ -8345,7 +8365,7 @@
 	)
 	(symbol
 		(lib_id "formula:LED_0805_Amber")
-		(at 182.88 135.89 90)
+		(at 182.88 127 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8353,7 +8373,7 @@
 		(dnp no)
 		(uuid "49de3e9a-1a23-4c31-8aa7-43cad66f3362")
 		(property "Reference" "D5"
-			(at 193.04 137.16 90)
+			(at 193.04 128.27 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8361,7 +8381,7 @@
 			)
 		)
 		(property "Value" "LED_0805_Amber"
-			(at 193.04 134.62 90)
+			(at 193.04 125.73 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8369,7 +8389,7 @@
 			)
 		)
 		(property "Footprint" "footprints:LED_0805_OEM"
-			(at 182.88 138.43 0)
+			(at 182.88 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8378,7 +8398,7 @@
 			)
 		)
 		(property "Datasheet" "https://media.digikey.com/pdf/Data%20Sheets/Chicago%20Miniature%20Lamps%20PDFs/CMDA5_Series_Rev_Aug_2014.pdf"
-			(at 180.34 135.89 0)
+			(at 180.34 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8387,7 +8407,7 @@
 			)
 		)
 		(property "Description" "LED, Amber, 1.9V, 20mA, 0805"
-			(at 182.88 135.89 0)
+			(at 182.88 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8396,7 +8416,7 @@
 			)
 		)
 		(property "MFN" "DK"
-			(at 182.88 135.89 0)
+			(at 182.88 127 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -8405,7 +8425,7 @@
 			)
 		)
 		(property "MPN" "L71517CT-ND"
-			(at 182.88 135.89 0)
+			(at 182.88 127 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -8414,7 +8434,7 @@
 			)
 		)
 		(property "PurchasingLink" "https://www.digikey.com/product-detail/en/visual-communications-company-vcc/CMDA5DY7D1S/L71517CT-ND/614867"
-			(at 170.18 125.73 0)
+			(at 170.18 116.84 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -8443,7 +8463,7 @@
 	)
 	(symbol
 		(lib_id "formula:MMBF170")
-		(at 217.17 146.05 0)
+		(at 217.17 137.16 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8451,7 +8471,7 @@
 		(dnp no)
 		(uuid "61a9f493-c135-489c-b039-6140e994a0fd")
 		(property "Reference" "Q2"
-			(at 207.01 139.446 0)
+			(at 207.01 130.556 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8460,7 +8480,7 @@
 			)
 		)
 		(property "Value" "MMBF170"
-			(at 207.01 141.986 0)
+			(at 207.01 133.096 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8469,7 +8489,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 222.25 147.955 0)
+			(at 222.25 139.065 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8480,7 +8500,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.fairchildsemi.com/datasheets/MM/MMBF170.pdf"
-			(at 222.25 144.145 0)
+			(at 222.25 135.255 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8490,7 +8510,7 @@
 			)
 		)
 		(property "Description" "MOSFET, N-channel, 60V, 500mA"
-			(at 217.17 146.05 0)
+			(at 217.17 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8499,7 +8519,7 @@
 			)
 		)
 		(property "MFN" "DK"
-			(at 224.79 141.605 0)
+			(at 224.79 132.715 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8508,7 +8528,7 @@
 			)
 		)
 		(property "MPN" "MMBF170CT-ND"
-			(at 227.33 139.065 0)
+			(at 227.33 130.175 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8517,7 +8537,7 @@
 			)
 		)
 		(property "PurchasingLink" "https://www.digikey.com/product-detail/en/on-semiconductor/MMBF170/MMBF170CT-ND/244295"
-			(at 229.87 136.525 0)
+			(at 229.87 127.635 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9169,7 +9189,7 @@
 	)
 	(symbol
 		(lib_id "formula:R_200")
-		(at 219.71 128.27 0)
+		(at 219.71 147.32 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9178,7 +9198,7 @@
 		(dnp no)
 		(uuid "87ef5989-6584-48be-b25a-7c0dd0799c57")
 		(property "Reference" "R18"
-			(at 214.63 129.54 0)
+			(at 214.63 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9186,7 +9206,7 @@
 			)
 		)
 		(property "Value" "R_200"
-			(at 214.63 127 0)
+			(at 214.63 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9194,7 +9214,7 @@
 			)
 		)
 		(property "Footprint" "footprints:R_0603_1608Metric"
-			(at 221.488 128.27 0)
+			(at 221.488 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9203,7 +9223,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf"
-			(at 217.678 128.27 0)
+			(at 217.678 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9212,7 +9232,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 219.71 128.27 0)
+			(at 219.71 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9221,7 +9241,7 @@
 			)
 		)
 		(property "MFN" "DK"
-			(at 219.71 128.27 0)
+			(at 219.71 147.32 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -9230,7 +9250,7 @@
 			)
 		)
 		(property "MPN" "RMCF0805JT200RCT-ND"
-			(at 219.71 128.27 0)
+			(at 219.71 147.32 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -9239,7 +9259,7 @@
 			)
 		)
 		(property "PurchasingLink" "https://www.digikey.com/products/en?keywords=RMCF0805JT200RCT-ND"
-			(at 207.518 118.11 0)
+			(at 207.518 137.16 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -9366,7 +9386,7 @@
 	)
 	(symbol
 		(lib_id "formula:MMBF170")
-		(at 180.34 144.78 0)
+		(at 180.34 137.16 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9374,7 +9394,7 @@
 		(dnp no)
 		(uuid "8c2137f8-c60b-485a-ad8c-1814d5d8d826")
 		(property "Reference" "Q1"
-			(at 170.18 138.176 0)
+			(at 170.18 130.556 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9383,7 +9403,7 @@
 			)
 		)
 		(property "Value" "MMBF170"
-			(at 170.18 140.716 0)
+			(at 170.18 133.096 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9392,7 +9412,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 185.42 146.685 0)
+			(at 185.42 139.065 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9403,7 +9423,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.fairchildsemi.com/datasheets/MM/MMBF170.pdf"
-			(at 185.42 142.875 0)
+			(at 185.42 135.255 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9413,7 +9433,7 @@
 			)
 		)
 		(property "Description" "MOSFET, N-channel, 60V, 500mA"
-			(at 180.34 144.78 0)
+			(at 180.34 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9422,7 +9442,7 @@
 			)
 		)
 		(property "MFN" "DK"
-			(at 187.96 140.335 0)
+			(at 187.96 132.715 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9431,7 +9451,7 @@
 			)
 		)
 		(property "MPN" "MMBF170CT-ND"
-			(at 190.5 137.795 0)
+			(at 190.5 130.175 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9440,7 +9460,7 @@
 			)
 		)
 		(property "PurchasingLink" "https://www.digikey.com/product-detail/en/on-semiconductor/MMBF170/MMBF170CT-ND/244295"
-			(at 193.04 135.255 0)
+			(at 193.04 127.635 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9542,7 +9562,7 @@
 	)
 	(symbol
 		(lib_id "formula:R_200")
-		(at 182.88 127 0)
+		(at 182.88 147.32 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9551,7 +9571,7 @@
 		(dnp no)
 		(uuid "9f5f249a-f0d0-46bf-87c4-056d99754e6b")
 		(property "Reference" "R17"
-			(at 177.8 128.27 0)
+			(at 177.8 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9559,7 +9579,7 @@
 			)
 		)
 		(property "Value" "R_200"
-			(at 177.8 125.73 0)
+			(at 177.8 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9567,7 +9587,7 @@
 			)
 		)
 		(property "Footprint" "footprints:R_0603_1608Metric"
-			(at 184.658 127 0)
+			(at 184.658 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9576,7 +9596,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf"
-			(at 180.848 127 0)
+			(at 180.848 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9585,7 +9605,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 182.88 127 0)
+			(at 182.88 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9594,7 +9614,7 @@
 			)
 		)
 		(property "MFN" "DK"
-			(at 182.88 127 0)
+			(at 182.88 147.32 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -9603,7 +9623,7 @@
 			)
 		)
 		(property "MPN" "RMCF0805JT200RCT-ND"
-			(at 182.88 127 0)
+			(at 182.88 147.32 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -9612,7 +9632,7 @@
 			)
 		)
 		(property "PurchasingLink" "https://www.digikey.com/products/en?keywords=RMCF0805JT200RCT-ND"
-			(at 170.688 116.84 0)
+			(at 170.688 137.16 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -9711,7 +9731,7 @@
 	)
 	(symbol
 		(lib_id "formula:LED_0805_Amber")
-		(at 219.71 137.16 90)
+		(at 219.71 127 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9719,7 +9739,7 @@
 		(dnp no)
 		(uuid "a64240f8-8e02-44cf-b735-4121a0e5c5fd")
 		(property "Reference" "D6"
-			(at 231.14 138.43 90)
+			(at 231.14 128.27 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9727,7 +9747,7 @@
 			)
 		)
 		(property "Value" "LED_0805_Amber"
-			(at 231.14 135.89 90)
+			(at 231.14 125.73 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9735,7 +9755,7 @@
 			)
 		)
 		(property "Footprint" "footprints:LED_0805_OEM"
-			(at 219.71 139.7 0)
+			(at 219.71 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9744,7 +9764,7 @@
 			)
 		)
 		(property "Datasheet" "https://media.digikey.com/pdf/Data%20Sheets/Chicago%20Miniature%20Lamps%20PDFs/CMDA5_Series_Rev_Aug_2014.pdf"
-			(at 217.17 137.16 0)
+			(at 217.17 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9753,7 +9773,7 @@
 			)
 		)
 		(property "Description" "LED, Amber, 1.9V, 20mA, 0805"
-			(at 219.71 137.16 0)
+			(at 219.71 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9762,7 +9782,7 @@
 			)
 		)
 		(property "MFN" "DK"
-			(at 219.71 137.16 0)
+			(at 219.71 127 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -9771,7 +9791,7 @@
 			)
 		)
 		(property "MPN" "L71517CT-ND"
-			(at 219.71 137.16 0)
+			(at 219.71 127 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -9780,7 +9800,7 @@
 			)
 		)
 		(property "PurchasingLink" "https://www.digikey.com/product-detail/en/visual-communications-company-vcc/CMDA5DY7D1S/L71517CT-ND/614867"
-			(at 207.01 127 0)
+			(at 207.01 116.84 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -9835,7 +9855,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+		(property "Footprint" "obad_footprints:TestPoint_Pad_D1.0mm"
 			(at 116.84 129.54 0)
 			(effects
 				(font
@@ -10047,7 +10067,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 182.88 120.65 0)
+		(at 182.88 121.92 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10056,7 +10076,7 @@
 		(fields_autoplaced yes)
 		(uuid "c5543e02-77a9-4b54-a9dd-7e094364ee66")
 		(property "Reference" "#PWR078"
-			(at 182.88 124.46 0)
+			(at 182.88 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10065,7 +10085,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 182.88 115.57 0)
+			(at 182.88 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10073,7 +10093,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 182.88 120.65 0)
+			(at 182.88 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10082,7 +10102,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 182.88 120.65 0)
+			(at 182.88 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10091,7 +10111,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 182.88 120.65 0)
+			(at 182.88 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10677,7 +10697,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 182.88 151.13 0)
+		(at 182.88 152.4 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10686,7 +10706,7 @@
 		(fields_autoplaced yes)
 		(uuid "fb7c98cc-4ff4-4f92-aa85-8cf7d4bcb903")
 		(property "Reference" "#PWR079"
-			(at 182.88 157.48 0)
+			(at 182.88 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10695,7 +10715,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 182.88 156.21 0)
+			(at 182.88 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10703,7 +10723,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 182.88 151.13 0)
+			(at 182.88 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10712,7 +10732,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 182.88 151.13 0)
+			(at 182.88 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10721,7 +10741,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 182.88 151.13 0)
+			(at 182.88 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)

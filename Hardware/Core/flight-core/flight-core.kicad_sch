@@ -1995,16 +1995,6 @@
 		)
 		(uuid "9d2892a5-219f-4cf7-b146-883ba1e12aa8")
 	)
-	(text "VERTICAL"
-		(exclude_from_sim no)
-		(at 0 123.19 0)
-		(effects
-			(font
-				(size 12.7 12.7)
-			)
-		)
-		(uuid "bc5452c6-1daf-461b-baee-1f1704678c51")
-	)
 	(text "TEST & DEBUG HOOKS"
 		(exclude_from_sim no)
 		(at 19.05 173.99 0)
@@ -2675,6 +2665,16 @@
 	)
 	(wire
 		(pts
+			(xy 170.18 87.63) (xy 241.3 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8121845e-4fd7-48b1-8d09-8639c259a9e8")
+	)
+	(wire
+		(pts
 			(xy 177.8 48.26) (xy 177.8 41.91)
 		)
 		(stroke
@@ -2802,16 +2802,6 @@
 			(type default)
 		)
 		(uuid "9b41b56c-83ff-4070-98ff-36701b18b944")
-	)
-	(wire
-		(pts
-			(xy 170.18 87.63) (xy 241.3 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9b6c9907-a765-4b75-9eac-4a3295c3741c")
 	)
 	(wire
 		(pts
@@ -4128,7 +4118,7 @@
 		(uuid "e78e1781-056c-4752-b216-5f23ef32894c")
 	)
 	(label "SHDN_SENSE_NUC"
-		(at 170.18 87.63 0)
+		(at 195.58 87.63 0)
 		(effects
 			(font
 				(size 1.27 1.27)

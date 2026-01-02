@@ -32,7 +32,7 @@
 					)
 				)
 			)
-			(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(property "Footprint" "obad_footprints:TestPoint_Pad_D1.0mm"
 				(at 5.08 0 0)
 				(effects
 					(font
@@ -1952,7 +1952,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+		(property "Footprint" "obad_footprints:TestPoint_Pad_D1.0mm"
 			(at 130.81 119.38 0)
 			(effects
 				(font
