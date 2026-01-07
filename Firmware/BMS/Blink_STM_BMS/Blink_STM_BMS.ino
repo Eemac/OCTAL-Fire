@@ -1,5 +1,5 @@
 #include <Wire.h>
-// #include <meFDCAN.h>
+#include <meFDCAN.h>
 
 #include <SPI.h>
 #include "ADBMS1818.h"

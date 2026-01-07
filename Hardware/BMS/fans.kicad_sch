@@ -6158,7 +6158,7 @@
 				)
 			)
 		)
-		(property "Value" "2.2k"
+		(property "Value" "2.2"
 			(at 143.51 78.74 90)
 			(effects
 				(font
