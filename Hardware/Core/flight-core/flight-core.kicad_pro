@@ -193,7 +193,8 @@
         0.3556,
         0.635,
         0.762,
-        1.143
+        1.143,
+        1.27
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -660,6 +661,10 @@
       "shutdown LED circuit1"
     ],
     [
+      "3f50e8c8-eee6-4ddc-a94f-89689d17a49c",
+      "shutdown LED no TP1"
+    ],
+    [
       "9976fc8a-7b1b-4d73-80e0-124c6478f0b5",
       "shutdown LED circuit3"
     ],
@@ -672,8 +677,8 @@
       "shutdown LED circuit5"
     ],
     [
-      "198621ff-0bf5-4d98-a943-93b911a933cc",
-      "shutdown LED circuit6"
+      "ec077d63-45ad-434d-a6f7-9eff9e5b3760",
+      "shutdown LED no TP2"
     ],
     [
       "869e4b4b-8519-4ffd-82e5-16a97cf491a6",
@@ -700,8 +705,8 @@
       "shutdown LED circuit12"
     ],
     [
-      "68688099-dbbf-4479-aee5-4cbc4e279232",
-      "shutdown LED circuit13"
+      "18dcfcb1-e7d4-4316-a947-4cdecfe32fef",
+      "shutdown LED no TP3"
     ],
     [
       "67fc5250-5d6f-4bc7-96e1-28b63490e611",
@@ -792,10 +797,6 @@
       "Bus Arbitration Logic"
     ],
     [
-      "7e54b340-baec-4f55-9d27-4a94895e53c2",
-      "shutdown LED circuit"
-    ],
-    [
       "4ca96cdf-dbab-45c4-8eef-8c50f309fb20",
       "CAN Repeater2"
     ],
@@ -868,8 +869,8 @@
       "shutdown LED circuit20"
     ],
     [
-      "8ed8bd18-c52b-459e-8a1a-953e20c7e312",
-      "shutdown LED circuit21"
+      "6ca77398-8594-4a6a-8039-7de7c0d7cc6b",
+      "shutdown LED no TP"
     ]
   ],
   "text_variables": {}
