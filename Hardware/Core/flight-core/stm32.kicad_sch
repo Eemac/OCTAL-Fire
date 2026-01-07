@@ -8488,7 +8488,7 @@
 		(uuid "453e555c-73dc-4e85-808f-44141f55f484")
 	)
 	(label "DEBUG1"
-		(at 170.18 41.91 90)
+		(at 170.18 72.39 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9031,7 +9031,7 @@
 	)
 	(hierarchical_label "SHDN_SENSE_LOWER_RIDER_ESTOP"
 		(shape input)
-		(at 195.58 49.53 90)
+		(at 198.12 49.53 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9042,7 +9042,7 @@
 	)
 	(hierarchical_label "SHDN_SENSE_BMS_OK_N"
 		(shape input)
-		(at 200.66 49.53 90)
+		(at 208.28 49.53 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9086,7 +9086,7 @@
 	)
 	(hierarchical_label "SHDN_SENSE_NUC"
 		(shape input)
-		(at 198.12 49.53 90)
+		(at 195.58 49.53 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9120,7 +9120,7 @@
 	)
 	(hierarchical_label "SHDN_SENSE_BMS_OK_S"
 		(shape input)
-		(at 205.74 49.53 90)
+		(at 203.2 49.53 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9153,7 +9153,7 @@
 	)
 	(hierarchical_label "SHDN_SENSE_BMS_OK_E"
 		(shape input)
-		(at 203.2 49.53 90)
+		(at 205.74 49.53 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9253,7 +9253,7 @@
 	)
 	(hierarchical_label "SHDN_SENSE_BMS_OK_ALL"
 		(shape input)
-		(at 208.28 49.53 90)
+		(at 200.66 49.53 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9286,7 +9286,7 @@
 	)
 	(hierarchical_label "RESET_CUBE_1"
 		(shape output)
-		(at 170.18 72.39 0)
+		(at 170.18 41.91 90)
 		(effects
 			(font
 				(size 1.27 1.27)
