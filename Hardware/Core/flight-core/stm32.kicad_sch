@@ -8697,16 +8697,6 @@
 		)
 		(uuid "7bc0d66f-b9c2-4184-a22c-f4d8d2946d6f")
 	)
-	(label "DEBUG2"
-		(at 238.76 35.56 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "8877346c-f9dd-4b9e-bdae-e0469484aa7d")
-	)
 	(label "CORE_HEARTBEAT"
 		(at 238.76 41.91 180)
 		(effects
@@ -14905,16 +14895,6 @@
 		(pin "SHDN_SENSE_FRAME_ESTOP" input
 			(at 238.76 59.69 180)
 			(uuid "1d3df59e-5189-4464-b744-85c8e17606a1")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "DEBUG2" input
-			(at 238.76 35.56 180)
-			(uuid "4f8c3a6d-6c38-4319-b747-93c2790852fe")
 			(effects
 				(font
 					(size 1.27 1.27)
