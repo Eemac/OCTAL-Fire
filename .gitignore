@@ -30,6 +30,10 @@ fp-info-cache
 *.lck
 *pcb.backup
 
+# extension logs/files
+*hide-refs.pl
+*replicate_layout.log
+
 # Netlist files
 *.net
 
