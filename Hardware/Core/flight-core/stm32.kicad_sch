@@ -6264,7 +6264,7 @@
 		(uuid "11fd0f4a-cc30-4961-9747-b674283107bc")
 	)
 	(junction
-		(at 198.12 77.47)
+		(at 198.12 74.93)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "12c82808-dbcb-4035-9f1f-453c1d6d622f")
@@ -6372,7 +6372,7 @@
 		(uuid "8258cbf0-1c0d-49e2-89c9-806e951428f0")
 	)
 	(junction
-		(at 205.74 87.63)
+		(at 205.74 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "89a52f32-72e9-4b0c-bf77-70cf8766d409")
@@ -6390,7 +6390,7 @@
 		(uuid "9bb85f85-8eb6-489f-b24c-37821305407f")
 	)
 	(junction
-		(at 195.58 80.01)
+		(at 195.58 77.47)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9fd08acf-1a52-45af-95b3-82efed6e654b")
@@ -6414,7 +6414,7 @@
 		(uuid "a7c130b5-05c9-47ce-bc3c-715ce4c5efc7")
 	)
 	(junction
-		(at 200.66 82.55)
+		(at 200.66 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bb085dbc-3444-47b3-b2aa-602d8a577781")
@@ -6432,7 +6432,7 @@
 		(uuid "cecd218f-d1c3-476e-945a-dda944b5fbbd")
 	)
 	(junction
-		(at 208.28 90.17)
+		(at 208.28 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d03aa7f1-3711-48eb-8c6f-5fd104e81504")
@@ -6492,7 +6492,7 @@
 		(uuid "f46fbfa5-23e4-4637-88e7-eefb635ca354")
 	)
 	(junction
-		(at 203.2 85.09)
+		(at 203.2 82.55)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f7fa15cd-96b6-4432-9041-9d583c051ef3")
@@ -6573,7 +6573,7 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 90.17) (xy 208.28 90.17)
+			(xy 170.18 87.63) (xy 208.28 87.63)
 		)
 		(stroke
 			(width 0)
@@ -6703,7 +6703,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 49.53) (xy 203.2 85.09)
+			(xy 203.2 46.99) (xy 203.2 82.55)
 		)
 		(stroke
 			(width 0)
@@ -6935,7 +6935,7 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 49.53) (xy 198.12 77.47)
+			(xy 198.12 46.99) (xy 198.12 74.93)
 		)
 		(stroke
 			(width 0)
@@ -7026,7 +7026,7 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 77.47) (xy 198.12 77.47)
+			(xy 170.18 74.93) (xy 198.12 74.93)
 		)
 		(stroke
 			(width 0)
@@ -7076,7 +7076,7 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 49.53) (xy 205.74 87.63)
+			(xy 205.74 46.99) (xy 205.74 85.09)
 		)
 		(stroke
 			(width 0)
@@ -7196,7 +7196,7 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 80.01) (xy 195.58 80.01)
+			(xy 170.18 77.47) (xy 195.58 77.47)
 		)
 		(stroke
 			(width 0)
@@ -7296,7 +7296,7 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 80.01) (xy 238.76 80.01)
+			(xy 195.58 77.47) (xy 238.76 77.47)
 		)
 		(stroke
 			(width 0)
@@ -7446,7 +7446,7 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 87.63) (xy 205.74 87.63)
+			(xy 170.18 85.09) (xy 205.74 85.09)
 		)
 		(stroke
 			(width 0)
@@ -7516,7 +7516,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 85.09) (xy 238.76 85.09)
+			(xy 203.2 82.55) (xy 238.76 82.55)
 		)
 		(stroke
 			(width 0)
@@ -7637,7 +7637,7 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 87.63) (xy 238.76 87.63)
+			(xy 205.74 85.09) (xy 238.76 85.09)
 		)
 		(stroke
 			(width 0)
@@ -7668,7 +7668,7 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 49.53) (xy 195.58 80.01)
+			(xy 195.58 46.99) (xy 195.58 77.47)
 		)
 		(stroke
 			(width 0)
@@ -7678,7 +7678,7 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 49.53) (xy 200.66 82.55)
+			(xy 200.66 46.99) (xy 200.66 80.01)
 		)
 		(stroke
 			(width 0)
@@ -7748,7 +7748,7 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 90.17) (xy 238.76 90.17)
+			(xy 208.28 87.63) (xy 238.76 87.63)
 		)
 		(stroke
 			(width 0)
@@ -7949,7 +7949,7 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 82.55) (xy 200.66 82.55)
+			(xy 170.18 80.01) (xy 200.66 80.01)
 		)
 		(stroke
 			(width 0)
@@ -7979,7 +7979,7 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 85.09) (xy 203.2 85.09)
+			(xy 170.18 82.55) (xy 203.2 82.55)
 		)
 		(stroke
 			(width 0)
@@ -8079,7 +8079,7 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 49.53) (xy 208.28 90.17)
+			(xy 208.28 46.99) (xy 208.28 87.63)
 		)
 		(stroke
 			(width 0)
@@ -8129,7 +8129,7 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 77.47) (xy 238.76 77.47)
+			(xy 198.12 74.93) (xy 238.76 74.93)
 		)
 		(stroke
 			(width 0)
@@ -8169,7 +8169,7 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 82.55) (xy 238.76 82.55)
+			(xy 200.66 80.01) (xy 238.76 80.01)
 		)
 		(stroke
 			(width 0)
@@ -8488,7 +8488,7 @@
 		(uuid "453e555c-73dc-4e85-808f-44141f55f484")
 	)
 	(label "DEBUG1"
-		(at 170.18 72.39 0)
+		(at 170.18 90.17 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9031,7 +9031,7 @@
 	)
 	(hierarchical_label "SHDN_SENSE_LOWER_RIDER_ESTOP"
 		(shape input)
-		(at 195.58 49.53 90)
+		(at 195.58 46.99 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9042,7 +9042,7 @@
 	)
 	(hierarchical_label "SHDN_SENSE_BMS_OK_N"
 		(shape input)
-		(at 200.66 49.53 90)
+		(at 200.66 46.99 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9086,7 +9086,7 @@
 	)
 	(hierarchical_label "SHDN_SENSE_NUC"
 		(shape input)
-		(at 198.12 49.53 90)
+		(at 198.12 46.99 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9120,7 +9120,7 @@
 	)
 	(hierarchical_label "SHDN_SENSE_BMS_OK_S"
 		(shape input)
-		(at 205.74 49.53 90)
+		(at 205.74 46.99 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9153,7 +9153,7 @@
 	)
 	(hierarchical_label "SHDN_SENSE_BMS_OK_E"
 		(shape input)
-		(at 203.2 49.53 90)
+		(at 203.2 46.99 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9197,7 +9197,7 @@
 	)
 	(hierarchical_label "RESET_CUBE_2"
 		(shape output)
-		(at 170.18 74.93 0)
+		(at 170.18 72.39 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9253,7 +9253,7 @@
 	)
 	(hierarchical_label "SHDN_SENSE_BMS_OK_ALL"
 		(shape input)
-		(at 208.28 49.53 90)
+		(at 208.28 46.99 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -14793,7 +14793,7 @@
 			)
 		)
 		(pin "SHDN_SENSE_BMS_OK_ALL" input
-			(at 238.76 90.17 180)
+			(at 238.76 87.63 180)
 			(uuid "dac364bb-605b-46a9-8c4e-1c372a2e8214")
 			(effects
 				(font
@@ -14803,7 +14803,7 @@
 			)
 		)
 		(pin "SHDN_SENSE_BMS_OK_S" input
-			(at 238.76 87.63 180)
+			(at 238.76 85.09 180)
 			(uuid "1f52970b-d5ad-46e3-8436-663a4ff53ae9")
 			(effects
 				(font
@@ -14813,7 +14813,7 @@
 			)
 		)
 		(pin "SHDN_SENSE_BMS_OK_E" input
-			(at 238.76 85.09 180)
+			(at 238.76 82.55 180)
 			(uuid "8024c5aa-a82a-4d42-8823-d3bc3f0b7e5e")
 			(effects
 				(font
@@ -14823,7 +14823,7 @@
 			)
 		)
 		(pin "SHDN_SENSE_BMS_OK_N" input
-			(at 238.76 82.55 180)
+			(at 238.76 80.01 180)
 			(uuid "c46e55b9-53bb-4278-9ae7-82d7e7f8ed70")
 			(effects
 				(font
@@ -14833,7 +14833,7 @@
 			)
 		)
 		(pin "SHDN_SENSE_NUC" input
-			(at 238.76 77.47 180)
+			(at 238.76 74.93 180)
 			(uuid "e77738dc-77d4-4b8d-bbc5-c17aaa8b92eb")
 			(effects
 				(font
@@ -15063,7 +15063,7 @@
 			)
 		)
 		(pin "SHDN_SENSE_LOWER_RIDER_ESTOP" input
-			(at 238.76 80.01 180)
+			(at 238.76 77.47 180)
 			(uuid "5663cd8a-e797-499a-8192-52535824067c")
 			(effects
 				(font
