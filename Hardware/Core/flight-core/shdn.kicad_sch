@@ -2404,16 +2404,6 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 76.2) (xy 83.82 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "01ae4a9e-d835-4b48-a77b-40e723bb8b65")
-	)
-	(wire
-		(pts
 			(xy 238.76 128.27) (xy 236.22 128.27)
 		)
 		(stroke
@@ -2984,16 +2974,6 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 78.74) (xy 83.82 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8c8b05f7-cbe2-42ad-8d10-7ab30d70b281")
-	)
-	(wire
-		(pts
 			(xy 73.66 59.69) (xy 71.12 59.69)
 		)
 		(stroke
@@ -3041,6 +3021,16 @@
 			(type default)
 		)
 		(uuid "9990dc60-063f-47ba-9c9b-3288dcca15bd")
+	)
+	(wire
+		(pts
+			(xy 58.42 76.2) (xy 83.82 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99b872eb-be9e-43f6-923b-e3ebcac953ed")
 	)
 	(wire
 		(pts
@@ -3211,6 +3201,16 @@
 			(type default)
 		)
 		(uuid "cf01a6a5-8d8d-4219-80ee-3a11c8398df2")
+	)
+	(wire
+		(pts
+			(xy 58.42 78.74) (xy 83.82 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2fa90b2-83d6-4c9f-8296-5888cd9cc62d")
 	)
 	(wire
 		(pts
@@ -7216,7 +7216,7 @@
 			)
 		)
 		(pin "CAN-_OUT" output
-			(at 83.82 78.74 180)
+			(at 83.82 76.2 180)
 			(uuid "39de01cd-b93b-4b96-8c2a-501c67b80555")
 			(effects
 				(font
@@ -7226,7 +7226,7 @@
 			)
 		)
 		(pin "CAN+_OUT" output
-			(at 83.82 76.2 180)
+			(at 83.82 78.74 180)
 			(uuid "0c6fdbba-ce58-4fe6-8397-f8f726e6276c")
 			(effects
 				(font
