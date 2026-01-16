@@ -2215,6 +2215,16 @@
 	)
 	(wire
 		(pts
+			(xy 57.15 62.23) (xy 80.01 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "109d1b8f-3586-4c38-811b-e70a507718cb")
+	)
+	(wire
+		(pts
 			(xy 170.18 85.09) (xy 241.3 85.09)
 		)
 		(stroke
@@ -2815,16 +2825,6 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 62.23) (xy 74.93 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9c2fc98b-ac15-454f-8000-b2174b8b9f04")
-	)
-	(wire
-		(pts
 			(xy 177.8 41.91) (xy 185.42 41.91)
 		)
 		(stroke
@@ -2982,16 +2982,6 @@
 			(type default)
 		)
 		(uuid "bbb3b47f-c04f-4b8a-b7bc-a7550a851d38")
-	)
-	(wire
-		(pts
-			(xy 57.15 59.69) (xy 74.93 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bd3cb347-2101-4013-90e4-78e59013fe39")
 	)
 	(wire
 		(pts
@@ -3394,6 +3384,16 @@
 		)
 		(uuid "1a04e78e-618e-4b3d-9f12-0c580948e71c")
 	)
+	(label "CAN+_SENSE"
+		(at 96.52 50.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1a2ce918-ca65-4393-93b1-d10ab3831a2f")
+	)
 	(label "CANBN-"
 		(at 58.42 90.17 0)
 		(effects
@@ -3555,12 +3555,12 @@
 		(uuid "3b7eeca1-05e9-4d05-bb9e-7792ed738ae5")
 	)
 	(label "CAN+_SENSE"
-		(at 57.15 59.69 0)
+		(at 44.45 54.61 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "409c8d7e-7d2e-42d3-ba5f-541d7ad91b6f")
 	)
@@ -3846,7 +3846,7 @@
 		(uuid "932be38e-b1a5-4b3c-ab0d-fa003e626fe9")
 	)
 	(label "CAN-_SENSE"
-		(at 57.15 62.23 0)
+		(at 67.31 62.23 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3896,7 +3896,7 @@
 		(uuid "9cdd9f14-c7a4-47fd-a5ce-849bab1f1767")
 	)
 	(label "+5V"
-		(at 44.45 54.61 180)
+		(at 44.45 57.15 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3967,12 +3967,12 @@
 		(uuid "b9efe47d-b31f-4806-a6df-eb2512b5348b")
 	)
 	(label "SENSE_POWER_CYCLE"
-		(at 44.45 57.15 180)
+		(at 57.15 59.69 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "bd36568b-6407-43e3-8011-a6c51d9e4351")
 	)
@@ -4168,12 +4168,12 @@
 		(uuid "f328e855-32fa-4902-97fd-33e636ae5191")
 	)
 	(label "+60V"
-		(at 57.15 54.61 0)
+		(at 44.45 59.69 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "f74c7330-cb45-4150-bb5b-d9c29531e122")
 	)
@@ -4208,12 +4208,12 @@
 		(uuid "f989eb48-9dce-4947-bdfa-7c67a4073fa0")
 	)
 	(label "GPIO_SENSE1"
-		(at 44.45 59.69 180)
+		(at 57.15 54.61 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "fac4ed11-d4b2-4709-811d-9fefe0e201d3")
 	)
@@ -8566,8 +8566,8 @@
 		)
 	)
 	(sheet
-		(at 74.93 57.15)
-		(size 34.29 7.62)
+		(at 80.01 50.8)
+		(size 29.21 13.97)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -8582,7 +8582,7 @@
 		)
 		(uuid "ba3a1bbc-b1e5-484f-8b44-4c2b1cf2999c")
 		(property "Sheetname" "CAN Repeater14"
-			(at 74.93 56.4384 0)
+			(at 80.01 50.0884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8591,7 +8591,7 @@
 			)
 		)
 		(property "Sheetfile" "can_repeater.kicad_sch"
-			(at 74.93 65.3546 0)
+			(at 80.01 65.3546 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8610,7 +8610,7 @@
 			)
 		)
 		(pin "CAN-_OUT" output
-			(at 74.93 62.23 180)
+			(at 80.01 62.23 180)
 			(uuid "771a4f0d-2084-413e-aedd-e79461cd3a2f")
 			(effects
 				(font
@@ -8620,13 +8620,13 @@
 			)
 		)
 		(pin "CAN+_OUT" output
-			(at 74.93 59.69 180)
+			(at 96.52 50.8 90)
 			(uuid "47a9f047-5f40-489a-a753-afb2e7c826a1")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(pin "CAN+_IN" input
