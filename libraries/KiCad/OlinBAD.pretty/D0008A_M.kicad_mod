@@ -8,6 +8,7 @@
 		(at 0 0 0)
 		(unlocked yes)
 		(layer "F.SilkS")
+		(hide yes)
 		(uuid "3e267a30-d05c-4166-9802-808bac321b65")
 		(effects
 			(font
@@ -20,6 +21,7 @@
 		(at 0 0 0)
 		(unlocked yes)
 		(layer "F.Fab")
+		(hide yes)
 		(uuid "0365c472-a549-4565-baf7-4cb6f32f8362")
 		(effects
 			(font
@@ -102,26 +104,6 @@
 		)
 		(layer "F.CrtYd")
 		(uuid "4569f221-be8b-49f1-940b-2e08cddddfe8")
-	)
-	(fp_line
-		(start -0.499999 0)
-		(end 0.499999 0)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.CrtYd")
-		(uuid "f5021ae0-680c-4513-a6af-6ffff97b85ad")
-	)
-	(fp_line
-		(start 0 0.499999)
-		(end 0 -0.499999)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.CrtYd")
-		(uuid "27c730e4-4604-4138-adb5-6e58e54d3031")
 	)
 	(fp_line
 		(start 4.149999 2.999999)
@@ -1318,18 +1300,6 @@
 		)
 		(layer "F.Fab")
 		(uuid "743970a1-d0e9-4368-b7d2-10be8129a834")
-	)
-	(fp_text user "${REFERENCE}"
-		(at 0 0 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(uuid "cf278982-7382-4b15-b31e-9afaefcba8ff")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-		)
 	)
 	(pad "1" smd oval
 		(at -2.825001 -1.905 90)
