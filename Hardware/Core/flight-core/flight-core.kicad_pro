@@ -127,7 +127,7 @@
         "min_connection": 0.0,
         "min_copper_edge_clearance": 0.5,
         "min_groove_width": 0.0,
-        "min_hole_clearance": 0.25,
+        "min_hole_clearance": 0.19,
         "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.2,
         "min_microvia_drill": 0.1,
@@ -194,7 +194,8 @@
         0.635,
         0.762,
         1.143,
-        1.27
+        1.27,
+        2.0
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -703,10 +704,6 @@
     [
       "8ee200ee-cecf-4aa2-a5f7-7a91abc1ffd4",
       "shutdown LED circuit12"
-    ],
-    [
-      "18dcfcb1-e7d4-4316-a947-4cdecfe32fef",
-      "shutdown LED no TP3"
     ],
     [
       "67fc5250-5d6f-4bc7-96e1-28b63490e611",

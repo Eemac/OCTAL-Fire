@@ -2352,12 +2352,6 @@
 		(uuid "68e9da44-8b98-47cd-a911-cb4b7199ddfc")
 	)
 	(junction
-		(at 60.96 62.23)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7cdbb680-c8c9-4dfd-b26a-2053574e64ef")
-	)
-	(junction
 		(at 139.7 121.92)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2703,16 +2697,6 @@
 		)
 		(uuid "606122e6-e246-487a-a79b-9c816f20272b")
 	)
-	(wire
-		(pts
-			(xy 58.42 62.23) (xy 60.96 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "62864e1b-0227-4d0a-8f73-ba21db9177bc")
-	)
 	(bus
 		(pts
 			(xy 156.21 43.18) (xy 156.21 72.39)
@@ -2935,7 +2919,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 62.23) (xy 66.04 62.23)
+			(xy 58.42 62.23) (xy 66.04 62.23)
 		)
 		(stroke
 			(width 0)
@@ -2982,16 +2966,6 @@
 			(type default)
 		)
 		(uuid "df45688c-cc9d-4e4d-b872-8e88ed2214e8")
-	)
-	(wire
-		(pts
-			(xy 60.96 69.85) (xy 60.96 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "df963e4d-3184-44f2-ac7c-9a353b035c73")
 	)
 	(wire
 		(pts
@@ -3403,75 +3377,6 @@
 			(project "flight-core"
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/f120f04e-9926-485a-8729-a726a206f3dc"
 					(reference "#PWR0243")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 60.96 66.04 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "12fb31f1-b90c-4fe8-a226-cfb59b191b9f")
-		(property "Reference" "C102"
-			(at 61.722 63.754 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10pF"
-			(at 61.722 68.326 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "footprints:C_0603_1608Metric"
-			(at 61.9252 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 60.96 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 60.96 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "902396a7-99dc-4825-bfa4-db139fbaf207")
-		)
-		(pin "1"
-			(uuid "c35f2904-d9c3-4b1b-a664-c5c8f6ce95da")
-		)
-		(instances
-			(project ""
-				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/f120f04e-9926-485a-8729-a726a206f3dc"
-					(reference "C102")
 					(unit 1)
 				)
 			)
@@ -4731,72 +4636,6 @@
 			(project "flight-core"
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/f120f04e-9926-485a-8729-a726a206f3dc"
 					(reference "U59")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 60.96 74.93 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9522a5eb-8ec3-4d1e-b6c7-1fdbb12a23e0")
-		(property "Reference" "#PWR0244"
-			(at 60.96 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 60.96 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 60.96 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 60.96 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 60.96 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "77441512-c9a7-455e-ab6b-4d4a0c451c5a")
-		)
-		(instances
-			(project "flight-core"
-				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/f120f04e-9926-485a-8729-a726a206f3dc"
-					(reference "#PWR0244")
 					(unit 1)
 				)
 			)

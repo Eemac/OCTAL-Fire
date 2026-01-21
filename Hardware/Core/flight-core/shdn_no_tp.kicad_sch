@@ -1068,10 +1068,6 @@
 		)
 		(instances
 			(project ""
-				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/91e18f07-bd3f-4576-bbe1-a0227cf7132e/8e65f8e7-591b-477a-9c20-d7fa30040a28/18dcfcb1-e7d4-4316-a947-4cdecfe32fef"
-					(reference "D19")
-					(unit 1)
-				)
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/91e18f07-bd3f-4576-bbe1-a0227cf7132e/8e65f8e7-591b-477a-9c20-d7fa30040a28/3f50e8c8-eee6-4ddc-a94f-89689d17a49c"
 					(reference "D8")
 					(unit 1)
@@ -1174,10 +1170,6 @@
 		)
 		(instances
 			(project ""
-				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/91e18f07-bd3f-4576-bbe1-a0227cf7132e/8e65f8e7-591b-477a-9c20-d7fa30040a28/18dcfcb1-e7d4-4316-a947-4cdecfe32fef"
-					(reference "R31")
-					(unit 1)
-				)
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/91e18f07-bd3f-4576-bbe1-a0227cf7132e/8e65f8e7-591b-477a-9c20-d7fa30040a28/3f50e8c8-eee6-4ddc-a94f-89689d17a49c"
 					(reference "R20")
 					(unit 1)
@@ -1251,10 +1243,6 @@
 		)
 		(instances
 			(project ""
-				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/91e18f07-bd3f-4576-bbe1-a0227cf7132e/8e65f8e7-591b-477a-9c20-d7fa30040a28/18dcfcb1-e7d4-4316-a947-4cdecfe32fef"
-					(reference "#PWR0110")
-					(unit 1)
-				)
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/91e18f07-bd3f-4576-bbe1-a0227cf7132e/8e65f8e7-591b-477a-9c20-d7fa30040a28/3f50e8c8-eee6-4ddc-a94f-89689d17a49c"
 					(reference "#PWR088")
 					(unit 1)
@@ -1329,10 +1317,6 @@
 		)
 		(instances
 			(project ""
-				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/91e18f07-bd3f-4576-bbe1-a0227cf7132e/8e65f8e7-591b-477a-9c20-d7fa30040a28/18dcfcb1-e7d4-4316-a947-4cdecfe32fef"
-					(reference "#PWR0111")
-					(unit 1)
-				)
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/91e18f07-bd3f-4576-bbe1-a0227cf7132e/8e65f8e7-591b-477a-9c20-d7fa30040a28/3f50e8c8-eee6-4ddc-a94f-89689d17a49c"
 					(reference "#PWR089")
 					(unit 1)
@@ -1443,10 +1427,6 @@
 		)
 		(instances
 			(project ""
-				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/91e18f07-bd3f-4576-bbe1-a0227cf7132e/8e65f8e7-591b-477a-9c20-d7fa30040a28/18dcfcb1-e7d4-4316-a947-4cdecfe32fef"
-					(reference "Q16")
-					(unit 1)
-				)
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1/91e18f07-bd3f-4576-bbe1-a0227cf7132e/8e65f8e7-591b-477a-9c20-d7fa30040a28/3f50e8c8-eee6-4ddc-a94f-89689d17a49c"
 					(reference "Q5")
 					(unit 1)

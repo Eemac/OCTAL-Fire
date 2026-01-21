@@ -205,322 +205,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector_Generic:Conn_02x04_Counter_Clockwise"
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at 1.27 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Conn_02x04_Counter_Clockwise"
-				(at 1.27 -7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Generic connector, double row, 02x04, counter clockwise pin numbering scheme (similar to DIP package numbering), script generated (kicad-library-utils/schlib/autogen/connector/)"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "connector"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Connector*:*_2x??_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Conn_02x04_Counter_Clockwise_1_1"
-				(rectangle
-					(start -1.27 3.81)
-					(end 3.81 -6.35)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(rectangle
-					(start -1.27 2.667)
-					(end 0 2.413)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 0.127)
-					(end 0 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 -2.413)
-					(end 0 -2.667)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 -4.953)
-					(end 0 -5.207)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 3.81 2.667)
-					(end 2.54 2.413)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 3.81 0.127)
-					(end 2.54 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 3.81 -2.413)
-					(end 2.54 -2.667)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 3.81 -4.953)
-					(end 2.54 -5.207)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -5.08 2.54 0)
-					(length 3.81)
-					(name "Pin_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 3.81)
-					(name "Pin_2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -2.54 0)
-					(length 3.81)
-					(name "Pin_3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -5.08 0)
-					(length 3.81)
-					(name "Pin_4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 2.54 180)
-					(length 3.81)
-					(name "Pin_8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 0 180)
-					(length 3.81)
-					(name "Pin_7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 -2.54 180)
-					(length 3.81)
-					(name "Pin_6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 -5.08 180)
-					(length 3.81)
-					(name "Pin_5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Connector_Generic:Conn_02x05_Counter_Clockwise"
 			(pin_names
 				(offset 1.016)
@@ -1009,6 +693,113 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Mechanical:MountingHole_Pad"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole_Pad"
+				(at 0 4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole with connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*Pad*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_Pad_0_1"
+				(circle
+					(center 0 1.27)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_1_1"
+				(pin input line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1903,7 +1694,7 @@
 		)
 	)
 	(rectangle
-		(start 19.05 78.74)
+		(start 16.764 78.486)
 		(end 120.65 168.91)
 		(stroke
 			(width 0)
@@ -1927,7 +1718,7 @@
 		(uuid 48f66fc8-7db2-466e-9da0-479f04f7132d)
 	)
 	(rectangle
-		(start 19.05 173.99)
+		(start 16.764 173.99)
 		(end 120.65 191.77)
 		(stroke
 			(width 0)
@@ -1939,7 +1730,7 @@
 		(uuid 568b3101-66f4-45a0-a986-783a1c233679)
 	)
 	(rectangle
-		(start 19.05 20.32)
+		(start 16.764 20.32)
 		(end 120.65 73.66)
 		(stroke
 			(width 0)
@@ -2022,6 +1813,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "195cdd7f-4522-491e-98ea-cd5da1e6cc2b")
+	)
+	(junction
+		(at 21.59 184.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4096a96e-c2f7-4c95-83cc-31989054af47")
 	)
 	(junction
 		(at 191.77 20.32)
@@ -2212,16 +2009,6 @@
 			(type default)
 		)
 		(uuid "0ffec415-3e42-4164-89b8-2779f5a84e21")
-	)
-	(wire
-		(pts
-			(xy 57.15 62.23) (xy 80.01 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "109d1b8f-3586-4c38-811b-e70a507718cb")
 	)
 	(wire
 		(pts
@@ -2675,16 +2462,6 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 87.63) (xy 241.3 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8121845e-4fd7-48b1-8d09-8639c259a9e8")
-	)
-	(wire
-		(pts
 			(xy 177.8 48.26) (xy 177.8 41.91)
 		)
 		(stroke
@@ -2755,7 +2532,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 62.23) (xy 109.22 62.23)
+			(xy 113.03 62.23) (xy 111.76 62.23)
 		)
 		(stroke
 			(width 0)
@@ -2825,6 +2602,26 @@
 	)
 	(wire
 		(pts
+			(xy 50.8 62.23) (xy 80.01 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c2fc98b-ac15-454f-8000-b2174b8b9f04")
+	)
+	(wire
+		(pts
+			(xy 170.18 87.63) (xy 213.36 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9fdb432f-35e3-4d92-888d-94e7c65028ea")
+	)
+	(wire
+		(pts
 			(xy 177.8 41.91) (xy 185.42 41.91)
 		)
 		(stroke
@@ -2875,7 +2672,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 59.69) (xy 109.22 59.69)
+			(xy 113.03 59.69) (xy 111.76 59.69)
 		)
 		(stroke
 			(width 0)
@@ -2982,6 +2779,16 @@
 			(type default)
 		)
 		(uuid "bbb3b47f-c04f-4b8a-b7bc-a7550a851d38")
+	)
+	(wire
+		(pts
+			(xy 50.8 59.69) (xy 77.47 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd3cb347-2101-4013-90e4-78e59013fe39")
 	)
 	(wire
 		(pts
@@ -3273,6 +3080,16 @@
 		)
 		(uuid "fff01833-d6c6-491e-931c-6f2a0d3f69f2")
 	)
+	(label "SHDN_SENSE_BMS_OK_E"
+		(at 58.42 114.3 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "004030a1-87dc-4082-b7ee-72e9ea5c4f77")
+	)
 	(label "CAN+"
 		(at 113.03 109.22 0)
 		(effects
@@ -3292,16 +3109,6 @@
 			(justify right bottom)
 		)
 		(uuid "03ab08b9-75cb-490d-b5a1-f6e2e30a45b5")
-	)
-	(label "SHDN_SENSE_ALL_BATT"
-		(at 58.42 161.29 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "05cfd65c-7519-4eb1-8ee8-19abe49ae449")
 	)
 	(label "SENSE_POWER_CYCLE"
 		(at 130.81 43.18 270)
@@ -3374,26 +3181,6 @@
 		)
 		(uuid "174928b2-c2f2-4109-92f3-3d8a0109fa2d")
 	)
-	(label "SHDN_SENSE_BMS_OK_N"
-		(at 58.42 95.25 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "1a04e78e-618e-4b3d-9f12-0c580948e71c")
-	)
-	(label "CAN+_SENSE"
-		(at 96.52 50.8 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "1a2ce918-ca65-4393-93b1-d10ab3831a2f")
-	)
 	(label "CANBN-"
 		(at 58.42 90.17 0)
 		(effects
@@ -3405,7 +3192,7 @@
 		(uuid "1a4cae70-8170-4065-b50f-d86ef006b046")
 	)
 	(label "GPIO_SENSE2"
-		(at 44.45 62.23 180)
+		(at 38.1 62.23 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3464,18 +3251,8 @@
 		)
 		(uuid "26683373-7a83-4027-97e4-3eccd598ca43")
 	)
-	(label "SHDN_SENSE_BMS_OK_E"
-		(at 58.42 116.84 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "28460cac-8f22-4f2f-a6ef-1f22651d5a85")
-	)
 	(label "CAN-"
-		(at 110.49 62.23 0)
+		(at 113.03 62.23 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3493,6 +3270,16 @@
 			(justify left bottom)
 		)
 		(uuid "2e4be7fc-6d0b-431d-9d45-52582a9e0d55")
+	)
+	(label "SHDN_SENSE_BMS_OK_S"
+		(at 58.42 161.29 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2f12bd8a-bbc3-4608-9248-7303edd6d0fe")
 	)
 	(label "BMS_EN_W"
 		(at 36.83 161.29 180)
@@ -3544,6 +3331,16 @@
 		)
 		(uuid "36b86f33-cc44-40b1-afb5-d4abe14d1d66")
 	)
+	(label "SHDN_SENSE_BMS_OK_N"
+		(at 58.42 116.84 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3af9e69c-2a80-45ce-9e51-92ea186968e7")
+	)
 	(label "CUBE_HANDOFF"
 		(at 224.79 39.37 0)
 		(effects
@@ -3555,12 +3352,12 @@
 		(uuid "3b7eeca1-05e9-4d05-bb9e-7792ed738ae5")
 	)
 	(label "CAN+_SENSE"
-		(at 44.45 54.61 180)
+		(at 50.8 59.69 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "409c8d7e-7d2e-42d3-ba5f-541d7ad91b6f")
 	)
@@ -3595,14 +3392,14 @@
 		(uuid "44898e69-5b0e-4c7a-8fc3-c9c9da8c5e27")
 	)
 	(label "SHDN_SENSE_BMS_OK_N"
-		(at 58.42 114.3 0)
+		(at 58.42 92.71 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "4cdd6233-eb01-4426-9ee5-a2a9d795f085")
+		(uuid "46bcc349-5961-49be-934d-8911b87b2d04")
 	)
 	(label "+5V"
 		(at 64.77 186.69 180)
@@ -3705,6 +3502,16 @@
 		)
 		(uuid "67083a77-3b8a-4b91-beb7-035016c1c6c8")
 	)
+	(label "SHDN_SENSE_CTRL_LOBATT"
+		(at 191.77 85.09 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "67cfd522-c731-4487-ada9-1941f146e125")
+	)
 	(label "60V_W"
 		(at 187.96 157.48 180)
 		(effects
@@ -3734,6 +3541,16 @@
 			(justify right bottom)
 		)
 		(uuid "78b75aa5-b038-446d-ac80-45dff93fc3e2")
+	)
+	(label "SHDN_SENSE_BMS_OK_S"
+		(at 58.42 135.89 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7964ab5c-3d4b-41a8-9571-0e68b5e336ac")
 	)
 	(label "BMS_EN_CORE"
 		(at 146.05 157.48 90)
@@ -3805,26 +3622,6 @@
 		)
 		(uuid "85f0a5a7-8242-4443-b33b-2bd35a646592")
 	)
-	(label "SHDN_SENSE_NUC"
-		(at 58.42 92.71 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "865c60b7-fa46-4362-a902-81d613f3a957")
-	)
-	(label "SHDN_SENSE_BMS_OK_S"
-		(at 58.42 138.43 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "884ec49a-d434-4949-9207-caf8b4fd990a")
-	)
 	(label "CANBE-"
 		(at 58.42 111.76 0)
 		(effects
@@ -3845,8 +3642,18 @@
 		)
 		(uuid "932be38e-b1a5-4b3c-ab0d-fa003e626fe9")
 	)
+	(label "SHDN_SENSE_ALL_BATT"
+		(at 58.42 158.75 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9397e1ec-8870-4ec0-8399-cebaa312759c")
+	)
 	(label "CAN-_SENSE"
-		(at 67.31 62.23 0)
+		(at 50.8 62.23 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3896,7 +3703,7 @@
 		(uuid "9cdd9f14-c7a4-47fd-a5ce-849bab1f1767")
 	)
 	(label "+5V"
-		(at 44.45 57.15 180)
+		(at 38.1 54.61 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3967,12 +3774,12 @@
 		(uuid "b9efe47d-b31f-4806-a6df-eb2512b5348b")
 	)
 	(label "SENSE_POWER_CYCLE"
-		(at 57.15 59.69 0)
+		(at 38.1 57.15 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "bd36568b-6407-43e3-8011-a6c51d9e4351")
 	)
@@ -4007,7 +3814,7 @@
 		(uuid "c85c0a24-095f-4d95-96bf-59ef8aabc7bc")
 	)
 	(label "CAN+"
-		(at 110.49 59.69 0)
+		(at 113.03 59.69 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4045,6 +3852,16 @@
 			(justify left bottom)
 		)
 		(uuid "d2b2db7b-187c-4178-a1af-f9cf51cb0b9a")
+	)
+	(label "SHDN_SENSE_NUC"
+		(at 38.1 64.77 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d5e7145c-94f2-49df-8474-7036323de450")
 	)
 	(label "CUBE_IO_~{RESET}"
 		(at 170.18 53.34 0)
@@ -4087,16 +3904,6 @@
 		)
 		(uuid "e3ea77bb-cdc3-4fe5-af78-9783b656e5ff")
 	)
-	(label "SHDN_SENSE_BMS_OK_E"
-		(at 58.42 135.89 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e4f9bbf9-a11a-4d91-8183-8c838730e527")
-	)
 	(label "SHDN_SENSE_BMS_OK_N"
 		(at 170.18 92.71 0)
 		(effects
@@ -4108,7 +3915,7 @@
 		(uuid "e6eae2cd-d87e-499d-bc69-f4e89b34a358")
 	)
 	(label "GND"
-		(at 57.15 57.15 0)
+		(at 50.8 57.15 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4118,12 +3925,22 @@
 		(uuid "e78e1781-056c-4752-b216-5f23ef32894c")
 	)
 	(label "SHDN_SENSE_NUC"
-		(at 195.58 87.63 0)
+		(at 58.42 95.25 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
+		)
+		(uuid "e9179d1d-847e-40cf-a1d2-6ca2a98e7324")
+	)
+	(label "SHDN_SENSE_NUC"
+		(at 213.36 87.63 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
 		)
 		(uuid "ebdff573-0d64-4a06-8105-de5853d89771")
 	)
@@ -4137,15 +3954,15 @@
 		)
 		(uuid "ec1ec34b-36ac-4f39-a347-6f31ca3eab99")
 	)
-	(label "SHDN_SENSE_BMS_OK_S"
-		(at 58.42 158.75 0)
+	(label "SHDN_SENSE_BMS_OK_E"
+		(at 58.42 138.43 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "ec7e25b4-b1f8-4340-ab43-72ba2593cb2c")
+		(uuid "f015ea1b-64a7-4e0e-8e16-4b09d98413d0")
 	)
 	(label "60V_N"
 		(at 187.96 139.7 180)
@@ -4168,12 +3985,12 @@
 		(uuid "f328e855-32fa-4902-97fd-33e636ae5191")
 	)
 	(label "+60V"
-		(at 44.45 59.69 180)
+		(at 50.8 54.61 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "f74c7330-cb45-4150-bb5b-d9c29531e122")
 	)
@@ -4208,14 +4025,24 @@
 		(uuid "f989eb48-9dce-4947-bdfa-7c67a4073fa0")
 	)
 	(label "GPIO_SENSE1"
-		(at 57.15 54.61 0)
+		(at 38.1 59.69 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "fac4ed11-d4b2-4709-811d-9fefe0e201d3")
+	)
+	(label "SHDN_SENSE_CTRL_LOBATT"
+		(at 50.8 64.77 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "fac4ed11-d4b2-4709-811d-9fefe0e201d3")
+		(uuid "faecb4d5-95c8-4ad8-894d-25cc5163aac6")
 	)
 	(label "SHDN_SENSE_BMS_OK_S"
 		(at 170.18 97.79 0)
@@ -4340,7 +4167,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "footprints:Test_Point_SMD"
+		(property "Footprint" "TestPoint:TestPoint_Keystone_5019_Miniature"
 			(at 41.91 186.69 0)
 			(effects
 				(font
@@ -4575,6 +4402,98 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_02x05_Counter_Clockwise")
+		(at 43.18 59.69 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "21bf6a23-2b59-45ac-ae8f-f41c51980b2e")
+		(property "Reference" "J101"
+			(at 44.45 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_02x05_Counter_Clockwise"
+			(at 44.45 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_Molex:Molex_Micro-Fit_3.0_43045-1012_2x05_P3.00mm_Vertical"
+			(at 43.18 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 43.18 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, double row, 02x05, counter clockwise pin numbering scheme (similar to DIP package numbering), script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 43.18 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "7"
+			(uuid "36fcaf4c-8ff9-4082-afca-2c90c448e017")
+		)
+		(pin "8"
+			(uuid "d1a1f6c9-42e5-4f2e-b805-7136defdfd4e")
+		)
+		(pin "9"
+			(uuid "ca254e93-7882-403f-af65-02035f28b98a")
+		)
+		(pin "3"
+			(uuid "55d68839-f09f-4ab2-8361-39a55609b71c")
+		)
+		(pin "6"
+			(uuid "3756f64c-7dc4-485d-a603-7f205188a867")
+		)
+		(pin "5"
+			(uuid "1ca31ac6-2182-4a87-95fc-aac309f1a6a5")
+		)
+		(pin "1"
+			(uuid "82c0edc1-640b-4fa0-9913-13c3742693a6")
+		)
+		(pin "2"
+			(uuid "cf2f44e9-6c1a-44d8-b2a9-9aa16d254e0d")
+		)
+		(pin "10"
+			(uuid "75a9c208-d30a-4236-8d0c-9ddc111b799d")
+		)
+		(pin "4"
+			(uuid "14d85a1e-b623-467c-8b8f-d676ff060b3c")
+		)
+		(instances
+			(project "flight-core"
+				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1"
+					(reference "J101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "formula:TP_SMD")
 		(at 45.72 180.34 270)
 		(unit 1)
@@ -4602,7 +4521,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "footprints:Test_Point_SMD"
+		(property "Footprint" "TestPoint:TestPoint_Keystone_5019_Miniature"
 			(at 41.91 180.34 0)
 			(effects
 				(font
@@ -4837,6 +4756,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 21.59 181.61 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3c6c60a1-b96d-4da4-bc84-4c43e2597d77")
+		(property "Reference" "H104"
+			(at 24.13 179.0699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 24.13 181.6099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
+			(at 21.59 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 21.59 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 21.59 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f8b130be-c480-42ec-9ae5-a13df06d0185")
+		)
+		(instances
+			(project "flight-core"
+				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1"
+					(reference "H104")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 45.72 119.38 0)
 		(unit 1)
@@ -4964,92 +4950,6 @@
 			(project "flight-core"
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1"
 					(reference "R2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_02x04_Counter_Clockwise")
-		(at 49.53 57.15 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "482b5e06-d196-43b4-9cd1-7a0990c9dadd")
-		(property "Reference" "J2"
-			(at 50.8 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Conn_02x04_Counter_Clockwise"
-			(at 50.8 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "obad_footprints:MicroFit_VT_8"
-			(at 49.53 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 49.53 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, double row, 02x04, counter clockwise pin numbering scheme (similar to DIP package numbering), script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 49.53 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "82ab286f-a99d-48af-a643-8cb1d6d3bffa")
-		)
-		(pin "4"
-			(uuid "a52994ae-26fc-4a72-867d-57d839715d1b")
-		)
-		(pin "1"
-			(uuid "a2562011-fc86-446f-905d-fd6485ed9aa9")
-		)
-		(pin "2"
-			(uuid "869f36a9-e91c-4d50-ae7a-42b71acc33d6")
-		)
-		(pin "6"
-			(uuid "d821e6af-b17e-4ac5-a8fa-f9938bde08e8")
-		)
-		(pin "7"
-			(uuid "0a7eba5c-12b3-40b5-a21f-6ff066686d2e")
-		)
-		(pin "8"
-			(uuid "2aac93fa-7e3e-4786-9190-a481b375dac3")
-		)
-		(pin "5"
-			(uuid "a1eec662-f966-4286-a09f-bcd50771bcd4")
-		)
-		(instances
-			(project ""
-				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1"
-					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -5425,6 +5325,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 21.59 181.61 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6450d300-8320-435f-92d9-d6c87651d199")
+		(property "Reference" "H105"
+			(at 24.13 179.0699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 24.13 181.6099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
+			(at 21.59 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 21.59 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 21.59 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8a772a61-3e66-430c-b6b6-85db0f728cd3")
+		)
+		(instances
+			(project "flight-core"
+				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1"
+					(reference "H105")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 45.72 97.79 0)
 		(unit 1)
@@ -5490,6 +5457,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 21.59 181.61 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "65b0f397-568b-465f-a39d-55d3825c7191")
+		(property "Reference" "H108"
+			(at 24.13 179.0699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 24.13 181.6099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
+			(at 21.59 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 21.59 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 21.59 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e0720cde-4ed7-4bc4-b7a3-ef376885a613")
+		)
+		(instances
+			(project "flight-core"
+				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1"
+					(reference "H108")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "formula:TP_SMD")
 		(at 95.25 180.34 270)
 		(unit 1)
@@ -5517,7 +5551,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "footprints:Test_Point_SMD"
+		(property "Footprint" "TestPoint:TestPoint_Keystone_5019_Miniature"
 			(at 91.44 180.34 0)
 			(effects
 				(font
@@ -5647,7 +5681,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "footprints:Test_Point_SMD"
+		(property "Footprint" "TestPoint:TestPoint_Keystone_5019_Miniature"
 			(at 66.04 186.69 0)
 			(effects
 				(font
@@ -5750,6 +5784,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 21.59 181.61 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6deca247-d37a-4e74-b155-15d612cee7d7")
+		(property "Reference" "H103"
+			(at 24.13 179.0699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 24.13 181.6099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
+			(at 21.59 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 21.59 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 21.59 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a154f84a-0d57-403e-b102-a347ae909ae4")
+		)
+		(instances
+			(project "flight-core"
+				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1"
+					(reference "H103")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_02x05_Counter_Clockwise")
 		(at 50.8 158.75 0)
 		(unit 1)
@@ -5836,6 +5937,140 @@
 			(project "flight-core"
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1"
 					(reference "J6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 21.59 181.61 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "90f401d1-3c49-42c5-980b-c4fbf0d90764")
+		(property "Reference" "H102"
+			(at 24.13 179.0699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 24.13 181.6099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
+			(at 21.59 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 21.59 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 21.59 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bc493552-e560-40f8-9fe3-97a1994ed711")
+		)
+		(instances
+			(project "flight-core"
+				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1"
+					(reference "H102")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 21.59 181.61 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9575641a-254b-42a2-8245-e1e434f1ca85")
+		(property "Reference" "H106"
+			(at 24.13 179.0699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 24.13 181.6099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
+			(at 21.59 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 21.59 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 21.59 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1f2a618d-d484-4e94-b5de-35bfb70be3be")
+		)
+		(instances
+			(project "flight-core"
+				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1"
+					(reference "H106")
 					(unit 1)
 				)
 			)
@@ -6028,7 +6263,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "footprints:Test_Point_SMD"
+		(property "Footprint" "TestPoint:TestPoint_Keystone_5019_Miniature"
 			(at 91.44 186.69 0)
 			(effects
 				(font
@@ -6264,6 +6499,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 21.59 181.61 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b2e39d8b-bde8-4994-8c68-9cffc49b4d55")
+		(property "Reference" "H107"
+			(at 24.13 179.0699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 24.13 181.6099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
+			(at 21.59 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 21.59 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 21.59 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c891f8fe-aa13-4373-b042-36e035bd079f")
+		)
+		(instances
+			(project "flight-core"
+				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1"
+					(reference "H107")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_02x02_Counter_Clockwise")
 		(at 35.56 33.02 0)
 		(unit 1)
@@ -6280,7 +6582,7 @@
 				)
 			)
 		)
-		(property "Value" "Conn_02x02_Remote_ESTOP"
+		(property "Value" "Conn_02x02_GPS"
 			(at 36.83 29.21 0)
 			(effects
 				(font
@@ -6557,6 +6859,138 @@
 			(project "flight-core"
 				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1"
 					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 21.59 181.61 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c5eaf238-20a0-4907-a7a1-72cd5f9b0cd1")
+		(property "Reference" "H101"
+			(at 24.13 179.0699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 24.13 181.6099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
+			(at 21.59 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 21.59 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 21.59 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c9b22e86-61c5-496c-8a35-90c22e209798")
+		)
+		(instances
+			(project ""
+				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1"
+					(reference "H101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 21.59 184.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ccae6ded-b718-4917-9562-e5e2aedfc856")
+		(property "Reference" "#PWR0110"
+			(at 21.59 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 21.59 187.452 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 21.59 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 21.59 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 21.59 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d25f585c-df26-4a3f-a340-6b73f1c6728c")
+		)
+		(instances
+			(project "flight-core"
+				(path "/93f46f4b-cdf5-47ec-af03-96378e73b2e1"
+					(reference "#PWR0110")
 					(unit 1)
 				)
 			)
@@ -6940,7 +7374,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "footprints:Test_Point_SMD"
+		(property "Footprint" "TestPoint:TestPoint_Keystone_5019_Miniature"
 			(at 66.04 180.34 0)
 			(effects
 				(font
@@ -7496,16 +7930,6 @@
 		(pin "SHDN_SENSE_NE_ARM" output
 			(at 241.3 106.68 180)
 			(uuid "43fe6b95-8841-4572-a646-ac4b065d0146")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "SHDN_SENSE_NUC" output
-			(at 241.3 87.63 180)
-			(uuid "fc8d5492-b0e9-4175-9ac8-629983eb8ed3")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8566,8 +8990,8 @@
 		)
 	)
 	(sheet
-		(at 80.01 50.8)
-		(size 29.21 13.97)
+		(at 77.47 57.15)
+		(size 34.29 7.62)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -8582,7 +9006,7 @@
 		)
 		(uuid "ba3a1bbc-b1e5-484f-8b44-4c2b1cf2999c")
 		(property "Sheetname" "CAN Repeater14"
-			(at 80.01 50.0884 0)
+			(at 77.47 56.4384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8591,7 +9015,7 @@
 			)
 		)
 		(property "Sheetfile" "can_repeater.kicad_sch"
-			(at 80.01 65.3546 0)
+			(at 77.47 65.3546 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8600,7 +9024,7 @@
 			)
 		)
 		(pin "CAN-_IN" input
-			(at 109.22 62.23 0)
+			(at 111.76 62.23 0)
 			(uuid "58a75dd5-331d-4f83-b7dd-0638f83a0e27")
 			(effects
 				(font
@@ -8610,7 +9034,7 @@
 			)
 		)
 		(pin "CAN-_OUT" output
-			(at 80.01 62.23 180)
+			(at 77.47 62.23 180)
 			(uuid "771a4f0d-2084-413e-aedd-e79461cd3a2f")
 			(effects
 				(font
@@ -8620,7 +9044,7 @@
 			)
 		)
 		(pin "CAN+_OUT" output
-			(at 96.52 50.8 90)
+			(at 77.47 59.69 180)
 			(uuid "47a9f047-5f40-489a-a753-afb2e7c826a1")
 			(effects
 				(font
@@ -8630,7 +9054,7 @@
 			)
 		)
 		(pin "CAN+_IN" input
-			(at 109.22 59.69 0)
+			(at 111.76 59.69 0)
 			(uuid "70e9e1c1-4090-4cd5-a403-c5047443271d")
 			(effects
 				(font

@@ -1,61 +1,172 @@
-12-31 13:50:41 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 674:Plugin executed on: 'darwin'
-12-31 13:50:41 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 675:Plugin executed with python version: '3.9.13 (v3.9.13:6de2ca5339, May 17 2022, 11:37:23) \n[Clang 13.0.0 (clang-1300.0.29.30)]'
-12-31 13:50:41 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 676:KiCad build version: 9.0.5
-12-31 13:50:41 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 677:Plugin version: 4.0.1
-12-31 13:50:41 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 678:Frame repr: <wx._core.Frame object at 0x13d1bf430>
-12-31 13:50:41 com_github_MitjaNemec_PlaceFootprints.place_footprints 121:getting a list of all footprints on board
-12-31 13:50:41 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint R3 on root level
-12-31 13:50:41 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint TP1 on root level
-12-31 13:50:41 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint TP6 on root level
-12-31 13:50:41 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint TP2 on root level
-12-31 13:50:41 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint J1 on root level
-12-31 13:50:41 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint R2 on root level
-12-31 13:50:41 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint TP3 on root level
-12-31 13:50:41 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint TP5 on root level
-12-31 13:50:41 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint R1 on root level
-12-31 13:50:41 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint TP4 on root level
-12-31 13:50:41 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint R4 on root level
-12-31 13:50:41 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint J2 on root level
-12-31 13:50:41 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint J3 on root level
-12-31 13:50:41 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint D2 on root level
-12-31 13:50:41 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint J4 on root level
-12-31 13:50:41 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint D4 on root level
-12-31 13:50:41 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint D3 on root level
-12-31 13:50:41 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint D1 on root level
-12-31 13:50:41 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint J6 on root level
-12-31 13:50:41 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint J5 on root level
-12-31 13:50:41 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 717:Reference footprint='Q16'
-12-31 13:50:44 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 94:By Sheet GUI initialized
-12-31 13:50:44 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 103:Ref fp:Footprint(ref='Q16', fp=<pcbnew.FOOTPRINT; proxy of <Swig Object of type 'FOOTPRINT *' at 0x15fb59d50> >, fp_id='564189C0-57B4-4383-83F1-70D0045ABEC3', sheet_id=['/stm32/', '/stm32/LEDs & TPs/', '/stm32/LEDs & TPs/shutdown LED circuit14/'], filename=['stm32.kicad_sch', 'test_points_leds.kicad_sch', 'shdn_led.kicad_sch'])
-12-31 13:50:44 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 104:Levels:['stm32.kicad_sch', 'test_points_leds.kicad_sch', 'shdn_led.kicad_sch']
-12-31 13:50:44 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 106:Selecting: 3
-12-31 13:50:44 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 110:Should invoke level_changed()
-12-31 13:50:44 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 288:Level_changed() invoked
-12-31 13:50:44 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 291:self.ref_fp.sheet_id[index] = '/stm32/LEDs & TPs/shutdown LED circuit14/'
-12-31 13:50:44 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 292:self.ref_fp.sheet_id = ['/stm32/', '/stm32/LEDs & TPs/', '/stm32/LEDs & TPs/shutdown LED circuit14/']
-12-31 13:50:44 com_github_MitjaNemec_PlaceFootprints.place_footprints 284:constructing a list of sheets suitable for replication on level:'/stm32/LEDs & TPs/shutdown LED circuit14/', file:'shdn_led.kicad_sch'
-12-31 13:50:44 com_github_MitjaNemec_PlaceFootprints.place_footprints 308:suitable sheets are:[['/stm32/', '/stm32/LEDs & TPs/', '/stm32/LEDs & TPs/shutdown LED circuit/'], ['/stm32/', '/stm32/LEDs & TPs/', '/stm32/LEDs & TPs/shutdown LED circuit1/'], ['/stm32/', '/stm32/LEDs & TPs/', '/stm32/LEDs & TPs/shutdown LED circuit3/'], ['/stm32/', '/stm32/LEDs & TPs/', '/stm32/LEDs & TPs/shutdown LED circuit4/'], ['/stm32/', '/stm32/LEDs & TPs/', '/stm32/LEDs & TPs/shutdown LED circuit5/'], ['/stm32/', '/stm32/LEDs & TPs/', '/stm32/LEDs & TPs/shutdown LED circuit6/'], ['/stm32/', '/stm32/LEDs & TPs/', '/stm32/LEDs & TPs/shutdown LED circuit7/'], ['/stm32/', '/stm32/LEDs & TPs/', '/stm32/LEDs & TPs/shutdown LED circuit8/'], ['/stm32/', '/stm32/LEDs & TPs/', '/stm32/LEDs & TPs/shutdown LED circuit9/'], ['/stm32/', '/stm32/LEDs & TPs/', '/stm32/LEDs & TPs/shutdown LED circuit10/'], ['/stm32/', '/stm32/LEDs & TPs/', '/stm32/LEDs & TPs/shutdown LED circuit11/'], ['/stm32/', '/stm32/LEDs & TPs/', '/stm32/LEDs & TPs/shutdown LED circuit12/'], ['/stm32/', '/stm32/LEDs & TPs/', '/stm32/LEDs & TPs/shutdown LED circuit13/'], ['/stm32/', '/stm32/LEDs & TPs/', '/stm32/LEDs & TPs/shutdown LED circuit15/'], ['/stm32/', '/stm32/LEDs & TPs/', '/stm32/LEDs & TPs/shutdown LED circuit16/'], ['/stm32/', '/stm32/LEDs & TPs/', '/stm32/LEDs & TPs/shutdown LED circuit17/'], ['/stm32/', '/stm32/LEDs & TPs/', '/stm32/LEDs & TPs/shutdown LED circuit18/'], ['/stm32/', '/stm32/LEDs & TPs/', '/stm32/LEDs & TPs/shutdown LED circuit19/'], ['/stm32/', '/stm32/LEDs & TPs/', '/stm32/LEDs & TPs/shutdown LED circuit20/'], ['/stm32/', '/stm32/LEDs & TPs/', '/stm32/LEDs & TPs/shutdown LED circuit21/']]
-12-31 13:50:44 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 306:self.list_sheetsChoices: [['/stm32/', '/stm32/LEDs & TPs/', '/stm32/LEDs & TPs/shutdown LED circuit/'], ['/stm32/', '/stm32/LEDs & TPs/', '/stm32/LEDs & TPs/shutdown LED circuit1/'], ['/stm32/', '/stm32/LEDs & TPs/', '/stm32/LEDs & TPs/shutdown LED circuit3/'], ['/stm32/', '/stm32/LEDs & TPs/', '/stm32/LEDs & TPs/shutdown LED circuit4/'], ['/stm32/', '/stm32/LEDs & TPs/', '/stm32/LEDs & TPs/shutdown LED circuit5/'], ['/stm32/', '/stm32/LEDs & TPs/', '/stm32/LEDs & TPs/shutdown LED circuit6/'], ['/stm32/', '/stm32/LEDs & TPs/', '/stm32/LEDs & TPs/shutdown LED circuit7/'], ['/stm32/', '/stm32/LEDs & TPs/', '/stm32/LEDs & TPs/shutdown LED circuit8/'], ['/stm32/', '/stm32/LEDs & TPs/', '/stm32/LEDs & TPs/shutdown LED circuit9/'], ['/stm32/', '/stm32/LEDs & TPs/', '/stm32/LEDs & TPs/shutdown LED circuit10/'], ['/stm32/', '/stm32/LEDs & TPs/', '/stm32/LEDs & TPs/shutdown LED circuit11/'], ['/stm32/', '/stm32/LEDs & TPs/', '/stm32/LEDs & TPs/shutdown LED circuit12/'], ['/stm32/', '/stm32/LEDs & TPs/', '/stm32/LEDs & TPs/shutdown LED circuit13/'], ['/stm32/', '/stm32/LEDs & TPs/', '/stm32/LEDs & TPs/shutdown LED circuit15/'], ['/stm32/', '/stm32/LEDs & TPs/', '/stm32/LEDs & TPs/shutdown LED circuit16/'], ['/stm32/', '/stm32/LEDs & TPs/', '/stm32/LEDs & TPs/shutdown LED circuit17/'], ['/stm32/', '/stm32/LEDs & TPs/', '/stm32/LEDs & TPs/shutdown LED circuit18/'], ['/stm32/', '/stm32/LEDs & TPs/', '/stm32/LEDs & TPs/shutdown LED circuit19/'], ['/stm32/', '/stm32/LEDs & TPs/', '/stm32/LEDs & TPs/shutdown LED circuit20/'], ['/stm32/', '/stm32/LEDs & TPs/', '/stm32/LEDs & TPs/shutdown LED circuit21/']]
-12-31 13:50:44 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 309:fp.sheet_id: ['/stm32/', '/stm32/LEDs & TPs/', '/stm32/LEDs & TPs/shutdown LED circuit20/']
-12-31 13:50:44 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 309:fp.sheet_id: ['/stm32/', '/stm32/LEDs & TPs/', '/stm32/LEDs & TPs/shutdown LED circuit1/']
-12-31 13:50:44 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 309:fp.sheet_id: ['/stm32/', '/stm32/LEDs & TPs/', '/stm32/LEDs & TPs/shutdown LED circuit18/']
-12-31 13:50:44 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 309:fp.sheet_id: ['/stm32/', '/stm32/LEDs & TPs/', '/stm32/LEDs & TPs/shutdown LED circuit10/']
-12-31 13:50:44 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 309:fp.sheet_id: ['/stm32/', '/stm32/LEDs & TPs/', '/stm32/LEDs & TPs/shutdown LED circuit12/']
-12-31 13:50:44 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 309:fp.sheet_id: ['/stm32/', '/stm32/LEDs & TPs/', '/stm32/LEDs & TPs/shutdown LED circuit7/']
-12-31 13:50:44 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 309:fp.sheet_id: ['/stm32/', '/stm32/LEDs & TPs/', '/stm32/LEDs & TPs/shutdown LED circuit17/']
-12-31 13:50:44 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 309:fp.sheet_id: ['/stm32/', '/stm32/LEDs & TPs/', '/stm32/LEDs & TPs/shutdown LED circuit/']
-12-31 13:50:44 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 309:fp.sheet_id: ['/stm32/', '/stm32/LEDs & TPs/', '/stm32/LEDs & TPs/shutdown LED circuit13/']
-12-31 13:50:44 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 309:fp.sheet_id: ['/stm32/', '/stm32/LEDs & TPs/', '/stm32/LEDs & TPs/shutdown LED circuit4/']
-12-31 13:50:44 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 309:fp.sheet_id: ['/stm32/', '/stm32/LEDs & TPs/', '/stm32/LEDs & TPs/shutdown LED circuit8/']
-12-31 13:50:44 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 309:fp.sheet_id: ['/stm32/', '/stm32/LEDs & TPs/', '/stm32/LEDs & TPs/shutdown LED circuit6/']
-12-31 13:50:44 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 309:fp.sheet_id: ['/stm32/', '/stm32/LEDs & TPs/', '/stm32/LEDs & TPs/shutdown LED circuit3/']
-12-31 13:50:44 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 309:fp.sheet_id: ['/stm32/', '/stm32/LEDs & TPs/', '/stm32/LEDs & TPs/shutdown LED circuit16/']
-12-31 13:50:44 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 309:fp.sheet_id: ['/stm32/', '/stm32/LEDs & TPs/', '/stm32/LEDs & TPs/shutdown LED circuit21/']
-12-31 13:50:44 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 309:fp.sheet_id: ['/stm32/', '/stm32/LEDs & TPs/', '/stm32/LEDs & TPs/shutdown LED circuit11/']
-12-31 13:50:44 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 309:fp.sheet_id: ['/stm32/', '/stm32/LEDs & TPs/', '/stm32/LEDs & TPs/shutdown LED circuit19/']
-12-31 13:50:44 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 309:fp.sheet_id: ['/stm32/', '/stm32/LEDs & TPs/', '/stm32/LEDs & TPs/shutdown LED circuit15/']
-12-31 13:50:44 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 309:fp.sheet_id: ['/stm32/', '/stm32/LEDs & TPs/', '/stm32/LEDs & TPs/shutdown LED circuit14/']
-12-31 13:50:44 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 309:fp.sheet_id: ['/stm32/', '/stm32/LEDs & TPs/', '/stm32/LEDs & TPs/shutdown LED circuit5/']
-12-31 13:50:44 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 309:fp.sheet_id: ['/stm32/', '/stm32/LEDs & TPs/', '/stm32/LEDs & TPs/shutdown LED circuit9/']
-12-31 13:50:44 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 314:self.ref_list: ['Q28', 'Q4', 'Q26', 'Q12', 'Q14', 'Q9', 'Q25', 'Q24', 'Q15', 'Q6', 'Q10', 'Q8', 'Q5', 'Q18', 'Q29', 'Q13', 'Q27', 'Q17', 'Q7', 'Q11']
-12-31 13:50:44 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 267:Selection: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 674:Plugin executed on: 'darwin'
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 675:Plugin executed with python version: '3.9.13 (v3.9.13:6de2ca5339, May 17 2022, 11:37:23) \n[Clang 13.0.0 (clang-1300.0.29.30)]'
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 676:KiCad build version: 9.0.5
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 677:Plugin version: 4.0.1
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 678:Frame repr: <wx._core.Frame object at 0x167d15280>
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 121:getting a list of all footprints on board
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint H101 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint H108 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint H107 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint H106 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint H105 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint H104 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint H103 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint H102 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-6970057A on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-69700042 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-6970001B on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-696FFF22 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-696FFEA2 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-696FFDFB on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-696FFD95 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-696FF966 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-696FF831 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-696FF90C on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-696FF891 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-696FF812 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-696FF8E3 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-697004E1 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-696FF923 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-696FF86A on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-696FF85E on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-696FF9B9 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-696FF83E on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-696FF99E on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-696FF84A on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-696FF824 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-697004F4 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-696FFED1 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-6970057A on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-697004F4 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-697004E1 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-69700042 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-6970001B on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-696FFF22 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-696FFED1 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-696FFEA2 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-696FFDFB on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-696FFD95 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-696FF9B9 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-696FF99E on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-696FF966 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-696FF923 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-696FF90C on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-696FF8E3 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-696FF891 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-696FF86A on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-696FF85E on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-696FF84A on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-696FF83E on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-696FF831 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-696FF824 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-696FF812 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-6965088E on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint R3 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint TP1 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-696BB797 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-696C00F2 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-6965088E on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint TP6 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-6969FA05 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint G*** on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-696BB12B on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint TP2 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint J1 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-6965091C on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-696BE7EF on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-696BEA9A on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-696BE055 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-696C0D50 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-696BE07A on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-696BEB0A on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-696BB9FA on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-6965088E on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-6969F9E0 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-696BEE33 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-690E2A9C on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint D2 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-6969FA05 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint R2 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint TP3 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-690E2AFE on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-6965094E on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-696A9DB9 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint D4 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint G*** on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint G*** on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint D3 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-6969FA78 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-696BE806 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-696D4A77 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-696BE7FE on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-696C0520 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-6969FA68 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-695E6650 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-695E665F on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint TP5 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-696A9DCE on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-69650A2E on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint D1 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint R1 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-696C0112 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-6969FA85 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint TP4 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-695E662C on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-695E6544 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-6969F9E0 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-6965088E on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-696BE7F7 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint G*** on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-696BFD08 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint G*** on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-690E2B03 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-6965091C on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-6965088E on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint R4 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-696C0094 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-696BB7AA on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-6965094E on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-690E2C42 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint kibuzzard-695E6668 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint J3 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint J4 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint J101 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint J6 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint J5 on root level
+01-21 08:28:58 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 717:Reference footprint='H101'
+01-21 08:28:59 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 858:Reference designator is: H
+01-21 08:28:59 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 859:Reference number is: 101
+01-21 08:28:59 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 891:Sorted and filtered list:
+['H101', 'H102', 'H103', 'H104', 'H105', 'H106', 'H107', 'H108']
+01-21 08:28:59 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 376:wx.Colour(38, 38, 38, 255)
+01-21 08:29:05 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 507:'87.2'
+01-21 08:29:05 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 559:Preparing config for reference circular
+01-21 08:29:05 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 573:Saving config file
+01-21 08:29:05 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 575:Saved the config file
+01-21 08:29:05 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 929:Footprints to place:
+['H101', 'H102', 'H103', 'H104', 'H105', 'H106', 'H107', 'H108']
+01-21 08:29:05 com_github_MitjaNemec_PlaceFootprints.place_footprints 359:Starting placing with circular layout
+01-21 08:29:05 com_github_MitjaNemec_PlaceFootprints.place_footprints 369:reference footprint position at: VECTOR2I(81900000, 22300000)
+01-21 08:29:05 com_github_MitjaNemec_PlaceFootprints.place_footprints 374:rotation center at: (81900000, 109500000.0)
+01-21 08:29:05 com_github_MitjaNemec_PlaceFootprints.place_footprints 506:Text of: H101 has property "Keep upright" rotation might not look as intended
+01-21 08:29:05 com_github_MitjaNemec_PlaceFootprints.place_footprints 506:Text of: H101 has property "Keep upright" rotation might not look as intended
+01-21 08:29:05 com_github_MitjaNemec_PlaceFootprints.place_footprints 506:Text of: H101 has property "Keep upright" rotation might not look as intended
+01-21 08:29:05 com_github_MitjaNemec_PlaceFootprints.place_footprints 506:Text of: H101 has property "Keep upright" rotation might not look as intended
+01-21 08:29:05 com_github_MitjaNemec_PlaceFootprints.place_footprints 506:Text of: H101 has property "Keep upright" rotation might not look as intended
+01-21 08:29:05 com_github_MitjaNemec_PlaceFootprints.place_footprints 506:Text of: H101 has property "Keep upright" rotation might not look as intended
+01-21 08:29:05 com_github_MitjaNemec_PlaceFootprints.place_footprints 506:Text of: H101 has property "Keep upright" rotation might not look as intended
+01-21 08:29:05 com_github_MitjaNemec_PlaceFootprints.place_footprints 506:Text of: H101 has property "Keep upright" rotation might not look as intended
+01-21 08:29:05 com_github_MitjaNemec_PlaceFootprints.place_footprints 506:Text of: H101 has property "Keep upright" rotation might not look as intended
+01-21 08:29:05 com_github_MitjaNemec_PlaceFootprints.place_footprints 506:Text of: H101 has property "Keep upright" rotation might not look as intended
+01-21 08:29:05 com_github_MitjaNemec_PlaceFootprints.place_footprints 506:Text of: H101 has property "Keep upright" rotation might not look as intended
+01-21 08:29:05 com_github_MitjaNemec_PlaceFootprints.place_footprints 506:Text of: H101 has property "Keep upright" rotation might not look as intended
+01-21 08:29:05 com_github_MitjaNemec_PlaceFootprints.place_footprints 506:Text of: H101 has property "Keep upright" rotation might not look as intended
+01-21 08:29:05 com_github_MitjaNemec_PlaceFootprints.place_footprints 506:Text of: H101 has property "Keep upright" rotation might not look as intended
+01-21 08:29:05 com_github_MitjaNemec_PlaceFootprints.place_footprints 506:Text of: H101 has property "Keep upright" rotation might not look as intended
+01-21 08:29:05 com_github_MitjaNemec_PlaceFootprints.place_footprints 506:Text of: H101 has property "Keep upright" rotation might not look as intended
+01-21 08:29:05 com_github_MitjaNemec_PlaceFootprints.place_footprints 506:Text of: H101 has property "Keep upright" rotation might not look as intended
+01-21 08:29:05 com_github_MitjaNemec_PlaceFootprints.place_footprints 506:Text of: H101 has property "Keep upright" rotation might not look as intended
+01-21 08:29:05 com_github_MitjaNemec_PlaceFootprints.place_footprints 506:Text of: H101 has property "Keep upright" rotation might not look as intended
+01-21 08:29:05 com_github_MitjaNemec_PlaceFootprints.place_footprints 506:Text of: H101 has property "Keep upright" rotation might not look as intended
+01-21 08:29:05 com_github_MitjaNemec_PlaceFootprints.place_footprints 506:Text of: H101 has property "Keep upright" rotation might not look as intended
+01-21 08:29:05 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 944:Placing complete
