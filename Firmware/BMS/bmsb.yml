@@ -1,0 +1,40 @@
+name: bms_b
+
+publish:
+  - name: bms_status_b
+    id: 0x11
+    freq_hz: 100
+    signals:
+      - name: bms_state_b
+        slice: 0 + 2
+        unit:
+          type: enum
+          values:
+            - ACTIVE
+            - CHARGING
+            - FAULT
+
+  - name: bms_status_b_ex
+    id: 0x1100
+    freq_hz: 100
+    signals:
+      - name: bms_state_b
+        slice: 0 + 2
+        unit:
+          type: enum
+          values:
+            - ACTIVE
+            - CHARGING
+            - FAULT
+  - name: bms_status_b_ex_e
+    id: 0x1103
+    freq_hz: 100
+    signals:
+      - name: bms_state_b
+        slice: 0 + 2
+        unit:
+          type: enum
+          values:
+            - ACTIVE
+            - CHARGING
+            - FAULT

@@ -1513,6 +1513,18 @@
 		)
 		(uuid d98c40c2-2a55-4e33-abb5-a0d18e99c17c)
 	)
+	(text "WRONG!!"
+		(exclude_from_sim no)
+		(at 108.966 57.404 0)
+		(effects
+			(font
+				(size 3 3)
+				(thickness 0.6)
+				(bold yes)
+			)
+		)
+		(uuid "21651933-2fdb-456b-9515-5f644b388814")
+	)
 	(text "3.3V Buck Converter"
 		(exclude_from_sim no)
 		(at 201.93 40.64 0)
@@ -1522,6 +1534,18 @@
 			)
 		)
 		(uuid "56f72690-0ecc-4872-aed8-6a459b821cc5")
+	)
+	(text "WRONG!!"
+		(exclude_from_sim no)
+		(at 164.338 71.628 0)
+		(effects
+			(font
+				(size 3 3)
+				(thickness 0.6)
+				(bold yes)
+			)
+		)
+		(uuid "9404a89d-2c23-48d2-bdef-0fd97d727a18")
 	)
 	(text "ADBMS Datasheet pg71"
 		(exclude_from_sim no)
@@ -1552,6 +1576,30 @@
 			)
 		)
 		(uuid "d653f87e-16e0-478e-ab63-f5db3cf3c82c")
+	)
+	(text "WRONG!!"
+		(exclude_from_sim no)
+		(at 224.028 57.912 0)
+		(effects
+			(font
+				(size 3 3)
+				(thickness 0.6)
+				(bold yes)
+			)
+		)
+		(uuid "ee13f04f-0f14-4d84-bed3-d81a6b365fc8")
+	)
+	(text "WRONG!!"
+		(exclude_from_sim no)
+		(at 36.322 65.278 0)
+		(effects
+			(font
+				(size 3 3)
+				(thickness 0.6)
+				(bold yes)
+			)
+		)
+		(uuid "f5cd3222-3ee5-4eea-8aeb-3e762e749d04")
 	)
 	(text "POWER"
 		(exclude_from_sim no)
@@ -4459,7 +4507,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100pf"
+		(property "Value" "0.1uF"
 			(at 96.52 60.452 0)
 			(effects
 				(font
@@ -4666,7 +4714,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100pf"
+		(property "Value" "0.1uF"
 			(at 222.25 60.452 0)
 			(effects
 				(font
@@ -5414,7 +5462,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100pf"
+		(property "Value" "0.1uF"
 			(at 40.64 74.422 0)
 			(effects
 				(font
@@ -5910,7 +5958,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100pf"
+		(property "Value" "0.1uF"
 			(at 166.37 74.422 0)
 			(effects
 				(font

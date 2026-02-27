@@ -52,3 +52,15 @@ can_isolation_unique_part_bom.txt
 fab/
 *.csv
 *.xml
+
+
+# Python virtual environments
+venv/
+.venv/
+
+# Compiled Python files
+*.pyc
+
+# Other common files to ignore (optional)
+# .vscode/  # Ignore VS Code specific settings if desired
+# __pycache__/
