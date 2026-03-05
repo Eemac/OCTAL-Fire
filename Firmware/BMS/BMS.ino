@@ -80,7 +80,7 @@ void setup()
   digitalToggle(PB9);
   digitalToggle(PB2);
 
-  Serial.begin(112500);
+  Serial.begin(115200);
 
   can_init_bms_a(&hfdcan2);
 
@@ -131,10 +131,11 @@ void loop()
         Serial.println("Value out of uint16_t range.");
       }
   }
-
-  if(can_receive(&hfdcan2) > 0) {
     Serial.print(msg1.pwm);
     Serial.print(" ");
+
+  if(can_receive(&hfdcan2) > 0) {
+   
   }
 }
 
