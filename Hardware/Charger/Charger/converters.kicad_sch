@@ -411,6 +411,142 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:Fuse"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "F"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Fuse"
+				(at -1.905 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Fuse"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "fuse"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*Fuse*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Fuse_0_1"
+				(rectangle
+					(start -0.762 -2.54)
+					(end 0.762 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Fuse_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:L"
 			(pin_numbers
 				(hide yes)
@@ -1504,121 +1640,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "formula:Fuse_Holder_Blade"
-			(pin_names
-				(offset 1.016)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Fuse_Holder_Blade"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "footprints:Fuse_Block_Holder"
-				(at 0 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Fuse_Holder_Blade_0_1"
-				(rectangle
-					(start -3.81 1.27)
-					(end 3.81 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.81 0) (xy 3.81 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Fuse_Holder_Blade_1_1"
-				(pin bidirectional line
-					(at -6.35 0 0)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 6.35 0 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:+3.3V"
 			(power)
 			(pin_numbers
@@ -2485,6 +2506,16 @@
 	)
 	(wire
 		(pts
+			(xy 226.06 63.5) (xy 233.68 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36e59774-362c-440d-93bd-a051f8a0dff7")
+	)
+	(wire
+		(pts
 			(xy 214.63 125.73) (xy 218.44 125.73)
 		)
 		(stroke
@@ -2532,6 +2563,16 @@
 			(type default)
 		)
 		(uuid "3e15b599-c424-4b75-9b7c-80ffd44063bd")
+	)
+	(wire
+		(pts
+			(xy 223.52 130.81) (xy 228.6 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e298d95-0906-4f7b-aa20-b12afb6050ca")
 	)
 	(wire
 		(pts
@@ -2682,16 +2723,6 @@
 			(type default)
 		)
 		(uuid "5c87b65c-268d-4194-8922-af22388d3ed3")
-	)
-	(wire
-		(pts
-			(xy 233.68 63.5) (xy 228.6 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5d2e7525-0ea3-48f4-a06f-d6e2afd40fa1")
 	)
 	(wire
 		(pts
@@ -2875,7 +2906,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 63.5) (xy 215.9 63.5)
+			(xy 213.36 63.5) (xy 218.44 63.5)
 		)
 		(stroke
 			(width 0)
@@ -2922,16 +2953,6 @@
 			(type default)
 		)
 		(uuid "9346e90f-73d7-4ae2-9852-5bbfcfa61e23")
-	)
-	(wire
-		(pts
-			(xy 226.06 130.81) (xy 228.6 130.81)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "93b2d37f-5b3d-4667-875b-236d29e18ba9")
 	)
 	(wire
 		(pts
@@ -3225,7 +3246,7 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 130.81) (xy 213.36 130.81)
+			(xy 212.09 130.81) (xy 215.9 130.81)
 		)
 		(stroke
 			(width 0)
@@ -3519,7 +3540,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "080ae68a-9721-44d1-95ba-b0a6204659bf")
-		(property "Reference" "C208"
+		(property "Reference" "C216"
 			(at 206.248 71.628 0)
 			(effects
 				(font
@@ -3573,7 +3594,7 @@
 		(instances
 			(project "Charger"
 				(path "/ec0cb266-3da5-4155-a0e5-38a3c68d3210/91227ca9-06bc-4f19-ad47-eac0cfdbbcc1"
-					(reference "C208")
+					(reference "C216")
 					(unit 1)
 				)
 			)
@@ -3588,7 +3609,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0fb1f43c-e7fd-42bf-aa9b-8784c92fdc69")
-		(property "Reference" "C?"
+		(property "Reference" "C201"
 			(at 114.3 114.808 0)
 			(effects
 				(font
@@ -3642,7 +3663,74 @@
 		(instances
 			(project "Charger"
 				(path "/ec0cb266-3da5-4155-a0e5-38a3c68d3210/91227ca9-06bc-4f19-ad47-eac0cfdbbcc1"
-					(reference "C?")
+					(reference "C201")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Fuse")
+		(at 222.25 63.5 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1068e79a-d08e-41e0-b2ac-2aa1b4e0f85f")
+		(property "Reference" "F202"
+			(at 222.25 59.436 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Fuse 1A"
+			(at 222.25 61.468 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Fuse:Fuse_1206_3216Metric"
+			(at 222.25 65.278 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 222.25 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Fuse"
+			(at 222.25 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7062cb93-405a-4f65-b724-34252294370d")
+		)
+		(pin "1"
+			(uuid "82176ffd-ab38-4e79-98ad-fd61ab097bdc")
+		)
+		(instances
+			(project ""
+				(path "/ec0cb266-3da5-4155-a0e5-38a3c68d3210/91227ca9-06bc-4f19-ad47-eac0cfdbbcc1"
+					(reference "F202")
 					(unit 1)
 				)
 			)
@@ -3657,7 +3745,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1d29f737-8528-4b87-970b-4cd0710978f2")
-		(property "Reference" "R?"
+		(property "Reference" "R201"
 			(at 134.62 134.62 0)
 			(effects
 				(font
@@ -3711,7 +3799,7 @@
 		(instances
 			(project "Charger"
 				(path "/ec0cb266-3da5-4155-a0e5-38a3c68d3210/91227ca9-06bc-4f19-ad47-eac0cfdbbcc1"
-					(reference "R?")
+					(reference "R201")
 					(unit 1)
 				)
 			)
@@ -3728,7 +3816,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1eebdffe-ba08-40c1-8d6f-a1f0ae0bec62")
-		(property "Reference" "#PWR0205"
+		(property "Reference" "#PWR0206"
 			(at 232.41 130.81 0)
 			(effects
 				(font
@@ -3778,7 +3866,7 @@
 		(instances
 			(project "Charger"
 				(path "/ec0cb266-3da5-4155-a0e5-38a3c68d3210/91227ca9-06bc-4f19-ad47-eac0cfdbbcc1"
-					(reference "#PWR0205")
+					(reference "#PWR0206")
 					(unit 1)
 				)
 			)
@@ -3793,7 +3881,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "22c3ee8b-35d5-4af4-bc8e-a2ef4dc82874")
-		(property "Reference" "C209"
+		(property "Reference" "C218"
 			(at 213.868 71.628 0)
 			(effects
 				(font
@@ -3847,75 +3935,7 @@
 		(instances
 			(project "Charger"
 				(path "/ec0cb266-3da5-4155-a0e5-38a3c68d3210/91227ca9-06bc-4f19-ad47-eac0cfdbbcc1"
-					(reference "C209")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "formula:Fuse_Holder_Blade")
-		(at 222.25 63.5 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "22efe081-75b1-452b-8c11-555bdd703ef9")
-		(property "Reference" "U202"
-			(at 222.25 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Fuse_Holder_Blade"
-			(at 222.25 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "footprints:Fuse_Block_Holder"
-			(at 222.25 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 222.25 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 222.25 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "9b906cd3-5f67-4de2-90ff-102403b28ecf")
-		)
-		(pin "1"
-			(uuid "f7583fbc-a746-4ec0-b908-df00050754a4")
-		)
-		(instances
-			(project "Charger"
-				(path "/ec0cb266-3da5-4155-a0e5-38a3c68d3210/91227ca9-06bc-4f19-ad47-eac0cfdbbcc1"
-					(reference "U202")
+					(reference "C218")
 					(unit 1)
 				)
 			)
@@ -3931,7 +3951,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "236e3ca5-579a-463a-b522-1599e7c17235")
-		(property "Reference" "#PWR0201"
+		(property "Reference" "#PWR0203"
 			(at 115.57 86.36 0)
 			(effects
 				(font
@@ -3981,7 +4001,7 @@
 		(instances
 			(project "Charger"
 				(path "/ec0cb266-3da5-4155-a0e5-38a3c68d3210/91227ca9-06bc-4f19-ad47-eac0cfdbbcc1"
-					(reference "#PWR0201")
+					(reference "#PWR0203")
 					(unit 1)
 				)
 			)
@@ -3996,7 +4016,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2dd4b3df-bcb4-4933-8dfe-8f590190c34c")
-		(property "Reference" "R?"
+		(property "Reference" "R203"
 			(at 180.594 132.08 0)
 			(effects
 				(font
@@ -4050,7 +4070,7 @@
 		(instances
 			(project "Charger"
 				(path "/ec0cb266-3da5-4155-a0e5-38a3c68d3210/91227ca9-06bc-4f19-ad47-eac0cfdbbcc1"
-					(reference "R?")
+					(reference "R203")
 					(unit 1)
 				)
 			)
@@ -4065,7 +4085,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "31973339-dd98-43b1-b38a-b42d3306997f")
-		(property "Reference" "C207"
+		(property "Reference" "C214"
 			(at 198.628 71.628 0)
 			(effects
 				(font
@@ -4119,7 +4139,7 @@
 		(instances
 			(project "Charger"
 				(path "/ec0cb266-3da5-4155-a0e5-38a3c68d3210/91227ca9-06bc-4f19-ad47-eac0cfdbbcc1"
-					(reference "C207")
+					(reference "C214")
 					(unit 1)
 				)
 			)
@@ -4134,7 +4154,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3cd53f2f-f36d-4932-a67c-c9007597dc30")
-		(property "Reference" "R?"
+		(property "Reference" "R204"
 			(at 181.61 146.05 0)
 			(effects
 				(font
@@ -4188,7 +4208,7 @@
 		(instances
 			(project "Charger"
 				(path "/ec0cb266-3da5-4155-a0e5-38a3c68d3210/91227ca9-06bc-4f19-ad47-eac0cfdbbcc1"
-					(reference "R?")
+					(reference "R204")
 					(unit 1)
 				)
 			)
@@ -4203,7 +4223,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4f4764ea-37da-4ea3-a1bd-b2a1a96d2777")
-		(property "Reference" "C203"
+		(property "Reference" "C206"
 			(at 127 65.278 0)
 			(effects
 				(font
@@ -4257,7 +4277,7 @@
 		(instances
 			(project "Charger"
 				(path "/ec0cb266-3da5-4155-a0e5-38a3c68d3210/91227ca9-06bc-4f19-ad47-eac0cfdbbcc1"
-					(reference "C203")
+					(reference "C206")
 					(unit 1)
 				)
 			)
@@ -4272,7 +4292,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "54ba64ab-a74d-4aca-9a21-11f1bf16262d")
-		(property "Reference" "C?"
+		(property "Reference" "C215"
 			(at 204.978 138.938 0)
 			(effects
 				(font
@@ -4326,7 +4346,7 @@
 		(instances
 			(project "Charger"
 				(path "/ec0cb266-3da5-4155-a0e5-38a3c68d3210/91227ca9-06bc-4f19-ad47-eac0cfdbbcc1"
-					(reference "C?")
+					(reference "C215")
 					(unit 1)
 				)
 			)
@@ -4418,7 +4438,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5ec44ed8-dbb7-485a-968c-68598c7b15c9")
-		(property "Reference" "D102"
+		(property "Reference" "D205"
 			(at 260.604 93.98 90)
 			(effects
 				(font
@@ -4472,7 +4492,7 @@
 		(instances
 			(project "Charger"
 				(path "/ec0cb266-3da5-4155-a0e5-38a3c68d3210/91227ca9-06bc-4f19-ad47-eac0cfdbbcc1"
-					(reference "D102")
+					(reference "D205")
 					(unit 1)
 				)
 			)
@@ -4555,7 +4575,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "661a30d1-a802-47b7-b443-943160963e38")
-		(property "Reference" "C?"
+		(property "Reference" "C217"
 			(at 212.598 138.938 0)
 			(effects
 				(font
@@ -4609,7 +4629,7 @@
 		(instances
 			(project "Charger"
 				(path "/ec0cb266-3da5-4155-a0e5-38a3c68d3210/91227ca9-06bc-4f19-ad47-eac0cfdbbcc1"
-					(reference "C?")
+					(reference "C217")
 					(unit 1)
 				)
 			)
@@ -4624,7 +4644,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6925f3af-14ab-4f96-a7ba-507618e0e4c2")
-		(property "Reference" "R203"
+		(property "Reference" "R206"
 			(at 182.88 78.74 0)
 			(effects
 				(font
@@ -4678,7 +4698,7 @@
 		(instances
 			(project "Charger"
 				(path "/ec0cb266-3da5-4155-a0e5-38a3c68d3210/91227ca9-06bc-4f19-ad47-eac0cfdbbcc1"
-					(reference "R203")
+					(reference "R206")
 					(unit 1)
 				)
 			)
@@ -4693,7 +4713,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "69b9d17b-6dfc-432b-a2b8-02f220ccc731")
-		(property "Reference" "C?"
+		(property "Reference" "C211"
 			(at 189.738 138.938 0)
 			(effects
 				(font
@@ -4747,7 +4767,7 @@
 		(instances
 			(project "Charger"
 				(path "/ec0cb266-3da5-4155-a0e5-38a3c68d3210/91227ca9-06bc-4f19-ad47-eac0cfdbbcc1"
-					(reference "C?")
+					(reference "C211")
 					(unit 1)
 				)
 			)
@@ -4762,7 +4782,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6e2f9dec-8f08-4727-b399-d8ab889fe1c9")
-		(property "Reference" "C?"
+		(property "Reference" "C209"
 			(at 173.99 112.268 0)
 			(effects
 				(font
@@ -4816,7 +4836,7 @@
 		(instances
 			(project "Charger"
 				(path "/ec0cb266-3da5-4155-a0e5-38a3c68d3210/91227ca9-06bc-4f19-ad47-eac0cfdbbcc1"
-					(reference "C?")
+					(reference "C209")
 					(unit 1)
 				)
 			)
@@ -4832,7 +4852,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6e9af1a2-fcef-41be-8128-b84ec5a582f8")
-		(property "Reference" "#PWR0203"
+		(property "Reference" "#PWR0208"
 			(at 242.57 95.25 0)
 			(effects
 				(font
@@ -4882,7 +4902,7 @@
 		(instances
 			(project "Charger"
 				(path "/ec0cb266-3da5-4155-a0e5-38a3c68d3210/91227ca9-06bc-4f19-ad47-eac0cfdbbcc1"
-					(reference "#PWR0203")
+					(reference "#PWR0208")
 					(unit 1)
 				)
 			)
@@ -4897,7 +4917,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "77dafe16-7706-482b-a5fa-61f94ee03857")
-		(property "Reference" "C204"
+		(property "Reference" "C208"
 			(at 173.99 66.548 0)
 			(effects
 				(font
@@ -4951,7 +4971,7 @@
 		(instances
 			(project "Charger"
 				(path "/ec0cb266-3da5-4155-a0e5-38a3c68d3210/91227ca9-06bc-4f19-ad47-eac0cfdbbcc1"
-					(reference "C204")
+					(reference "C208")
 					(unit 1)
 				)
 			)
@@ -4968,7 +4988,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "838643bc-653c-4936-8e77-32ba47c9fc38")
-		(property "Reference" "#PWR0106"
+		(property "Reference" "#PWR0210"
 			(at 259.08 95.25 0)
 			(effects
 				(font
@@ -5018,7 +5038,7 @@
 		(instances
 			(project "Charger"
 				(path "/ec0cb266-3da5-4155-a0e5-38a3c68d3210/91227ca9-06bc-4f19-ad47-eac0cfdbbcc1"
-					(reference "#PWR0106")
+					(reference "#PWR0210")
 					(unit 1)
 				)
 			)
@@ -5033,7 +5053,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "845d02b7-5c56-4ab5-868f-0229cdbe108e")
-		(property "Reference" "C205"
+		(property "Reference" "C210"
 			(at 175.26 44.958 0)
 			(effects
 				(font
@@ -5087,7 +5107,7 @@
 		(instances
 			(project "Charger"
 				(path "/ec0cb266-3da5-4155-a0e5-38a3c68d3210/91227ca9-06bc-4f19-ad47-eac0cfdbbcc1"
-					(reference "C205")
+					(reference "C210")
 					(unit 1)
 				)
 			)
@@ -5103,7 +5123,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "86ffea19-46c8-4a45-a344-acda5d8744fb")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR0204"
 			(at 180.34 157.48 0)
 			(effects
 				(font
@@ -5153,7 +5173,7 @@
 		(instances
 			(project "Charger"
 				(path "/ec0cb266-3da5-4155-a0e5-38a3c68d3210/91227ca9-06bc-4f19-ad47-eac0cfdbbcc1"
-					(reference "#PWR?")
+					(reference "#PWR0204")
 					(unit 1)
 				)
 			)
@@ -5169,7 +5189,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "931b7f24-1853-439e-953e-d299a689a14d")
-		(property "Reference" "#PWR0204"
+		(property "Reference" "#PWR0207"
 			(at 233.68 63.5 0)
 			(effects
 				(font
@@ -5219,7 +5239,7 @@
 		(instances
 			(project "Charger"
 				(path "/ec0cb266-3da5-4155-a0e5-38a3c68d3210/91227ca9-06bc-4f19-ad47-eac0cfdbbcc1"
-					(reference "#PWR0204")
+					(reference "#PWR0207")
 					(unit 1)
 				)
 			)
@@ -5234,7 +5254,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9b0a84ac-3bf9-4c57-9fba-85b05915261c")
-		(property "Reference" "R202"
+		(property "Reference" "R205"
 			(at 181.864 64.77 0)
 			(effects
 				(font
@@ -5288,7 +5308,7 @@
 		(instances
 			(project "Charger"
 				(path "/ec0cb266-3da5-4155-a0e5-38a3c68d3210/91227ca9-06bc-4f19-ad47-eac0cfdbbcc1"
-					(reference "R202")
+					(reference "R205")
 					(unit 1)
 				)
 			)
@@ -5304,7 +5324,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a0053db5-f235-4e17-b648-d9eb3156aad8")
-		(property "Reference" "#PWR0206"
+		(property "Reference" "#PWR0201"
 			(at 83.82 107.95 0)
 			(effects
 				(font
@@ -5354,7 +5374,7 @@
 		(instances
 			(project "Charger"
 				(path "/ec0cb266-3da5-4155-a0e5-38a3c68d3210/91227ca9-06bc-4f19-ad47-eac0cfdbbcc1"
-					(reference "#PWR0206")
+					(reference "#PWR0201")
 					(unit 1)
 				)
 			)
@@ -5369,7 +5389,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a01250ab-c264-4761-a5af-a9c6c825767d")
-		(property "Reference" "C?"
+		(property "Reference" "C213"
 			(at 197.358 138.938 0)
 			(effects
 				(font
@@ -5423,7 +5443,7 @@
 		(instances
 			(project "Charger"
 				(path "/ec0cb266-3da5-4155-a0e5-38a3c68d3210/91227ca9-06bc-4f19-ad47-eac0cfdbbcc1"
-					(reference "C?")
+					(reference "C213")
 					(unit 1)
 				)
 			)
@@ -5438,7 +5458,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a1b23c1d-8875-4c9f-9939-9d6cca5017aa")
-		(property "Reference" "L201"
+		(property "Reference" "L202"
 			(at 178.816 54.61 90)
 			(effects
 				(font
@@ -5490,7 +5510,7 @@
 		(instances
 			(project "Charger"
 				(path "/ec0cb266-3da5-4155-a0e5-38a3c68d3210/91227ca9-06bc-4f19-ad47-eac0cfdbbcc1"
-					(reference "L201")
+					(reference "L202")
 					(unit 1)
 				)
 			)
@@ -5506,7 +5526,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a8c4f0c5-2ade-4ce8-8d37-64c576feabbc")
-		(property "Reference" "#PWR0202"
+		(property "Reference" "#PWR0205"
 			(at 181.61 90.17 0)
 			(effects
 				(font
@@ -5556,7 +5576,7 @@
 		(instances
 			(project "Charger"
 				(path "/ec0cb266-3da5-4155-a0e5-38a3c68d3210/91227ca9-06bc-4f19-ad47-eac0cfdbbcc1"
-					(reference "#PWR0202")
+					(reference "#PWR0205")
 					(unit 1)
 				)
 			)
@@ -5571,7 +5591,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a9f73b25-3b72-4ebb-9683-a2a48c15383e")
-		(property "Reference" "L?"
+		(property "Reference" "L201"
 			(at 177.546 121.92 90)
 			(effects
 				(font
@@ -5623,7 +5643,7 @@
 		(instances
 			(project "Charger"
 				(path "/ec0cb266-3da5-4155-a0e5-38a3c68d3210/91227ca9-06bc-4f19-ad47-eac0cfdbbcc1"
-					(reference "L?")
+					(reference "L201")
 					(unit 1)
 				)
 			)
@@ -5638,7 +5658,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ab697977-9f8e-4a3a-ba5c-1b3885f63027")
-		(property "Reference" "C206"
+		(property "Reference" "C212"
 			(at 191.008 71.628 0)
 			(effects
 				(font
@@ -5692,7 +5712,7 @@
 		(instances
 			(project "Charger"
 				(path "/ec0cb266-3da5-4155-a0e5-38a3c68d3210/91227ca9-06bc-4f19-ad47-eac0cfdbbcc1"
-					(reference "C206")
+					(reference "C212")
 					(unit 1)
 				)
 			)
@@ -5708,7 +5728,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "abb4fd01-8b94-4dd8-b536-11233ccc52a3")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR0202"
 			(at 114.3 153.67 0)
 			(effects
 				(font
@@ -5758,7 +5778,7 @@
 		(instances
 			(project "Charger"
 				(path "/ec0cb266-3da5-4155-a0e5-38a3c68d3210/91227ca9-06bc-4f19-ad47-eac0cfdbbcc1"
-					(reference "#PWR?")
+					(reference "#PWR0202")
 					(unit 1)
 				)
 			)
@@ -5773,7 +5793,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ae1183dd-ebee-49f3-b82c-77ed9c316e91")
-		(property "Reference" "C?"
+		(property "Reference" "C203"
 			(at 118.11 126.238 0)
 			(effects
 				(font
@@ -5827,7 +5847,7 @@
 		(instances
 			(project "Charger"
 				(path "/ec0cb266-3da5-4155-a0e5-38a3c68d3210/91227ca9-06bc-4f19-ad47-eac0cfdbbcc1"
-					(reference "C?")
+					(reference "C203")
 					(unit 1)
 				)
 			)
@@ -5842,7 +5862,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b0ab53a5-df0b-4b48-a807-8cd1d282c437")
-		(property "Reference" "R102"
+		(property "Reference" "R208"
 			(at 257.302 105.41 90)
 			(effects
 				(font
@@ -5894,7 +5914,7 @@
 		(instances
 			(project "Charger"
 				(path "/ec0cb266-3da5-4155-a0e5-38a3c68d3210/91227ca9-06bc-4f19-ad47-eac0cfdbbcc1"
-					(reference "R102")
+					(reference "R208")
 					(unit 1)
 				)
 			)
@@ -5910,7 +5930,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b1d586ab-3e9a-4d0e-8c8d-a71ee7835fb0")
-		(property "Reference" "U201"
+		(property "Reference" "U202"
 			(at 154.94 33.02 0)
 			(effects
 				(font
@@ -6006,7 +6026,7 @@
 		(instances
 			(project "Charger"
 				(path "/ec0cb266-3da5-4155-a0e5-38a3c68d3210/91227ca9-06bc-4f19-ad47-eac0cfdbbcc1"
-					(reference "U201")
+					(reference "U202")
 					(unit 1)
 				)
 			)
@@ -6021,7 +6041,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b2fd183f-dec0-43c1-a388-1f4f9048a0fa")
-		(property "Reference" "C?"
+		(property "Reference" "C205"
 			(at 125.73 132.588 0)
 			(effects
 				(font
@@ -6075,7 +6095,7 @@
 		(instances
 			(project "Charger"
 				(path "/ec0cb266-3da5-4155-a0e5-38a3c68d3210/91227ca9-06bc-4f19-ad47-eac0cfdbbcc1"
-					(reference "C?")
+					(reference "C205")
 					(unit 1)
 				)
 			)
@@ -6091,7 +6111,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b95b82ee-d9b4-4a56-ac69-ee59ba5eca35")
-		(property "Reference" "U?"
+		(property "Reference" "U201"
 			(at 153.67 100.33 0)
 			(effects
 				(font
@@ -6187,7 +6207,74 @@
 		(instances
 			(project "Charger"
 				(path "/ec0cb266-3da5-4155-a0e5-38a3c68d3210/91227ca9-06bc-4f19-ad47-eac0cfdbbcc1"
-					(reference "U?")
+					(reference "U201")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Fuse")
+		(at 219.71 130.81 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bb65c4e2-79d8-42bd-a33f-05ca885edd4c")
+		(property "Reference" "F201"
+			(at 219.456 133.096 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Fuse 1A"
+			(at 219.71 129.032 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Fuse:Fuse_1206_3216Metric"
+			(at 219.71 129.032 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 219.71 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Fuse"
+			(at 219.71 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ba385057-2ce6-4222-bcde-310afa047b87")
+		)
+		(pin "1"
+			(uuid "6659db0a-2e25-43b9-96c8-9831f8ca655b")
+		)
+		(instances
+			(project "Charger"
+				(path "/ec0cb266-3da5-4155-a0e5-38a3c68d3210/91227ca9-06bc-4f19-ad47-eac0cfdbbcc1"
+					(reference "F201")
 					(unit 1)
 				)
 			)
@@ -6202,7 +6289,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c3138b00-2510-4aae-bcfb-556c2f683066")
-		(property "Reference" "C?"
+		(property "Reference" "C207"
 			(at 172.72 133.858 0)
 			(effects
 				(font
@@ -6256,7 +6343,7 @@
 		(instances
 			(project "Charger"
 				(path "/ec0cb266-3da5-4155-a0e5-38a3c68d3210/91227ca9-06bc-4f19-ad47-eac0cfdbbcc1"
-					(reference "C?")
+					(reference "C207")
 					(unit 1)
 				)
 			)
@@ -6271,7 +6358,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "cdad566e-9a46-4527-8b62-944a8fc96e1e")
-		(property "Reference" "D101"
+		(property "Reference" "D204"
 			(at 244.094 93.98 90)
 			(effects
 				(font
@@ -6325,7 +6412,7 @@
 		(instances
 			(project "Charger"
 				(path "/ec0cb266-3da5-4155-a0e5-38a3c68d3210/91227ca9-06bc-4f19-ad47-eac0cfdbbcc1"
-					(reference "D101")
+					(reference "D204")
 					(unit 1)
 				)
 			)
@@ -6340,7 +6427,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "cdfff923-cb5a-484d-9bc5-da91e7299c9f")
-		(property "Reference" "C202"
+		(property "Reference" "C204"
 			(at 119.38 58.928 0)
 			(effects
 				(font
@@ -6394,7 +6481,7 @@
 		(instances
 			(project "Charger"
 				(path "/ec0cb266-3da5-4155-a0e5-38a3c68d3210/91227ca9-06bc-4f19-ad47-eac0cfdbbcc1"
-					(reference "C202")
+					(reference "C204")
 					(unit 1)
 				)
 			)
@@ -6409,7 +6496,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "dbdde382-28f0-4339-8b57-710769acb5d8")
-		(property "Reference" "C201"
+		(property "Reference" "C202"
 			(at 115.57 47.498 0)
 			(effects
 				(font
@@ -6463,7 +6550,7 @@
 		(instances
 			(project "Charger"
 				(path "/ec0cb266-3da5-4155-a0e5-38a3c68d3210/91227ca9-06bc-4f19-ad47-eac0cfdbbcc1"
-					(reference "C201")
+					(reference "C202")
 					(unit 1)
 				)
 			)
@@ -6478,7 +6565,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "decef89b-b764-4467-9f6d-223833b72004")
-		(property "Reference" "R201"
+		(property "Reference" "R202"
 			(at 135.89 67.31 0)
 			(effects
 				(font
@@ -6532,7 +6619,7 @@
 		(instances
 			(project "Charger"
 				(path "/ec0cb266-3da5-4155-a0e5-38a3c68d3210/91227ca9-06bc-4f19-ad47-eac0cfdbbcc1"
-					(reference "R201")
+					(reference "R202")
 					(unit 1)
 				)
 			)
@@ -6547,7 +6634,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "dfa35cf7-5cac-4674-bc63-e4ed6661717a")
-		(property "Reference" "#PWR0107"
+		(property "Reference" "#PWR0211"
 			(at 259.08 115.57 0)
 			(effects
 				(font
@@ -6597,7 +6684,7 @@
 		(instances
 			(project "Charger"
 				(path "/ec0cb266-3da5-4155-a0e5-38a3c68d3210/91227ca9-06bc-4f19-ad47-eac0cfdbbcc1"
-					(reference "#PWR0107")
+					(reference "#PWR0211")
 					(unit 1)
 				)
 			)
@@ -6689,7 +6776,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ef79b428-9860-4d26-bd9c-a4ac04938b99")
-		(property "Reference" "R101"
+		(property "Reference" "R207"
 			(at 240.792 105.41 90)
 			(effects
 				(font
@@ -6741,74 +6828,7 @@
 		(instances
 			(project "Charger"
 				(path "/ec0cb266-3da5-4155-a0e5-38a3c68d3210/91227ca9-06bc-4f19-ad47-eac0cfdbbcc1"
-					(reference "R101")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "formula:Fuse_Holder_Blade")
-		(at 219.71 130.81 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "fc1ac339-c5f7-4c87-98f6-75a6f1c954e6")
-		(property "Reference" "U204"
-			(at 219.71 135.636 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Fuse_Holder_Blade"
-			(at 222.25 133.604 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "footprints:Fuse_Block_Holder"
-			(at 219.71 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 219.71 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 219.71 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "0e698c9b-15d7-4d91-b896-02c1797ab3bb")
-		)
-		(pin "1"
-			(uuid "15893915-f5cb-41a7-9957-9bf92b01fd86")
-		)
-		(instances
-			(project "Charger"
-				(path "/ec0cb266-3da5-4155-a0e5-38a3c68d3210/91227ca9-06bc-4f19-ad47-eac0cfdbbcc1"
-					(reference "U204")
+					(reference "R207")
 					(unit 1)
 				)
 			)
@@ -6900,7 +6920,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ff370fbe-93c1-42ac-8711-d9491eba4425")
-		(property "Reference" "#PWR0103"
+		(property "Reference" "#PWR0209"
 			(at 242.57 115.57 0)
 			(effects
 				(font
@@ -6950,7 +6970,7 @@
 		(instances
 			(project "Charger"
 				(path "/ec0cb266-3da5-4155-a0e5-38a3c68d3210/91227ca9-06bc-4f19-ad47-eac0cfdbbcc1"
-					(reference "#PWR0103")
+					(reference "#PWR0209")
 					(unit 1)
 				)
 			)
