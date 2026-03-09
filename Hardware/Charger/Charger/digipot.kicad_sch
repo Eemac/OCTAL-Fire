@@ -1592,7 +1592,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "120cab73-ee5a-4220-b721-ba5a226fb86f")
-		(property "Reference" "#PWR01"
+		(property "Reference" "#PWR?"
 			(at 36.83 72.39 0)
 			(effects
 				(font
@@ -1638,6 +1638,14 @@
 		)
 		(pin "1"
 			(uuid "a7772db0-a2e7-49f3-941e-d4a1c6ff16c0")
+		)
+		(instances
+			(project "Charger"
+				(path "/ec0cb266-3da5-4155-a0e5-38a3c68d3210/b765b54b-82fb-4d18-b796-af942e7a589a"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -1954,7 +1962,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "496db444-02dd-4927-8883-a90ceddf9656")
-		(property "Reference" "J1"
+		(property "Reference" "J?"
 			(at 77.47 48.2599 0)
 			(effects
 				(font
@@ -2007,6 +2015,14 @@
 		)
 		(pin "3"
 			(uuid "bc8545d1-3163-4465-8243-599dc737d6d3")
+		)
+		(instances
+			(project "Charger"
+				(path "/ec0cb266-3da5-4155-a0e5-38a3c68d3210/b765b54b-82fb-4d18-b796-af942e7a589a"
+					(reference "J?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -2766,7 +2782,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c5ff0d69-f1c9-4f11-b47e-34f57a27ae35")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR?"
 			(at 66.04 72.39 0)
 			(effects
 				(font
@@ -2812,6 +2828,14 @@
 		)
 		(pin "1"
 			(uuid "f14106ca-717d-4050-ac22-e1878bddee86")
+		)
+		(instances
+			(project "Charger"
+				(path "/ec0cb266-3da5-4155-a0e5-38a3c68d3210/b765b54b-82fb-4d18-b796-af942e7a589a"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -2890,7 +2914,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cd2446b6-824c-4b6a-8bd8-6d9295090975")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR?"
 			(at 49.53 38.1 0)
 			(effects
 				(font
@@ -2936,6 +2960,14 @@
 		)
 		(pin "1"
 			(uuid "40fd8754-6c01-4c5c-acfe-ab032fe43447")
+		)
+		(instances
+			(project "Charger"
+				(path "/ec0cb266-3da5-4155-a0e5-38a3c68d3210/b765b54b-82fb-4d18-b796-af942e7a589a"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
