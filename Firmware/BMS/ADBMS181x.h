@@ -111,7 +111,7 @@
 #define STAT 3
 #define BMS_CFGR 0
 #define BMS_CFGRB 4
-#define CS_PIN 10
+#define CS_PIN PA4
 
 /*! Cell Voltage data structure. */
 typedef struct

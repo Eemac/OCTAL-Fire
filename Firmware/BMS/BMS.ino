@@ -160,8 +160,8 @@ void setup()
   pinMode(PB14,OUTPUT);
   pinMode(PB15,OUTPUT);
   pinMode(PA15,OUTPUT);
-  pinMode(PA4, OUTPUT);
-  digitalWrite(PA4, HIGH);
+  pinMode(CS_PIN, OUTPUT);
+  digitalWrite(CS_PIN, HIGH);
 
   digitalToggle(PB9);
   digitalToggle(PB2);
