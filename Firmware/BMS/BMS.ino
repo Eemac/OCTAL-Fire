@@ -71,14 +71,19 @@ void setup()
   pinMode(PB5,OUTPUT);
   pinMode(PB6,OUTPUT);
   pinMode(PB7,OUTPUT);
+  pinMode(PB9,OUTPUT);
   pinMode(PB11,OUTPUT);
   pinMode(PB14,OUTPUT);
   pinMode(PB15,OUTPUT);
   pinMode(PA15,OUTPUT);
 
-  Serial.begin(112500);
+  digitalToggle(PB9);
+  digitalToggle(PB2);
+
+  Serial.begin(115200);
 
   can_init_bms_a(&hfdcan2);
+
   // initTemp(tempStruct);
   //InitBMS(adStruct);
   //doDebug(ledStruct, tempStruct, adStruct);
@@ -88,9 +93,10 @@ void setup()
 
 uint16_t parsedValue = 0;
 
-void loop() 
+void loop()
 {
   digitalToggle(PB1);
+  digitalToggle(PB2);
 
   delay(50);
   // bms_status.bms_fault_code = 2;
@@ -125,10 +131,11 @@ void loop()
         Serial.println("Value out of uint16_t range.");
       }
   }
-
-  if(can_receive(&hfdcan2) > 0) {
     Serial.print(msg1.pwm);
     Serial.print(" ");
+
+  if(can_receive(&hfdcan2) > 0) {
+   
   }
 }
 
