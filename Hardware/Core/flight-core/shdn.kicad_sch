@@ -4536,7 +4536,7 @@
 				)
 			)
 		)
-		(property "Value" "Conn_02x02_Remote_ESTOP"
+		(property "Value" "Conn_02x02_TILT"
 			(at 49.53 46.99 0)
 			(effects
 				(font
