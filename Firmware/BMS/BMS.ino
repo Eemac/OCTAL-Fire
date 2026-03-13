@@ -98,28 +98,17 @@ void init_bms_chip_array()
 
 void read_and_print_cell_voltages()
 {
+  //Voltage values will read as max(somehwere around 6.55 if no battery source connected to board)
   wakeup_idle(TOTAL_IC);
 
   ADBMS181x_adcv(MD_7KHZ_3KHZ, DCP_DISABLED, CELL_CH_ALL);
   ADBMS181x_pollAdc();
-
-  int8_t err = ADBMS181x_rdcv(REG_ALL, TOTAL_IC, bms_ic);
-  Serial.print("rdcv err = ");
-  Serial.println(err);
-
-  for (int i = 0; i < TOTAL_IC; i++)
-  {
-    Serial.print("IC ");
-    Serial.print(i + 1);
-    Serial.print(" PEC flags: ");
-    for (int r = 0; r < 6; r++)
-    {
-      Serial.print(bms_ic[i].cells.pec_match[r]);
-      Serial.print(" ");
-    }
-    Serial.println();
-  }
   
+
+  int8_t pec_error = ADBMS181x_rdcv(0, TOTAL_IC, bms_ic);
+
+  Serial.print("PEC status: ");
+  Serial.println(pec_error);
 
   for (int ic = 0; ic < TOTAL_IC; ic++)
   {
@@ -172,7 +161,7 @@ void setup()
   SPI.begin();
   SPI.beginTransaction(SPISettings(1000000, MSBFIRST, SPI_MODE0));
   init_bms_chip_array();
-  can_init_bms_a(&hfdcan2);
+  //can_init_bms_a(&hfdcan2);
 
   read_and_print_cell_voltages();
 
