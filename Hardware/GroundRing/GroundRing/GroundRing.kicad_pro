@@ -51,13 +51,7 @@
           "min_clearance": 0.5
         }
       },
-      "diff_pair_dimensions": [
-        {
-          "gap": 0.0,
-          "via_gap": 0.0,
-          "width": 0.0
-        }
-      ],
+      "diff_pair_dimensions": [],
       "drc_exclusions": [],
       "meta": {
         "version": 2
@@ -186,10 +180,7 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [
-        0.0,
-        1.0
-      ],
+      "track_widths": [],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -216,12 +207,7 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [
-        {
-          "diameter": 0.0,
-          "drill": 0.0
-        }
-      ],
+      "via_dimensions": [],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -465,7 +451,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "Charger.kicad_pro",
+    "filename": "GroundRing.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -625,24 +611,8 @@
   },
   "sheets": [
     [
-      "ec0cb266-3da5-4155-a0e5-38a3c68d3210",
+      "d42c6761-53ca-4e2f-9de1-21d20d42e706",
       "Root"
-    ],
-    [
-      "91227ca9-06bc-4f19-ad47-eac0cfdbbcc1",
-      "Power Supplies"
-    ],
-    [
-      "94dc2c9c-6360-4f0e-81c0-d08593c9f773",
-      "stm32"
-    ],
-    [
-      "dc9c6c82-2ca0-4595-949b-0b07300fa078",
-      "USB-C Connector"
-    ],
-    [
-      "b765b54b-82fb-4d18-b796-af942e7a589a",
-      "DigiPot"
     ]
   ],
   "text_variables": {}
