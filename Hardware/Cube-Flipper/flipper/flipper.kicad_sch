@@ -4903,6 +4903,17 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "UART_TELEM2_RX\nUART_TELEM2_CTS\nUART_TELEM2_RTS\nUART_TELEM2_TX"
+		(exclude_from_sim no)
+		(at 156.21 87.63 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "bed407f2-41a1-4962-8d47-f49502acf0d3")
+	)
 	(no_connect
 		(at 133.35 92.075)
 		(uuid "01e7aaf2-30dc-4f43-8440-7ccb1e375dfb")
@@ -4922,6 +4933,14 @@
 	(no_connect
 		(at 133.35 76.835)
 		(uuid "10958c9f-a884-43e3-95ae-e8d89f7ca635")
+	)
+	(no_connect
+		(at 154.94 86.995)
+		(uuid "10cd379d-9658-4e87-933f-79c90b225f68")
+	)
+	(no_connect
+		(at 151.13 86.995)
+		(uuid "114153fd-c9a5-4573-98d2-1f778dd1426e")
 	)
 	(no_connect
 		(at 154.94 145.415)
@@ -4984,6 +5003,10 @@
 		(uuid "39ca352a-0900-488c-885a-1afa70b2beb6")
 	)
 	(no_connect
+		(at 154.94 84.455)
+		(uuid "3e57bd41-3976-45ac-8de1-056c0f9503ec")
+	)
+	(no_connect
 		(at 151.13 107.315)
 		(uuid "416a6874-a3be-496b-8de1-519cd020a961")
 	)
@@ -4994,6 +5017,14 @@
 	(no_connect
 		(at 151.13 147.955)
 		(uuid "4296e798-af95-4c64-97b3-8754d6209b21")
+	)
+	(no_connect
+		(at 154.94 89.535)
+		(uuid "44d9b51c-92b4-46d6-b3cc-cd3b8c3a1276")
+	)
+	(no_connect
+		(at 151.13 92.075)
+		(uuid "48a7c58d-b3fe-4f4c-95b9-fab0849f0e09")
 	)
 	(no_connect
 		(at 129.54 86.995)
@@ -5100,6 +5131,10 @@
 		(uuid "8b5bff44-5fb9-4493-b19b-65583d763493")
 	)
 	(no_connect
+		(at 151.13 84.455)
+		(uuid "8ec34f58-7929-4ab4-8fe6-5c4e1f7feadb")
+	)
+	(no_connect
 		(at 154.94 132.715)
 		(uuid "8f4a2b94-5211-4fe9-89bc-eccfcf8dc92b")
 	)
@@ -5114,6 +5149,10 @@
 	(no_connect
 		(at 151.13 140.335)
 		(uuid "9b67cac7-f8f4-413b-b9db-d0608f7a86ad")
+	)
+	(no_connect
+		(at 151.13 89.535)
+		(uuid "9e278329-c46a-4faf-b356-34eddb1bec80")
 	)
 	(no_connect
 		(at 129.54 102.235)
@@ -5214,6 +5253,10 @@
 	(no_connect
 		(at 133.35 94.615)
 		(uuid "eb143d33-1bca-4936-9f69-36ba39e662ac")
+	)
+	(no_connect
+		(at 154.94 92.075)
+		(uuid "ec3938a7-642c-4d04-ac1b-7c02ef942e73")
 	)
 	(no_connect
 		(at 129.54 114.935)
@@ -5383,16 +5426,6 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 89.535) (xy 154.94 89.535)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "41cc6407-2996-4738-bc78-613ed9c9b44e")
-	)
-	(wire
-		(pts
 			(xy 129.54 56.515) (xy 133.35 56.515)
 		)
 		(stroke
@@ -5463,26 +5496,6 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 92.075) (xy 154.94 92.075)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a9c707c6-a263-4e8c-a470-e4534870c9db")
-	)
-	(wire
-		(pts
-			(xy 151.13 86.995) (xy 154.94 86.995)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aacb15c2-7422-4ae9-9a7b-ae061638cba3")
-	)
-	(wire
-		(pts
 			(xy 129.54 125.095) (xy 133.35 125.095)
 		)
 		(stroke
@@ -5500,16 +5513,6 @@
 			(type default)
 		)
 		(uuid "b64d7ace-4169-4f4b-a652-e1454959bea4")
-	)
-	(wire
-		(pts
-			(xy 151.13 84.455) (xy 154.94 84.455)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c39dcfc1-1322-4a6c-bcb6-f97f468a48e7")
 	)
 	(wire
 		(pts
@@ -5681,16 +5684,6 @@
 		)
 		(uuid "22ad5a31-c0a9-4000-9506-ca8f6cd8a7dc")
 	)
-	(label "UART_TELEM2_RX"
-		(at 154.94 84.455 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "252d7aa9-797e-4a0e-b6b2-d2e1af5ef4d0")
-	)
 	(label "CAN+"
 		(at 129.54 147.955 180)
 		(effects
@@ -5730,16 +5723,6 @@
 			(justify left bottom)
 		)
 		(uuid "51fee94a-fd72-4f7a-aea4-283997aae7fe")
-	)
-	(label "UART_TELEM2_TX"
-		(at 154.94 86.995 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "554b16c5-17f9-4a2f-9b6f-059d65aebd6a")
 	)
 	(label "TP_P56"
 		(at 154.94 117.475 0)
@@ -5911,16 +5894,6 @@
 		)
 		(uuid "d8704cbf-c346-4857-afd3-1afea72ca95e")
 	)
-	(label "UART_TELEM2_CTS"
-		(at 154.94 92.075 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "d900c6e4-be22-4d6c-b54b-055b9b683da5")
-	)
 	(label "VDD_SERVO_IN"
 		(at 129.54 59.055 180)
 		(effects
@@ -5930,16 +5903,6 @@
 			(justify right bottom)
 		)
 		(uuid "e0660468-2c72-42a9-984c-46f3f5925a54")
-	)
-	(label "UART_TELEM2_RTS"
-		(at 154.94 89.535 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "eb6443b2-6bf9-4b78-bf40-04155264c05f")
 	)
 	(label "RESET_CUBE"
 		(at 129.54 56.515 180)
@@ -6288,7 +6251,7 @@
 				)
 			)
 		)
-		(property "Footprint" "obad_footprints:CONN_DF173p0H-80DS-0p5V57_80P_HIR"
+		(property "Footprint" "obad_footprints:Cube_Orange_Cube_Side"
 			(at 142.24 99.695 0)
 			(effects
 				(font
