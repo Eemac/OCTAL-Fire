@@ -7,12 +7,41 @@
 #include "ADBMS181x.h"
 #include "bms_hardware.h"
 #include <SPI.h>
+#include <Wire.h>
 
 #define LED PB9   // QFP48 socket PCB
 #define TOTAL_IC 1
 
+#define THERM_A1_PIN PA0
+#define THERM_B1_PIN PA1
+#define THERM_A2_PIN PA2
+#define THERM_B2_PIN PA3
+
+#define MUX_SDA_PIN PA8
+#define MUX_SCL_PIN PA9
+
+#define MUX1_ADDR 0x4C
+#define MUX2_ADDR 0x4E
+
+#define MAX14661_CMD_A 0x14
+#define MAX14661_CMD_B 0x15
+
 cell_asic bms_ic[TOTAL_IC];
 FDCAN_HandleTypeDef hfdcan2;
+
+const char *mux1_names[16] = {
+  "TH_1_A", "TH_1_B", "TH_1_C", "TH_1_D",
+  "TH_2_A", "TH_2_B", "TH_2_C", "TH_2_D",
+  "TH_3_C", "TH_3_D", "TH_3_A", "TH_3_B",
+  "TH_4_A", "TH_4_B", "TH_4_C", "TH_4_D"
+};
+
+const char *mux2_names[16] = {
+  "TH_5_A", "TH_5_B", "TH_5_C", "TH_5_D",
+  "TH_6_A", "TH_6_B", "TH_6_C", "TH_6_D",
+  "TH_7_A", "TH_7_B", "TH_7_C", "TH_7_D",
+  "THERM_BUSBAR", "THERM_AMBIENT", "UNUSED_15", "UNUSED_16"
+};
 
 void OCTAL_Set_Clock(void) {
   // set flash latency for target (144MHz -> FLASH_LATENCY_4) and up voltage to HF range
@@ -132,6 +161,91 @@ void read_and_print_cell_voltages()
   Serial.println();
 }
 
+void init_thermistors()
+{
+  pinMode(THERM_A1_PIN, INPUT_ANALOG);
+  pinMode(THERM_B1_PIN, INPUT_ANALOG);
+  pinMode(THERM_A2_PIN, INPUT_ANALOG);
+  pinMode(THERM_B2_PIN, INPUT_ANALOG);
+
+  Wire.setSDA(MUX_SDA_PIN);
+  Wire.setSCL(MUX_SCL_PIN);
+  Wire.begin();
+  Wire.setClock(100000);
+
+  analogReadResolution(12);
+}
+
+bool set_mux_channels(uint8_t mux_addr, uint8_t chA, uint8_t chB)
+{
+  if (chA > 0x10 || chB > 0x10) return false;
+
+  Wire.beginTransmission(mux_addr);
+  Wire.write(MAX14661_CMD_A);
+  Wire.write(chA);
+  Wire.write(chB);
+  return (Wire.endTransmission() == 0);
+}
+
+float raw_to_therm_voltage(uint16_t raw)
+{
+  return (3.3f * raw) / 4095.0f;
+}
+
+void print_single_therm_reading(const char *name, uint16_t raw)
+{
+  Serial.print(name);
+  Serial.print(": raw=");
+  Serial.print(raw);
+  Serial.print("  V=");
+  Serial.println(raw_to_therm_voltage(raw), 4);
+}
+
+void read_and_print_thermistors_for_index(uint8_t index)
+{
+  bool mux1_ok = set_mux_channels(MUX1_ADDR, index, index);
+  bool mux2_ok = set_mux_channels(MUX2_ADDR, index, index);
+
+  if (!mux1_ok || !mux2_ok)
+  {
+    Serial.println("Thermistor mux write failed");
+    return;
+  }
+
+  delay(5);
+
+  uint16_t raw_a1 = analogRead(THERM_A1_PIN);
+  uint16_t raw_b1 = analogRead(THERM_B1_PIN);
+  uint16_t raw_a2 = analogRead(THERM_A2_PIN);
+  uint16_t raw_b2 = analogRead(THERM_B2_PIN);
+
+  Serial.print("Thermistor index ");
+  Serial.println(index + 1);
+
+  Serial.print("THERM_A1 -> ");
+  print_single_therm_reading(mux1_names[index], raw_a1);
+
+  Serial.print("THERM_B1 -> ");
+  print_single_therm_reading(mux1_names[index], raw_b1);
+
+  Serial.print("THERM_A2 -> ");
+  print_single_therm_reading(mux2_names[index], raw_a2);
+
+  Serial.print("THERM_B2 -> ");
+  print_single_therm_reading(mux2_names[index], raw_b2);
+
+  Serial.println();
+}
+
+void scan_all_thermistors()
+{
+  for (uint8_t index = 0; index < 16; index++)
+  {
+    read_and_print_thermistors_for_index(index);
+    delay(20);
+  }
+}
+
 void setup() 
 {
   OCTAL_Set_Clock();
@@ -161,9 +275,11 @@ void setup()
   SPI.begin();
   SPI.beginTransaction(SPISettings(1000000, MSBFIRST, SPI_MODE0));
   init_bms_chip_array();
+  init_thermistors();
   //can_init_bms_a(&hfdcan2);
 
   read_and_print_cell_voltages();
+  scan_all_thermistors();
 
 
   // initTemp(tempStruct);
@@ -181,7 +297,8 @@ void loop()
   //digitalToggle(PB2);
   Serial.println("Starting cell read...");
   read_and_print_cell_voltages();
-
+  Serial.println("Starting thermistor read...");
+  scan_all_thermistors();
 
   delay(1000);
   // bms_status.bms_fault_code = 2;
