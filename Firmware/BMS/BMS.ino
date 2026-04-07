@@ -36,6 +36,7 @@ enum BmsState {
 };
 
 enum BmsFaultBits {
+  FAULT_ADBMS_COMMS    = 2,
   FAULT_MUX            = 4,
   FAULT_CELL_UNDERTEMP = 5,
   FAULT_CELL_OVERTEMP  = 6,
@@ -47,19 +48,17 @@ enum BmsFaultBits {
 BmsState bms_state = IDLE;
 uint16_t bms_faults = 0;
 
-// Placeholder voltage thresholds for now.
+const float CELL_VOLTAGE_LOW  = 2.5f; // Min value is can handle is 2.5(discharge)
+const float CELL_VOLTAGE_HIGH = 4.25f; // Max value it can handle is 4.25(discharge)
 
-const float CELL_VOLTAGE_LOW  = 3.00f;
-const float CELL_VOLTAGE_HIGH = 4.20f;
-
-// Placeholder temperature thresholds for now.
 //Must add the over current later aswell
-const float TEMP_LOW_C  = 0.0f;
-const float TEMP_HIGH_C = 60.0f;
+const float TEMP_LOW_C  = -20.0f; // Min value it cna take is -20.0f(discharge)
+const float TEMP_HIGH_C = 55.0f; // Max value it can tolerate = 55.0f(discharge)
 
 // Stored measurement summaries
 float min_cell_voltage = 100.0f;
 float max_cell_voltage = 0.0f;
+float pack_voltage = 0.0f;
 
 float min_temp_c = 1000.0f;
 float max_temp_c = -1000.0f;
@@ -206,6 +205,7 @@ bool read_cell_voltages()
 {
   min_cell_voltage = 100.0f;
   max_cell_voltage = 0.0f;
+  pack_voltage = 0.0f;
 
   wakeup_idle(TOTAL_IC);
   ADBMS181x_adcv(MD_7KHZ_3KHZ, DCP_DISABLED, CELL_CH_ALL);
@@ -221,6 +221,8 @@ bool read_cell_voltages()
 
       if (volts < min_cell_voltage) min_cell_voltage = volts;
       if (volts > max_cell_voltage) max_cell_voltage = volts;
+
+      pack_voltage += volts;
     }
   }
 
@@ -273,6 +275,7 @@ void update_faults()
 
   if (last_pec_error != 0)
   {
+    set_fault_bit(FAULT_ADBMS_COMMS);
     set_fault_bit(FAULT_PEC);
   }
 
@@ -306,7 +309,7 @@ void print_faults()
 {
   Serial.print("Fault mask: 0b");
   Serial.println(bms_faults, BIN);
-
+  if (bms_faults & (1U << FAULT_ADBMS_COMMS))    Serial.println("FAULT: ADBMS comms");
   if (bms_faults & (1U << FAULT_MUX))            Serial.println("FAULT: Mux");
   if (bms_faults & (1U << FAULT_PEC))            Serial.println("FAULT: PEC");
   if (bms_faults & (1U << FAULT_CELL_UNDERVOLT)) Serial.println("FAULT: Cell undervoltage");
