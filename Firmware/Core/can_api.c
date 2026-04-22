@@ -6,7 +6,7 @@
 #include "stm32g4xx_hal_fdcan.h"
 #include "can_lib.h"
 
-void can_init_bms_a(FDCAN_HandleTypeDef *hfdcan2) {
+void can_init_core(FDCAN_HandleTypeDef *hfdcan2) {
     __HAL_RCC_FDCAN_CLK_ENABLE();
     __HAL_RCC_GPIOA_CLK_ENABLE();
     __HAL_RCC_GPIOB_CLK_ENABLE();
@@ -53,36 +53,6 @@ void can_init_bms_a(FDCAN_HandleTypeDef *hfdcan2) {
     // Set up filters for the chip
     FDCAN_FilterTypeDef sFilterConfig;
     
-    sFilterConfig.IdType = FDCAN_EXTENDED_ID;
-    sFilterConfig.FilterIndex = 0;
-    sFilterConfig.FilterType = FDCAN_FILTER_MASK;
-    sFilterConfig.FilterConfig = FDCAN_FILTER_TO_RXFIFO0;
-    sFilterConfig.FilterID1 = 525226497; 
-    sFilterConfig.FilterID2 = 0x1FFFFFFF; 
-    if (HAL_FDCAN_ConfigFilter(hfdcan2, &sFilterConfig) != HAL_OK) {
-        // Error_Handler();
-    }
-    
-    sFilterConfig.IdType = FDCAN_STANDARD_ID;
-    sFilterConfig.FilterIndex = 0;
-    sFilterConfig.FilterType = FDCAN_FILTER_MASK;
-    sFilterConfig.FilterConfig = FDCAN_FILTER_TO_RXFIFO0;
-    sFilterConfig.FilterID1 = 17; 
-    sFilterConfig.FilterID2 = 0x7FF; 
-    if (HAL_FDCAN_ConfigFilter(hfdcan2, &sFilterConfig) != HAL_OK) {
-        // Error_Handler();
-    }
-    
-    sFilterConfig.IdType = FDCAN_EXTENDED_ID;
-    sFilterConfig.FilterIndex = 1;
-    sFilterConfig.FilterType = FDCAN_FILTER_MASK;
-    sFilterConfig.FilterConfig = FDCAN_FILTER_TO_RXFIFO0;
-    sFilterConfig.FilterID1 = 4355; 
-    sFilterConfig.FilterID2 = 0x1FFFFFFF; 
-    if (HAL_FDCAN_ConfigFilter(hfdcan2, &sFilterConfig) != HAL_OK) {
-        // Error_Handler();
-    }
-    
     //     /**FDCAN2 GPIO Configuration for stm32g473CCT3
     //     PB12     ------> FDCAN2_RX
     //     PB13     ------> FDCAN2_TX
@@ -117,31 +87,30 @@ void can_init_bms_a(FDCAN_HandleTypeDef *hfdcan2) {
  * Transmit messages
  */
 
-uint8_t thrust_data[8] = {0};
+uint8_t core_status_data[1] = {0};
 
-can_frame_t thrust_msg = {
-    .id = 5145601,
-    .mob = 0,
-    .data = thrust_data,
-    .dlc = 8,
+can_frame_t core_status_msg = {
+    .id = 512,
+    .data = core_status_data,
+    .dlc = 1,
 };
 
-volatile struct can_lib_thrust_t thrust = {0};
+volatile struct can_lib_core_status_t core_status = {0};
 
-void can_send_thrust(FDCAN_HandleTypeDef *hfdcan2) {
+void can_send_core_status(FDCAN_HandleTypeDef *hfdcan2) {
     // We can be sure here that the CAN data struct won't change here
 
-    can_lib_thrust_pack(
-        thrust_data,
+    can_lib_core_status_pack(
+        core_status_data,
         // We can safely discard the volatile qualifier because we are in an
         // ATOMIC block, so the value will not be changed in an ISR
-        (const struct can_lib_thrust_t*) &thrust,
-        8
+        (const struct can_lib_core_status_t*) &core_status,
+        1
     );
 
     FDCAN_TxHeaderTypeDef TxHeader;
-    TxHeader.Identifier = 5145601;
-    TxHeader.IdType = FDCAN_EXTENDED_ID;  
+    TxHeader.Identifier = 512;
+    TxHeader.IdType = FDCAN_STANDARD_ID;  
     TxHeader.TxFrameType = FDCAN_DATA_FRAME;
     TxHeader.DataLength = FDCAN_DLC_BYTES_8;
     TxHeader.ErrorStateIndicator = FDCAN_ESI_ACTIVE;
@@ -151,54 +120,7 @@ void can_send_thrust(FDCAN_HandleTypeDef *hfdcan2) {
     TxHeader.MessageMarker = 0;
 
     if (HAL_FDCAN_GetTxFifoFreeLevel(hfdcan2) > 0) {
-        if (HAL_FDCAN_AddMessageToTxFifoQ(hfdcan2, &TxHeader, thrust_data)!= HAL_OK) {
-
-        }
-    }
-}
-
-
-
-
-
-
-
-
-uint8_t bms_status_data[7] = {0};
-
-can_frame_t bms_status_msg = {
-    .id = 4096,
-    .mob = 0,
-    .data = bms_status_data,
-    .dlc = 7,
-};
-
-volatile struct can_lib_bms_status_t bms_status = {0};
-
-void can_send_bms_status(FDCAN_HandleTypeDef *hfdcan2) {
-    // We can be sure here that the CAN data struct won't change here
-
-    can_lib_bms_status_pack(
-        bms_status_data,
-        // We can safely discard the volatile qualifier because we are in an
-        // ATOMIC block, so the value will not be changed in an ISR
-        (const struct can_lib_bms_status_t*) &bms_status,
-        7
-    );
-
-    FDCAN_TxHeaderTypeDef TxHeader;
-    TxHeader.Identifier = 4096;
-    TxHeader.IdType = FDCAN_EXTENDED_ID;  
-    TxHeader.TxFrameType = FDCAN_DATA_FRAME;
-    TxHeader.DataLength = FDCAN_DLC_BYTES_8;
-    TxHeader.ErrorStateIndicator = FDCAN_ESI_ACTIVE;
-    TxHeader.BitRateSwitch = FDCAN_BRS_OFF;
-    TxHeader.FDFormat = FDCAN_CLASSIC_CAN;
-    TxHeader.TxEventFifoControl = FDCAN_NO_TX_EVENTS;
-    TxHeader.MessageMarker = 0;
-
-    if (HAL_FDCAN_GetTxFifoFreeLevel(hfdcan2) > 0) {
-        if (HAL_FDCAN_AddMessageToTxFifoQ(hfdcan2, &TxHeader, bms_status_data)!= HAL_OK) {
+        if (HAL_FDCAN_AddMessageToTxFifoQ(hfdcan2, &TxHeader, core_status_data)!= HAL_OK) {
 
         }
     }
@@ -216,51 +138,6 @@ void can_send_bms_status(FDCAN_HandleTypeDef *hfdcan2) {
  * Receive messages
  */
 
-uint8_t msg1_data[7] = {0};
-
-can_frame_t msg1_msg = {
-    .mob = 0,
-    .data = msg1_data,
-};
-
-can_filter_t msg1_filter = {
-    .id = 525226497,
-    .mask = 2047
-};
-
-struct can_lib_msg1_t msg1 = {0};
-
-
-uint8_t bms_status_b_data[1] = {0};
-
-can_frame_t bms_status_b_msg = {
-    .mob = 0,
-    .data = bms_status_b_data,
-};
-
-can_filter_t bms_status_b_filter = {
-    .id = 17,
-    .mask = 2047
-};
-
-struct can_lib_bms_status_b_t bms_status_b = {0};
-
-
-uint8_t bms_status_b_ex_e_data[1] = {0};
-
-can_frame_t bms_status_b_ex_e_msg = {
-    .mob = 0,
-    .data = bms_status_b_ex_e_data,
-};
-
-can_filter_t bms_status_b_ex_e_filter = {
-    .id = 4355,
-    .mask = 2047
-};
-
-struct can_lib_bms_status_b_ex_e_t bms_status_b_ex_e = {0};
-
-
 
 int can_receive(FDCAN_HandleTypeDef *hfdcan2) {
     
@@ -272,18 +149,6 @@ int can_receive(FDCAN_HandleTypeDef *hfdcan2) {
     if(rc > 0) {
         HAL_FDCAN_GetRxMessage(hfdcan2, FDCAN_RX_FIFO0, &rx_msg_header, rx_msg_data);
         switch (rx_msg_header.Identifier) {
-            
-                case 525226497:
-                    can_lib_msg1_unpack(&msg1, rx_msg_data, 7);
-                    break;
-            
-                case 17:
-                    can_lib_bms_status_b_unpack(&bms_status_b, rx_msg_data, 1);
-                    break;
-            
-                case 4355:
-                    can_lib_bms_status_b_ex_e_unpack(&bms_status_b_ex_e, rx_msg_data, 1);
-                    break;
             
                 default:
                     break;
