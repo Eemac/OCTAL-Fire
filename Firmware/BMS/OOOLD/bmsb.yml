@@ -2,7 +2,7 @@ name: bms_b
 
 publish:
   - name: bms_status_b
-    id: 0x11
+    id: 0x88
     freq_hz: 100
     signals:
       - name: bms_state_b

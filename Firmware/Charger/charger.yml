@@ -1,0 +1,43 @@
+name: charger
+subscribe:
+  - name: bms_status_a
+  - name: bms_voltage_metrics_a
+
+publish:
+  - name: charger_status
+    id: 0x100
+    signals:
+      - name: charger_state
+        slice: 0 + 3
+        unit:
+          type: enum
+          values:
+            - STARTUP
+            - IDLE
+            - ACTIVE
+            - FAULT
+
+      - name: voltage_target
+        slice: 3 + 16
+        unit:
+          type: uint16_t
+          name: V
+          minimum: 0
+          maximum: 70
+
+      - name: output_voltage
+        slice: 19 + 16
+        unit:
+          type: uint16_t
+          name: V
+          minimum: 0.0
+          maximum: 70.0
+
+      - name: output_current
+        slice: 35 + 10
+        unit:
+          type: uint16_t
+          name: A
+          minimum: 0.0
+          maximum: 100.0
+

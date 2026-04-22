@@ -9,6 +9,7 @@ subscribe:
 
 publish:
   - name: thrust
+  - name: thrust2
   - name: bms_status
     id: 0x1000
     freq_hz: 100

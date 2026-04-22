@@ -43,10 +43,10 @@ class YamlParser:
             if raw.get("id"):
                 # Must check for "id" because there are cases where we are
                 # publishing a message defined elsewhere, like the motor
-                # controller message
+                # controller messages
                 id = raw["id"]
                 signals, length = self._parse_signals(raw)
-                cycle_time = (1 / raw["freq_hz"]) * 1000  # Milliseconds
+                # cycle_time = (1 / raw["freq_hz"]) * 1000  # Milliseconds
 
                 extended_id = False
                 if id > 0x7FF:
@@ -58,7 +58,7 @@ class YamlParser:
                     length,
                     signals,
                     senders=[self.name],
-                    cycle_time=cycle_time,
+                    # cycle_time=cycle_time,
                     is_extended_frame=extended_id,
                 )
 
@@ -91,6 +91,8 @@ class YamlParser:
 
             unit = None
             is_signed = False
+            minimum = None
+            maximum = None
             choices = None
 
             if sig_type == "enum":
@@ -100,16 +102,20 @@ class YamlParser:
                 or sig_type == "uint16_t"
                 or sig_type == "uint64_t"
             ):
-                unit = sig["unit"]["name"]
-                # offset = eval(str(sig["unit"]["offset"]))
-                # scale = eval(str(sig["unit"]["scale"]))
+                if("minimum" in sig["name"]):
+                    unit = sig["unit"]["name"]
+                if("minimum" in sig["unit"]):
+                    minimum = sig["unit"]["minimum"]
+                    maximum = sig["unit"]["maximum"]
             elif (
                 sig_type == "int8_t" or sig_type == "int16_t" or sig_type == "uint64_t"
             ):
                 is_signed = True
-                unit = sig["unit"]["name"]
-                # offset = eval(str(sig["unit"]["offset"]))
-                # scale = eval(str(sig["unit"]["scale"]))
+                if("minimum" in sig["name"]):
+                    unit = sig["unit"]["name"]
+                if("minimum" in sig["unit"]):
+                    minimum = sig["unit"]["minimum"]
+                    maximum = sig["unit"]["maximum"]
             elif sig_type == "bool":
                 unit = "bool"
                 # choices = {0: sig["unit"]["values"]["f"], 1: sig["unit"]["values"]["t"]}
@@ -121,8 +127,8 @@ class YamlParser:
                 int(start),
                 int(length),
                 is_signed=is_signed,
-                # factor=scale,
-                # offset=offset,
+                minimum=minimum,
+                maximum=maximum,
                 unit=unit,
                 # choices=choices,
             )

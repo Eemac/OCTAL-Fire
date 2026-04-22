@@ -1,0 +1,17 @@
+name: core
+subscribe:
+
+publish:
+  - name: core_status
+    id: 0x200
+    signals:
+      - name: core_state
+        slice: 0 + 3
+        unit:
+          type: enum
+          values:
+            - STARTUP
+            - IDLE
+            - ACTIVE
+            - FAULT
+  
