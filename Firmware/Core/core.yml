@@ -1,9 +1,11 @@
 name: core
 subscribe:
+  - name: bms_status_a
+  - name: bms_voltage_metrics_a
 
 publish:
   - name: core_status
-    id: 0x200
+    id: 0x1
     signals:
       - name: core_state
         slice: 0 + 3
@@ -14,4 +16,15 @@ publish:
             - IDLE
             - ACTIVE
             - FAULT
-  
+  - name: core_batt_ctrl
+    id: 0x2
+    signals:
+      - name: batt_ctrl
+        slice: 3 + 2
+        unit:
+          type: enum
+          values:
+            - NORTH
+            - EAST
+            - WEST
+            - SOUTH

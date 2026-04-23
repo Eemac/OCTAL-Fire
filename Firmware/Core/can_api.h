@@ -33,6 +33,13 @@ enum core_state_e {
     CORE_STATE_FAULT,
 };
 
+enum batt_ctrl_e { 
+    BATT_CTRL_NORTH,
+    BATT_CTRL_EAST,
+    BATT_CTRL_WEST,
+    BATT_CTRL_SOUTH,
+};
+
 
 /*
  * Initialize the core CAN peripheral
@@ -54,6 +61,34 @@ extern volatile struct can_lib_core_status_t core_status;
 void can_send_core_status(FDCAN_HandleTypeDef *hfdcan2);
 
 
+extern uint8_t core_batt_ctrl_data[];
+extern can_frame_t core_batt_ctrl_msg;
+extern volatile struct can_lib_core_batt_ctrl_t core_batt_ctrl;
+
+/*
+ * Send the core_batt_ctrl message
+ *
+ * First it takes the data struct `core_batt_ctrl_t` and packs it into an
+ * array of bytes in core_batt_ctrl_data, which is a part of the
+ * can_frame_t. Then the can_frame_t is sent.
+ */
+void can_send_core_batt_ctrl(FDCAN_HandleTypeDef *hfdcan2);
+
+
+
+
+extern uint8_t bms_status_a_data[];
+extern can_frame_t bms_status_a_msg;
+extern struct can_lib_bms_status_a_t bms_status_a;
+
+int can_receive(FDCAN_HandleTypeDef *hfdcan2);
+
+
+extern uint8_t bms_voltage_metrics_a_data[];
+extern can_frame_t bms_voltage_metrics_a_msg;
+extern struct can_lib_bms_voltage_metrics_a_t bms_voltage_metrics_a;
+
+int can_receive(FDCAN_HandleTypeDef *hfdcan2);
 
 
 
