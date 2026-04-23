@@ -176,6 +176,8 @@ void initISense() {
   hopamp2.Init.PgaGain = OPAMP_PGA_GAIN_4_OR_MINUS_3;
   hopamp2.Init.UserTrimming = OPAMP_TRIMMING_FACTORY;
 
+  //AMP SENSE
+  pinMode(PB0, INPUT_ANALOG);
 }
 
 
@@ -215,8 +217,7 @@ void set_fault_bit(uint8_t bit)
   bms_faults |= (1U << bit);
 }
 
-bool read_cell_voltages()
-{
+bool read_cell_voltages() {
   bms_voltage_metrics_a.min_cell_voltage = 5000.0f;
   bms_voltage_metrics_a.max_cell_voltage = 0.0f;
   bms_status_a.pack_voltage = 0.0f;
@@ -278,8 +279,7 @@ float thermistorDecode(uint16_t t) {
 }
 
 uint8_t thermistors_index = 14;
-bool read_thermistors()
-{
+bool read_thermistors() {
   last_mux_error = false;
 
   float t1 = therm_voltage_to_temp_c(raw_to_therm_voltage(analogRead(THERM_A1_PIN)));
@@ -332,8 +332,7 @@ void readIsense() {
   // Serial.println(bms_status_a.pack_current); //144 = 6.10  ---------- / 4096.0 * 3.3
 }
 
-void update_faults()
-{
+void update_faults() {
   bms_faults = 0;
 
   if (last_pec_error != 0)
@@ -368,8 +367,7 @@ void update_faults()
   }
 }
 
-void print_faults()
-{
+void print_faults() {
   Serial.print("Fault mask: 0b");
   Serial.println(bms_faults, BIN);
   if (bms_faults & (1U << FAULT_ADBMS_COMMS))    Serial.println("FAULT: ADBMS comms");
@@ -403,9 +401,6 @@ void setup()
 
   //DISABLE BMS CONTROL OF FETS
   digitalToggle(PA10);
-
-  //AMP SENSE
-  pinMode(PB0, INPUT_ANALOG);
 
   Serial.begin(115200);
   delay(200);
@@ -457,20 +452,24 @@ void run_bms_cycle()
   }
 }
 
-uint32_t last_run_ms = 0;
-const uint32_t LOOP_PERIOD_MS = 75;
+unsigned long ms50 = 0;
+unsigned long ms200 = 0;
 
 void loop()
 {
-  uint32_t now = millis();
+  unsigned long now = millis();
 
-  if (now - last_run_ms >= LOOP_PERIOD_MS)
+  if (now - ms50 >= 50)
   {
-    last_run_ms = now;
+    ms50 = now;
 
     run_bms_cycle();
+  }
 
-     digitalToggle(PB9);
+  if (now - ms200 >= 200) {
+    ms200 = now;
+
+    digitalToggle(PB9);
   }
 
   delay(1);
