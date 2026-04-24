@@ -2602,16 +2602,6 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 62.23) (xy 80.01 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9c2fc98b-ac15-454f-8000-b2174b8b9f04")
-	)
-	(wire
-		(pts
 			(xy 170.18 87.63) (xy 213.36 87.63)
 		)
 		(stroke
@@ -2669,6 +2659,16 @@
 			(type default)
 		)
 		(uuid "a811d33c-8341-49ca-b1fd-705b77fd7a44")
+	)
+	(wire
+		(pts
+			(xy 50.8 62.23) (xy 77.47 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a960049d-d8c7-477a-a754-a037b8d88cd3")
 	)
 	(wire
 		(pts
@@ -9050,7 +9050,7 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(pin "CAN+_IN" input

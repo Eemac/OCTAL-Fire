@@ -919,6 +919,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Forgot a 100k pull-down attached to the SHDNs! \nWill be soldering these on by hand..."
+		(exclude_from_sim no)
+		(at 80.01 79.375 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "894d1b1a-ba1b-4bab-81be-4247ef8c1e1f")
+	)
 	(wire
 		(pts
 			(xy 107.95 80.01) (xy 107.95 82.55)

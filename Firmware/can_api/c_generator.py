@@ -57,11 +57,10 @@ def main():
                         }
                     )
     rx_messages = None
-    mobs = None
     masks = None
 
     if "subscribe" in yaml_data.keys():
-        rx_messages, mobs, masks = get_rx_messages(yaml_data["subscribe"], db.messages)
+        rx_messages, masks = get_rx_messages(yaml_data["subscribe"], db.messages)
 
         for msg in rx_messages:
             for sig in msg.signals:
@@ -75,7 +74,6 @@ def main():
                         )
     else:
         rx_messages = []
-        mobs = {}
 
     # Create the Jinja2 environment that contains the template info
     env = Environment(
@@ -98,7 +96,6 @@ def main():
             tx_messages=tx_messages,
             rx_messages=rx_messages,
             masks=masks,
-            mobs=mobs,
             header_file="can_api.h",
         )
 

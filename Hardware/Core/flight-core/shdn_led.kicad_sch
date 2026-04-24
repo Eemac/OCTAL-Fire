@@ -1065,6 +1065,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Forgot a 100k pull-down attached to the SHDNs! \nWill be soldering these on by hand..."
+		(exclude_from_sim no)
+		(at 78.105 76.835 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "6b3eba19-e4c8-428e-8799-e98029043eab")
+	)
 	(junction
 		(at 88.9 71.12)
 		(diameter 0)

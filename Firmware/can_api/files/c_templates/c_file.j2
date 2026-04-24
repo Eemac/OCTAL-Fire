@@ -104,7 +104,6 @@ uint8_t {{ message.name|lower }}_data[{{ message.length }}] = {0};
 
 can_frame_t {{ message.name|lower }}_msg = {
     .id = {{ message.frame_id }},
-    .mob = 0,
     .data = {{ message.name|lower }}_data,
     .dlc = {{ message.length }},
 };
@@ -156,7 +155,6 @@ void can_send_{{ message.name|lower }}(FDCAN_HandleTypeDef *hfdcan2) {
 uint8_t {{ message.name|lower }}_data[{{ message.length }}] = {0};
 
 can_frame_t {{ message.name|lower }}_msg = {
-    .mob = {{ mobs[message.name] }},
     .data = {{ message.name|lower }}_data,
 };
 

@@ -4,6 +4,7 @@
 #include "stm32g4xx_hal.h"
 #include "stm32g4xx_hal_fdcan.h"
 #include "can_api.h"
+#include "can_lib.h"
 #include "ADBMS181x.h"
 #include "bms_hardware.h"
 #include <SPI.h>
@@ -27,8 +28,9 @@
 #define MAX14661_CMD_A 0x14
 #define MAX14661_CMD_B 0x15
 
-cell_asic bms_ic[TOTAL_IC];
+cell_asic bms_ic;
 FDCAN_HandleTypeDef hfdcan2;
+OPAMP_HandleTypeDef hopamp2;
 
 enum BmsState {
   IDLE,
@@ -45,23 +47,14 @@ enum BmsFaultBits {
   FAULT_PEC            = 15
 };
 
-BmsState bms_state = IDLE;
 uint16_t bms_faults = 0;
 
 const float CELL_VOLTAGE_LOW  = 2.5f; // Min value is can handle is 2.5(discharge)
-const float CELL_VOLTAGE_HIGH = 4.25f; // Max value it can handle is 4.25(discharge)
+const float CELL_VOLTAGE_HIGH = 4.20f; // Max value it can handle is 4.25(discharge)
 
 //Must add the over current later aswell
 const float TEMP_LOW_C  = -20.0f; // Min value it cna take is -20.0f(discharge)
-const float TEMP_HIGH_C = 55.0f; // Max value it can tolerate = 55.0f(discharge)
-
-// Stored measurement summaries
-float min_cell_voltage = 100.0f;
-float max_cell_voltage = 0.0f;
-float pack_voltage = 0.0f;
-
-float min_temp_c = 1000.0f;
-float max_temp_c = -1000.0f;
+const float TEMP_HIGH_C = 60.0f; // Max value it can tolerate = 55.0f(discharge)
 
 int8_t last_pec_error = 0;
 bool last_mux_error = false;
@@ -124,31 +117,31 @@ void init_bms_chip_array()
 {
   for (int i = 0; i < TOTAL_IC; i++)
   {
-    bms_ic[i].isospi_reverse = false;
+    bms_ic.isospi_reverse = false;
 
-    bms_ic[i].ic_reg.cell_channels = 18;
-    bms_ic[i].ic_reg.stat_channels = 4;
-    bms_ic[i].ic_reg.aux_channels = 9;
+    bms_ic.ic_reg.cell_channels = 18;
+    bms_ic.ic_reg.stat_channels = 4;
+    bms_ic.ic_reg.aux_channels = 9;
 
-    bms_ic[i].ic_reg.num_cv_reg = 6;
-    bms_ic[i].ic_reg.num_gpio_reg = 4;
-    bms_ic[i].ic_reg.num_stat_reg = 2;
+    bms_ic.ic_reg.num_cv_reg = 6;
+    bms_ic.ic_reg.num_gpio_reg = 4;
+    bms_ic.ic_reg.num_stat_reg = 2;
 
-    bms_ic[i].system_open_wire = 0;
+    bms_ic.system_open_wire = 0;
 
     for (int j = 0; j < 18; j++)
     {
-      bms_ic[i].cells.c_codes[j] = 0;
+      bms_ic.cells.c_codes[j] = 0;
     }
 
     for (int j = 0; j < 6; j++)
     {
-      bms_ic[i].cells.pec_match[j] = 0;
+      bms_ic.cells.pec_match[j] = 0;
     }
   }
 
-  ADBMS181x_init_cfg(TOTAL_IC, bms_ic);
-  ADBMS181x_reset_crc_count(TOTAL_IC, bms_ic);
+  ADBMS181x_init_cfg(1, &bms_ic);
+  ADBMS181x_reset_crc_count(1, &bms_ic);
 }
 
 void init_thermistors()
@@ -164,7 +157,30 @@ void init_thermistors()
   Wire.setClock(100000);
 
   analogReadResolution(12);
+
+  set_mux_channels(MUX1_ADDR, 0, 1);
+  set_mux_channels(MUX2_ADDR, 0, 1);
+
+  bms_temp_metrics_a.max_cell_temp_ever = thermistorEncode(0);
+  bms_temp_metrics_a.min_cell_temp_ever = thermistorEncode(120);
 }
+
+void initISense() {
+  hopamp2.Instance = OPAMP2;
+  hopamp2.Init.PowerMode = OPAMP_POWERMODE_NORMALSPEED;
+  hopamp2.Init.Mode = OPAMP_PGA_MODE;
+  hopamp2.Init.NonInvertingInput = OPAMP_NONINVERTINGINPUT_IO2;
+  hopamp2.Init.InternalOutput = ENABLE;
+  hopamp2.Init.TimerControlledMuxmode = OPAMP_TIMERCONTROLLEDMUXMODE_DISABLE;
+  hopamp2.Init.PgaConnect = OPAMP_PGA_CONNECT_INVERTINGINPUT_NO;
+  hopamp2.Init.PgaGain = OPAMP_PGA_GAIN_4_OR_MINUS_3;
+  hopamp2.Init.UserTrimming = OPAMP_TRIMMING_FACTORY;
+
+  //AMP SENSE
+  pinMode(PB0, INPUT_ANALOG);
+}
+
+
 
 bool set_mux_channels(uint8_t mux_addr, uint8_t chA, uint8_t chB)
 {
@@ -185,7 +201,7 @@ float raw_to_therm_voltage(uint16_t raw)
 float therm_voltage_to_temp_c(float v_out)
 {
   if (v_out <= 0.0f || v_out >= 3.3f) {
-    return -1000.0f;
+    return 0.0;
   }
 
   float temp_k = 1.0f / (
@@ -201,76 +217,122 @@ void set_fault_bit(uint8_t bit)
   bms_faults |= (1U << bit);
 }
 
-bool read_cell_voltages()
-{
-  min_cell_voltage = 100.0f;
-  max_cell_voltage = 0.0f;
-  pack_voltage = 0.0f;
+bool read_cell_voltages() {
+  bms_voltage_metrics_a.min_cell_voltage = 5000.0f;
+  bms_voltage_metrics_a.max_cell_voltage = 0.0f;
+  bms_status_a.pack_voltage = 0.0f;
 
-  wakeup_idle(TOTAL_IC);
+  wakeup_idle(1);
   ADBMS181x_adcv(MD_7KHZ_3KHZ, DCP_DISABLED, CELL_CH_ALL);
   ADBMS181x_pollAdc();
 
-  last_pec_error = ADBMS181x_rdcv(0, TOTAL_IC, bms_ic);
+  last_pec_error = ADBMS181x_rdcv(0, 1, &bms_ic);
 
-  for (int ic = 0; ic < TOTAL_IC; ic++)
-  {
-    for (int cell = 0; cell < 18; cell++)
+    for (int cell = 0; cell < 14; cell++)
     {
-      float volts = bms_ic[ic].cells.c_codes[cell] * 0.0001f;
+      double volts = bms_ic.cells.c_codes[cell] * 0.0001f;
 
-      if (volts < min_cell_voltage) min_cell_voltage = volts;
-      if (volts > max_cell_voltage) max_cell_voltage = volts;
+      switch (cell)
+      {
+        // -------- group 0 --------
+        case 0: cell_voltages_0_a.cell_1 = can_lib_cell_voltages_0_a_cell_1_encode(volts * 1000); break;
+        case 1: cell_voltages_0_a.cell_2 = can_lib_cell_voltages_0_a_cell_2_encode(volts * 1000); break;
+        case 2: cell_voltages_0_a.cell_3 = can_lib_cell_voltages_0_a_cell_3_encode(volts * 1000); break;
+        case 3: cell_voltages_0_a.cell_4 = can_lib_cell_voltages_0_a_cell_4_encode(volts * 1000); break;
+        case 4: cell_voltages_0_a.cell_5 = can_lib_cell_voltages_0_a_cell_5_encode(volts * 1000); break;
+        // -------- group 1 --------
+        case 5: cell_voltages_1_a.cell_6 = can_lib_cell_voltages_1_a_cell_6_encode(volts * 1000); break;
+        case 6: cell_voltages_1_a.cell_7 = can_lib_cell_voltages_1_a_cell_7_encode(volts * 1000); break;
+        case 7: cell_voltages_1_a.cell_8 = can_lib_cell_voltages_1_a_cell_8_encode(volts * 1000); break;
+        case 8: cell_voltages_1_a.cell_9 = can_lib_cell_voltages_1_a_cell_9_encode(volts * 1000); break;
+        case 9: cell_voltages_1_a.cell_10 = can_lib_cell_voltages_1_a_cell_10_encode(volts * 1000); break;
+        // -------- group 2 --------
+        case 10: cell_voltages_2_a.cell_11 = can_lib_cell_voltages_2_a_cell_11_encode(volts * 1000); break;
+        case 11: cell_voltages_2_a.cell_12 = can_lib_cell_voltages_2_a_cell_12_encode(volts * 1000); break;
+        case 12: cell_voltages_2_a.cell_13 = can_lib_cell_voltages_2_a_cell_13_encode(volts * 1000); break;
+        case 13: cell_voltages_2_a.cell_14 = can_lib_cell_voltages_2_a_cell_14_encode(volts * 1000); break;
+      }
 
-      pack_voltage += volts;
+      if (volts * 1000 < can_lib_bms_voltage_metrics_a_max_cell_voltage_decode(bms_voltage_metrics_a.min_cell_voltage)) bms_voltage_metrics_a.min_cell_voltage = can_lib_bms_voltage_metrics_a_max_cell_voltage_encode(volts * 1000);
+      if (volts * 1000 > can_lib_bms_voltage_metrics_a_min_cell_voltage_decode(bms_voltage_metrics_a.max_cell_voltage)) bms_voltage_metrics_a.max_cell_voltage = can_lib_bms_voltage_metrics_a_min_cell_voltage_encode(volts * 1000);
+
+      bms_status_a.pack_voltage += can_lib_bms_status_a_pack_voltage_encode(volts * 1000);
+   
     }
-  }
+
+    bms_voltage_metrics_a.cell_voltage_threshold_high = can_lib_bms_voltage_metrics_a_cell_voltage_threshold_high_encode(CELL_VOLTAGE_HIGH * 1000);
+    bms_voltage_metrics_a.cell_voltage_threshold_low = can_lib_bms_voltage_metrics_a_cell_voltage_threshold_high_encode(CELL_VOLTAGE_LOW * 1000);
+
+    if(last_pec_error == 0) {
+      digitalToggle(PB11);
+    }
 
   return (last_pec_error == 0);
 }
 
-bool read_all_thermistors()
-{
-  min_temp_c = 1000.0f;
-  max_temp_c = -1000.0f;
+uint16_t thermistorEncode(float t) {
+  return (uint16_t)((t + 20.0) / 140.0 * 65536.0);
+}
+
+float thermistorDecode(uint16_t t) {
+  return (float)(t * 140.0 / 65536.0 - 20.0);
+}
+
+uint8_t thermistors_index = 14;
+bool read_thermistors() {
   last_mux_error = false;
 
-  for (uint8_t index = 0; index < 16; index++)
+  float t1 = therm_voltage_to_temp_c(raw_to_therm_voltage(analogRead(THERM_A1_PIN)));
+  float t2 = therm_voltage_to_temp_c(raw_to_therm_voltage(analogRead(THERM_B1_PIN)));
+  float t3 = therm_voltage_to_temp_c(raw_to_therm_voltage(analogRead(THERM_A2_PIN)));
+  float t4 = therm_voltage_to_temp_c(raw_to_therm_voltage(analogRead(THERM_B2_PIN)));
+
+  thermistors_index += 2;
+  if(thermistors_index == 14) {
+    thermistors_index = 0;
+
+  //     Serial.println(thermistorDecode(bms_temp_metrics_a.max_current_cell_temp));
+  // Serial.println(thermistorDecode(bms_temp_metrics_a.min_current_cell_temp));
+
+    bms_temp_metrics_a.min_current_cell_temp = thermistorEncode(120);
+    bms_temp_metrics_a.max_current_cell_temp = thermistorEncode(-20);
+  }
+
+
+  if (t1 < bms_temp_metrics_a.min_current_cell_temp) bms_temp_metrics_a.min_current_cell_temp = thermistorEncode(t1);
+  if (t2 < bms_temp_metrics_a.min_current_cell_temp) bms_temp_metrics_a.min_current_cell_temp = thermistorEncode(t2);
+  if (t3 < bms_temp_metrics_a.min_current_cell_temp) bms_temp_metrics_a.min_current_cell_temp = thermistorEncode(t3);
+  if (t4 < bms_temp_metrics_a.min_current_cell_temp) bms_temp_metrics_a.min_current_cell_temp = thermistorEncode(t4);
+
+  if (t1 > bms_temp_metrics_a.max_current_cell_temp) bms_temp_metrics_a.max_current_cell_temp = thermistorEncode(t1);
+  if (t2 > bms_temp_metrics_a.max_current_cell_temp) bms_temp_metrics_a.max_current_cell_temp = thermistorEncode(t2);
+  if (t3 > bms_temp_metrics_a.max_current_cell_temp) bms_temp_metrics_a.max_current_cell_temp = thermistorEncode(t3);
+  if (t4 > bms_temp_metrics_a.max_current_cell_temp) bms_temp_metrics_a.max_current_cell_temp = thermistorEncode(t4);
+
+  bool mux1_ok = set_mux_channels(MUX1_ADDR, thermistors_index, thermistors_index + 1);
+  if(mux1_ok) {digitalToggle(PB7);}
+  bool mux2_ok = set_mux_channels(MUX2_ADDR, thermistors_index, thermistors_index + 1);
+  if(mux2_ok) {digitalToggle(PA15);}
+
+  if (!mux1_ok || !mux2_ok)
   {
-    bool mux1_ok = set_mux_channels(MUX1_ADDR, index, index);
-    bool mux2_ok = set_mux_channels(MUX2_ADDR, index, index);
-
-    if (!mux1_ok || !mux2_ok)
-    {
-      last_mux_error = true;
-      return false;
-    }
-
-    delay(5);
-
-    float t1 = therm_voltage_to_temp_c(raw_to_therm_voltage(analogRead(THERM_A1_PIN)));
-    float t2 = therm_voltage_to_temp_c(raw_to_therm_voltage(analogRead(THERM_B1_PIN)));
-    float t3 = therm_voltage_to_temp_c(raw_to_therm_voltage(analogRead(THERM_A2_PIN)));
-    float t4 = therm_voltage_to_temp_c(raw_to_therm_voltage(analogRead(THERM_B2_PIN)));
-
-    if (t1 < min_temp_c) min_temp_c = t1;
-    if (t2 < min_temp_c) min_temp_c = t2;
-    if (t3 < min_temp_c) min_temp_c = t3;
-    if (t4 < min_temp_c) min_temp_c = t4;
-
-    if (t1 > max_temp_c) max_temp_c = t1;
-    if (t2 > max_temp_c) max_temp_c = t2;
-    if (t3 > max_temp_c) max_temp_c = t3;
-    if (t4 > max_temp_c) max_temp_c = t4;
-
-    delay(20);
+    last_mux_error = true;
+    return false;
   }
 
   return true;
 }
 
-void update_faults()
-{
+void readIsense() {
+  float sum = 0;
+
+  for (int i = 0; i < 20; i++){sum += (float)analogRead(PB0);}
+  sum = sum / 20.0;
+  bms_status_a.pack_current = (uint16_t)((sum - 121.0) * 0.265 * 10.0); //100mA in ones place
+  // Serial.println(bms_status_a.pack_current); //144 = 6.10  ---------- / 4096.0 * 3.3
+}
+
+void update_faults() {
   bms_faults = 0;
 
   if (last_pec_error != 0)
@@ -284,29 +346,28 @@ void update_faults()
     set_fault_bit(FAULT_MUX);
   }
 
-  if (min_cell_voltage < CELL_VOLTAGE_LOW)
+  if (can_lib_bms_voltage_metrics_a_min_cell_voltage_decode(bms_voltage_metrics_a.min_cell_voltage) < CELL_VOLTAGE_LOW * 1000)
   {
     set_fault_bit(FAULT_CELL_UNDERVOLT);
   }
 
-  if (max_cell_voltage > CELL_VOLTAGE_HIGH)
+  if (can_lib_bms_voltage_metrics_a_max_cell_voltage_decode(bms_voltage_metrics_a.max_cell_voltage) > CELL_VOLTAGE_HIGH  * 1000.0)
   {
     set_fault_bit(FAULT_CELL_OVERVOLT);
   }
 
-  if (min_temp_c < TEMP_LOW_C)
+  if (thermistorDecode(bms_temp_metrics_a.min_cell_temp_ever) < TEMP_LOW_C)
   {
     set_fault_bit(FAULT_CELL_UNDERTEMP);
   }
 
-  if (max_temp_c > TEMP_HIGH_C)
+  if (thermistorDecode(bms_temp_metrics_a.max_cell_temp_ever) > TEMP_HIGH_C)
   {
     set_fault_bit(FAULT_CELL_OVERTEMP);
   }
 }
 
-void print_faults()
-{
+void print_faults() {
   Serial.print("Fault mask: 0b");
   Serial.println(bms_faults, BIN);
   if (bms_faults & (1U << FAULT_ADBMS_COMMS))    Serial.println("FAULT: ADBMS comms");
@@ -338,8 +399,8 @@ void setup()
   pinMode(CS_PIN, OUTPUT);
   digitalWrite(CS_PIN, HIGH);
 
-  digitalToggle(PB9);
-  digitalToggle(PB2);
+  //DISABLE BMS CONTROL OF FETS
+  digitalToggle(PA10);
 
   Serial.begin(115200);
   delay(200);
@@ -350,33 +411,33 @@ void setup()
   init_bms_chip_array();
   init_thermistors();
 
-  // can_init_bms_a(&hfdcan2);
+  can_init_bms_a(&hfdcan2);
 }
 
-void loop()
+void run_bms_cycle()
 {
-  switch (bms_state)
+  bool cells_ok = read_cell_voltages();
+  bool therms_ok = read_thermistors();
+  readIsense();
+
+  update_faults();
+
+  can_send_bms_status_a(&hfdcan2);
+  can_send_bms_temp_metrics_a(&hfdcan2);
+  can_send_bms_voltage_metrics_a(&hfdcan2);
+  can_send_cell_voltages_0_a(&hfdcan2);
+  can_send_cell_voltages_1_a(&hfdcan2);
+  can_send_cell_voltages_2_a(&hfdcan2);
+
+  digitalToggle(PB2);
+
+  switch (bms_status_a.bms_state)
   {
     case IDLE:
     {
-      bool cells_ok = read_cell_voltages();
-      bool therms_ok = read_all_thermistors();
-
-      update_faults();
-
-      Serial.println("BMS state: IDLE");
-      Serial.print("Min cell voltage: ");
-      Serial.println(min_cell_voltage, 4);
-      Serial.print("Max cell voltage: ");
-      Serial.println(max_cell_voltage, 4);
-      Serial.print("Min temp C: ");
-      Serial.println(min_temp_c, 2);
-      Serial.print("Max temp C: ");
-      Serial.println(max_temp_c, 2);
-
       if (!cells_ok || !therms_ok || bms_faults != 0)
       {
-        bms_state = FAULTED;
+        bms_status_a.bms_state = FAULTED;
       }
 
       break;
@@ -384,14 +445,32 @@ void loop()
 
     case FAULTED:
     {
-      Serial.println("BMS state: FAULTED");
-      print_faults();
-
-      digitalToggle(PB9);
-      delay(500);
+      digitalToggle(PB4);
+      // handle_faulted_state_nonblocking(); // NEW
       break;
     }
   }
+}
 
-  delay(200);
+unsigned long ms50 = 0;
+unsigned long ms200 = 0;
+
+void loop()
+{
+  unsigned long now = millis();
+
+  if (now - ms50 >= 50)
+  {
+    ms50 = now;
+
+    run_bms_cycle();
+  }
+
+  if (now - ms200 >= 200) {
+    ms200 = now;
+
+    digitalToggle(PB9);
+  }
+
+  delay(1);
 }

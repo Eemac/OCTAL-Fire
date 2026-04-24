@@ -2978,16 +2978,6 @@
 		)
 		(uuid "4215956f-06a2-461b-a36e-553806cc7d6c")
 	)
-	(text "TODO:\nFAN STUFF"
-		(exclude_from_sim no)
-		(at 82.296 91.694 0)
-		(effects
-			(font
-				(size 5 5)
-			)
-		)
-		(uuid "9b57a4ab-5a92-4301-b035-61fdb323e952")
-	)
 	(text "SPI"
 		(exclude_from_sim no)
 		(at 93.98 68.58 0)

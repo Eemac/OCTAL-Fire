@@ -6579,7 +6579,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 46.99) (xy 203.2 85.09)
+			(xy 203.2 49.53) (xy 203.2 85.09)
 		)
 		(stroke
 			(width 0)
@@ -7543,7 +7543,7 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 46.99) (xy 205.74 87.63)
+			(xy 205.74 49.53) (xy 205.74 87.63)
 		)
 		(stroke
 			(width 0)
@@ -7713,7 +7713,7 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 46.99) (xy 198.12 77.47)
+			(xy 198.12 49.53) (xy 198.12 77.47)
 		)
 		(stroke
 			(width 0)
@@ -7743,7 +7743,7 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 46.99) (xy 208.28 90.17)
+			(xy 208.28 49.53) (xy 208.28 90.17)
 		)
 		(stroke
 			(width 0)
@@ -7964,7 +7964,7 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 46.99) (xy 200.66 82.55)
+			(xy 200.66 49.53) (xy 200.66 82.55)
 		)
 		(stroke
 			(width 0)
@@ -8134,7 +8134,7 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 46.99) (xy 195.58 80.01)
+			(xy 195.58 49.53) (xy 195.58 80.01)
 		)
 		(stroke
 			(width 0)
@@ -8906,7 +8906,7 @@
 	)
 	(hierarchical_label "SHDN_SENSE_LOWER_RIDER_ESTOP"
 		(shape input)
-		(at 195.58 46.99 90)
+		(at 195.58 49.53 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8917,7 +8917,7 @@
 	)
 	(hierarchical_label "SHDN_SENSE_BMS_OK_N"
 		(shape input)
-		(at 200.66 46.99 90)
+		(at 200.66 49.53 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8961,7 +8961,7 @@
 	)
 	(hierarchical_label "SHDN_SENSE_NUC"
 		(shape input)
-		(at 198.12 46.99 90)
+		(at 198.12 49.53 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8995,7 +8995,7 @@
 	)
 	(hierarchical_label "SHDN_SENSE_BMS_OK_S"
 		(shape input)
-		(at 205.74 46.99 90)
+		(at 205.74 49.53 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9028,7 +9028,7 @@
 	)
 	(hierarchical_label "SHDN_SENSE_BMS_OK_E"
 		(shape input)
-		(at 203.2 46.99 90)
+		(at 203.2 49.53 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9117,7 +9117,7 @@
 	)
 	(hierarchical_label "SHDN_SENSE_BMS_OK_ALL"
 		(shape input)
-		(at 208.28 46.99 90)
+		(at 208.28 49.53 90)
 		(effects
 			(font
 				(size 1.27 1.27)
