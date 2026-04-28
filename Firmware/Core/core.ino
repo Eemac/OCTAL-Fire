@@ -22,6 +22,7 @@
 #define SHDN_NW PB10 
 
 #define RESET_IO PA10
+#define DISP_CS PA9
 
 #define CAN_COMS PB6 
 #define USBC_COMS PB7 
@@ -66,7 +67,7 @@ FDCAN_HandleTypeDef hfdcan2;
 
 MCP23S17 MCP(CS);
 
-bool mcpbegin = 0;
+bool mcpbegin = false;
 
 void OCTAL_Set_Clock(void) {
   // set flash latency for target (144MHz -> FLASH_LATENCY_4) and up voltage to HF range
@@ -118,7 +119,11 @@ void OCTAL_Set_Clock(void) {
 }
 
 void setup() {
+  Serial.begin(112500);
+  delay(1000);
+
   OCTAL_Set_Clock();
+  delay(10);
 
   pinMode(SHDN_N, INPUT);
   pinMode(SHDN_NE, INPUT);
@@ -145,14 +150,17 @@ void setup() {
 
   pinMode(HEARTBEAT, OUTPUT);  // Core Heartbeat
 
-  Serial.begin(112500);
+  pinMode(DISP_CS, OUTPUT);
+  digitalWrite(DISP_CS, HIGH);
 
   SPI.begin();
   mcpbegin = MCP.begin();
   delay(50);
+  Serial.println("I worked");
+
   if (mcpbegin) {
     // GPA outputs: DEBUG1, RESET_CUBEs_2
-    MCP.pinMode1(DEBUG1, OUTPUT);
+    // MCP.pinMode1(DEBUG1, OUTPUT);
     MCP.pinMode1(RESET_CUBE_2, OUTPUT);
 
     // GPB output: RESET_CUBE_1
@@ -174,7 +182,6 @@ void setup() {
     MCP.pinMode1(SHDN_BMS_S, INPUT);
     MCP.pinMode1(SHDN_BMS_ALL, INPUT);
 
-
     // // Port 0 (GPA): Debug GPA0, ResetCube2 GPA1 are Outputs (0), others are SHDN Inputs (1)
     // MCP.pinMode8(0, 0b11111100); 
     
@@ -182,15 +189,16 @@ void setup() {
     // MCP.pinMode8(1, 0b11111110); 
 
     MCP.write1(DEBUG1, HIGH); // prime output
-    MCP.write1(RESET_CUBE_2, LOW); // prime output
-    MCP.write1(RESET_CUBE_2, LOW); // prime output
-    
+    MCP.write1(RESET_CUBE_1, HIGH); // prime output
+    MCP.write1(RESET_CUBE_2, HIGH); // prime output
+
+    MCP.pinMode1(DEBUG1, OUTPUT);
+  
     Serial.println("MCP23S17 Initialized.");
   } else {
     Serial.println("MCP23S17 not found.");
   }
-  delay(100);
-
+  
 
   can_init_core(&hfdcan2);
 }
@@ -262,33 +270,36 @@ void printShutdownStatus() {
 
     Serial.println();
   }
+  Serial.println();
 
-  Serial.println("--- SHDN Pin Status ---");
+  // Serial.println("--- SHDN Pin Status ---");
   
-  for (int i = 0; i < 8; i++) {
-    int state = digitalRead(shdnPins[i]);
+  // for (int i = 0; i < 8; i++) {
+  //   int state = digitalRead(shdnPins[i]);
     
-    Serial.print(shdnLabels[i]);
-    Serial.print(": ");
-    Serial.print(state == HIGH ? "CLOSED" : "OPEN ");
+  //   Serial.print(shdnLabels[i]);
+  //   Serial.print(": ");
+  //   Serial.print(state == HIGH ? "CLOSED" : "OPEN ");
     
-    if ((i + 1) % 4 == 0) {
-      Serial.println();
-    } else {
-      Serial.print(" | ");
-    }
-  }
-  Serial.println("-----------------------");
+  //   if ((i + 1) % 4 == 0) {
+  //     Serial.println();
+  //   } else {
+  //     Serial.print(" | ");
+  //   }
+  // }
+  // Serial.println("-----------------------");
 }
 
 float MAX_VPACK_DIFF = 0.080; // 80mV pack difference
+bool SETUP = false;
 
 void loop() {
-
   digitalToggle(HEARTBEAT);
-  MCP.write1(DEBUG1, HIGH);
+  MCP.pinMode1(DEBUG1, OUTPUT);
+  if (MCP.read1(DEBUG1) == HIGH) {
+    Serial.println("DEBUG1 HIGH");
+  }
   delay(1000);
-
 
   current_5v = (analogRead(ASENSE_5V) * 3.3) / 1023.0;
   current_3v3 = (analogRead(ASENSE_3V3) * 3.3) / 1023.0;
@@ -297,12 +308,12 @@ void loop() {
   // Serial.print("Current 3V3: ");
   // Serial.println(current_3v3);
 
-  // printShutdownStatus();
+  printShutdownStatus();
 
   delay(100);
   core_status.core_state = 0;
-  Serial.print("DEBUG1 raw read: ");
-  Serial.println(MCP.read1(DEBUG1), HEX);
+  // Serial.print("DEBUG1 raw read: ");
+  // Serial.println(MCP.read1(DEBUG1), HEX);
 
   digitalWrite(RESET_IO, HIGH);
 
