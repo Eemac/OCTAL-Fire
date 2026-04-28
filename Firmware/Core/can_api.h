@@ -33,13 +33,6 @@ enum core_state_e {
     CORE_STATE_FAULT,
 };
 
-enum batt_ctrl_e { 
-    BATT_CTRL_NORTH,
-    BATT_CTRL_EAST,
-    BATT_CTRL_WEST,
-    BATT_CTRL_SOUTH,
-};
-
 
 /*
  * Initialize the core CAN peripheral

@@ -19,12 +19,19 @@ publish:
   - name: core_batt_ctrl
     id: 0x2
     signals:
-      - name: batt_ctrl
-        slice: 3 + 2
+      - name: north
+        slice: 3 + 1
         unit:
-          type: enum
-          values:
-            - NORTH
-            - EAST
-            - WEST
-            - SOUTH
+          type: bool
+      - name: east
+        slice: 4 + 1
+        unit:
+          type: bool
+      - name: west
+        slice: 5 + 1
+        unit:
+          type: bool
+      - name: south
+        slice: 6 + 1
+        unit:
+          type: bool
