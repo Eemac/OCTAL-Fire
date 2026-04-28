@@ -12,15 +12,6 @@
 #define ASENSE_5V PA0
 #define ASENSE_3V3 PA1
 
-// #define SHDN_N PB0 
-// #define SHDN_NE PB1 
-// #define SHDN_E PB2 
-// #define SHDN_SE PB3 
-// #define SHDN_S PB4 
-// #define SHDN_SW PB5 
-// #define SHDN_W PB9 
-// #define SHDN_NW PB10 
-
 #define RESET_IO PA10
 #define DISP_CS PA9
 
@@ -122,7 +113,7 @@ void setup() {
   pinMode(HEARTBEAT, OUTPUT);  // Core Heartbeat
   digitalWrite(HEARTBEAT, HIGH);
 
-  delay(26000);
+  // delay(20000);
 
   pinMode(RESET_IO, OUTPUT);
   digitalWrite(RESET_IO, HIGH); // SO IMPORTANT TO HAVE BEFORE MCPBEGIN
@@ -153,14 +144,35 @@ void setup() {
   digitalWrite(DISP_CS, HIGH);
 
   SPI.begin();
-  mcpbegin = MCP.begin();
+  // mcpbegin = MCP.begin();
   delay(50);
 
   if (mcpbegin) {
-    // Port 0 (GPA): Debug GPA0, ResetCube2 GPA1 are Outputs (0), others are SHDN Inputs (1)
-    MCP.pinMode8(0, 0b11111100);   
-    // Port 1 (GPB): ResetCube1 GPB0 is Output (0), others are SHDN Inputs (1)
-    MCP.pinMode8(1, 0b11111110); 
+    MCP.pinMode1(DEBUG1, OUTPUT);
+    MCP.pinMode1(RESET_CUBE_2, OUTPUT);
+
+    // GPB output: RESET_CUBE_1
+    MCP.pinMode1(RESET_CUBE_1, OUTPUT);
+
+    // everything else input (SHDN signals)
+    MCP.pinMode1(SHDN_REMOTE, INPUT);
+    MCP.pinMode1(SHDN_TILT, INPUT);
+    MCP.pinMode1(SHDN_WIRED, INPUT);
+    MCP.pinMode1(SHDN_FRAME, INPUT);
+    MCP.pinMode1(SHDN_TSMS, INPUT);
+    MCP.pinMode1(SHDN_CRIT_RIDER, INPUT);
+    MCP.pinMode1(SHDN_CTRL_LOBATT, INPUT);
+
+    MCP.pinMode1(SHDN_LOWER_RIDER, INPUT);
+    MCP.pinMode1(SHDN_NUC, INPUT);
+    MCP.pinMode1(SHDN_BMS_N, INPUT);
+    MCP.pinMode1(SHDN_BMS_E, INPUT);
+    MCP.pinMode1(SHDN_BMS_S, INPUT);
+    MCP.pinMode1(SHDN_BMS_ALL, INPUT);
+    // // Port 0 (GPA): Debug GPA0, ResetCube2 GPA1 are Outputs (0), others are SHDN Inputs (1)
+    // MCP.pinMode8(0, 0b11111100);   
+    // // Port 1 (GPB): ResetCube1 GPB0 is Output (0), others are SHDN Inputs (1)
+    // MCP.pinMode8(1, 0b11111110); 
   
     Serial.println("MCP23S17 Initialized.");
   } else {
@@ -183,78 +195,67 @@ float current_3v3 = 0;
 //   "S ", "SW", "W ", "NW"
 // };
 
-// void printShutdownStatus() {
-//     if (mcpbegin) {
-//     Serial.println("--- MCP SHDN Status ---");
+void printShutdownStatus() {
+    if (mcpbegin) {
+    Serial.println("--- MCP SHDN Status ---");
 
-//     const int mcpPins[] = {
-//       SHDN_REMOTE,
-//       SHDN_TILT,
-//       SHDN_WIRED,
-//       SHDN_FRAME,
-//       SHDN_TSMS,
-//       SHDN_CRIT_RIDER,
-//       SHDN_CTRL_LOBATT,
+    const int mcpPins[] = {
+      SHDN_REMOTE,
+      SHDN_TILT,
+      SHDN_WIRED,
+      SHDN_FRAME,
+      SHDN_TSMS,
+      SHDN_CRIT_RIDER,
+      SHDN_CTRL_LOBATT,
 
-//       SHDN_LOWER_RIDER,
-//       SHDN_NUC,
-//       SHDN_BMS_N,
-//       SHDN_BMS_E,
-//       SHDN_BMS_S,
-//       SHDN_BMS_ALL
-//     };
+      SHDN_LOWER_RIDER,
+      SHDN_NUC,
+      SHDN_BMS_N,
+      SHDN_BMS_E,
+      SHDN_BMS_S,
+      SHDN_BMS_ALL
+    };
 
-//     const char* mcpLabels[] = {
-//       "REMOTE",
-//       "TILT",
-//       "WIRED",
-//       "FRAME",
-//       "TSMS",
-//       "CRIT",
-//       "LOBATT",
+    const char* mcpLabels[] = {
+      "REMOTE",
+      "TILT",
+      "WIRED",
+      "FRAME",
+      "TSMS",
+      "CRIT",
+      "LOBATT",
 
-//       "LOWER",
-//       "NUC",
-//       "BMS_N",
-//       "BMS_E",
-//       "BMS_S",
-//       "BMS_ALL"
-//     };
+      "LOWER",
+      "NUC",
+      "BMS_N",
+      "BMS_E",
+      "BMS_S",
+      "BMS_ALL"
+    };
 
-//     for (int i = 0; i < 13; i++) {
-//       int state = MCP.read1(mcpPins[i]);
+    for (int i = 0; i < 13; i++) {
+      int state = MCP.read1(mcpPins[i]);
 
-//       Serial.print(mcpLabels[i]);
-//       Serial.print(": ");
-//       Serial.print(state == HIGH ? "CLOSED" : "OPEN");
+      Serial.print(mcpLabels[i]);
+      Serial.print(": ");
+      Serial.print(state == HIGH ? "CLOSED" : "OPEN");
 
-//       if ((i + 1) % 4 == 0) {
-//         Serial.println();
-//       } else {
-//         Serial.print(" | ");
-//       }
-//     }
+      if ((i + 1) % 4 == 0) {
+        Serial.println();
+      } else {
+        Serial.print(" | ");
+      }
+    }
 
-//     Serial.println();
-//   }
-//   Serial.println();
-// }
-// float MAX_VPACK_DIFF = 0.080; // 80mV pack difference
-bool done = true;
+    Serial.println();
+  }
+  Serial.println();
+}
+float MAX_VPACK_DIFF = 0.080; // 80mV pack difference
 bool try_to_reset = true;
 
 void loop() {
 
-  if (done) {
-    MCP.pinMode1(DEBUG1, OUTPUT);
-    done = false;
-  }
-  // if (SETUP) {
-  //   run_setup();
-  //   Serial.println("SETUP!");
-  //   SETUP = false;
-  // }
-  // // setup();
   digitalToggle(HEARTBEAT);
   MCP.write1(RESET_CUBE_1, 0);
 
@@ -264,13 +265,13 @@ void loop() {
   MCP.write1(DEBUG1, 0);
   delay(100);
 
-  if (try_to_reset) {
-    Serial.println("Attempting reset");
-    MCP.write1(RESET_CUBE_1, 0);
-    delay(100);
-    try_to_reset = false;
-  }
-  MCP.write1(RESET_CUBE_1, 1);
+  // if (try_to_reset) {
+  //   Serial.println("Attempting reset");
+  //   MCP.write1(RESET_CUBE_1, 0);
+  //   delay(100);
+  //   try_to_reset = false;
+  // }
+  // MCP.write1(RESET_CUBE_1, 1);
 
   current_5v = (analogRead(ASENSE_5V) * 3.3) / 1023.0;
   current_3v3 = (analogRead(ASENSE_3V3) * 3.3) / 1023.0;
@@ -279,56 +280,56 @@ void loop() {
   // Serial.print("Current 3V3: ");
   // Serial.println(current_3v3);
 
-  // printShutdownStatus();
+  printShutdownStatus();
 
   // delay(100);
-  // core_status.core_state = 0;
+  core_status.core_state = 0;
   // // Serial.print("DEBUG1 raw read: ");
   // // Serial.println(MCP.read1(DEBUG1), HEX);
 
-  // if (Serial.available()) {
-  //   digitalWrite(USBC_COMS, HIGH);
-  //   String input = Serial.readStringUntil('\n');
-  //   input.trim();
+  if (Serial.available()) {
+    digitalWrite(USBC_COMS, HIGH);
+    String input = Serial.readStringUntil('\n');
+    input.trim();
 
-  //   long value = input.toInt();
+    long value = input.toInt();
 
-  //   if (value >= 0 && value <= 65535) {
-  //     parsedValue = value;
+    if (value >= 0 && value <= 65535) {
+      parsedValue = value;
 
-  //     Serial.print("Parsed uint16_t value: ");
-  //     Serial.println(parsedValue, HEX);
-  //   } else {
-  //     Serial.println("Value out of uint16_t range.");
-  //   }
-  // } else {
-  //   digitalWrite(USBC_COMS, LOW);
-  // }
+      Serial.print("Parsed uint16_t value: ");
+      Serial.println(parsedValue, HEX);
+    } else {
+      Serial.println("Value out of uint16_t range.");
+    }
+  } else {
+    digitalWrite(USBC_COMS, LOW);
+  }
 
-  // if (can_receive(&hfdcan2) > 0) {
-  //   Serial.print("CAN RECEIVED");
-  //   digitalWrite(CAN_COMS, HIGH);
+  if (can_receive(&hfdcan2) > 0) {
+    Serial.print("CAN RECEIVED");
+    digitalWrite(CAN_COMS, HIGH);
     
-  //   // // pack voltage reading
-  //   // float min_volt = bms_status_n.pack_voltage;
-  //   // if (bms_status_e.pack_voltage < min_volt) min_volt = bms_status_e.pack_voltage;
-  //   // if (bms_status_s.pack_voltage < min_volt) min_volt = bms_status_s.pack_voltage;
-  //   // if (bms_status_w.pack_voltage < min_volt) min_volt = bms_status_w.pack_voltage;
+    // pack voltage reading
+    float min_volt = bms_status_n.pack_voltage;
+    if (bms_status_e.pack_voltage < min_volt) min_volt = bms_status_e.pack_voltage;
+    if (bms_status_s.pack_voltage < min_volt) min_volt = bms_status_s.pack_voltage;
+    if (bms_status_w.pack_voltage < min_volt) min_volt = bms_status_w.pack_voltage;
 
-  //   // core_batt_ctrl.north = (bms_status_n.pack_voltage <= (min_volt + MAX_VPACK_DIFF)) ? 1 : 0;
-  //   // core_batt_ctrl.east  = (bms_status_e.pack_voltage <= (min_volt + MAX_VPACK_DIFF)) ? 1 : 0;
-  //   // core_batt_ctrl.south = (bms_status_s.pack_voltage <= (min_volt + MAX_VPACK_DIFF)) ? 1 : 0;
-  //   // core_batt_ctrl.west  = (bms_status_w.pack_voltage <= (min_volt + MAX_VPACK_DIFF)) ? 1 : 0;
+    core_batt_ctrl.north = (bms_status_n.pack_voltage <= (min_volt + MAX_VPACK_DIFF)) ? 1 : 0;
+    core_batt_ctrl.east  = (bms_status_e.pack_voltage <= (min_volt + MAX_VPACK_DIFF)) ? 1 : 0;
+    core_batt_ctrl.south = (bms_status_s.pack_voltage <= (min_volt + MAX_VPACK_DIFF)) ? 1 : 0;
+    core_batt_ctrl.west  = (bms_status_w.pack_voltage <= (min_volt + MAX_VPACK_DIFF)) ? 1 : 0;
 
-  //   // if (core_batt_ctrl == 1111) {
-  //   //   MCP.write1(DEBUG1, HIGH);
-  //   // }
+    if (core_batt_ctrl == 1111) {
+      MCP.write1(DEBUG1, HIGH);
+    }
     
-  //   Serial.print(CAN_COMS);
-  // } else {
-  //   digitalWrite(CAN_COMS, LOW);
-  // }
+    Serial.print(CAN_COMS);
+  } else {
+    digitalWrite(CAN_COMS, LOW);
+  }
 
-  // can_send_core_status(&hfdcan2);
-  // can_send_core_batt_ctrl(&hfdcan2);
+  can_send_core_status(&hfdcan2);
+  can_send_core_batt_ctrl(&hfdcan2);
 }
