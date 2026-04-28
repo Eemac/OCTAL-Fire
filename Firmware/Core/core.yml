@@ -1,7 +1,13 @@
 name: core
 subscribe:
-  - name: bms_status_a
-  - name: bms_voltage_metrics_a
+  - name: bms_status_n
+  - name: bms_voltage_metrics_n
+  - name: bms_status_e
+  - name: bms_voltage_metrics_e
+  - name: bms_status_s
+  - name: bms_voltage_metrics_s
+  - name: bms_status_w
+  - name: bms_voltage_metrics_w
 
 publish:
   - name: core_status
