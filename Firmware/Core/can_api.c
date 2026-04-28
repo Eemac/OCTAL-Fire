@@ -204,32 +204,32 @@ void can_send_core_batt_ctrl(FDCAN_HandleTypeDef *hfdcan2) {
  * Receive messages
  */
 
-uint8_t bms_status_a_data[8] = {0};
+uint8_t bms_status_north_data[8] = {0};
 
-can_frame_t bms_status_a_msg = {
-    .data = bms_status_a_data,
+can_frame_t bms_status_north_msg = {
+    .data = bms_status_north_data,
 };
 
-can_filter_t bms_status_a_filter = {
+can_filter_t bms_status_north_filter = {
     .id = 16,
     .mask = 2047
 };
 
-struct can_lib_bms_status_a_t bms_status_a = {0};
+struct can_lib_bms_status_north_t bms_status_north = {0};
 
 
-uint8_t bms_voltage_metrics_a_data[8] = {0};
+uint8_t bms_voltage_metrics_north_data[8] = {0};
 
-can_frame_t bms_voltage_metrics_a_msg = {
-    .data = bms_voltage_metrics_a_data,
+can_frame_t bms_voltage_metrics_north_msg = {
+    .data = bms_voltage_metrics_north_data,
 };
 
-can_filter_t bms_voltage_metrics_a_filter = {
+can_filter_t bms_voltage_metrics_north_filter = {
     .id = 18,
     .mask = 2047
 };
 
-struct can_lib_bms_voltage_metrics_a_t bms_voltage_metrics_a = {0};
+struct can_lib_bms_voltage_metrics_north_t bms_voltage_metrics_north = {0};
 
 
 
@@ -245,11 +245,11 @@ int can_receive(FDCAN_HandleTypeDef *hfdcan2) {
         switch (rx_msg_header.Identifier) {
             
                 case 16:
-                    can_lib_bms_status_a_unpack(&bms_status_a, rx_msg_data, 8);
+                    can_lib_bms_status_north_unpack(&bms_status_north, rx_msg_data, 8);
                     break;
             
                 case 18:
-                    can_lib_bms_voltage_metrics_a_unpack(&bms_voltage_metrics_a, rx_msg_data, 8);
+                    can_lib_bms_voltage_metrics_north_unpack(&bms_voltage_metrics_north, rx_msg_data, 8);
                     break;
             
                 default:

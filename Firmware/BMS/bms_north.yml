@@ -1,8 +1,8 @@
-name: bms_a
+name: bms_north
 subscribe:
 
 publish:
-  - name: bms_status_a
+  - name: bms_status_north
     id: 0x10
     signals:
       - name: bms_state
@@ -63,7 +63,7 @@ publish:
           #Bit is set to 1 if that cell is currently balancing, 0 if not
 
 
-  - name: bms_temp_metrics_a
+  - name: bms_temp_metrics_north
     id: 0x11
     signals:
       - name: max_current_cell_temp
@@ -116,7 +116,7 @@ publish:
           maximum: 120
 
 
-  - name: bms_voltage_metrics_a
+  - name: bms_voltage_metrics_north
     id: 0x12
     signals:
       - name: max_cell_voltage
@@ -160,7 +160,7 @@ publish:
           maximum: 70
 
 
-  - name: cell_voltages_0_a
+  - name: cell_voltages_0_north
     id: 0x13
     signals:
       - name: cell_1
@@ -200,7 +200,7 @@ publish:
           maximum: 5
 
 
-  - name: cell_voltages_1_a
+  - name: cell_voltages_1_north
     id: 0x14
     signals:
       - name: cell_6
@@ -240,7 +240,7 @@ publish:
           maximum: 5
 
 
-  - name: cell_voltages_2_a
+  - name: cell_voltages_2_north
     id: 0x15
     signals:
       - name: cell_11
@@ -273,7 +273,7 @@ publish:
           maximum: 5
 
 
-  - name: thermistors_0_a
+  - name: thermistors_0_north
     id: 0x16
     signals:
       - name: thermistor_1
@@ -320,7 +320,7 @@ publish:
           maximum: 120
 
 
-  - name: thermistors_1_a
+  - name: thermistors_1_north
     id: 0x17
     signals:
       - name: thermistor_7
@@ -367,7 +367,7 @@ publish:
           maximum: 120
 
 
-  - name: thermistors_2_a
+  - name: thermistors_2_north
     id: 0x18
     signals:
       - name: thermistor_13
@@ -414,7 +414,7 @@ publish:
           maximum: 120
 
 
-  - name: thermistors_3_a
+  - name: thermistors_3_north
     id: 0x19
     signals:
       - name: thermistor_19
@@ -461,7 +461,7 @@ publish:
           maximum: 120
 
 
-  - name: thermistors_4_a
+  - name: thermistors_4_north
     id: 0x1A
     signals:
       - name: thermistor_25

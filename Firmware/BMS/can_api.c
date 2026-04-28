@@ -6,7 +6,7 @@
 #include "stm32g4xx_hal_fdcan.h"
 #include "can_lib.h"
 
-void can_init_bms_a(FDCAN_HandleTypeDef *hfdcan2) {
+void can_init_bms_west(FDCAN_HandleTypeDef *hfdcan2) {
     __HAL_RCC_FDCAN_CLK_ENABLE();
     __HAL_RCC_GPIOA_CLK_ENABLE();
     __HAL_RCC_GPIOB_CLK_ENABLE();
@@ -87,29 +87,29 @@ void can_init_bms_a(FDCAN_HandleTypeDef *hfdcan2) {
  * Transmit messages
  */
 
-uint8_t bms_status_a_data[8] = {0};
+uint8_t bms_status_west_data[8] = {0};
 
-can_frame_t bms_status_a_msg = {
-    .id = 16,
-    .data = bms_status_a_data,
+can_frame_t bms_status_west_msg = {
+    .id = 64,
+    .data = bms_status_west_data,
     .dlc = 8,
 };
 
-volatile struct can_lib_bms_status_a_t bms_status_a = {0};
+volatile struct can_lib_bms_status_west_t bms_status_west = {0};
 
-void can_send_bms_status_a(FDCAN_HandleTypeDef *hfdcan2) {
+void can_send_bms_status_west(FDCAN_HandleTypeDef *hfdcan2) {
     // We can be sure here that the CAN data struct won't change here
 
-    can_lib_bms_status_a_pack(
-        bms_status_a_data,
+    can_lib_bms_status_west_pack(
+        bms_status_west_data,
         // We can safely discard the volatile qualifier because we are in an
         // ATOMIC block, so the value will not be changed in an ISR
-        (const struct can_lib_bms_status_a_t*) &bms_status_a,
+        (const struct can_lib_bms_status_west_t*) &bms_status_west,
         8
     );
 
     FDCAN_TxHeaderTypeDef TxHeader;
-    TxHeader.Identifier = 16;
+    TxHeader.Identifier = 64;
     TxHeader.IdType = FDCAN_STANDARD_ID;  
     TxHeader.TxFrameType = FDCAN_DATA_FRAME;
     TxHeader.DataLength = FDCAN_DLC_BYTES_8;
@@ -120,7 +120,7 @@ void can_send_bms_status_a(FDCAN_HandleTypeDef *hfdcan2) {
     TxHeader.MessageMarker = 0;
 
     if (HAL_FDCAN_GetTxFifoFreeLevel(hfdcan2) > 0) {
-        if (HAL_FDCAN_AddMessageToTxFifoQ(hfdcan2, &TxHeader, bms_status_a_data)!= HAL_OK) {
+        if (HAL_FDCAN_AddMessageToTxFifoQ(hfdcan2, &TxHeader, bms_status_west_data)!= HAL_OK) {
 
         }
     }
@@ -133,29 +133,29 @@ void can_send_bms_status_a(FDCAN_HandleTypeDef *hfdcan2) {
 
 
 
-uint8_t bms_temp_metrics_a_data[8] = {0};
+uint8_t bms_temp_metrics_west_data[8] = {0};
 
-can_frame_t bms_temp_metrics_a_msg = {
-    .id = 17,
-    .data = bms_temp_metrics_a_data,
+can_frame_t bms_temp_metrics_west_msg = {
+    .id = 65,
+    .data = bms_temp_metrics_west_data,
     .dlc = 8,
 };
 
-volatile struct can_lib_bms_temp_metrics_a_t bms_temp_metrics_a = {0};
+volatile struct can_lib_bms_temp_metrics_west_t bms_temp_metrics_west = {0};
 
-void can_send_bms_temp_metrics_a(FDCAN_HandleTypeDef *hfdcan2) {
+void can_send_bms_temp_metrics_west(FDCAN_HandleTypeDef *hfdcan2) {
     // We can be sure here that the CAN data struct won't change here
 
-    can_lib_bms_temp_metrics_a_pack(
-        bms_temp_metrics_a_data,
+    can_lib_bms_temp_metrics_west_pack(
+        bms_temp_metrics_west_data,
         // We can safely discard the volatile qualifier because we are in an
         // ATOMIC block, so the value will not be changed in an ISR
-        (const struct can_lib_bms_temp_metrics_a_t*) &bms_temp_metrics_a,
+        (const struct can_lib_bms_temp_metrics_west_t*) &bms_temp_metrics_west,
         8
     );
 
     FDCAN_TxHeaderTypeDef TxHeader;
-    TxHeader.Identifier = 17;
+    TxHeader.Identifier = 65;
     TxHeader.IdType = FDCAN_STANDARD_ID;  
     TxHeader.TxFrameType = FDCAN_DATA_FRAME;
     TxHeader.DataLength = FDCAN_DLC_BYTES_8;
@@ -166,7 +166,7 @@ void can_send_bms_temp_metrics_a(FDCAN_HandleTypeDef *hfdcan2) {
     TxHeader.MessageMarker = 0;
 
     if (HAL_FDCAN_GetTxFifoFreeLevel(hfdcan2) > 0) {
-        if (HAL_FDCAN_AddMessageToTxFifoQ(hfdcan2, &TxHeader, bms_temp_metrics_a_data)!= HAL_OK) {
+        if (HAL_FDCAN_AddMessageToTxFifoQ(hfdcan2, &TxHeader, bms_temp_metrics_west_data)!= HAL_OK) {
 
         }
     }
@@ -179,29 +179,29 @@ void can_send_bms_temp_metrics_a(FDCAN_HandleTypeDef *hfdcan2) {
 
 
 
-uint8_t bms_voltage_metrics_a_data[8] = {0};
+uint8_t bms_voltage_metrics_west_data[8] = {0};
 
-can_frame_t bms_voltage_metrics_a_msg = {
-    .id = 18,
-    .data = bms_voltage_metrics_a_data,
+can_frame_t bms_voltage_metrics_west_msg = {
+    .id = 66,
+    .data = bms_voltage_metrics_west_data,
     .dlc = 8,
 };
 
-volatile struct can_lib_bms_voltage_metrics_a_t bms_voltage_metrics_a = {0};
+volatile struct can_lib_bms_voltage_metrics_west_t bms_voltage_metrics_west = {0};
 
-void can_send_bms_voltage_metrics_a(FDCAN_HandleTypeDef *hfdcan2) {
+void can_send_bms_voltage_metrics_west(FDCAN_HandleTypeDef *hfdcan2) {
     // We can be sure here that the CAN data struct won't change here
 
-    can_lib_bms_voltage_metrics_a_pack(
-        bms_voltage_metrics_a_data,
+    can_lib_bms_voltage_metrics_west_pack(
+        bms_voltage_metrics_west_data,
         // We can safely discard the volatile qualifier because we are in an
         // ATOMIC block, so the value will not be changed in an ISR
-        (const struct can_lib_bms_voltage_metrics_a_t*) &bms_voltage_metrics_a,
+        (const struct can_lib_bms_voltage_metrics_west_t*) &bms_voltage_metrics_west,
         8
     );
 
     FDCAN_TxHeaderTypeDef TxHeader;
-    TxHeader.Identifier = 18;
+    TxHeader.Identifier = 66;
     TxHeader.IdType = FDCAN_STANDARD_ID;  
     TxHeader.TxFrameType = FDCAN_DATA_FRAME;
     TxHeader.DataLength = FDCAN_DLC_BYTES_8;
@@ -212,7 +212,7 @@ void can_send_bms_voltage_metrics_a(FDCAN_HandleTypeDef *hfdcan2) {
     TxHeader.MessageMarker = 0;
 
     if (HAL_FDCAN_GetTxFifoFreeLevel(hfdcan2) > 0) {
-        if (HAL_FDCAN_AddMessageToTxFifoQ(hfdcan2, &TxHeader, bms_voltage_metrics_a_data)!= HAL_OK) {
+        if (HAL_FDCAN_AddMessageToTxFifoQ(hfdcan2, &TxHeader, bms_voltage_metrics_west_data)!= HAL_OK) {
 
         }
     }
@@ -225,29 +225,29 @@ void can_send_bms_voltage_metrics_a(FDCAN_HandleTypeDef *hfdcan2) {
 
 
 
-uint8_t cell_voltages_0_a_data[8] = {0};
+uint8_t cell_voltages_0_west_data[8] = {0};
 
-can_frame_t cell_voltages_0_a_msg = {
-    .id = 19,
-    .data = cell_voltages_0_a_data,
+can_frame_t cell_voltages_0_west_msg = {
+    .id = 67,
+    .data = cell_voltages_0_west_data,
     .dlc = 8,
 };
 
-volatile struct can_lib_cell_voltages_0_a_t cell_voltages_0_a = {0};
+volatile struct can_lib_cell_voltages_0_west_t cell_voltages_0_west = {0};
 
-void can_send_cell_voltages_0_a(FDCAN_HandleTypeDef *hfdcan2) {
+void can_send_cell_voltages_0_west(FDCAN_HandleTypeDef *hfdcan2) {
     // We can be sure here that the CAN data struct won't change here
 
-    can_lib_cell_voltages_0_a_pack(
-        cell_voltages_0_a_data,
+    can_lib_cell_voltages_0_west_pack(
+        cell_voltages_0_west_data,
         // We can safely discard the volatile qualifier because we are in an
         // ATOMIC block, so the value will not be changed in an ISR
-        (const struct can_lib_cell_voltages_0_a_t*) &cell_voltages_0_a,
+        (const struct can_lib_cell_voltages_0_west_t*) &cell_voltages_0_west,
         8
     );
 
     FDCAN_TxHeaderTypeDef TxHeader;
-    TxHeader.Identifier = 19;
+    TxHeader.Identifier = 67;
     TxHeader.IdType = FDCAN_STANDARD_ID;  
     TxHeader.TxFrameType = FDCAN_DATA_FRAME;
     TxHeader.DataLength = FDCAN_DLC_BYTES_8;
@@ -258,7 +258,7 @@ void can_send_cell_voltages_0_a(FDCAN_HandleTypeDef *hfdcan2) {
     TxHeader.MessageMarker = 0;
 
     if (HAL_FDCAN_GetTxFifoFreeLevel(hfdcan2) > 0) {
-        if (HAL_FDCAN_AddMessageToTxFifoQ(hfdcan2, &TxHeader, cell_voltages_0_a_data)!= HAL_OK) {
+        if (HAL_FDCAN_AddMessageToTxFifoQ(hfdcan2, &TxHeader, cell_voltages_0_west_data)!= HAL_OK) {
 
         }
     }
@@ -271,29 +271,29 @@ void can_send_cell_voltages_0_a(FDCAN_HandleTypeDef *hfdcan2) {
 
 
 
-uint8_t cell_voltages_1_a_data[8] = {0};
+uint8_t cell_voltages_1_west_data[8] = {0};
 
-can_frame_t cell_voltages_1_a_msg = {
-    .id = 20,
-    .data = cell_voltages_1_a_data,
+can_frame_t cell_voltages_1_west_msg = {
+    .id = 68,
+    .data = cell_voltages_1_west_data,
     .dlc = 8,
 };
 
-volatile struct can_lib_cell_voltages_1_a_t cell_voltages_1_a = {0};
+volatile struct can_lib_cell_voltages_1_west_t cell_voltages_1_west = {0};
 
-void can_send_cell_voltages_1_a(FDCAN_HandleTypeDef *hfdcan2) {
+void can_send_cell_voltages_1_west(FDCAN_HandleTypeDef *hfdcan2) {
     // We can be sure here that the CAN data struct won't change here
 
-    can_lib_cell_voltages_1_a_pack(
-        cell_voltages_1_a_data,
+    can_lib_cell_voltages_1_west_pack(
+        cell_voltages_1_west_data,
         // We can safely discard the volatile qualifier because we are in an
         // ATOMIC block, so the value will not be changed in an ISR
-        (const struct can_lib_cell_voltages_1_a_t*) &cell_voltages_1_a,
+        (const struct can_lib_cell_voltages_1_west_t*) &cell_voltages_1_west,
         8
     );
 
     FDCAN_TxHeaderTypeDef TxHeader;
-    TxHeader.Identifier = 20;
+    TxHeader.Identifier = 68;
     TxHeader.IdType = FDCAN_STANDARD_ID;  
     TxHeader.TxFrameType = FDCAN_DATA_FRAME;
     TxHeader.DataLength = FDCAN_DLC_BYTES_8;
@@ -304,7 +304,7 @@ void can_send_cell_voltages_1_a(FDCAN_HandleTypeDef *hfdcan2) {
     TxHeader.MessageMarker = 0;
 
     if (HAL_FDCAN_GetTxFifoFreeLevel(hfdcan2) > 0) {
-        if (HAL_FDCAN_AddMessageToTxFifoQ(hfdcan2, &TxHeader, cell_voltages_1_a_data)!= HAL_OK) {
+        if (HAL_FDCAN_AddMessageToTxFifoQ(hfdcan2, &TxHeader, cell_voltages_1_west_data)!= HAL_OK) {
 
         }
     }
@@ -317,29 +317,29 @@ void can_send_cell_voltages_1_a(FDCAN_HandleTypeDef *hfdcan2) {
 
 
 
-uint8_t cell_voltages_2_a_data[6] = {0};
+uint8_t cell_voltages_2_west_data[6] = {0};
 
-can_frame_t cell_voltages_2_a_msg = {
-    .id = 21,
-    .data = cell_voltages_2_a_data,
+can_frame_t cell_voltages_2_west_msg = {
+    .id = 69,
+    .data = cell_voltages_2_west_data,
     .dlc = 6,
 };
 
-volatile struct can_lib_cell_voltages_2_a_t cell_voltages_2_a = {0};
+volatile struct can_lib_cell_voltages_2_west_t cell_voltages_2_west = {0};
 
-void can_send_cell_voltages_2_a(FDCAN_HandleTypeDef *hfdcan2) {
+void can_send_cell_voltages_2_west(FDCAN_HandleTypeDef *hfdcan2) {
     // We can be sure here that the CAN data struct won't change here
 
-    can_lib_cell_voltages_2_a_pack(
-        cell_voltages_2_a_data,
+    can_lib_cell_voltages_2_west_pack(
+        cell_voltages_2_west_data,
         // We can safely discard the volatile qualifier because we are in an
         // ATOMIC block, so the value will not be changed in an ISR
-        (const struct can_lib_cell_voltages_2_a_t*) &cell_voltages_2_a,
+        (const struct can_lib_cell_voltages_2_west_t*) &cell_voltages_2_west,
         6
     );
 
     FDCAN_TxHeaderTypeDef TxHeader;
-    TxHeader.Identifier = 21;
+    TxHeader.Identifier = 69;
     TxHeader.IdType = FDCAN_STANDARD_ID;  
     TxHeader.TxFrameType = FDCAN_DATA_FRAME;
     TxHeader.DataLength = FDCAN_DLC_BYTES_8;
@@ -350,7 +350,7 @@ void can_send_cell_voltages_2_a(FDCAN_HandleTypeDef *hfdcan2) {
     TxHeader.MessageMarker = 0;
 
     if (HAL_FDCAN_GetTxFifoFreeLevel(hfdcan2) > 0) {
-        if (HAL_FDCAN_AddMessageToTxFifoQ(hfdcan2, &TxHeader, cell_voltages_2_a_data)!= HAL_OK) {
+        if (HAL_FDCAN_AddMessageToTxFifoQ(hfdcan2, &TxHeader, cell_voltages_2_west_data)!= HAL_OK) {
 
         }
     }
@@ -363,29 +363,29 @@ void can_send_cell_voltages_2_a(FDCAN_HandleTypeDef *hfdcan2) {
 
 
 
-uint8_t thermistors_0_a_data[8] = {0};
+uint8_t thermistors_0_west_data[8] = {0};
 
-can_frame_t thermistors_0_a_msg = {
-    .id = 22,
-    .data = thermistors_0_a_data,
+can_frame_t thermistors_0_west_msg = {
+    .id = 70,
+    .data = thermistors_0_west_data,
     .dlc = 8,
 };
 
-volatile struct can_lib_thermistors_0_a_t thermistors_0_a = {0};
+volatile struct can_lib_thermistors_0_west_t thermistors_0_west = {0};
 
-void can_send_thermistors_0_a(FDCAN_HandleTypeDef *hfdcan2) {
+void can_send_thermistors_0_west(FDCAN_HandleTypeDef *hfdcan2) {
     // We can be sure here that the CAN data struct won't change here
 
-    can_lib_thermistors_0_a_pack(
-        thermistors_0_a_data,
+    can_lib_thermistors_0_west_pack(
+        thermistors_0_west_data,
         // We can safely discard the volatile qualifier because we are in an
         // ATOMIC block, so the value will not be changed in an ISR
-        (const struct can_lib_thermistors_0_a_t*) &thermistors_0_a,
+        (const struct can_lib_thermistors_0_west_t*) &thermistors_0_west,
         8
     );
 
     FDCAN_TxHeaderTypeDef TxHeader;
-    TxHeader.Identifier = 22;
+    TxHeader.Identifier = 70;
     TxHeader.IdType = FDCAN_STANDARD_ID;  
     TxHeader.TxFrameType = FDCAN_DATA_FRAME;
     TxHeader.DataLength = FDCAN_DLC_BYTES_8;
@@ -396,7 +396,7 @@ void can_send_thermistors_0_a(FDCAN_HandleTypeDef *hfdcan2) {
     TxHeader.MessageMarker = 0;
 
     if (HAL_FDCAN_GetTxFifoFreeLevel(hfdcan2) > 0) {
-        if (HAL_FDCAN_AddMessageToTxFifoQ(hfdcan2, &TxHeader, thermistors_0_a_data)!= HAL_OK) {
+        if (HAL_FDCAN_AddMessageToTxFifoQ(hfdcan2, &TxHeader, thermistors_0_west_data)!= HAL_OK) {
 
         }
     }
@@ -409,29 +409,29 @@ void can_send_thermistors_0_a(FDCAN_HandleTypeDef *hfdcan2) {
 
 
 
-uint8_t thermistors_1_a_data[8] = {0};
+uint8_t thermistors_1_west_data[8] = {0};
 
-can_frame_t thermistors_1_a_msg = {
-    .id = 23,
-    .data = thermistors_1_a_data,
+can_frame_t thermistors_1_west_msg = {
+    .id = 71,
+    .data = thermistors_1_west_data,
     .dlc = 8,
 };
 
-volatile struct can_lib_thermistors_1_a_t thermistors_1_a = {0};
+volatile struct can_lib_thermistors_1_west_t thermistors_1_west = {0};
 
-void can_send_thermistors_1_a(FDCAN_HandleTypeDef *hfdcan2) {
+void can_send_thermistors_1_west(FDCAN_HandleTypeDef *hfdcan2) {
     // We can be sure here that the CAN data struct won't change here
 
-    can_lib_thermistors_1_a_pack(
-        thermistors_1_a_data,
+    can_lib_thermistors_1_west_pack(
+        thermistors_1_west_data,
         // We can safely discard the volatile qualifier because we are in an
         // ATOMIC block, so the value will not be changed in an ISR
-        (const struct can_lib_thermistors_1_a_t*) &thermistors_1_a,
+        (const struct can_lib_thermistors_1_west_t*) &thermistors_1_west,
         8
     );
 
     FDCAN_TxHeaderTypeDef TxHeader;
-    TxHeader.Identifier = 23;
+    TxHeader.Identifier = 71;
     TxHeader.IdType = FDCAN_STANDARD_ID;  
     TxHeader.TxFrameType = FDCAN_DATA_FRAME;
     TxHeader.DataLength = FDCAN_DLC_BYTES_8;
@@ -442,7 +442,7 @@ void can_send_thermistors_1_a(FDCAN_HandleTypeDef *hfdcan2) {
     TxHeader.MessageMarker = 0;
 
     if (HAL_FDCAN_GetTxFifoFreeLevel(hfdcan2) > 0) {
-        if (HAL_FDCAN_AddMessageToTxFifoQ(hfdcan2, &TxHeader, thermistors_1_a_data)!= HAL_OK) {
+        if (HAL_FDCAN_AddMessageToTxFifoQ(hfdcan2, &TxHeader, thermistors_1_west_data)!= HAL_OK) {
 
         }
     }
@@ -455,29 +455,29 @@ void can_send_thermistors_1_a(FDCAN_HandleTypeDef *hfdcan2) {
 
 
 
-uint8_t thermistors_2_a_data[8] = {0};
+uint8_t thermistors_2_west_data[8] = {0};
 
-can_frame_t thermistors_2_a_msg = {
-    .id = 24,
-    .data = thermistors_2_a_data,
+can_frame_t thermistors_2_west_msg = {
+    .id = 72,
+    .data = thermistors_2_west_data,
     .dlc = 8,
 };
 
-volatile struct can_lib_thermistors_2_a_t thermistors_2_a = {0};
+volatile struct can_lib_thermistors_2_west_t thermistors_2_west = {0};
 
-void can_send_thermistors_2_a(FDCAN_HandleTypeDef *hfdcan2) {
+void can_send_thermistors_2_west(FDCAN_HandleTypeDef *hfdcan2) {
     // We can be sure here that the CAN data struct won't change here
 
-    can_lib_thermistors_2_a_pack(
-        thermistors_2_a_data,
+    can_lib_thermistors_2_west_pack(
+        thermistors_2_west_data,
         // We can safely discard the volatile qualifier because we are in an
         // ATOMIC block, so the value will not be changed in an ISR
-        (const struct can_lib_thermistors_2_a_t*) &thermistors_2_a,
+        (const struct can_lib_thermistors_2_west_t*) &thermistors_2_west,
         8
     );
 
     FDCAN_TxHeaderTypeDef TxHeader;
-    TxHeader.Identifier = 24;
+    TxHeader.Identifier = 72;
     TxHeader.IdType = FDCAN_STANDARD_ID;  
     TxHeader.TxFrameType = FDCAN_DATA_FRAME;
     TxHeader.DataLength = FDCAN_DLC_BYTES_8;
@@ -488,7 +488,7 @@ void can_send_thermistors_2_a(FDCAN_HandleTypeDef *hfdcan2) {
     TxHeader.MessageMarker = 0;
 
     if (HAL_FDCAN_GetTxFifoFreeLevel(hfdcan2) > 0) {
-        if (HAL_FDCAN_AddMessageToTxFifoQ(hfdcan2, &TxHeader, thermistors_2_a_data)!= HAL_OK) {
+        if (HAL_FDCAN_AddMessageToTxFifoQ(hfdcan2, &TxHeader, thermistors_2_west_data)!= HAL_OK) {
 
         }
     }
@@ -501,29 +501,29 @@ void can_send_thermistors_2_a(FDCAN_HandleTypeDef *hfdcan2) {
 
 
 
-uint8_t thermistors_3_a_data[8] = {0};
+uint8_t thermistors_3_west_data[8] = {0};
 
-can_frame_t thermistors_3_a_msg = {
-    .id = 25,
-    .data = thermistors_3_a_data,
+can_frame_t thermistors_3_west_msg = {
+    .id = 73,
+    .data = thermistors_3_west_data,
     .dlc = 8,
 };
 
-volatile struct can_lib_thermistors_3_a_t thermistors_3_a = {0};
+volatile struct can_lib_thermistors_3_west_t thermistors_3_west = {0};
 
-void can_send_thermistors_3_a(FDCAN_HandleTypeDef *hfdcan2) {
+void can_send_thermistors_3_west(FDCAN_HandleTypeDef *hfdcan2) {
     // We can be sure here that the CAN data struct won't change here
 
-    can_lib_thermistors_3_a_pack(
-        thermistors_3_a_data,
+    can_lib_thermistors_3_west_pack(
+        thermistors_3_west_data,
         // We can safely discard the volatile qualifier because we are in an
         // ATOMIC block, so the value will not be changed in an ISR
-        (const struct can_lib_thermistors_3_a_t*) &thermistors_3_a,
+        (const struct can_lib_thermistors_3_west_t*) &thermistors_3_west,
         8
     );
 
     FDCAN_TxHeaderTypeDef TxHeader;
-    TxHeader.Identifier = 25;
+    TxHeader.Identifier = 73;
     TxHeader.IdType = FDCAN_STANDARD_ID;  
     TxHeader.TxFrameType = FDCAN_DATA_FRAME;
     TxHeader.DataLength = FDCAN_DLC_BYTES_8;
@@ -534,7 +534,7 @@ void can_send_thermistors_3_a(FDCAN_HandleTypeDef *hfdcan2) {
     TxHeader.MessageMarker = 0;
 
     if (HAL_FDCAN_GetTxFifoFreeLevel(hfdcan2) > 0) {
-        if (HAL_FDCAN_AddMessageToTxFifoQ(hfdcan2, &TxHeader, thermistors_3_a_data)!= HAL_OK) {
+        if (HAL_FDCAN_AddMessageToTxFifoQ(hfdcan2, &TxHeader, thermistors_3_west_data)!= HAL_OK) {
 
         }
     }
@@ -547,29 +547,29 @@ void can_send_thermistors_3_a(FDCAN_HandleTypeDef *hfdcan2) {
 
 
 
-uint8_t thermistors_4_a_data[8] = {0};
+uint8_t thermistors_4_west_data[8] = {0};
 
-can_frame_t thermistors_4_a_msg = {
-    .id = 26,
-    .data = thermistors_4_a_data,
+can_frame_t thermistors_4_west_msg = {
+    .id = 74,
+    .data = thermistors_4_west_data,
     .dlc = 8,
 };
 
-volatile struct can_lib_thermistors_4_a_t thermistors_4_a = {0};
+volatile struct can_lib_thermistors_4_west_t thermistors_4_west = {0};
 
-void can_send_thermistors_4_a(FDCAN_HandleTypeDef *hfdcan2) {
+void can_send_thermistors_4_west(FDCAN_HandleTypeDef *hfdcan2) {
     // We can be sure here that the CAN data struct won't change here
 
-    can_lib_thermistors_4_a_pack(
-        thermistors_4_a_data,
+    can_lib_thermistors_4_west_pack(
+        thermistors_4_west_data,
         // We can safely discard the volatile qualifier because we are in an
         // ATOMIC block, so the value will not be changed in an ISR
-        (const struct can_lib_thermistors_4_a_t*) &thermistors_4_a,
+        (const struct can_lib_thermistors_4_west_t*) &thermistors_4_west,
         8
     );
 
     FDCAN_TxHeaderTypeDef TxHeader;
-    TxHeader.Identifier = 26;
+    TxHeader.Identifier = 74;
     TxHeader.IdType = FDCAN_STANDARD_ID;  
     TxHeader.TxFrameType = FDCAN_DATA_FRAME;
     TxHeader.DataLength = FDCAN_DLC_BYTES_8;
@@ -580,7 +580,7 @@ void can_send_thermistors_4_a(FDCAN_HandleTypeDef *hfdcan2) {
     TxHeader.MessageMarker = 0;
 
     if (HAL_FDCAN_GetTxFifoFreeLevel(hfdcan2) > 0) {
-        if (HAL_FDCAN_AddMessageToTxFifoQ(hfdcan2, &TxHeader, thermistors_4_a_data)!= HAL_OK) {
+        if (HAL_FDCAN_AddMessageToTxFifoQ(hfdcan2, &TxHeader, thermistors_4_west_data)!= HAL_OK) {
 
         }
     }

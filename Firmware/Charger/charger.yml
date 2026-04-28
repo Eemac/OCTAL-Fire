@@ -1,7 +1,7 @@
 name: charger
 subscribe:
-  - name: bms_status_a
-  - name: bms_voltage_metrics_a
+  - name: bms_status_north
+  - name: bms_voltage_metrics_north
 
 publish:
   - name: charger_status

@@ -70,16 +70,16 @@ void can_send_core_batt_ctrl(FDCAN_HandleTypeDef *hfdcan2);
 
 
 
-extern uint8_t bms_status_a_data[];
-extern can_frame_t bms_status_a_msg;
-extern struct can_lib_bms_status_a_t bms_status_a;
+extern uint8_t bms_status_north_data[];
+extern can_frame_t bms_status_north_msg;
+extern struct can_lib_bms_status_north_t bms_status_north;
 
 int can_receive(FDCAN_HandleTypeDef *hfdcan2);
 
 
-extern uint8_t bms_voltage_metrics_a_data[];
-extern can_frame_t bms_voltage_metrics_a_msg;
-extern struct can_lib_bms_voltage_metrics_a_t bms_voltage_metrics_a;
+extern uint8_t bms_voltage_metrics_north_data[];
+extern can_frame_t bms_voltage_metrics_north_msg;
+extern struct can_lib_bms_voltage_metrics_north_t bms_voltage_metrics_north;
 
 int can_receive(FDCAN_HandleTypeDef *hfdcan2);
 

@@ -1,0 +1,508 @@
+name: bms_east
+subscribe:
+
+publish:
+  - name: bms_status_east
+    id: 0x20
+    signals:
+      - name: bms_state
+        slice: 0 + 3
+        unit:
+          type: enum
+          values:
+            - CHARGING_IDLE
+            - CHARGING_ACTIVE
+            - BALANCING
+            - ACTIVE
+            - IDLE
+            - FAULTED
+            - SURVIVAL
+
+      - name: bms_faults
+        slice: 3 + 15
+        unit:
+          type: uint16_t
+          name: 
+          # Bitfield definition:
+          # 0  - CAN error
+          # 1  - Loop timing overrun
+          # 2  - ADBMS comms fault
+          # 3  - ADBMS die over temperature
+          # 4  - ADBMS PEC Error
+          # 5  - Mux fault
+          # 6  - Cell under temp
+          # 7  - Cell over temp
+          # 8  - Cell undervoltage
+          # 9  - Cell overvoltage
+          # 10 - Open wire
+          # 11 - Current sense fault
+          # 12 - Overcurrent
+          # 13 - 3.3V brownout
+          # 14 - 5V brownout
+
+      - name: pack_voltage
+        slice: 18 + 16
+        unit:
+          type: uint16_t
+          name: V
+          minimum: 0.0
+          maximum: 70.0
+
+      - name: pack_current
+        slice: 34 + 10
+        unit:
+          type: int16_t
+          name: A
+          minimum: -150.0
+          maximum: 400.0
+
+      - name: balancing_mask
+        slice: 44 + 14
+        unit:
+          type: uint16_t
+          #Bit is set to 1 if that cell is currently balancing, 0 if not
+
+
+  - name: bms_temp_metrics_east
+    id: 0x21
+    signals:
+      - name: max_current_cell_temp
+        slice: 0 + 10
+        unit:
+          type: uint16_t
+          name: C
+          minimum: -20.0
+          maximum: 120
+
+
+      - name: min_current_cell_temp
+        slice: 10 + 10
+        unit:
+          type: uint16_t
+          name: C
+          minimum: -20.0
+          maximum: 120
+
+      - name: max_cell_temp_ever
+        slice: 20 + 10
+        unit:
+          type: uint16_t
+          name: C
+          minimum: -20.0
+          maximum: 120
+
+      - name: min_cell_temp_ever
+        slice: 30 + 10
+        unit:
+          type: uint16_t
+          name: C
+          minimum: -20.0
+          maximum: 120
+
+      - name: temp_threshold_high
+        slice: 40 + 10
+        unit:
+          type: uint16_t
+          name: C
+          minimum: -20.0
+          maximum: 120
+
+      - name: temp_threshold_low
+        slice: 50 + 10
+        unit:
+          type: uint16_t
+          name: C
+          minimum: -20.0
+          maximum: 120
+
+
+  - name: bms_voltage_metrics_east
+    id: 0x22
+    signals:
+      - name: max_cell_voltage
+        slice: 0 + 12
+        unit:
+          type: uint16_t
+          name: V
+          minimum: 0
+          maximum: 5
+
+      - name: min_cell_voltage
+        slice: 12 + 12
+        unit:
+          type: uint16_t
+          name: V
+          minimum: 0
+          maximum: 5
+
+      - name: cell_voltage_threshold_high
+        slice: 24 + 12
+        unit:
+          type: uint16_t
+          name: V
+          minimum: 0
+          maximum: 5
+
+      - name: cell_voltage_threshold_low
+        slice: 36 + 12
+        unit:
+          type: uint16_t
+          name: V
+          minimum: 0
+          maximum: 5
+
+      - name: charger_target_voltage
+        slice: 48 + 12
+        unit:
+          type: uint16_t
+          name: V
+          minimum: 0
+          maximum: 70
+
+
+  - name: cell_voltages_0_east
+    id: 0x23
+    signals:
+      - name: cell_1
+        slice: 0 + 12
+        unit:
+          type: uint16_t
+          name: V
+          minimum: 0
+          maximum: 5
+      - name: cell_2
+        slice: 12 + 12
+        unit:
+          type: uint16_t
+          name: V
+          minimum: 0
+          maximum: 5
+      - name: cell_3
+        slice: 24 + 12
+        unit:
+          type: uint16_t
+          name: V
+          minimum: 0
+          maximum: 5
+      - name: cell_4
+        slice: 36 + 12
+        unit:
+          type: uint16_t
+          name: V
+          minimum: 0
+          maximum: 5
+      - name: cell_5
+        slice: 48 + 12
+        unit:
+          type: uint16_t
+          name: V
+          minimum: 0
+          maximum: 5
+
+
+  - name: cell_voltages_1_east
+    id: 0x24
+    signals:
+      - name: cell_6
+        slice: 0 + 12
+        unit:
+          type: uint16_t
+          name: V
+          minimum: 0
+          maximum: 5
+      - name: cell_7
+        slice: 12 + 12
+        unit:
+          type: uint16_t
+          name: V
+          minimum: 0
+          maximum: 5
+      - name: cell_8
+        slice: 24 + 12
+        unit:
+          type: uint16_t
+          name: V
+          minimum: 0
+          maximum: 5
+      - name: cell_9
+        slice: 36 + 12
+        unit:
+          type: uint16_t
+          name: V
+          minimum: 0
+          maximum: 5
+      - name: cell_10
+        slice: 48 + 12
+        unit:
+          type: uint16_t
+          name: V
+          minimum: 0
+          maximum: 5
+
+
+  - name: cell_voltages_2_east
+    id: 0x25
+    signals:
+      - name: cell_11
+        slice: 0 + 12
+        unit:
+          type: uint16_t
+          name: V
+          minimum: 0
+          maximum: 5
+      - name: cell_12
+        slice: 12 + 12
+        unit:
+          type: uint16_t
+          name: V
+          minimum: 0
+          maximum: 5
+      - name: cell_13
+        slice: 24 + 12
+        unit:
+          type: uint16_t
+          name: V
+          minimum: 0
+          maximum: 5
+      - name: cell_14
+        slice: 36 + 12
+        unit:
+          type: uint16_t
+          name: V
+          minimum: 0
+          maximum: 5
+
+
+  - name: thermistors_0_east
+    id: 0x26
+    signals:
+      - name: thermistor_1
+        slice: 0 + 10
+        unit:
+          type: uint16_t
+          name: C
+          minimum: -20.0
+          maximum: 120
+      - name: thermistor_2
+        slice: 10 + 10
+        unit:
+          type: uint16_t
+          name: C
+          minimum: -20.0
+          maximum: 120
+      - name: thermistor_3
+        slice: 20 + 10
+        unit:
+          type: uint16_t
+          name: C
+          minimum: -20.0
+          maximum: 120
+      - name: thermistor_4
+        slice: 30 + 10
+        unit:
+          type: uint16_t
+          name: C
+          minimum: -20.0
+          maximum: 120
+      - name: thermistor_5
+        slice: 40 + 10
+        unit:
+          type: uint16_t
+          name: C
+          minimum: -20.0
+          maximum: 120
+      - name: thermistor_6
+        slice: 50 + 10
+        unit:
+          type: uint16_t
+          name: C
+          minimum: -20.0
+          maximum: 120
+
+
+  - name: thermistors_1_east
+    id: 0x27
+    signals:
+      - name: thermistor_7
+        slice: 0 + 10
+        unit:
+          type: uint16_t
+          name: C
+          minimum: -20.0
+          maximum: 120     
+      - name: thermistor_8
+        slice: 10 + 10
+        unit:
+          type: uint16_t
+          name: C
+          minimum: -20.0
+          maximum: 120
+      - name: thermistor_9
+        slice: 20 + 10
+        unit:
+          type: uint16_t
+          name: C
+          minimum: -20.0
+          maximum: 120
+      - name: thermistor_10
+        slice: 30 + 10
+        unit:
+          type: uint16_t
+          name: C
+          minimum: -20.0
+          maximum: 120
+      - name: thermistor_11
+        slice: 40 + 10
+        unit:
+          type: uint16_t
+          name: C
+          minimum: -20.0
+          maximum: 120
+      - name: thermistor_12
+        slice: 50 + 10
+        unit:
+          type: uint16_t
+          name: C
+          minimum: -20.0
+          maximum: 120
+
+
+  - name: thermistors_2_east
+    id: 0x28
+    signals:
+      - name: thermistor_13
+        slice: 0 + 10
+        unit:
+          type: uint16_t
+          name: C
+          minimum: -20.0
+          maximum: 120      
+      - name: thermistor_14
+        slice: 10 + 10
+        unit:
+          type: uint16_t
+          name: C
+          minimum: -20.0
+          maximum: 120
+      - name: thermistor_15
+        slice: 20 + 10
+        unit:
+          type: uint16_t
+          name: C
+          minimum: -20.0
+          maximum: 120
+      - name: thermistor_16
+        slice: 30 + 10
+        unit:
+          type: uint16_t
+          name: C
+          minimum: -20.0
+          maximum: 120
+      - name: thermistor_17
+        slice: 40 + 10
+        unit:
+          type: uint16_t
+          name: C
+          minimum: -20.0
+          maximum: 120
+      - name: thermistor_18
+        slice: 50 + 10
+        unit:
+          type: uint16_t
+          name: C
+          minimum: -20.0
+          maximum: 120
+
+
+  - name: thermistors_3_east
+    id: 0x29
+    signals:
+      - name: thermistor_19
+        slice: 0 + 10
+        unit:
+          type: uint16_t
+          name: C
+          minimum: -20.0
+          maximum: 120      
+      - name: thermistor_20
+        slice: 10 + 10
+        unit:
+          type: uint16_t
+          name: C
+          minimum: -20.0
+          maximum: 120
+      - name: thermistor_21
+        slice: 20 + 10
+        unit:
+          type: uint16_t
+          name: C
+          minimum: -20.0
+          maximum: 120
+      - name: thermistor_22
+        slice: 30 + 10
+        unit:
+          type: uint16_t
+          name: C
+          minimum: -20.0
+          maximum: 120
+      - name: thermistor_23
+        slice: 40 + 10
+        unit:
+          type: uint16_t
+          name: C
+          minimum: -20.0
+          maximum: 120
+      - name: thermistor_24
+        slice: 50 + 10
+        unit:
+          type: uint16_t
+          name: C
+          minimum: -20.0
+          maximum: 120
+
+
+  - name: thermistors_4_east
+    id: 0x2A
+    signals:
+      - name: thermistor_25
+        slice: 0 + 10
+        unit:
+          type: uint16_t
+          name: C
+          minimum: -20.0
+          maximum: 120    
+      - name: thermistor_26
+        slice: 10 + 10
+        unit:
+          type: uint16_t
+          name: C
+          minimum: -20.0
+          maximum: 120
+      - name: thermistor_27
+        slice: 20 + 10
+        unit:
+          type: uint16_t
+          name: C
+          minimum: -20.0
+          maximum: 120
+      - name: thermistor_28
+        slice: 30 + 10
+        unit:
+          type: uint16_t
+          name: C
+          minimum: -20.0
+          maximum: 120
+      - name: thermistor_29
+        slice: 40 + 10
+        unit:
+          type: uint16_t
+          name: C
+          minimum: -20.0
+          maximum: 120
+      - name: thermistor_30
+        slice: 50 + 10
+        unit:
+          type: uint16_t
+          name: C
+          minimum: -20.0
+          maximum: 120

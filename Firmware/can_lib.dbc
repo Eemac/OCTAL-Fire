@@ -33,7 +33,7 @@ NS_ :
 
 BS_:
 
-BU_: ESC bms_a core charger
+BU_: ESC bms_north bms_east bms_south bms_west core charger
 
 
 BO_ 2672710145 msg1: 7 ESC
@@ -83,14 +83,14 @@ BO_ 2152629249 thrust: 8 ESC
  SG_ b2 : 8|8@1+ (1,0) [0|255] "tcode"  ESC
  SG_ b1 : 0|8@1+ (1,0) [0|255] "tcode"  ESC
 
-BO_ 16 bms_status_a: 8 bms_a
+BO_ 16 bms_status_north: 8 bms_north
  SG_ balancing_mask : 44|14@1+ (1,0) [0|0] "" Vector__XXX
  SG_ pack_current : 34|10@1- (1,0) [-150.0|400.0] "" Vector__XXX
  SG_ pack_voltage : 18|16@1+ (1,0) [0.0|70.0] "" Vector__XXX
  SG_ bms_faults : 3|15@1+ (1,0) [0|0] "" Vector__XXX
  SG_ bms_state : 0|3@1+ (1,0) [0|0] "" Vector__XXX
 
-BO_ 17 bms_temp_metrics_a: 8 bms_a
+BO_ 17 bms_temp_metrics_north: 8 bms_north
  SG_ temp_threshold_low : 50|10@1+ (1,0) [-20.0|120] "" Vector__XXX
  SG_ temp_threshold_high : 40|10@1+ (1,0) [-20.0|120] "" Vector__XXX
  SG_ min_cell_temp_ever : 30|10@1+ (1,0) [-20.0|120] "" Vector__XXX
@@ -98,34 +98,34 @@ BO_ 17 bms_temp_metrics_a: 8 bms_a
  SG_ min_current_cell_temp : 10|10@1+ (1,0) [-20.0|120] "" Vector__XXX
  SG_ max_current_cell_temp : 0|10@1+ (1,0) [-20.0|120] "" Vector__XXX
 
-BO_ 18 bms_voltage_metrics_a: 8 bms_a
+BO_ 18 bms_voltage_metrics_north: 8 bms_north
  SG_ charger_target_voltage : 48|12@1+ (1,0) [0|70] "" Vector__XXX
  SG_ cell_voltage_threshold_low : 36|12@1+ (1,0) [0|5] "" Vector__XXX
  SG_ cell_voltage_threshold_high : 24|12@1+ (1,0) [0|5] "" Vector__XXX
  SG_ min_cell_voltage : 12|12@1+ (1,0) [0|5] "" Vector__XXX
  SG_ max_cell_voltage : 0|12@1+ (1,0) [0|5] "" Vector__XXX
 
-BO_ 19 cell_voltages_0_a: 8 bms_a
+BO_ 19 cell_voltages_0_north: 8 bms_north
  SG_ cell_5 : 48|12@1+ (1,0) [0|5] "" Vector__XXX
  SG_ cell_4 : 36|12@1+ (1,0) [0|5] "" Vector__XXX
  SG_ cell_3 : 24|12@1+ (1,0) [0|5] "" Vector__XXX
  SG_ cell_2 : 12|12@1+ (1,0) [0|5] "" Vector__XXX
  SG_ cell_1 : 0|12@1+ (1,0) [0|5] "" Vector__XXX
 
-BO_ 20 cell_voltages_1_a: 8 bms_a
+BO_ 20 cell_voltages_1_north: 8 bms_north
  SG_ cell_10 : 48|12@1+ (1,0) [0|5] "" Vector__XXX
  SG_ cell_9 : 36|12@1+ (1,0) [0|5] "" Vector__XXX
  SG_ cell_8 : 24|12@1+ (1,0) [0|5] "" Vector__XXX
  SG_ cell_7 : 12|12@1+ (1,0) [0|5] "" Vector__XXX
  SG_ cell_6 : 0|12@1+ (1,0) [0|5] "" Vector__XXX
 
-BO_ 21 cell_voltages_2_a: 6 bms_a
+BO_ 21 cell_voltages_2_north: 6 bms_north
  SG_ cell_14 : 36|12@1+ (1,0) [0|5] "" Vector__XXX
  SG_ cell_13 : 24|12@1+ (1,0) [0|5] "" Vector__XXX
  SG_ cell_12 : 12|12@1+ (1,0) [0|5] "" Vector__XXX
  SG_ cell_11 : 0|12@1+ (1,0) [0|5] "" Vector__XXX
 
-BO_ 22 thermistors_0_a: 8 bms_a
+BO_ 22 thermistors_0_north: 8 bms_north
  SG_ thermistor_6 : 50|10@1+ (1,0) [-20.0|120] "" Vector__XXX
  SG_ thermistor_5 : 40|10@1+ (1,0) [-20.0|120] "" Vector__XXX
  SG_ thermistor_4 : 30|10@1+ (1,0) [-20.0|120] "" Vector__XXX
@@ -133,7 +133,7 @@ BO_ 22 thermistors_0_a: 8 bms_a
  SG_ thermistor_2 : 10|10@1+ (1,0) [-20.0|120] "" Vector__XXX
  SG_ thermistor_1 : 0|10@1+ (1,0) [-20.0|120] "" Vector__XXX
 
-BO_ 23 thermistors_1_a: 8 bms_a
+BO_ 23 thermistors_1_north: 8 bms_north
  SG_ thermistor_12 : 50|10@1+ (1,0) [-20.0|120] "" Vector__XXX
  SG_ thermistor_11 : 40|10@1+ (1,0) [-20.0|120] "" Vector__XXX
  SG_ thermistor_10 : 30|10@1+ (1,0) [-20.0|120] "" Vector__XXX
@@ -141,7 +141,7 @@ BO_ 23 thermistors_1_a: 8 bms_a
  SG_ thermistor_8 : 10|10@1+ (1,0) [-20.0|120] "" Vector__XXX
  SG_ thermistor_7 : 0|10@1+ (1,0) [-20.0|120] "" Vector__XXX
 
-BO_ 24 thermistors_2_a: 8 bms_a
+BO_ 24 thermistors_2_north: 8 bms_north
  SG_ thermistor_18 : 50|10@1+ (1,0) [-20.0|120] "" Vector__XXX
  SG_ thermistor_17 : 40|10@1+ (1,0) [-20.0|120] "" Vector__XXX
  SG_ thermistor_16 : 30|10@1+ (1,0) [-20.0|120] "" Vector__XXX
@@ -149,7 +149,7 @@ BO_ 24 thermistors_2_a: 8 bms_a
  SG_ thermistor_14 : 10|10@1+ (1,0) [-20.0|120] "" Vector__XXX
  SG_ thermistor_13 : 0|10@1+ (1,0) [-20.0|120] "" Vector__XXX
 
-BO_ 25 thermistors_3_a: 8 bms_a
+BO_ 25 thermistors_3_north: 8 bms_north
  SG_ thermistor_24 : 50|10@1+ (1,0) [-20.0|120] "" Vector__XXX
  SG_ thermistor_23 : 40|10@1+ (1,0) [-20.0|120] "" Vector__XXX
  SG_ thermistor_22 : 30|10@1+ (1,0) [-20.0|120] "" Vector__XXX
@@ -157,7 +157,7 @@ BO_ 25 thermistors_3_a: 8 bms_a
  SG_ thermistor_20 : 10|10@1+ (1,0) [-20.0|120] "" Vector__XXX
  SG_ thermistor_19 : 0|10@1+ (1,0) [-20.0|120] "" Vector__XXX
 
-BO_ 26 thermistors_4_a: 8 bms_a
+BO_ 26 thermistors_4_north: 8 bms_north
  SG_ thermistor_30 : 50|10@1+ (1,0) [-20.0|120] "" Vector__XXX
  SG_ thermistor_29 : 40|10@1+ (1,0) [-20.0|120] "" Vector__XXX
  SG_ thermistor_28 : 30|10@1+ (1,0) [-20.0|120] "" Vector__XXX
@@ -165,8 +165,257 @@ BO_ 26 thermistors_4_a: 8 bms_a
  SG_ thermistor_26 : 10|10@1+ (1,0) [-20.0|120] "" Vector__XXX
  SG_ thermistor_25 : 0|10@1+ (1,0) [-20.0|120] "" Vector__XXX
 
-BO_ 512 core_status: 1 core
+BO_ 32 bms_status_east: 8 bms_east
+ SG_ balancing_mask : 44|14@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ pack_current : 34|10@1- (1,0) [-150.0|400.0] "" Vector__XXX
+ SG_ pack_voltage : 18|16@1+ (1,0) [0.0|70.0] "" Vector__XXX
+ SG_ bms_faults : 3|15@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ bms_state : 0|3@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 33 bms_temp_metrics_east: 8 bms_east
+ SG_ temp_threshold_low : 50|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ temp_threshold_high : 40|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ min_cell_temp_ever : 30|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ max_cell_temp_ever : 20|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ min_current_cell_temp : 10|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ max_current_cell_temp : 0|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+
+BO_ 34 bms_voltage_metrics_east: 8 bms_east
+ SG_ charger_target_voltage : 48|12@1+ (1,0) [0|70] "" Vector__XXX
+ SG_ cell_voltage_threshold_low : 36|12@1+ (1,0) [0|5] "" Vector__XXX
+ SG_ cell_voltage_threshold_high : 24|12@1+ (1,0) [0|5] "" Vector__XXX
+ SG_ min_cell_voltage : 12|12@1+ (1,0) [0|5] "" Vector__XXX
+ SG_ max_cell_voltage : 0|12@1+ (1,0) [0|5] "" Vector__XXX
+
+BO_ 35 cell_voltages_0_east: 8 bms_east
+ SG_ cell_5 : 48|12@1+ (1,0) [0|5] "" Vector__XXX
+ SG_ cell_4 : 36|12@1+ (1,0) [0|5] "" Vector__XXX
+ SG_ cell_3 : 24|12@1+ (1,0) [0|5] "" Vector__XXX
+ SG_ cell_2 : 12|12@1+ (1,0) [0|5] "" Vector__XXX
+ SG_ cell_1 : 0|12@1+ (1,0) [0|5] "" Vector__XXX
+
+BO_ 36 cell_voltages_1_east: 8 bms_east
+ SG_ cell_10 : 48|12@1+ (1,0) [0|5] "" Vector__XXX
+ SG_ cell_9 : 36|12@1+ (1,0) [0|5] "" Vector__XXX
+ SG_ cell_8 : 24|12@1+ (1,0) [0|5] "" Vector__XXX
+ SG_ cell_7 : 12|12@1+ (1,0) [0|5] "" Vector__XXX
+ SG_ cell_6 : 0|12@1+ (1,0) [0|5] "" Vector__XXX
+
+BO_ 37 cell_voltages_2_east: 6 bms_east
+ SG_ cell_14 : 36|12@1+ (1,0) [0|5] "" Vector__XXX
+ SG_ cell_13 : 24|12@1+ (1,0) [0|5] "" Vector__XXX
+ SG_ cell_12 : 12|12@1+ (1,0) [0|5] "" Vector__XXX
+ SG_ cell_11 : 0|12@1+ (1,0) [0|5] "" Vector__XXX
+
+BO_ 38 thermistors_0_east: 8 bms_east
+ SG_ thermistor_6 : 50|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_5 : 40|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_4 : 30|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_3 : 20|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_2 : 10|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_1 : 0|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+
+BO_ 39 thermistors_1_east: 8 bms_east
+ SG_ thermistor_12 : 50|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_11 : 40|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_10 : 30|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_9 : 20|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_8 : 10|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_7 : 0|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+
+BO_ 40 thermistors_2_east: 8 bms_east
+ SG_ thermistor_18 : 50|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_17 : 40|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_16 : 30|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_15 : 20|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_14 : 10|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_13 : 0|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+
+BO_ 41 thermistors_3_east: 8 bms_east
+ SG_ thermistor_24 : 50|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_23 : 40|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_22 : 30|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_21 : 20|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_20 : 10|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_19 : 0|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+
+BO_ 42 thermistors_4_east: 8 bms_east
+ SG_ thermistor_30 : 50|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_29 : 40|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_28 : 30|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_27 : 20|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_26 : 10|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_25 : 0|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+
+BO_ 48 bms_status_south: 8 bms_south
+ SG_ balancing_mask : 44|14@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ pack_current : 34|10@1- (1,0) [-150.0|400.0] "" Vector__XXX
+ SG_ pack_voltage : 18|16@1+ (1,0) [0.0|70.0] "" Vector__XXX
+ SG_ bms_faults : 3|15@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ bms_state : 0|3@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 49 bms_temp_metrics_south: 8 bms_south
+ SG_ temp_threshold_low : 50|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ temp_threshold_high : 40|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ min_cell_temp_ever : 30|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ max_cell_temp_ever : 20|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ min_current_cell_temp : 10|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ max_current_cell_temp : 0|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+
+BO_ 50 bms_voltage_metrics_south: 8 bms_south
+ SG_ charger_target_voltage : 48|12@1+ (1,0) [0|70] "" Vector__XXX
+ SG_ cell_voltage_threshold_low : 36|12@1+ (1,0) [0|5] "" Vector__XXX
+ SG_ cell_voltage_threshold_high : 24|12@1+ (1,0) [0|5] "" Vector__XXX
+ SG_ min_cell_voltage : 12|12@1+ (1,0) [0|5] "" Vector__XXX
+ SG_ max_cell_voltage : 0|12@1+ (1,0) [0|5] "" Vector__XXX
+
+BO_ 51 cell_voltages_0_south: 8 bms_south
+ SG_ cell_5 : 48|12@1+ (1,0) [0|5] "" Vector__XXX
+ SG_ cell_4 : 36|12@1+ (1,0) [0|5] "" Vector__XXX
+ SG_ cell_3 : 24|12@1+ (1,0) [0|5] "" Vector__XXX
+ SG_ cell_2 : 12|12@1+ (1,0) [0|5] "" Vector__XXX
+ SG_ cell_1 : 0|12@1+ (1,0) [0|5] "" Vector__XXX
+
+BO_ 52 cell_voltages_1_south: 8 bms_south
+ SG_ cell_10 : 48|12@1+ (1,0) [0|5] "" Vector__XXX
+ SG_ cell_9 : 36|12@1+ (1,0) [0|5] "" Vector__XXX
+ SG_ cell_8 : 24|12@1+ (1,0) [0|5] "" Vector__XXX
+ SG_ cell_7 : 12|12@1+ (1,0) [0|5] "" Vector__XXX
+ SG_ cell_6 : 0|12@1+ (1,0) [0|5] "" Vector__XXX
+
+BO_ 53 cell_voltages_2_south: 6 bms_south
+ SG_ cell_14 : 36|12@1+ (1,0) [0|5] "" Vector__XXX
+ SG_ cell_13 : 24|12@1+ (1,0) [0|5] "" Vector__XXX
+ SG_ cell_12 : 12|12@1+ (1,0) [0|5] "" Vector__XXX
+ SG_ cell_11 : 0|12@1+ (1,0) [0|5] "" Vector__XXX
+
+BO_ 54 thermistors_0_south: 8 bms_south
+ SG_ thermistor_6 : 50|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_5 : 40|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_4 : 30|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_3 : 20|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_2 : 10|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_1 : 0|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+
+BO_ 55 thermistors_1_south: 8 bms_south
+ SG_ thermistor_12 : 50|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_11 : 40|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_10 : 30|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_9 : 20|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_8 : 10|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_7 : 0|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+
+BO_ 56 thermistors_2_south: 8 bms_south
+ SG_ thermistor_18 : 50|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_17 : 40|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_16 : 30|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_15 : 20|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_14 : 10|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_13 : 0|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+
+BO_ 57 thermistors_3_south: 8 bms_south
+ SG_ thermistor_24 : 50|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_23 : 40|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_22 : 30|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_21 : 20|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_20 : 10|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_19 : 0|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+
+BO_ 58 thermistors_4_south: 8 bms_south
+ SG_ thermistor_30 : 50|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_29 : 40|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_28 : 30|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_27 : 20|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_26 : 10|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_25 : 0|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+
+BO_ 64 bms_status_west: 8 bms_west
+ SG_ balancing_mask : 44|14@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ pack_current : 34|10@1- (1,0) [-150.0|400.0] "" Vector__XXX
+ SG_ pack_voltage : 18|16@1+ (1,0) [0.0|70.0] "" Vector__XXX
+ SG_ bms_faults : 3|15@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ bms_state : 0|3@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 65 bms_temp_metrics_west: 8 bms_west
+ SG_ temp_threshold_low : 50|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ temp_threshold_high : 40|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ min_cell_temp_ever : 30|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ max_cell_temp_ever : 20|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ min_current_cell_temp : 10|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ max_current_cell_temp : 0|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+
+BO_ 66 bms_voltage_metrics_west: 8 bms_west
+ SG_ charger_target_voltage : 48|12@1+ (1,0) [0|70] "" Vector__XXX
+ SG_ cell_voltage_threshold_low : 36|12@1+ (1,0) [0|5] "" Vector__XXX
+ SG_ cell_voltage_threshold_high : 24|12@1+ (1,0) [0|5] "" Vector__XXX
+ SG_ min_cell_voltage : 12|12@1+ (1,0) [0|5] "" Vector__XXX
+ SG_ max_cell_voltage : 0|12@1+ (1,0) [0|5] "" Vector__XXX
+
+BO_ 67 cell_voltages_0_west: 8 bms_west
+ SG_ cell_5 : 48|12@1+ (1,0) [0|5] "" Vector__XXX
+ SG_ cell_4 : 36|12@1+ (1,0) [0|5] "" Vector__XXX
+ SG_ cell_3 : 24|12@1+ (1,0) [0|5] "" Vector__XXX
+ SG_ cell_2 : 12|12@1+ (1,0) [0|5] "" Vector__XXX
+ SG_ cell_1 : 0|12@1+ (1,0) [0|5] "" Vector__XXX
+
+BO_ 68 cell_voltages_1_west: 8 bms_west
+ SG_ cell_10 : 48|12@1+ (1,0) [0|5] "" Vector__XXX
+ SG_ cell_9 : 36|12@1+ (1,0) [0|5] "" Vector__XXX
+ SG_ cell_8 : 24|12@1+ (1,0) [0|5] "" Vector__XXX
+ SG_ cell_7 : 12|12@1+ (1,0) [0|5] "" Vector__XXX
+ SG_ cell_6 : 0|12@1+ (1,0) [0|5] "" Vector__XXX
+
+BO_ 69 cell_voltages_2_west: 6 bms_west
+ SG_ cell_14 : 36|12@1+ (1,0) [0|5] "" Vector__XXX
+ SG_ cell_13 : 24|12@1+ (1,0) [0|5] "" Vector__XXX
+ SG_ cell_12 : 12|12@1+ (1,0) [0|5] "" Vector__XXX
+ SG_ cell_11 : 0|12@1+ (1,0) [0|5] "" Vector__XXX
+
+BO_ 70 thermistors_0_west: 8 bms_west
+ SG_ thermistor_6 : 50|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_5 : 40|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_4 : 30|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_3 : 20|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_2 : 10|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_1 : 0|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+
+BO_ 71 thermistors_1_west: 8 bms_west
+ SG_ thermistor_12 : 50|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_11 : 40|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_10 : 30|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_9 : 20|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_8 : 10|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_7 : 0|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+
+BO_ 72 thermistors_2_west: 8 bms_west
+ SG_ thermistor_18 : 50|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_17 : 40|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_16 : 30|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_15 : 20|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_14 : 10|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_13 : 0|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+
+BO_ 73 thermistors_3_west: 8 bms_west
+ SG_ thermistor_24 : 50|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_23 : 40|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_22 : 30|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_21 : 20|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_20 : 10|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_19 : 0|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+
+BO_ 74 thermistors_4_west: 8 bms_west
+ SG_ thermistor_30 : 50|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_29 : 40|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_28 : 30|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_27 : 20|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_26 : 10|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+ SG_ thermistor_25 : 0|10@1+ (1,0) [-20.0|120] "" Vector__XXX
+
+BO_ 1 core_status: 1 core
  SG_ core_state : 0|3@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2 core_batt_ctrl: 1 core
+ SG_ batt_ctrl : 3|2@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 256 charger_status: 6 charger
  SG_ output_current : 35|10@1+ (1,0) [0.0|100.0] "" Vector__XXX

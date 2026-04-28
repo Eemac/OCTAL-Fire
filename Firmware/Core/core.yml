@@ -1,13 +1,7 @@
 name: core
 subscribe:
-  - name: bms_status_n
-  - name: bms_voltage_metrics_n
-  - name: bms_status_e
-  - name: bms_voltage_metrics_e
-  - name: bms_status_s
-  - name: bms_voltage_metrics_s
-  - name: bms_status_w
-  - name: bms_voltage_metrics_w
+  - name: bms_status_north
+  - name: bms_voltage_metrics_north
 
 publish:
   - name: core_status
@@ -25,19 +19,12 @@ publish:
   - name: core_batt_ctrl
     id: 0x2
     signals:
-      - name: north
-        slice: 3 + 1
+      - name: batt_ctrl
+        slice: 3 + 2
         unit:
-          type: bool
-      - name: east
-        slice: 4 + 1
-        unit:
-          type: bool
-      - name: west
-        slice: 5 + 1
-        unit:
-          type: bool
-      - name: south
-        slice: 6 + 1
-        unit:
-          type: bool
+          type: enum
+          values:
+            - NORTH
+            - EAST
+            - WEST
+            - SOUTH

@@ -38,163 +38,163 @@ enum bms_state_e {
 
 
 /*
- * Initialize the bms_a CAN peripheral
+ * Initialize the bms_west CAN peripheral
  */
-void can_init_bms_a(FDCAN_HandleTypeDef *fdcan2);
+void can_init_bms_west(FDCAN_HandleTypeDef *fdcan2);
 
 
-extern uint8_t bms_status_a_data[];
-extern can_frame_t bms_status_a_msg;
-extern volatile struct can_lib_bms_status_a_t bms_status_a;
+extern uint8_t bms_status_west_data[];
+extern can_frame_t bms_status_west_msg;
+extern volatile struct can_lib_bms_status_west_t bms_status_west;
 
 /*
- * Send the bms_status_a message
+ * Send the bms_status_west message
  *
- * First it takes the data struct `bms_status_a_t` and packs it into an
- * array of bytes in bms_status_a_data, which is a part of the
+ * First it takes the data struct `bms_status_west_t` and packs it into an
+ * array of bytes in bms_status_west_data, which is a part of the
  * can_frame_t. Then the can_frame_t is sent.
  */
-void can_send_bms_status_a(FDCAN_HandleTypeDef *hfdcan2);
+void can_send_bms_status_west(FDCAN_HandleTypeDef *hfdcan2);
 
 
-extern uint8_t bms_temp_metrics_a_data[];
-extern can_frame_t bms_temp_metrics_a_msg;
-extern volatile struct can_lib_bms_temp_metrics_a_t bms_temp_metrics_a;
+extern uint8_t bms_temp_metrics_west_data[];
+extern can_frame_t bms_temp_metrics_west_msg;
+extern volatile struct can_lib_bms_temp_metrics_west_t bms_temp_metrics_west;
 
 /*
- * Send the bms_temp_metrics_a message
+ * Send the bms_temp_metrics_west message
  *
- * First it takes the data struct `bms_temp_metrics_a_t` and packs it into an
- * array of bytes in bms_temp_metrics_a_data, which is a part of the
+ * First it takes the data struct `bms_temp_metrics_west_t` and packs it into an
+ * array of bytes in bms_temp_metrics_west_data, which is a part of the
  * can_frame_t. Then the can_frame_t is sent.
  */
-void can_send_bms_temp_metrics_a(FDCAN_HandleTypeDef *hfdcan2);
+void can_send_bms_temp_metrics_west(FDCAN_HandleTypeDef *hfdcan2);
 
 
-extern uint8_t bms_voltage_metrics_a_data[];
-extern can_frame_t bms_voltage_metrics_a_msg;
-extern volatile struct can_lib_bms_voltage_metrics_a_t bms_voltage_metrics_a;
+extern uint8_t bms_voltage_metrics_west_data[];
+extern can_frame_t bms_voltage_metrics_west_msg;
+extern volatile struct can_lib_bms_voltage_metrics_west_t bms_voltage_metrics_west;
 
 /*
- * Send the bms_voltage_metrics_a message
+ * Send the bms_voltage_metrics_west message
  *
- * First it takes the data struct `bms_voltage_metrics_a_t` and packs it into an
- * array of bytes in bms_voltage_metrics_a_data, which is a part of the
+ * First it takes the data struct `bms_voltage_metrics_west_t` and packs it into an
+ * array of bytes in bms_voltage_metrics_west_data, which is a part of the
  * can_frame_t. Then the can_frame_t is sent.
  */
-void can_send_bms_voltage_metrics_a(FDCAN_HandleTypeDef *hfdcan2);
+void can_send_bms_voltage_metrics_west(FDCAN_HandleTypeDef *hfdcan2);
 
 
-extern uint8_t cell_voltages_0_a_data[];
-extern can_frame_t cell_voltages_0_a_msg;
-extern volatile struct can_lib_cell_voltages_0_a_t cell_voltages_0_a;
+extern uint8_t cell_voltages_0_west_data[];
+extern can_frame_t cell_voltages_0_west_msg;
+extern volatile struct can_lib_cell_voltages_0_west_t cell_voltages_0_west;
 
 /*
- * Send the cell_voltages_0_a message
+ * Send the cell_voltages_0_west message
  *
- * First it takes the data struct `cell_voltages_0_a_t` and packs it into an
- * array of bytes in cell_voltages_0_a_data, which is a part of the
+ * First it takes the data struct `cell_voltages_0_west_t` and packs it into an
+ * array of bytes in cell_voltages_0_west_data, which is a part of the
  * can_frame_t. Then the can_frame_t is sent.
  */
-void can_send_cell_voltages_0_a(FDCAN_HandleTypeDef *hfdcan2);
+void can_send_cell_voltages_0_west(FDCAN_HandleTypeDef *hfdcan2);
 
 
-extern uint8_t cell_voltages_1_a_data[];
-extern can_frame_t cell_voltages_1_a_msg;
-extern volatile struct can_lib_cell_voltages_1_a_t cell_voltages_1_a;
+extern uint8_t cell_voltages_1_west_data[];
+extern can_frame_t cell_voltages_1_west_msg;
+extern volatile struct can_lib_cell_voltages_1_west_t cell_voltages_1_west;
 
 /*
- * Send the cell_voltages_1_a message
+ * Send the cell_voltages_1_west message
  *
- * First it takes the data struct `cell_voltages_1_a_t` and packs it into an
- * array of bytes in cell_voltages_1_a_data, which is a part of the
+ * First it takes the data struct `cell_voltages_1_west_t` and packs it into an
+ * array of bytes in cell_voltages_1_west_data, which is a part of the
  * can_frame_t. Then the can_frame_t is sent.
  */
-void can_send_cell_voltages_1_a(FDCAN_HandleTypeDef *hfdcan2);
+void can_send_cell_voltages_1_west(FDCAN_HandleTypeDef *hfdcan2);
 
 
-extern uint8_t cell_voltages_2_a_data[];
-extern can_frame_t cell_voltages_2_a_msg;
-extern volatile struct can_lib_cell_voltages_2_a_t cell_voltages_2_a;
+extern uint8_t cell_voltages_2_west_data[];
+extern can_frame_t cell_voltages_2_west_msg;
+extern volatile struct can_lib_cell_voltages_2_west_t cell_voltages_2_west;
 
 /*
- * Send the cell_voltages_2_a message
+ * Send the cell_voltages_2_west message
  *
- * First it takes the data struct `cell_voltages_2_a_t` and packs it into an
- * array of bytes in cell_voltages_2_a_data, which is a part of the
+ * First it takes the data struct `cell_voltages_2_west_t` and packs it into an
+ * array of bytes in cell_voltages_2_west_data, which is a part of the
  * can_frame_t. Then the can_frame_t is sent.
  */
-void can_send_cell_voltages_2_a(FDCAN_HandleTypeDef *hfdcan2);
+void can_send_cell_voltages_2_west(FDCAN_HandleTypeDef *hfdcan2);
 
 
-extern uint8_t thermistors_0_a_data[];
-extern can_frame_t thermistors_0_a_msg;
-extern volatile struct can_lib_thermistors_0_a_t thermistors_0_a;
+extern uint8_t thermistors_0_west_data[];
+extern can_frame_t thermistors_0_west_msg;
+extern volatile struct can_lib_thermistors_0_west_t thermistors_0_west;
 
 /*
- * Send the thermistors_0_a message
+ * Send the thermistors_0_west message
  *
- * First it takes the data struct `thermistors_0_a_t` and packs it into an
- * array of bytes in thermistors_0_a_data, which is a part of the
+ * First it takes the data struct `thermistors_0_west_t` and packs it into an
+ * array of bytes in thermistors_0_west_data, which is a part of the
  * can_frame_t. Then the can_frame_t is sent.
  */
-void can_send_thermistors_0_a(FDCAN_HandleTypeDef *hfdcan2);
+void can_send_thermistors_0_west(FDCAN_HandleTypeDef *hfdcan2);
 
 
-extern uint8_t thermistors_1_a_data[];
-extern can_frame_t thermistors_1_a_msg;
-extern volatile struct can_lib_thermistors_1_a_t thermistors_1_a;
+extern uint8_t thermistors_1_west_data[];
+extern can_frame_t thermistors_1_west_msg;
+extern volatile struct can_lib_thermistors_1_west_t thermistors_1_west;
 
 /*
- * Send the thermistors_1_a message
+ * Send the thermistors_1_west message
  *
- * First it takes the data struct `thermistors_1_a_t` and packs it into an
- * array of bytes in thermistors_1_a_data, which is a part of the
+ * First it takes the data struct `thermistors_1_west_t` and packs it into an
+ * array of bytes in thermistors_1_west_data, which is a part of the
  * can_frame_t. Then the can_frame_t is sent.
  */
-void can_send_thermistors_1_a(FDCAN_HandleTypeDef *hfdcan2);
+void can_send_thermistors_1_west(FDCAN_HandleTypeDef *hfdcan2);
 
 
-extern uint8_t thermistors_2_a_data[];
-extern can_frame_t thermistors_2_a_msg;
-extern volatile struct can_lib_thermistors_2_a_t thermistors_2_a;
+extern uint8_t thermistors_2_west_data[];
+extern can_frame_t thermistors_2_west_msg;
+extern volatile struct can_lib_thermistors_2_west_t thermistors_2_west;
 
 /*
- * Send the thermistors_2_a message
+ * Send the thermistors_2_west message
  *
- * First it takes the data struct `thermistors_2_a_t` and packs it into an
- * array of bytes in thermistors_2_a_data, which is a part of the
+ * First it takes the data struct `thermistors_2_west_t` and packs it into an
+ * array of bytes in thermistors_2_west_data, which is a part of the
  * can_frame_t. Then the can_frame_t is sent.
  */
-void can_send_thermistors_2_a(FDCAN_HandleTypeDef *hfdcan2);
+void can_send_thermistors_2_west(FDCAN_HandleTypeDef *hfdcan2);
 
 
-extern uint8_t thermistors_3_a_data[];
-extern can_frame_t thermistors_3_a_msg;
-extern volatile struct can_lib_thermistors_3_a_t thermistors_3_a;
+extern uint8_t thermistors_3_west_data[];
+extern can_frame_t thermistors_3_west_msg;
+extern volatile struct can_lib_thermistors_3_west_t thermistors_3_west;
 
 /*
- * Send the thermistors_3_a message
+ * Send the thermistors_3_west message
  *
- * First it takes the data struct `thermistors_3_a_t` and packs it into an
- * array of bytes in thermistors_3_a_data, which is a part of the
+ * First it takes the data struct `thermistors_3_west_t` and packs it into an
+ * array of bytes in thermistors_3_west_data, which is a part of the
  * can_frame_t. Then the can_frame_t is sent.
  */
-void can_send_thermistors_3_a(FDCAN_HandleTypeDef *hfdcan2);
+void can_send_thermistors_3_west(FDCAN_HandleTypeDef *hfdcan2);
 
 
-extern uint8_t thermistors_4_a_data[];
-extern can_frame_t thermistors_4_a_msg;
-extern volatile struct can_lib_thermistors_4_a_t thermistors_4_a;
+extern uint8_t thermistors_4_west_data[];
+extern can_frame_t thermistors_4_west_msg;
+extern volatile struct can_lib_thermistors_4_west_t thermistors_4_west;
 
 /*
- * Send the thermistors_4_a message
+ * Send the thermistors_4_west message
  *
- * First it takes the data struct `thermistors_4_a_t` and packs it into an
- * array of bytes in thermistors_4_a_data, which is a part of the
+ * First it takes the data struct `thermistors_4_west_t` and packs it into an
+ * array of bytes in thermistors_4_west_data, which is a part of the
  * can_frame_t. Then the can_frame_t is sent.
  */
-void can_send_thermistors_4_a(FDCAN_HandleTypeDef *hfdcan2);
+void can_send_thermistors_4_west(FDCAN_HandleTypeDef *hfdcan2);
 
 
 
