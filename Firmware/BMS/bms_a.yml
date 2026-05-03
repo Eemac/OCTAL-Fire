@@ -22,7 +22,7 @@ publish:
         slice: 3 + 15
         unit:
           type: uint16_t
-          name: 
+          name: faults
           # Bitfield definition:
           # 0  - CAN error
           # 1  - Loop timing overrun
@@ -44,23 +44,24 @@ publish:
         slice: 18 + 16
         unit:
           type: uint16_t
-          name: V
-          minimum: 0.0
-          maximum: 70.0
+          name: 0.1V
+          minimum: 0
+          maximum: 700
 
       - name: pack_current
         slice: 34 + 10
         unit:
           type: int16_t
           name: A
-          minimum: -150.0
-          maximum: 400.0
+          minimum: -511
+          maximum: 511
 
       - name: balancing_mask
         slice: 44 + 14
         unit:
           type: uint16_t
-          #Bit is set to 1 if that cell is currently balancing, 0 if not
+          name: bitmask
+          # Bit is set to 1 if that cell is currently balancing, 0 if not
 
 
   - name: bms_temp_metrics_a
@@ -69,50 +70,49 @@ publish:
       - name: max_current_cell_temp
         slice: 0 + 10
         unit:
-          type: uint16_t
+          type: int16_t
           name: C
-          minimum: -20.0
+          minimum: -20
           maximum: 120
-
 
       - name: min_current_cell_temp
         slice: 10 + 10
         unit:
-          type: uint16_t
+          type: int16_t
           name: C
-          minimum: -20.0
+          minimum: -20
           maximum: 120
 
       - name: max_cell_temp_ever
         slice: 20 + 10
         unit:
-          type: uint16_t
+          type: int16_t
           name: C
-          minimum: -20.0
+          minimum: -20
           maximum: 120
 
       - name: min_cell_temp_ever
         slice: 30 + 10
         unit:
-          type: uint16_t
+          type: int16_t
           name: C
-          minimum: -20.0
+          minimum: -20
           maximum: 120
 
       - name: temp_threshold_high
         slice: 40 + 10
         unit:
-          type: uint16_t
+          type: int16_t
           name: C
-          minimum: -20.0
+          minimum: -20
           maximum: 120
 
       - name: temp_threshold_low
         slice: 50 + 10
         unit:
-          type: uint16_t
+          type: int16_t
           name: C
-          minimum: -20.0
+          minimum: -20
           maximum: 120
 
 
@@ -123,41 +123,41 @@ publish:
         slice: 0 + 12
         unit:
           type: uint16_t
-          name: V
+          name: 10mV
           minimum: 0
-          maximum: 5
+          maximum: 500
 
       - name: min_cell_voltage
         slice: 12 + 12
         unit:
           type: uint16_t
-          name: V
+          name: 10mV
           minimum: 0
-          maximum: 5
+          maximum: 500
 
       - name: cell_voltage_threshold_high
         slice: 24 + 12
         unit:
           type: uint16_t
-          name: V
+          name: 10mV
           minimum: 0
-          maximum: 5
+          maximum: 500
 
       - name: cell_voltage_threshold_low
         slice: 36 + 12
         unit:
           type: uint16_t
-          name: V
+          name: 10mV
           minimum: 0
-          maximum: 5
+          maximum: 500
 
       - name: charger_target_voltage
         slice: 48 + 12
         unit:
           type: uint16_t
-          name: V
+          name: 0.1V
           minimum: 0
-          maximum: 70
+          maximum: 700
 
 
   - name: cell_voltages_0_a
@@ -167,37 +167,37 @@ publish:
         slice: 0 + 12
         unit:
           type: uint16_t
-          name: V
+          name: 10mV
           minimum: 0
-          maximum: 5
+          maximum: 500
       - name: cell_2
         slice: 12 + 12
         unit:
           type: uint16_t
-          name: V
+          name: 10mV
           minimum: 0
-          maximum: 5
+          maximum: 500
       - name: cell_3
         slice: 24 + 12
         unit:
           type: uint16_t
-          name: V
+          name: 10mV
           minimum: 0
-          maximum: 5
+          maximum: 500
       - name: cell_4
         slice: 36 + 12
         unit:
           type: uint16_t
-          name: V
+          name: 10mV
           minimum: 0
-          maximum: 5
+          maximum: 500
       - name: cell_5
         slice: 48 + 12
         unit:
           type: uint16_t
-          name: V
+          name: 10mV
           minimum: 0
-          maximum: 5
+          maximum: 500
 
 
   - name: cell_voltages_1_a
@@ -207,37 +207,37 @@ publish:
         slice: 0 + 12
         unit:
           type: uint16_t
-          name: V
+          name: 10mV
           minimum: 0
-          maximum: 5
+          maximum: 500
       - name: cell_7
         slice: 12 + 12
         unit:
           type: uint16_t
-          name: V
+          name: 10mV
           minimum: 0
-          maximum: 5
+          maximum: 500
       - name: cell_8
         slice: 24 + 12
         unit:
           type: uint16_t
-          name: V
+          name: 10mV
           minimum: 0
-          maximum: 5
+          maximum: 500
       - name: cell_9
         slice: 36 + 12
         unit:
           type: uint16_t
-          name: V
+          name: 10mV
           minimum: 0
-          maximum: 5
+          maximum: 500
       - name: cell_10
         slice: 48 + 12
         unit:
           type: uint16_t
-          name: V
+          name: 10mV
           minimum: 0
-          maximum: 5
+          maximum: 500
 
 
   - name: cell_voltages_2_a
@@ -247,30 +247,30 @@ publish:
         slice: 0 + 12
         unit:
           type: uint16_t
-          name: V
+          name: 10mV
           minimum: 0
-          maximum: 5
+          maximum: 500
       - name: cell_12
         slice: 12 + 12
         unit:
           type: uint16_t
-          name: V
+          name: 10mV
           minimum: 0
-          maximum: 5
+          maximum: 500
       - name: cell_13
         slice: 24 + 12
         unit:
           type: uint16_t
-          name: V
+          name: 10mV
           minimum: 0
-          maximum: 5
+          maximum: 500
       - name: cell_14
         slice: 36 + 12
         unit:
           type: uint16_t
-          name: V
+          name: 10mV
           minimum: 0
-          maximum: 5
+          maximum: 500
 
 
   - name: thermistors_0_a
@@ -279,44 +279,44 @@ publish:
       - name: thermistor_1
         slice: 0 + 10
         unit:
-          type: uint16_t
+          type: int16_t
           name: C
-          minimum: -20.0
+          minimum: -20
           maximum: 120
       - name: thermistor_2
         slice: 10 + 10
         unit:
-          type: uint16_t
+          type: int16_t
           name: C
-          minimum: -20.0
+          minimum: -20
           maximum: 120
       - name: thermistor_3
         slice: 20 + 10
         unit:
-          type: uint16_t
+          type: int16_t
           name: C
-          minimum: -20.0
+          minimum: -20
           maximum: 120
       - name: thermistor_4
         slice: 30 + 10
         unit:
-          type: uint16_t
+          type: int16_t
           name: C
-          minimum: -20.0
+          minimum: -20
           maximum: 120
       - name: thermistor_5
         slice: 40 + 10
         unit:
-          type: uint16_t
+          type: int16_t
           name: C
-          minimum: -20.0
+          minimum: -20
           maximum: 120
       - name: thermistor_6
         slice: 50 + 10
         unit:
-          type: uint16_t
+          type: int16_t
           name: C
-          minimum: -20.0
+          minimum: -20
           maximum: 120
 
 
@@ -326,44 +326,44 @@ publish:
       - name: thermistor_7
         slice: 0 + 10
         unit:
-          type: uint16_t
+          type: int16_t
           name: C
-          minimum: -20.0
-          maximum: 120     
+          minimum: -20
+          maximum: 120
       - name: thermistor_8
         slice: 10 + 10
         unit:
-          type: uint16_t
+          type: int16_t
           name: C
-          minimum: -20.0
+          minimum: -20
           maximum: 120
       - name: thermistor_9
         slice: 20 + 10
         unit:
-          type: uint16_t
+          type: int16_t
           name: C
-          minimum: -20.0
+          minimum: -20
           maximum: 120
       - name: thermistor_10
         slice: 30 + 10
         unit:
-          type: uint16_t
+          type: int16_t
           name: C
-          minimum: -20.0
+          minimum: -20
           maximum: 120
       - name: thermistor_11
         slice: 40 + 10
         unit:
-          type: uint16_t
+          type: int16_t
           name: C
-          minimum: -20.0
+          minimum: -20
           maximum: 120
       - name: thermistor_12
         slice: 50 + 10
         unit:
-          type: uint16_t
+          type: int16_t
           name: C
-          minimum: -20.0
+          minimum: -20
           maximum: 120
 
 
@@ -373,44 +373,44 @@ publish:
       - name: thermistor_13
         slice: 0 + 10
         unit:
-          type: uint16_t
+          type: int16_t
           name: C
-          minimum: -20.0
-          maximum: 120      
+          minimum: -20
+          maximum: 120
       - name: thermistor_14
         slice: 10 + 10
         unit:
-          type: uint16_t
+          type: int16_t
           name: C
-          minimum: -20.0
+          minimum: -20
           maximum: 120
       - name: thermistor_15
         slice: 20 + 10
         unit:
-          type: uint16_t
+          type: int16_t
           name: C
-          minimum: -20.0
+          minimum: -20
           maximum: 120
       - name: thermistor_16
         slice: 30 + 10
         unit:
-          type: uint16_t
+          type: int16_t
           name: C
-          minimum: -20.0
+          minimum: -20
           maximum: 120
       - name: thermistor_17
         slice: 40 + 10
         unit:
-          type: uint16_t
+          type: int16_t
           name: C
-          minimum: -20.0
+          minimum: -20
           maximum: 120
       - name: thermistor_18
         slice: 50 + 10
         unit:
-          type: uint16_t
+          type: int16_t
           name: C
-          minimum: -20.0
+          minimum: -20
           maximum: 120
 
 
@@ -420,44 +420,44 @@ publish:
       - name: thermistor_19
         slice: 0 + 10
         unit:
-          type: uint16_t
+          type: int16_t
           name: C
-          minimum: -20.0
-          maximum: 120      
+          minimum: -20
+          maximum: 120
       - name: thermistor_20
         slice: 10 + 10
         unit:
-          type: uint16_t
+          type: int16_t
           name: C
-          minimum: -20.0
+          minimum: -20
           maximum: 120
       - name: thermistor_21
         slice: 20 + 10
         unit:
-          type: uint16_t
+          type: int16_t
           name: C
-          minimum: -20.0
+          minimum: -20
           maximum: 120
       - name: thermistor_22
         slice: 30 + 10
         unit:
-          type: uint16_t
+          type: int16_t
           name: C
-          minimum: -20.0
+          minimum: -20
           maximum: 120
       - name: thermistor_23
         slice: 40 + 10
         unit:
-          type: uint16_t
+          type: int16_t
           name: C
-          minimum: -20.0
+          minimum: -20
           maximum: 120
       - name: thermistor_24
         slice: 50 + 10
         unit:
-          type: uint16_t
+          type: int16_t
           name: C
-          minimum: -20.0
+          minimum: -20
           maximum: 120
 
 
@@ -467,42 +467,42 @@ publish:
       - name: thermistor_25
         slice: 0 + 10
         unit:
-          type: uint16_t
+          type: int16_t
           name: C
-          minimum: -20.0
-          maximum: 120    
+          minimum: -20
+          maximum: 120
       - name: thermistor_26
         slice: 10 + 10
         unit:
-          type: uint16_t
+          type: int16_t
           name: C
-          minimum: -20.0
+          minimum: -20
           maximum: 120
       - name: thermistor_27
         slice: 20 + 10
         unit:
-          type: uint16_t
+          type: int16_t
           name: C
-          minimum: -20.0
+          minimum: -20
           maximum: 120
       - name: thermistor_28
         slice: 30 + 10
         unit:
-          type: uint16_t
+          type: int16_t
           name: C
-          minimum: -20.0
+          minimum: -20
           maximum: 120
       - name: thermistor_29
         slice: 40 + 10
         unit:
-          type: uint16_t
+          type: int16_t
           name: C
-          minimum: -20.0
+          minimum: -20
           maximum: 120
       - name: thermistor_30
         slice: 50 + 10
         unit:
-          type: uint16_t
+          type: int16_t
           name: C
-          minimum: -20.0
+          minimum: -20
           maximum: 120

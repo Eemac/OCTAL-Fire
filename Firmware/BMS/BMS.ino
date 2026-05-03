@@ -53,26 +53,29 @@ enum BmsState {
   SURVIVAL = 6
 };
 
+// Matches bms_a.yml fault bits 0 through 14.
 enum BmsFaultBits {
   FAULT_CAN_ERROR       = 0,
   FAULT_LOOP_TIMING     = 1,
   FAULT_ADBMS_COMMS     = 2,
   FAULT_ADBMS_OVERTEMP  = 3,
-  FAULT_MUX             = 4,
-  FAULT_CELL_UNDERTEMP  = 5,
-  FAULT_CELL_OVERTEMP   = 6,
-  FAULT_CELL_UNDERVOLT  = 7,
-  FAULT_CELL_OVERVOLT   = 8,
-  FAULT_OPEN_WIRE       = 9,
-  FAULT_CURRENT_SENSE   = 10,
-  FAULT_OVERCURRENT     = 11,
-  FAULT_3V3_BROWNOUT    = 12,
-  FAULT_5V_BROWNOUT     = 13,
-  FAULT_CHARGER_COMMS   = 14,
-  FAULT_PEC             = 15
+  FAULT_PEC             = 4,
+  FAULT_MUX             = 5,
+  FAULT_CELL_UNDERTEMP  = 6,
+  FAULT_CELL_OVERTEMP   = 7,
+  FAULT_CELL_UNDERVOLT  = 8,
+  FAULT_CELL_OVERVOLT   = 9,
+  FAULT_OPEN_WIRE       = 10,
+  FAULT_CURRENT_SENSE   = 11,
+  FAULT_OVERCURRENT     = 12,
+  FAULT_3V3_BROWNOUT    = 13,
+  FAULT_5V_BROWNOUT     = 14
 };
 
 uint16_t bms_faults = 0;
+
+const int NUM_CELLS = 14;
+const uint16_t ALL_CELL_MASK = (1U << NUM_CELLS) - 1U;
 
 const float CELL_VOLTAGE_LOW  = 2.5f;
 const float CELL_VOLTAGE_HIGH = 4.20f;
@@ -80,36 +83,65 @@ const float CELL_VOLTAGE_HIGH = 4.20f;
 const float TEMP_LOW_C  = -20.0f;
 const float TEMP_HIGH_C = 60.0f;
 
+// Passive balancing limits.
+const float BALANCE_START_DELTA_MV = 30.0f;
+const float BALANCE_STOP_DELTA_MV = 10.0f;
+const float BALANCE_MIN_CELL_MV = 3800.0f;
+const float BALANCE_MAX_TEMP_C = 45.0f;
+const float BALANCE_MAX_PACK_CURRENT_A = 2.0f;
+const uint8_t BALANCE_WRITE_RETRIES = 2;
+
+// Internal voltage/temp values.
+// These are real engineering values, not CAN-packed values.
+float last_cell_mv[NUM_CELLS] = {0.0f};
+
+float last_min_cell_mv = 0.0f;
+float last_max_cell_mv = 0.0f;
+float last_pack_voltage_v = 0.0f;
+
+float last_min_current_temp_c = 120.0f;
+float last_max_current_temp_c = -20.0f;
+float last_min_temp_ever_c = 120.0f;
+float last_max_temp_ever_c = -20.0f;
+
 int8_t last_pec_error = 0;
 bool last_mux_error = false;
+bool last_current_sense_error = false;
+bool last_balance_write_error = false;
+bool thermistor_scan_complete_once = false;
 
-// Isense Current reading 2x
+// Balancing state.
+uint16_t current_balancing_mask = 0;
+uint16_t last_written_balancing_mask = 0xFFFF;
 
+// ISENSE current reading through OPAMP2 at 2x gain.
 const float ISENSE_ADC_REF_V = 3.3f;
 const float ISENSE_ADC_MAX = 4095.0f;
 
-// Might Recalibrate since this was made with 4x values
+// Recalibrate these after real 2x current tests.
 const float ISENSE_ZERO_RAW = 241.18f;
-
-// Rough 2x gain estimate from your 4x calibration.
 const float ISENSE_COUNTS_PER_AMP = 7.32f;
+
 const float ISENSE_SIGN = 1.0f;
 const int ISENSE_AVERAGE_SAMPLES = 100;
 const int ISENSE_SAMPLE_DELAY_US = 50;
 const float ISENSE_DEADBAND_A = 0.15f;
+
 const float OVERCURRENT_LIMIT_A = 500.0f;
 const int OVERCURRENT_TRIP_COUNT = 3;
 const int PEC_TRIP_COUNT = 3;
+
 uint8_t overcurrent_counter = 0;
 uint8_t pec_error_counter = 0;
+
 bool overcurrent_fault_latched = false;
 bool pec_fault_latched = false;
+
 float last_isense_raw = 0.0f;
 float last_isense_2x_voltage = 0.0f;
 float last_isense_current_A = 0.0f;
 
 // Thermistors
-
 const char *mux1_names[16] = {
   "TH_1_A", "TH_1_B", "TH_1_C", "TH_1_D",
   "TH_2_A", "TH_2_B", "TH_2_C", "TH_2_D",
@@ -139,7 +171,8 @@ extern "C" void HAL_OPAMP_MspInit(OPAMP_HandleTypeDef *hopamp)
   }
 }
 
-void OCTAL_Set_Clock(void) {
+void OCTAL_Set_Clock(void)
+{
   __HAL_RCC_PWR_CLK_ENABLE();
   HAL_PWREx_ControlVoltageScaling(PWR_REGULATOR_VOLTAGE_SCALE1_BOOST);
 
@@ -157,7 +190,8 @@ void OCTAL_Set_Clock(void) {
   RCC_OscInitStruct.PLL.PLLQ = RCC_PLLQ_DIV6;
   RCC_OscInitStruct.PLL.PLLR = RCC_PLLR_DIV2;
 
-  if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK) {
+  if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
+  {
     Error_Handler();
   }
 
@@ -171,7 +205,8 @@ void OCTAL_Set_Clock(void) {
   RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;
   RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
 
-  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_4) != HAL_OK) {
+  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_4) != HAL_OK)
+  {
     Error_Handler();
   }
 
@@ -212,23 +247,87 @@ void init_bms_chip_array()
 
 bool set_mux_channels(uint8_t mux_addr, uint8_t chA, uint8_t chB)
 {
-  if (chA > 15 || chB > 15) return false;
+  if (chA > 15 || chB > 15)
+  {
+    return false;
+  }
 
   Wire.beginTransmission(mux_addr);
   Wire.write(MAX14661_CMD_A);
   Wire.write(chA);
   Wire.write(chB);
+
   return (Wire.endTransmission() == 0);
 }
 
-uint16_t thermistorEncode(float t) {
-  if (t <= -20.0f) return 0;
-  if (t >= 120.0f) return 65535;
-  return (uint16_t)((t + 20.0f) / 140.0f * 65535.0f);
+// CAN helper conversions.
+// These must match the updated bms_a.yml.
+//
+// Cell voltage CAN unit: 10 mV.
+// Example: 379 = 3790 mV = 3.79 V.
+uint16_t cell_mv_to_can_10mv(float mv)
+{
+  if (mv < 0.0f)
+  {
+    mv = 0.0f;
+  }
+
+  if (mv > 5000.0f)
+  {
+    mv = 5000.0f;
+  }
+
+  return (uint16_t)roundf(mv / 10.0f);
 }
 
-float thermistorDecode(uint16_t t) {
-  return (float)(t * 140.0f / 65535.0f - 20.0f);
+// Pack voltage CAN unit: 0.1 V.
+// Example: 530 = 53.0 V.
+uint16_t pack_voltage_v_to_can_0p1v(float volts)
+{
+  if (volts < 0.0f)
+  {
+    volts = 0.0f;
+  }
+
+  if (volts > 100.0f)
+  {
+    volts = 100.0f;
+  }
+
+  return (uint16_t)roundf(volts * 10.0f);
+}
+
+// Pack current CAN unit: A.
+// Uses signed range that fits in 10 bits.
+int16_t current_a_to_can(float amps)
+{
+  if (amps > 511.0f)
+  {
+    amps = 511.0f;
+  }
+
+  if (amps < -511.0f)
+  {
+    amps = -511.0f;
+  }
+
+  return (int16_t)roundf(amps);
+}
+
+// Temperature CAN unit: C.
+int16_t temp_c_to_can(float temp_c)
+{
+  if (temp_c > 120.0f)
+  {
+    temp_c = 120.0f;
+  }
+
+  if (temp_c < -20.0f)
+  {
+    temp_c = -20.0f;
+  }
+
+  return (int16_t)roundf(temp_c);
 }
 
 void init_thermistors()
@@ -245,11 +344,30 @@ void init_thermistors()
 
   analogReadResolution(12);
 
-  set_mux_channels(MUX1_ADDR, 0, 1);
-  set_mux_channels(MUX2_ADDR, 0, 1);
+  last_mux_error = false;
 
-  bms_temp_metrics_a.max_cell_temp_ever = thermistorEncode(0.0f);
-  bms_temp_metrics_a.min_cell_temp_ever = thermistorEncode(120.0f);
+  bool mux1_ok = set_mux_channels(MUX1_ADDR, 0, 1);
+  bool mux2_ok = set_mux_channels(MUX2_ADDR, 0, 1);
+
+  if (!mux1_ok || !mux2_ok)
+  {
+    last_mux_error = true;
+  }
+
+  last_max_temp_ever_c = -20.0f;
+  last_min_temp_ever_c = 120.0f;
+
+  bms_temp_metrics_a.max_cell_temp_ever =
+    can_lib_bms_temp_metrics_a_max_cell_temp_ever_encode(temp_c_to_can(last_max_temp_ever_c));
+
+  bms_temp_metrics_a.min_cell_temp_ever =
+    can_lib_bms_temp_metrics_a_min_cell_temp_ever_encode(temp_c_to_can(last_min_temp_ever_c));
+
+  bms_temp_metrics_a.temp_threshold_high =
+    can_lib_bms_temp_metrics_a_temp_threshold_high_encode(temp_c_to_can(TEMP_HIGH_C));
+
+  bms_temp_metrics_a.temp_threshold_low =
+    can_lib_bms_temp_metrics_a_temp_threshold_low_encode(temp_c_to_can(TEMP_LOW_C));
 }
 
 float raw_to_therm_voltage(uint16_t raw)
@@ -259,8 +377,9 @@ float raw_to_therm_voltage(uint16_t raw)
 
 float therm_voltage_to_temp_c(float v_out)
 {
-  if (v_out <= 0.0f || v_out >= 3.3f) {
-    return 0.0f;
+  if (v_out <= 0.0f || v_out >= 3.3f)
+  {
+    return NAN;
   }
 
   float temp_k = 1.0f / (
@@ -343,7 +462,6 @@ bool configureADC2ForVOPAMP2Channel()
 
   if (HAL_ADC_ConfigChannel(&hadc2, &sConfig) != HAL_OK)
   {
-    Serial.println("ERROR: ADC2 VOPAMP2 channel config failed");
     return false;
   }
 
@@ -377,13 +495,11 @@ bool reinitADC2ForVOPAMP2()
 
   if (HAL_ADC_Init(&hadc2) != HAL_OK)
   {
-    Serial.println("ERROR: ADC2 re-init failed");
     return false;
   }
 
   if (HAL_ADCEx_Calibration_Start(&hadc2, ADC_SINGLE_ENDED) != HAL_OK)
   {
-    Serial.println("ERROR: ADC2 re-calibration failed");
     return false;
   }
 
@@ -418,22 +534,25 @@ void initISense()
 
   if (HAL_OPAMP_Init(&hopamp2) != HAL_OK)
   {
-    Serial.println("ERROR: OPAMP2 init failed");
+    last_current_sense_error = true;
+    return;
   }
 
   if (HAL_OPAMP_Start(&hopamp2) != HAL_OK)
   {
-    Serial.println("ERROR: OPAMP2 start failed");
+    last_current_sense_error = true;
+    return;
   }
 
   delay(20);
 
   if (!reinitADC2ForVOPAMP2())
   {
-    Serial.println("ERROR: initial ADC2 VOPAMP2 setup failed");
+    last_current_sense_error = true;
+    return;
   }
 
-  Serial.println("ISENSE OPAMP2 2x + ADC2 VOPAMP2 initialized");
+  last_current_sense_error = false;
 }
 
 int32_t readVOPAMP2Once()
@@ -493,9 +612,11 @@ void readIsense()
 
   if (raw < 0.0f)
   {
-    Serial.println("ERROR: ISENSE ADC read failed");
+    last_current_sense_error = true;
     return;
   }
+
+  last_current_sense_error = false;
 
   last_isense_raw = raw;
   last_isense_2x_voltage = isenseRawToVoltage(last_isense_raw);
@@ -503,19 +624,8 @@ void readIsense()
 
   update_overcurrent_counter();
 
-  float current_for_can_A = last_isense_current_A;
-
-  if (current_for_can_A < 0.0f)
-  {
-    current_for_can_A = 0.0f;
-  }
-
-  if (current_for_can_A > 511.0f)
-  {
-    current_for_can_A = 511.0f;
-  }
-
-  bms_status_a.pack_current = (int16_t)roundf(current_for_can_A);
+  bms_status_a.pack_current =
+    can_lib_bms_status_a_pack_current_encode(current_a_to_can(last_isense_current_A));
 }
 
 void update_error_light()
@@ -532,121 +642,161 @@ void update_error_light()
   }
 }
 
-void printIsenseDebug()
-{
-  Serial.print("ISENSE raw ADC: ");
-  Serial.print(last_isense_raw, 2);
-
-  Serial.print(" | ISENSE 2x voltage: ");
-  Serial.print(last_isense_2x_voltage, 4);
-  Serial.print(" V");
-
-  Serial.print(" | Current actual: ");
-  Serial.print(last_isense_current_A, 3);
-  Serial.print(" A");
-
-  Serial.print(" | OC count: ");
-  Serial.print(overcurrent_counter);
-
-  Serial.print(" | PEC count: ");
-  Serial.print(pec_error_counter);
-
-  Serial.print(" | Fault mask: 0b");
-  Serial.print(bms_faults, BIN);
-
-  Serial.print(" | State: ");
-  Serial.print(bms_status_a.bms_state);
-
-  Serial.print(" | CAN pack_current raw: ");
-  Serial.println(bms_status_a.pack_current);
-}
-
 void set_fault_bit(uint8_t bit)
 {
   bms_faults |= (1U << bit);
 }
 
-bool read_cell_voltages() {
-  bms_voltage_metrics_a.min_cell_voltage =
-    can_lib_bms_voltage_metrics_a_min_cell_voltage_encode(5000.0f);
-
-  bms_voltage_metrics_a.max_cell_voltage =
-    can_lib_bms_voltage_metrics_a_max_cell_voltage_encode(0.0f);
-
-  float pack_sum_mv = 0.0f;
-
-  wakeup_idle(1);
+bool read_cell_voltages()
+{
+  wakeup_idle(TOTAL_IC);
   ADBMS181x_adcv(MD_7KHZ_3KHZ, DCP_DISABLED, CELL_CH_ALL);
   ADBMS181x_pollAdc();
 
-  last_pec_error = ADBMS181x_rdcv(0, 1, &bms_ic);
+  last_pec_error = ADBMS181x_rdcv(0, TOTAL_IC, &bms_ic);
   update_pec_counter();
 
-  for (int cell = 0; cell < 14; cell++)
+  if (last_pec_error != 0)
+  {
+    return false;
+  }
+
+  last_min_cell_mv = 99999.0f;
+  last_max_cell_mv = 0.0f;
+
+  float pack_sum_mv = 0.0f;
+
+  for (int cell = 0; cell < NUM_CELLS; cell++)
   {
     float volts = bms_ic.cells.c_codes[cell] * 0.0001f;
     float mv = volts * 1000.0f;
 
+    last_cell_mv[cell] = mv;
+
+    uint16_t can_cell_voltage = cell_mv_to_can_10mv(mv);
+
     switch (cell)
     {
-      case 0: cell_voltages_0_a.cell_1 = can_lib_cell_voltages_0_a_cell_1_encode(mv); break;
-      case 1: cell_voltages_0_a.cell_2 = can_lib_cell_voltages_0_a_cell_2_encode(mv); break;
-      case 2: cell_voltages_0_a.cell_3 = can_lib_cell_voltages_0_a_cell_3_encode(mv); break;
-      case 3: cell_voltages_0_a.cell_4 = can_lib_cell_voltages_0_a_cell_4_encode(mv); break;
-      case 4: cell_voltages_0_a.cell_5 = can_lib_cell_voltages_0_a_cell_5_encode(mv); break;
+      case 0:
+        cell_voltages_0_a.cell_1 =
+          can_lib_cell_voltages_0_a_cell_1_encode(can_cell_voltage);
+        break;
 
-      case 5: cell_voltages_1_a.cell_6 = can_lib_cell_voltages_1_a_cell_6_encode(mv); break;
-      case 6: cell_voltages_1_a.cell_7 = can_lib_cell_voltages_1_a_cell_7_encode(mv); break;
-      case 7: cell_voltages_1_a.cell_8 = can_lib_cell_voltages_1_a_cell_8_encode(mv); break;
-      case 8: cell_voltages_1_a.cell_9 = can_lib_cell_voltages_1_a_cell_9_encode(mv); break;
-      case 9: cell_voltages_1_a.cell_10 = can_lib_cell_voltages_1_a_cell_10_encode(mv); break;
+      case 1:
+        cell_voltages_0_a.cell_2 =
+          can_lib_cell_voltages_0_a_cell_2_encode(can_cell_voltage);
+        break;
 
-      case 10: cell_voltages_2_a.cell_11 = can_lib_cell_voltages_2_a_cell_11_encode(mv); break;
-      case 11: cell_voltages_2_a.cell_12 = can_lib_cell_voltages_2_a_cell_12_encode(mv); break;
-      case 12: cell_voltages_2_a.cell_13 = can_lib_cell_voltages_2_a_cell_13_encode(mv); break;
-      case 13: cell_voltages_2_a.cell_14 = can_lib_cell_voltages_2_a_cell_14_encode(mv); break;
+      case 2:
+        cell_voltages_0_a.cell_3 =
+          can_lib_cell_voltages_0_a_cell_3_encode(can_cell_voltage);
+        break;
+
+      case 3:
+        cell_voltages_0_a.cell_4 =
+          can_lib_cell_voltages_0_a_cell_4_encode(can_cell_voltage);
+        break;
+
+      case 4:
+        cell_voltages_0_a.cell_5 =
+          can_lib_cell_voltages_0_a_cell_5_encode(can_cell_voltage);
+        break;
+
+      case 5:
+        cell_voltages_1_a.cell_6 =
+          can_lib_cell_voltages_1_a_cell_6_encode(can_cell_voltage);
+        break;
+
+      case 6:
+        cell_voltages_1_a.cell_7 =
+          can_lib_cell_voltages_1_a_cell_7_encode(can_cell_voltage);
+        break;
+
+      case 7:
+        cell_voltages_1_a.cell_8 =
+          can_lib_cell_voltages_1_a_cell_8_encode(can_cell_voltage);
+        break;
+
+      case 8:
+        cell_voltages_1_a.cell_9 =
+          can_lib_cell_voltages_1_a_cell_9_encode(can_cell_voltage);
+        break;
+
+      case 9:
+        cell_voltages_1_a.cell_10 =
+          can_lib_cell_voltages_1_a_cell_10_encode(can_cell_voltage);
+        break;
+
+      case 10:
+        cell_voltages_2_a.cell_11 =
+          can_lib_cell_voltages_2_a_cell_11_encode(can_cell_voltage);
+        break;
+
+      case 11:
+        cell_voltages_2_a.cell_12 =
+          can_lib_cell_voltages_2_a_cell_12_encode(can_cell_voltage);
+        break;
+
+      case 12:
+        cell_voltages_2_a.cell_13 =
+          can_lib_cell_voltages_2_a_cell_13_encode(can_cell_voltage);
+        break;
+
+      case 13:
+        cell_voltages_2_a.cell_14 =
+          can_lib_cell_voltages_2_a_cell_14_encode(can_cell_voltage);
+        break;
     }
 
-    if (mv < can_lib_bms_voltage_metrics_a_min_cell_voltage_decode(bms_voltage_metrics_a.min_cell_voltage))
+    if (mv < last_min_cell_mv)
     {
-      bms_voltage_metrics_a.min_cell_voltage =
-        can_lib_bms_voltage_metrics_a_min_cell_voltage_encode(mv);
+      last_min_cell_mv = mv;
     }
 
-    if (mv > can_lib_bms_voltage_metrics_a_max_cell_voltage_decode(bms_voltage_metrics_a.max_cell_voltage))
+    if (mv > last_max_cell_mv)
     {
-      bms_voltage_metrics_a.max_cell_voltage =
-        can_lib_bms_voltage_metrics_a_max_cell_voltage_encode(mv);
+      last_max_cell_mv = mv;
     }
 
     pack_sum_mv += mv;
   }
 
+  last_pack_voltage_v = pack_sum_mv / 1000.0f;
+
   bms_status_a.pack_voltage =
-    can_lib_bms_status_a_pack_voltage_encode(pack_sum_mv);
+    can_lib_bms_status_a_pack_voltage_encode(pack_voltage_v_to_can_0p1v(last_pack_voltage_v));
+
+  bms_voltage_metrics_a.min_cell_voltage =
+    can_lib_bms_voltage_metrics_a_min_cell_voltage_encode(cell_mv_to_can_10mv(last_min_cell_mv));
+
+  bms_voltage_metrics_a.max_cell_voltage =
+    can_lib_bms_voltage_metrics_a_max_cell_voltage_encode(cell_mv_to_can_10mv(last_max_cell_mv));
 
   bms_voltage_metrics_a.cell_voltage_threshold_high =
-    can_lib_bms_voltage_metrics_a_cell_voltage_threshold_high_encode(CELL_VOLTAGE_HIGH * 1000.0f);
+    can_lib_bms_voltage_metrics_a_cell_voltage_threshold_high_encode(
+      cell_mv_to_can_10mv(CELL_VOLTAGE_HIGH * 1000.0f)
+    );
 
   bms_voltage_metrics_a.cell_voltage_threshold_low =
-    can_lib_bms_voltage_metrics_a_cell_voltage_threshold_low_encode(CELL_VOLTAGE_LOW * 1000.0f);
+    can_lib_bms_voltage_metrics_a_cell_voltage_threshold_low_encode(
+      cell_mv_to_can_10mv(CELL_VOLTAGE_LOW * 1000.0f)
+    );
 
-  if (last_pec_error == 0) {
-    digitalToggle(PB11);
-  }
+  digitalToggle(PB11);
 
-  return (last_pec_error == 0);
+  return true;
 }
 
 uint8_t thermistors_index = 0;
 
-bool read_thermistors() {
+bool read_thermistors()
+{
   last_mux_error = false;
 
   if (thermistors_index == 0)
   {
-    bms_temp_metrics_a.min_current_cell_temp = thermistorEncode(120.0f);
-    bms_temp_metrics_a.max_current_cell_temp = thermistorEncode(-20.0f);
+    last_min_current_temp_c = 120.0f;
+    last_max_current_temp_c = -20.0f;
   }
 
   float t1 = therm_voltage_to_temp_c(raw_to_therm_voltage(analogRead(THERM_A1_PIN)));
@@ -656,38 +806,66 @@ bool read_thermistors() {
 
   float temps[4] = {t1, t2, t3, t4};
 
-  float min_current = thermistorDecode(bms_temp_metrics_a.min_current_cell_temp);
-  float max_current = thermistorDecode(bms_temp_metrics_a.max_current_cell_temp);
-  float min_ever = thermistorDecode(bms_temp_metrics_a.min_cell_temp_ever);
-  float max_ever = thermistorDecode(bms_temp_metrics_a.max_cell_temp_ever);
-
   for (int i = 0; i < 4; i++)
   {
-    if (temps[i] < min_current) min_current = temps[i];
-    if (temps[i] > max_current) max_current = temps[i];
+    if (isnan(temps[i]))
+    {
+      last_mux_error = true;
+      return false;
+    }
 
-    if (temps[i] < min_ever) min_ever = temps[i];
-    if (temps[i] > max_ever) max_ever = temps[i];
+    if (temps[i] < last_min_current_temp_c)
+    {
+      last_min_current_temp_c = temps[i];
+    }
+
+    if (temps[i] > last_max_current_temp_c)
+    {
+      last_max_current_temp_c = temps[i];
+    }
+
+    if (temps[i] < last_min_temp_ever_c)
+    {
+      last_min_temp_ever_c = temps[i];
+    }
+
+    if (temps[i] > last_max_temp_ever_c)
+    {
+      last_max_temp_ever_c = temps[i];
+    }
   }
 
-  bms_temp_metrics_a.min_current_cell_temp = thermistorEncode(min_current);
-  bms_temp_metrics_a.max_current_cell_temp = thermistorEncode(max_current);
-  bms_temp_metrics_a.min_cell_temp_ever = thermistorEncode(min_ever);
-  bms_temp_metrics_a.max_cell_temp_ever = thermistorEncode(max_ever);
+  bms_temp_metrics_a.min_current_cell_temp =
+    can_lib_bms_temp_metrics_a_min_current_cell_temp_encode(temp_c_to_can(last_min_current_temp_c));
+
+  bms_temp_metrics_a.max_current_cell_temp =
+    can_lib_bms_temp_metrics_a_max_current_cell_temp_encode(temp_c_to_can(last_max_current_temp_c));
+
+  bms_temp_metrics_a.min_cell_temp_ever =
+    can_lib_bms_temp_metrics_a_min_cell_temp_ever_encode(temp_c_to_can(last_min_temp_ever_c));
+
+  bms_temp_metrics_a.max_cell_temp_ever =
+    can_lib_bms_temp_metrics_a_max_cell_temp_ever_encode(temp_c_to_can(last_max_temp_ever_c));
 
   thermistors_index += 2;
+
   if (thermistors_index >= 16)
   {
     thermistors_index = 0;
+    thermistor_scan_complete_once = true;
   }
 
   bool mux1_ok = set_mux_channels(MUX1_ADDR, thermistors_index, thermistors_index + 1);
-  if (mux1_ok) {
+
+  if (mux1_ok)
+  {
     digitalToggle(PB7);
   }
 
   bool mux2_ok = set_mux_channels(MUX2_ADDR, thermistors_index, thermistors_index + 1);
-  if (mux2_ok) {
+
+  if (mux2_ok)
+  {
     digitalToggle(PA15);
   }
 
@@ -700,7 +878,192 @@ bool read_thermistors() {
   return true;
 }
 
-void update_faults() {
+bool verify_adbms_balancing_mask()
+{
+  wakeup_idle(TOTAL_IC);
+
+  int8_t cfg_pec = ADBMS181x_rdcfg(TOTAL_IC, &bms_ic);
+  int8_t cfgb_pec = ADBMS181x_rdcfgb(TOTAL_IC, &bms_ic);
+
+  if (cfg_pec != 0 || cfgb_pec != 0)
+  {
+    return false;
+  }
+
+  bool cfgra_byte4_ok =
+    ((bms_ic.config.rx_data[4] & 0xFF) == (bms_ic.config.tx_data[4] & 0xFF));
+
+  bool cfgra_byte5_dcc_ok =
+    ((bms_ic.config.rx_data[5] & 0x0F) == (bms_ic.config.tx_data[5] & 0x0F));
+
+  bool cfgrb_byte0_dcc_ok =
+    ((bms_ic.configb.rx_data[0] & 0xF0) == (bms_ic.configb.tx_data[0] & 0xF0));
+
+  bool cfgrb_byte1_dcc_ok =
+    ((bms_ic.configb.rx_data[1] & 0x0F) == (bms_ic.configb.tx_data[1] & 0x0F));
+
+  return cfgra_byte4_ok &&
+         cfgra_byte5_dcc_ok &&
+         cfgrb_byte0_dcc_ok &&
+         cfgrb_byte1_dcc_ok;
+}
+
+void stage_balancing_mask_in_adbms_config(uint16_t mask)
+{
+  ADBMS181x_clear_discharge(TOTAL_IC, &bms_ic);
+
+  mask &= ALL_CELL_MASK;
+
+  for (int cell = 0; cell < NUM_CELLS; cell++)
+  {
+    if ((mask & (1U << cell)) == 0)
+    {
+      continue;
+    }
+
+    if (cell < 8)
+    {
+      // Cells 1–8: CFGRA byte 4 bits 0–7
+      bms_ic.config.tx_data[4] |= (1U << cell);
+    }
+    else if (cell < 12)
+    {
+      // Cells 9–12: CFGRA byte 5 bits 0–3
+      bms_ic.config.tx_data[5] |= (1U << (cell - 8));
+    }
+    else
+    {
+      // Cells 13–14: CFGRB byte 0 bits 4–5
+      bms_ic.configb.tx_data[0] |= (1U << ((cell - 12) + 4));
+    }
+  }
+}
+
+bool write_balancing_mask_to_adbms(uint16_t mask, bool force_write)
+{
+  mask &= ALL_CELL_MASK;
+
+  if (!force_write &&
+      !last_balance_write_error &&
+      mask == last_written_balancing_mask)
+  {
+    current_balancing_mask = mask;
+    bms_status_a.balancing_mask =
+      can_lib_bms_status_a_balancing_mask_encode(current_balancing_mask);
+    return true;
+  }
+
+  for (uint8_t attempt = 0; attempt < BALANCE_WRITE_RETRIES; attempt++)
+  {
+    stage_balancing_mask_in_adbms_config(mask);
+
+    wakeup_idle(TOTAL_IC);
+    ADBMS181x_wrcfg(TOTAL_IC, &bms_ic);
+    ADBMS181x_wrcfgb(TOTAL_IC, &bms_ic);
+
+    if (verify_adbms_balancing_mask())
+    {
+      last_balance_write_error = false;
+      last_written_balancing_mask = mask;
+      current_balancing_mask = mask;
+
+      bms_status_a.balancing_mask =
+        can_lib_bms_status_a_balancing_mask_encode(current_balancing_mask);
+
+      return true;
+    }
+
+    delay(2);
+  }
+
+  last_balance_write_error = true;
+  return false;
+}
+
+bool disable_all_balancing(bool force_write)
+{
+  return write_balancing_mask_to_adbms(0, force_write);
+}
+
+bool balancing_is_needed()
+{
+  if (last_min_cell_mv < BALANCE_MIN_CELL_MV)
+  {
+    return false;
+  }
+
+  return ((last_max_cell_mv - last_min_cell_mv) > BALANCE_START_DELTA_MV);
+}
+
+bool balancing_should_continue()
+{
+  if (last_min_cell_mv < BALANCE_MIN_CELL_MV)
+  {
+    return false;
+  }
+
+  return ((last_max_cell_mv - last_min_cell_mv) > BALANCE_STOP_DELTA_MV);
+}
+
+bool balancing_is_safe(bool cells_ok, bool therms_ok)
+{
+  if (!cells_ok || !therms_ok)
+  {
+    return false;
+  }
+
+  if (!thermistor_scan_complete_once)
+  {
+    return false;
+  }
+
+  if (bms_faults != 0)
+  {
+    return false;
+  }
+
+  if (fabs(last_isense_current_A) > BALANCE_MAX_PACK_CURRENT_A)
+  {
+    return false;
+  }
+
+  if (last_max_current_temp_c > BALANCE_MAX_TEMP_C)
+  {
+    return false;
+  }
+
+  if (last_min_cell_mv < BALANCE_MIN_CELL_MV)
+  {
+    return false;
+  }
+
+  return true;
+}
+
+uint16_t calculate_balancing_mask()
+{
+  uint16_t mask = 0;
+
+  for (int cell = 0; cell < NUM_CELLS; cell++)
+  {
+    if (last_cell_mv[cell] > last_min_cell_mv + BALANCE_STOP_DELTA_MV &&
+        last_cell_mv[cell] > BALANCE_MIN_CELL_MV)
+    {
+      mask |= (1U << cell);
+    }
+  }
+
+  return mask & ALL_CELL_MASK;
+}
+
+bool update_cell_balancing()
+{
+  uint16_t mask = calculate_balancing_mask();
+  return write_balancing_mask_to_adbms(mask, false);
+}
+
+void update_faults()
+{
   bms_faults = 0;
 
   if (pec_fault_latched)
@@ -714,28 +1077,37 @@ void update_faults() {
     set_fault_bit(FAULT_MUX);
   }
 
+  if (last_current_sense_error)
+  {
+    set_fault_bit(FAULT_CURRENT_SENSE);
+  }
+
+  if (last_balance_write_error)
+  {
+    set_fault_bit(FAULT_ADBMS_COMMS);
+  }
+
   if (overcurrent_fault_latched)
   {
     set_fault_bit(FAULT_OVERCURRENT);
   }
 
-  if (can_lib_bms_voltage_metrics_a_min_cell_voltage_decode(bms_voltage_metrics_a.min_cell_voltage) < CELL_VOLTAGE_LOW * 1000.0f)
+  if (last_min_cell_mv < CELL_VOLTAGE_LOW * 1000.0f)
   {
     set_fault_bit(FAULT_CELL_UNDERVOLT);
   }
 
-  if (can_lib_bms_voltage_metrics_a_max_cell_voltage_decode(bms_voltage_metrics_a.max_cell_voltage) > CELL_VOLTAGE_HIGH * 1000.0f)
+  if (last_max_cell_mv > CELL_VOLTAGE_HIGH * 1000.0f)
   {
     set_fault_bit(FAULT_CELL_OVERVOLT);
   }
 
-  // Use CURRENT thermistor scan for active temp faulting.
-  if (thermistorDecode(bms_temp_metrics_a.min_current_cell_temp) < TEMP_LOW_C)
+  if (last_min_current_temp_c < TEMP_LOW_C)
   {
     set_fault_bit(FAULT_CELL_UNDERTEMP);
   }
 
-  if (thermistorDecode(bms_temp_metrics_a.max_current_cell_temp) > TEMP_HIGH_C)
+  if (last_max_current_temp_c > TEMP_HIGH_C)
   {
     set_fault_bit(FAULT_CELL_OVERTEMP);
   }
@@ -743,18 +1115,102 @@ void update_faults() {
   bms_status_a.bms_faults = bms_faults;
 }
 
-void print_faults() {
-  Serial.print("Fault mask: 0b");
-  Serial.println(bms_faults, BIN);
+void update_bms_state(bool cells_ok, bool therms_ok)
+{
+  switch (bms_status_a.bms_state)
+  {
+    case IDLE:
+    case CHARGING_IDLE:
+    {
+      if (!disable_all_balancing(false))
+      {
+        bms_status_a.bms_state = FAULTED;
+        break;
+      }
 
-  if (bms_faults & (1U << FAULT_ADBMS_COMMS))    Serial.println("FAULT: ADBMS comms");
-  if (bms_faults & (1U << FAULT_MUX))            Serial.println("FAULT: Mux");
-  if (bms_faults & (1U << FAULT_PEC))            Serial.println("FAULT: PEC");
-  if (bms_faults & (1U << FAULT_OVERCURRENT))    Serial.println("FAULT: Overcurrent");
-  if (bms_faults & (1U << FAULT_CELL_UNDERVOLT)) Serial.println("FAULT: Cell undervoltage");
-  if (bms_faults & (1U << FAULT_CELL_OVERVOLT))  Serial.println("FAULT: Cell overvoltage");
-  if (bms_faults & (1U << FAULT_CELL_UNDERTEMP)) Serial.println("FAULT: Cell undertemp");
-  if (bms_faults & (1U << FAULT_CELL_OVERTEMP))  Serial.println("FAULT: Cell overtemp");
+      if (!cells_ok || !therms_ok || bms_faults != 0)
+      {
+        bms_status_a.bms_state = FAULTED;
+      }
+      else if (balancing_is_needed() && balancing_is_safe(cells_ok, therms_ok))
+      {
+        bms_status_a.bms_state = BALANCING;
+
+        if (!update_cell_balancing())
+        {
+          bms_status_a.bms_state = FAULTED;
+        }
+      }
+
+      break;
+    }
+
+    case BALANCING:
+    {
+      if (!balancing_is_safe(cells_ok, therms_ok))
+      {
+        disable_all_balancing(false);
+
+        if (bms_faults != 0 || !cells_ok || !therms_ok)
+        {
+          bms_status_a.bms_state = FAULTED;
+        }
+        else
+        {
+          bms_status_a.bms_state = IDLE;
+        }
+      }
+      else if (!balancing_should_continue())
+      {
+        disable_all_balancing(false);
+        bms_status_a.bms_state = IDLE;
+      }
+      else
+      {
+        if (!update_cell_balancing())
+        {
+          bms_status_a.bms_state = FAULTED;
+        }
+      }
+
+      break;
+    }
+
+    case FAULTED:
+    {
+      disable_all_balancing(false);
+
+      // Bring-up behavior: allow return to IDLE if faults clear.
+      // Final product may latch FAULTED until reset.
+      if (cells_ok && therms_ok && bms_faults == 0)
+      {
+        bms_status_a.bms_state = IDLE;
+      }
+
+      break;
+    }
+
+    case ACTIVE:
+    case CHARGING_ACTIVE:
+    case SURVIVAL:
+    {
+      disable_all_balancing(false);
+
+      if (!cells_ok || !therms_ok || bms_faults != 0)
+      {
+        bms_status_a.bms_state = FAULTED;
+      }
+
+      break;
+    }
+
+    default:
+    {
+      disable_all_balancing(false);
+      bms_status_a.bms_state = IDLE;
+      break;
+    }
+  }
 }
 
 void setup()
@@ -784,21 +1240,23 @@ void setup()
   // DISABLE BMS CONTROL OF FETS
   digitalToggle(PA10);
 
-  Serial.begin(115200);
-  delay(200);
-
   SPI.begin();
   SPI.beginTransaction(SPISettings(1000000, MSBFIRST, SPI_MODE0));
 
   init_bms_chip_array();
+
+  // Force all discharge/balancing bits off at startup.
+  disable_all_balancing(true);
+
   init_thermistors();
   initISense();
 
   can_init_bms_a(&hfdcan2);
 
   bms_status_a.bms_state = IDLE;
-
-  Serial.println("BMS started with ISENSE OPAMP2 2x current reading.");
+  bms_status_a.bms_faults = 0;
+  bms_status_a.balancing_mask =
+    can_lib_bms_status_a_balancing_mask_encode(0);
 }
 
 void run_bms_cycle()
@@ -811,8 +1269,17 @@ void run_bms_cycle()
   bool therms_ok = read_thermistors();
 
   update_faults();
+  update_bms_state(cells_ok, therms_ok);
+  update_faults();
 
-  // ERROR LED is only controlled by PEC error now.
+  if (bms_faults != 0 && bms_status_a.bms_state != FAULTED)
+  {
+    disable_all_balancing(false);
+    bms_status_a.bms_state = FAULTED;
+    update_faults();
+  }
+
+  // ERROR LED is only controlled by PEC error.
   update_error_light();
 
   can_send_bms_status_a(&hfdcan2);
@@ -823,42 +1290,10 @@ void run_bms_cycle()
   can_send_cell_voltages_2_a(&hfdcan2);
 
   digitalToggle(PB2);
-
-  switch (bms_status_a.bms_state)
-  {
-    case IDLE:
-    {
-      if (!cells_ok || !therms_ok || bms_faults != 0)
-      {
-        bms_status_a.bms_state = FAULTED;
-      }
-
-      break;
-    }
-
-    case FAULTED:
-    {
-      // For bring-up only: allow return to IDLE if faults clear.
-      // Later, we can make faults latch until reset.
-      if (cells_ok && therms_ok && bms_faults == 0)
-      {
-        bms_status_a.bms_state = IDLE;
-      }
-
-      break;
-    }
-
-    default:
-    {
-      bms_status_a.bms_state = IDLE;
-      break;
-    }
-  }
 }
 
 unsigned long ms50 = 0;
 unsigned long ms200 = 0;
-unsigned long ms1000 = 0;
 
 void loop()
 {
@@ -874,12 +1309,6 @@ void loop()
   {
     ms200 = now;
     digitalToggle(PB9);
-  }
-
-  if (now - ms1000 >= 1000)
-  {
-    ms1000 = now;
-    printIsenseDebug();
   }
 
   delay(1);
