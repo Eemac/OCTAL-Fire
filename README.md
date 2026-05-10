@@ -1,8 +1,8 @@
 # OCTAL-Fire
-## A BADass Firefighting Drone. And now the biggest collegiate drone in the world!
+The largest collegiate-built drone in the world!
 [OCTAL Website!](https://octalfire.com/)
 
-<img width="339" height="136" alt="THE DRONE" src="https://github.com/user-attachments/assets/7bd08627-0a60-4f48-a0ff-376e49a01b19" />
+<img width="100%" alt="THE DRONE" src="https://github.com/user-attachments/assets/7bd08627-0a60-4f48-a0ff-376e49a01b19" />
 
 ## What/Why is this project?
 OCTAL is engineered to respond to wildfires faster--and safer--than humans can. Satellites can already detect hotspots with a resolution of ~500ft. Our system will autonomously deploy to the detected hotspot, perform an analysis with 6 visible and infrared-spectrum cameras, and release retardant before the fire has time to get large, saving wildlife, property, and human lives. With four 66Ah, 60V solid-state LiPo battery packs, a 120kg payload, and a projected 40-minute flight time, OCTAL is built smart, tough, and versatile.
